@@ -1,2 +1,5 @@
 # ignore jupyter notebooks in the language bar on github
 notebooks/** linguist-vendored
+
+# Use bd merge for beads JSONL files
+.beads/issues.jsonl merge=beads

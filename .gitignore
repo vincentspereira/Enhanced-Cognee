@@ -197,3 +197,46 @@ SWE-bench_testsample/
 
 # ChromaDB Data
 .chromadb_data/
+
+# =============================================================================
+# Enhanced Cognee MCP Server - Additional Ignores
+# =============================================================================
+
+# Configuration files with API keys
+claude_desktop_config.json
+continue_config.json
+cursor_config.json
+windsurf_config.json
+.env.template
+
+# User-specific configurations
+user_config/
+user_memories/
+user_data/
+
+# Installation artifacts
+install_log.txt
+installation_backup/
+
+# Enhanced Cognee specific
+memory_store/
+project_cache/
+session_data/
+
+# Docker volumes and data
+docker_volumes/
+container_data/
+
+# Temporary files from IDE integration
+ide_temp/
+mcp_logs/
+
+# Backup files
+*.backup
+*.bak
+# Temporary files from AI assistants
+tmpclaude-*
+
+# Project specific ignores
+.beads/
+.beads-cognee-integration/

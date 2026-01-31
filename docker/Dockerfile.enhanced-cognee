@@ -1,0 +1,91 @@
+# Enhanced Cognee Dockerfile
+# Integrates Enhanced Cognee with enterprise-grade memory stack
+# Replaces default databases: SQLite->PostgreSQL, LanceDB->Qdrant, Kuzu->Neo4j, adds Redis
+
+FROM python:3.11-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    curl \
+    jq \
+    wget \
+    git \
+    gcc \
+    g++ \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python dependencies
+COPY requirements.txt /app/
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Install Enhanced Cognee dependencies
+RUN pip install --no-cache-dir \
+    # Enhanced Stack Dependencies
+    psycopg2-binary==2.9.9 \
+    qdrant-client==1.10.0 \
+    neo4j==5.25.0 \
+    redis==5.1.1 \
+    pgvector==0.3.2 \
+
+    # Existing Cognee Dependencies
+    fastapi==0.110.0 \
+    uvicorn==0.27.1 \
+    pydantic==2.6.1 \
+    sqlalchemy==2.0.25 \
+    alembic==1.13.1 \
+    asyncio-mqtt==0.16.1 \
+    python-dotenv==1.0.1 \
+    httpx==0.26.0 \
+    aiofiles==23.2.1 \
+    python-multipart==0.0.9 \
+    python-jose[cryptography]==3.3.0 \
+    passlib[bcrypt]==1.7.4 \
+    python-decouple==3.8 \
+    structlog==24.1.0 \
+    rich==13.7.0 \
+    typer==0.9.0 \
+    click==8.1.7 \
+    pyyaml==6.0.1 \
+    jinja2==3.1.3 \
+    markupsafe==2.1.5 \
+    numpy==1.26.4 \
+    pandas==2.2.1 \
+    scikit-learn==1.4.1 \
+    transformers==4.40.1 \
+    torch==2.2.1 \
+    sentence-transformers==2.6.1 \
+    tiktoken==0.6.0 \
+    openai==1.12.0 \
+    anthropic==0.8.1 \
+    tiktoken==0.6.0
+
+# Copy Enhanced Cognee application code
+COPY src/ /app/src/
+COPY alembic/ /app/alembic/
+COPY alembic.ini /app/
+COPY config/ /app/config/
+
+# Copy initialization scripts
+COPY docker/scripts/ /app/scripts/
+
+# Set environment variables for Enhanced Stack
+ENV PYTHONPATH=/app/src
+ENV ENHANCED_COGNEE_MODE=true
+ENV LOG_LEVEL=INFO
+
+# Create directories for Enhanced Cognee data
+RUN mkdir -p /app/data /app/logs /app/tmp
+
+# Expose port
+EXPOSE 8080
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD curl -f http://localhost:8080/health || exit 1
+
+# Start Enhanced Cognee with configuration
+CMD ["python", "-m", "uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8080", "--reload"]
