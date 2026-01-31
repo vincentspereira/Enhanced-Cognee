@@ -1,0 +1,642 @@
+name: Enhanced Cognee Testing Pipeline
+
+on:
+  push:
+    branches: [ main, develop, testing ]
+    paths-ignore:
+      - 'docs/**'
+      - '*.md'
+  pull_request:
+    branches: [ main, develop ]
+    types: [opened, synchronize, reopened]
+  schedule:
+    # Run comprehensive tests daily at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      test_category:
+        description: 'Test category to run'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - unit
+          - integration
+          - system
+          - performance
+          - security
+          - compliance
+      performance_level:
+        description: 'Performance testing level'
+        required: false
+        default: 'medium'
+        type: choice
+        options:
+          - light
+          - medium
+          - heavy
+      chaos_testing:
+        description: 'Enable chaos testing'
+        required: false
+        default: false
+        type: boolean
+
+env:
+  PYTHON_VERSION: '3.11'
+  NODE_VERSION: '18'
+  DOCKER_COMPOSE_VERSION: '2.20'
+  TESTING_TIMEOUT: '30m'
+
+jobs:
+  # Infrastructure Setup
+  setup-infrastructure:
+    name: Setup Testing Infrastructure
+    runs-on: ubuntu-latest
+    outputs:
+      infrastructure-ready: ${{ steps.setup.outputs.ready }}
+      test-database-url: ${{ steps.setup.outputs.database-url }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Create testing network
+        run: |
+          docker network create testing-network || true
+          echo "Testing network created"
+
+      - name: Start testing databases
+        run: |
+          cd testing
+          docker-compose -f docker-compose-testing.yml up -d postgres-test qdrant-test neo4j-test redis-test
+          echo "Database services started"
+
+      - name: Wait for databases to be ready
+        run: |
+          echo "Waiting for PostgreSQL..."
+          timeout 60 bash -c 'until pg_isready -h localhost -p 25432; do sleep 2; done'
+
+          echo "Waiting for Qdrant..."
+          timeout 60 bash -c 'until curl -f http://localhost:26333/health; do sleep 2; done'
+
+          echo "Waiting for Redis..."
+          timeout 30 bash -c 'until redis-cli -h localhost -p 26379 ping; do sleep 1; done'
+
+          echo "All databases ready"
+        env:
+          PGPASSWORD: test_password
+
+      - name: Setup infrastructure outputs
+        id: setup
+        run: |
+          echo "ready=true" >> $GITHUB_OUTPUT
+          echo "database-url=postgresql://test_user:test_password@localhost:25432/test_cognee" >> $GITHUB_OUTPUT
+
+  # Unit Testing
+  unit-tests:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    needs: setup-infrastructure
+    if: github.event.inputs.test_category == 'all' || github.event.inputs.test_category == 'unit' || github.event.inputs.test_category == ''
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.10', '3.11']
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install testing dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r testing/requirements.txt
+          pip install -e .
+
+      - name: Run unit tests with coverage
+        run: |
+          cd testing
+          pytest -m "unit" -v \
+            --cov=../cognee \
+            --cov=../src \
+            --cov-report=xml:reports/coverage/coverage-unit-${{ matrix.python-version }}.xml \
+            --cov-report=html:reports/coverage/html-unit-${{ matrix.python-version }} \
+            --junitxml=reports/junit/unit-tests-${{ matrix.python-version }}.xml \
+            --benchmark-json=reports/benchmark/benchmark-unit-${{ matrix.python-version }}.json
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          file: testing/reports/coverage/coverage-unit-${{ matrix.python-version }}.xml
+          flags: unit-tests
+          name: codecov-unit-${{ matrix.python-version }}
+
+      - name: Upload unit test results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: unit-test-results-${{ matrix.python-version }}
+          path: |
+            testing/reports/coverage/
+            testing/reports/junit/
+            testing/reports/benchmark/
+
+  # Integration Testing
+  integration-tests:
+    name: Integration Tests
+    runs-on: ubuntu-latest
+    needs: setup-infrastructure
+    if: github.event.inputs.test_category == 'all' || github.event.inputs.test_category == 'integration' || github.event.inputs.test_category == ''
+    services:
+      postgres:
+        image: pgvector/pgvector:pg15
+        env:
+          POSTGRES_PASSWORD: test_password
+          POSTGRES_USER: test_user
+          POSTGRES_DB: test_cognee
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 25432:5432
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt') }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r testing/requirements.txt
+          pip install -e .
+
+      - name: Wait for services
+        run: |
+          sleep 10
+
+      - name: Run integration tests
+        run: |
+          cd testing
+          pytest -m "integration" -v \
+            --junitxml=reports/junit/integration-tests.xml \
+            --html=reports/integration/integration-report.html \
+            --self-contained-html \
+            -k "not requires_docker"
+        env:
+          POSTGRES_HOST: localhost
+          POSTGRES_PORT: 5432
+          POSTGRES_DB: test_cognee
+          POSTGRES_USER: test_user
+          POSTGRES_PASSWORD: test_password
+          QDRANT_HOST: localhost
+          QDRANT_PORT: 26333
+
+      - name: Upload integration test results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: integration-test-results
+          path: |
+            testing/reports/junit/
+            testing/reports/integration/
+
+  # System Testing
+  system-tests:
+    name: System Tests
+    runs-on: ubuntu-latest
+    needs: [setup-infrastructure, unit-tests]
+    if: github.event.inputs.test_category == 'all' || github.event.inputs.test_category == 'system' || github.event.inputs.test_category == ''
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r testing/requirements.txt
+          pip install -e .
+
+      - name: Start Enhanced Cognee for system testing
+        run: |
+          cd testing
+          docker-compose -f docker-compose-testing.yml up -d enhanced-cognee-api
+          echo "Enhanced Cognee API started"
+
+      - name: Wait for API to be ready
+        run: |
+          timeout 300 bash -c 'until curl -f http://localhost:28080/health; do sleep 5; done'
+          echo "API is ready"
+
+      - name: Run system tests
+        run: |
+          cd testing
+          pytest -m "system" -v \
+            --junitxml=reports/junit/system-tests.xml \
+            --html=reports/system/system-report.html \
+            --self-contained-html \
+            -k "not requires_docker"
+        env:
+          ENHANCED_COGNEE_API_URL: http://localhost:28080
+
+      - name: Upload system test results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: system-test-results
+          path: |
+            testing/reports/junit/
+            testing/reports/system/
+
+  # Performance Testing
+  performance-tests:
+    name: Performance Tests
+    runs-on: ubuntu-latest
+    needs: [setup-infrastructure, unit-tests]
+    if: github.event.inputs.test_category == 'all' || github.event.inputs.test_category == 'performance' || github.event.inputs.test_category == ''
+    strategy:
+      matrix:
+        performance-level: ${{ github.event.inputs.performance_level == '' && fromJson('["medium"]') || fromJson('["light", "medium", "heavy"]') }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r testing/requirements.txt
+          pip install -e .
+          npm install -g artillery k6
+
+      - name: Start services for performance testing
+        run: |
+          cd testing
+          docker-compose -f docker-compose-testing.yml up -d enhanced-cognee-api locust-master
+          echo "Performance testing services started"
+
+      - name: Wait for services
+        run: |
+          timeout 300 bash -c 'until curl -f http://localhost:28080/health; do sleep 5; done'
+          timeout 60 bash -c 'until curl -f http://localhost:28089; do sleep 2; done'
+
+      - name: Run Locust performance tests
+        run: |
+          cd testing
+          locust --headless \
+            --host=http://localhost:28080 \
+            --users=${{ matrix.performance-level == 'light' && '100' || matrix.performance-level == 'medium' && '500' || '1000' }} \
+            --spawn-rate=${{ matrix.performance-level == 'light' && '5' || matrix.performance-level == 'medium' && '20' || '50' }} \
+            --run-time=300s \
+            --html=reports/performance/locust-report-${{ matrix.performance-level }}.html \
+            --csv=reports/performance/locust-stats-${{ matrix.performance-level }} \
+            -f performance/locustfile.py
+
+      - name: Run Artillery load tests
+        run: |
+          cd testing
+          artillery run performance/load-test.yml \
+            --target http://localhost:28080 \
+            --output reports/performance/artillery-report-${{ matrix.performance-level }}.json
+
+      - name: Upload performance test results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: performance-test-results-${{ matrix.performance-level }}
+          path: testing/reports/performance/
+
+  # Security Testing
+  security-tests:
+    name: Security Tests
+    runs-on: ubuntu-latest
+    needs: [setup-infrastructure]
+    if: github.event.inputs.test_category == 'all' || github.event.inputs.test_category == 'security' || github.event.inputs.test_category == ''
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install security tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install bandit safety semgrep
+          npm install -g @applitools/eyes-storybook
+
+      - name: Run Bandit security linter
+        run: |
+          bandit -r ../cognee ../src -f json -o testing/reports/security/bandit-report.json
+          bandit -r ../cognee ../src -f txt -o testing/reports/security/bandit-report.txt
+
+      - name: Run Safety dependency check
+        run: |
+          safety check --json --output testing/reports/security/safety-report.json
+          safety check --output testing/reports/security/safety-report.txt
+
+      - name: Run Semgrep static analysis
+        run: |
+          semgrep --config=auto \
+            --json --output=testing/reports/security/semgrep-report.json \
+            ../cognee ../src
+
+      - name: Start OWASP ZAP
+        run: |
+          cd testing
+          docker-compose -f docker-compose-testing.yml up -d zap-security enhanced-cognee-api
+          echo "Security testing services started"
+
+      - name: Wait for services
+        run: |
+          timeout 300 bash -c 'until curl -f http://localhost:28080/health; do sleep 5; done'
+          timeout 60 bash -c 'until curl -f http://localhost:28090; do sleep 2; done'
+
+      - name: Run ZAP security scan
+        run: |
+          cd testing
+          # Wait for ZAP to be ready
+          sleep 30
+
+          # Start ZAP authentication scan
+          curl -X POST "http://localhost:28090/JSON/ascan/action/scan" \
+            -d "url=http://localhost:28080/api/v1" \
+            -d "recurse=true"
+
+          # Wait for scan to complete
+          sleep 300
+
+          # Export results
+          curl -X GET "http://localhost:28090/JSON/core/view/JSON" \
+            -o testing/reports/security/zap-scan-results.json
+
+          curl -X GET "http://localhost:28090/OTHER/core/other/htmlreport/" \
+            -o testing/reports/security/zap-scan-report.html
+
+      - name: Run security test suite
+        run: |
+          cd testing
+          pytest -m "security" -v \
+            --junitxml=reports/junit/security-tests.xml \
+            --html=reports/security/security-report.html \
+            --self-contained-html
+
+      - name: Upload security test results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: security-test-results
+          path: testing/reports/security/
+
+  # Chaos Testing
+  chaos-tests:
+    name: Chaos Tests
+    runs-on: ubuntu-latest
+    needs: [setup-infrastructure, system-tests]
+    if: (github.event.inputs.test_category == 'all' || github.event.inputs.test_category == 'chaos' || github.event.inputs.chaos_testing == 'true') && github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install chaos engineering tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install chaostoolkit chaostoolkit-kubernetes
+          pip install -r testing/requirements.txt
+
+      - name: Start full testing stack
+        run: |
+          cd testing
+          docker-compose -f docker-compose-testing.yml up -d
+          echo "Full testing stack started"
+
+      - name: Wait for all services
+        run: |
+          timeout 300 bash -c 'until curl -f http://localhost:28080/health; do sleep 5; done'
+          echo "All services ready"
+
+      - name: Run chaos experiments
+        run: |
+          cd testing
+          pytest -m "chaos" -v \
+            --junitxml=reports/junit/chaos-tests.xml \
+            --html=reports/chaos/chaos-report.html \
+            --self-contained-html
+
+      - name: Run chaos toolkit experiments
+        run: |
+          cd testing
+          chaos run chaos/experiments/database-failure.json
+          chaos run chaos/experiments/network-partition.json
+          chaos run chaos/experiments/memory-pressure.json
+
+      - name: Upload chaos test results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: chaos-test-results
+          path: |
+            testing/reports/junit/
+            testing/reports/chaos/
+
+  # Compliance Testing
+  compliance-tests:
+    name: Compliance Tests
+    runs-on: ubuntu-latest
+    needs: [security-tests]
+    if: github.event.inputs.test_category == 'all' || github.event.inputs.test_category == 'compliance' || github.event.inputs.test_category == ''
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install compliance tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r testing/requirements.txt
+
+      - name: Run compliance tests
+        run: |
+          cd testing
+          pytest -m "compliance" -v \
+            --junitxml=reports/junit/compliance-tests.xml \
+            --html=reports/compliance/compliance-report.html \
+            --self-contained-html
+
+      - name: Run GDPR compliance checks
+        run: |
+          cd testing
+          python compliance/gdpr_checker.py \
+            --output reports/compliance/gdpr-report.json
+
+      - name: Run SOC 2 compliance checks
+        run: |
+          cd testing
+          python compliance/soc2_checker.py \
+            --output reports/compliance/soc2-report.json
+
+      - name: Run PCI DSS compliance checks
+        run: |
+          cd testing
+          python compliance/pci_dss_checker.py \
+            --output reports/compliance/pci-dss-report.json
+
+      - name: Upload compliance test results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: compliance-test-results
+          path: testing/reports/compliance/
+
+  # Test Results Aggregation
+  aggregate-results:
+    name: Aggregate Test Results
+    runs-on: ubuntu-latest
+    needs: [unit-tests, integration-tests, system-tests, performance-tests, security-tests, chaos-tests, compliance-tests]
+    if: always()
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest-html json2html jinja2
+
+      - name: Download all test artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: testing/reports/all-results/
+
+      - name: Generate comprehensive test report
+        run: |
+          cd testing
+          python scripts/generate_test_report.py \
+            --input-dir reports/all-results \
+            --output-dir reports/final \
+            --format html,json
+
+      - name: Generate test summary
+        run: |
+          cd testing
+          python scripts/generate_test_summary.py \
+            --input-dir reports/all-results \
+            --output reports/final/summary.md
+
+      - name: Upload final test report
+        uses: actions/upload-artifact@v3
+        with:
+          name: final-test-report
+          path: testing/reports/final/
+
+      - name: Comment PR with test results
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = './testing/reports/final/summary.md';
+
+            if (fs.existsSync(path)) {
+              const summary = fs.readFileSync(path, 'utf8');
+
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: `## 🧪 Test Results Summary\n\n${summary}`
+              });
+            }
+
+  # Cleanup
+  cleanup:
+    name: Cleanup Testing Infrastructure
+    runs-on: ubuntu-latest
+    needs: [aggregate-results]
+    if: always()
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Stop and cleanup testing infrastructure
+        run: |
+          cd testing
+          docker-compose -f docker-compose-testing.yml down -v --remove-orphans || true
+          docker system prune -f || true
+          echo "Testing infrastructure cleaned up"
+
+  # Notify on completion
+  notify:
+    name: Notify Test Completion
+    runs-on: ubuntu-latest
+    needs: [cleanup]
+    if: always() && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
+    steps:
+      - name: Notify success
+        if: needs.cleanup.result == 'success'
+        run: |
+          echo "✅ All Enhanced Cognee tests completed successfully!"
+          echo "Test results available in artifacts."
+
+      - name: Notify failure
+        if: needs.cleanup.result == 'failure'
+        run: |
+          echo "❌ Enhanced Cognee tests failed!"
+          echo "Check test artifacts for details."
+          exit 1

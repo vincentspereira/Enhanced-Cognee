@@ -1,0 +1,333 @@
+# Enhanced Cognee Testing Alert Rules
+# Comprehensive alerting rules for testing infrastructure and performance monitoring
+
+groups:
+  - name: enhanced_cognee_api_alerts
+    rules:
+      - alert: EnhancedCogneeAPIDown
+        expr: up{job="enhanced-cognee-api"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: enhanced-cognee-api
+        annotations:
+          summary: "Enhanced Cognee API is down"
+          description: "Enhanced Cognee API has been down for more than 1 minute"
+          runbook_url: "https://docs.enhanced-cognee.com/troubleshooting/api-down"
+
+      - alert: EnhancedCogneeHighLatency
+        expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket{job="enhanced-cognee-api"}[5m])) > 0.1
+        for: 2m
+        labels:
+          severity: warning
+          service: enhanced-cognee-api
+        annotations:
+          summary: "Enhanced Cognee API high latency detected"
+          description: "95th percentile latency is {{ $value }}s, which is above the 100ms threshold"
+          runbook_url: "https://docs.enhanced-cognee.com/troubleshooting/high-latency"
+
+      - alert: EnhancedCogneeHighErrorRate
+        expr: rate(http_requests_total{job="enhanced-cognee-api",status=~"5.."}[5m]) / rate(http_requests_total{job="enhanced-cognee-api"}[5m]) > 0.05
+        for: 1m
+        labels:
+          severity: warning
+          service: enhanced-cognee-api
+        annotations:
+          summary: "Enhanced Cognee API high error rate"
+          description: "Error rate is {{ $value | humanizePercentage }}, which is above 5%"
+          runbook_url: "https://docs.enhanced-cognee.com/troubleshooting/high-error-rate"
+
+      - alert: EnhancedCogneeMemoryUsage
+        expr: process_resident_memory_bytes{job="enhanced-cognee-api"} / 1024 / 1024 / 1024 > 2
+        for: 5m
+        labels:
+          severity: warning
+          service: enhanced-cognee-api
+        annotations:
+          summary: "Enhanced Cognee API high memory usage"
+          description: "Memory usage is {{ $value }}GB, which is above 2GB"
+          runbook_url: "https://docs.enhanced-cognee.com/troubleshooting/high-memory"
+
+  - name: database_alerts
+    rules:
+      - alert: PostgreSQLDown
+        expr: up{job="postgres-test"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: postgresql
+        annotations:
+          summary: "PostgreSQL database is down"
+          description: "PostgreSQL database has been down for more than 1 minute"
+
+      - alert: PostgreSQLHighConnections
+        expr: pg_stat_activity_count > 80
+        for: 2m
+        labels:
+          severity: warning
+          service: postgresql
+        annotations:
+          summary: "PostgreSQL high connection count"
+          description: "PostgreSQL has {{ $value }} active connections, which is above 80"
+
+      - alert: QdrantDown
+        expr: up{job="qdrant-test"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: qdrant
+        annotations:
+          summary: "Qdrant vector database is down"
+          description: "Qdrant vector database has been down for more than 1 minute"
+
+      - alert: Neo4jDown
+        expr: up{job="neo4j-test"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: neo4j
+        annotations:
+          summary: "Neo4j graph database is down"
+          description: "Neo4j graph database has been down for more than 1 minute"
+
+      - alert: RedisDown
+        expr: up{job="redis-test"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: redis
+        annotations:
+          summary: "Redis cache is down"
+          description: "Redis cache has been down for more than 1 minute"
+
+      - alert: RedisHighMemoryUsage
+        expr: redis_memory_used_bytes / redis_memory_max_bytes > 0.9
+        for: 2m
+        labels:
+          severity: warning
+          service: redis
+        annotations:
+          summary: "Redis high memory usage"
+          description: "Redis memory usage is {{ $value | humanizePercentage }}, which is above 90%"
+
+  - name: performance_testing_alerts
+    rules:
+      - alert: LocustMasterDown
+        expr: up{job="locust-master"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: locust
+        annotations:
+          summary: "Locust master is down"
+          description: "Locust master for performance testing has been down for more than 1 minute"
+
+      - alert: LocustHighFailureRate
+        expr: locust_requests_failure_rate > 0.1
+        for: 1m
+        labels:
+          severity: warning
+          service: locust
+        annotations:
+          summary: "Locust high failure rate"
+          description: "Locust failure rate is {{ $value | humanizePercentage }}, which is above 10%"
+
+      - alert: LocustLowRPS
+        expr: locust_requests_per_second < 10
+        for: 2m
+        labels:
+          severity: warning
+          service: locust
+        annotations:
+          summary: "Locust low requests per second"
+          description: "Locust RPS is {{ $value }}, which is below 10"
+
+      - alert: LocustHighResponseTime
+        expr: locust_response_time_percentile_95 > 5000
+        for: 1m
+        labels:
+          severity: warning
+          service: locust
+        annotations:
+          summary: "Locust high response time"
+          description: "Locust 95th percentile response time is {{ $value }}ms, which is above 5000ms"
+
+  - name: system_resource_alerts
+    rules:
+      - alert: HighCPUUsage
+        expr: 100 - (avg by(instance) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+        for: 2m
+        labels:
+          severity: warning
+          service: system
+        annotations:
+          summary: "High CPU usage detected"
+          description: "CPU usage is {{ $value }}%, which is above 80% on {{ $labels.instance }}"
+
+      - alert: HighMemoryUsage
+        expr: (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100 > 85
+        for: 2m
+        labels:
+          severity: warning
+          service: system
+        annotations:
+          summary: "High memory usage detected"
+          description: "Memory usage is {{ $value }}%, which is above 85% on {{ $labels.instance }}"
+
+      - alert: LowDiskSpace
+        expr: (1 - (node_filesystem_avail_bytes / node_filesystem_size_bytes)) * 100 > 90
+        for: 1m
+        labels:
+          severity: critical
+          service: system
+        annotations:
+          summary: "Low disk space detected"
+          description: "Disk usage is {{ $value }}%, which is above 90% on {{ $labels.instance }}"
+
+      - alert: HighNetworkTraffic
+        expr: rate(node_network_receive_bytes_total[5m]) + rate(node_network_transmit_bytes_total[5m]) > 100000000
+        for: 2m
+        labels:
+          severity: warning
+          service: system
+        annotations:
+          summary: "High network traffic detected"
+          description: "Network traffic is {{ $value }} bytes/s, which is above 100MB/s on {{ $labels.instance }}"
+
+  - name: security_alerts
+    rules:
+      - alert: ZAPSecurityScannerDown
+        expr: up{job="zap-security"} == 0
+        for: 1m
+        labels:
+          severity: warning
+          service: security
+        annotations:
+          summary: "OWASP ZAP security scanner is down"
+          description: "OWASP ZAP security scanner has been down for more than 1 minute"
+
+      - alert: HighSecurityAlerts
+        expr: zap_alerts_high > 0
+        for: 0m
+        labels:
+          severity: critical
+          service: security
+        annotations:
+          summary: "High severity security alerts detected"
+          description: "{{ $value }} high severity security alerts have been detected"
+
+      - alert: MediumSecurityAlerts
+        expr: zap_alerts_medium > 5
+        for: 5m
+        labels:
+          severity: warning
+          service: security
+        annotations:
+          summary: "Medium severity security alerts detected"
+          description: "{{ $value }} medium severity security alerts have been detected"
+
+  - name: testing_workflow_alerts
+    rules:
+      - alert: TestExecutionTime
+        expr: test_execution_duration_seconds > 3600
+        for: 0m
+        labels:
+          severity: warning
+          service: testing
+        annotations:
+          summary: "Test execution taking too long"
+          description: "Test execution has been running for {{ $value }} seconds, which is above 1 hour"
+
+      - alert: TestSuiteHighFailureRate
+        expr: test_suite_failure_rate > 0.1
+        for: 1m
+        labels:
+          severity: warning
+          service: testing
+        annotations:
+          summary: "Test suite high failure rate"
+          description: "Test suite failure rate is {{ $value | humanizePercentage }}, which is above 10%"
+
+      - alert: LowCodeCoverage
+        expr: code_coverage_percentage < 90
+        for: 5m
+        labels:
+          severity: warning
+          service: testing
+        annotations:
+          summary: "Low code coverage detected"
+          description: "Code coverage is {{ $value }}%, which is below 90%"
+
+  - name: memory_stack_alerts
+    rules:
+      - alert: MemoryStackInconsistency
+        expr: memory_stack_consistency_check != 1
+        for: 1m
+        labels:
+          severity: critical
+          service: memory-stack
+        annotations:
+          summary: "Memory stack inconsistency detected"
+          description: "Memory stack consistency check failed. Data may be inconsistent across databases."
+
+      - alert: MemoryOperationsHighLatency
+        expr: memory_operation_duration_seconds{quantile="0.95"} > 0.5
+        for: 2m
+        labels:
+          severity: warning
+          service: memory-stack
+        annotations:
+          summary: "Memory operations high latency"
+          description: "95th percentile memory operation latency is {{ $value }}s, which is above 500ms"
+
+      - alert: MemoryStorageHighFailureRate
+        expr: rate(memory_storage_failures_total[5m]) / rate(memory_storage_operations_total[5m]) > 0.05
+        for: 1m
+        labels:
+          severity: warning
+          service: memory-stack
+        annotations:
+          summary: "Memory storage high failure rate"
+          description: "Memory storage failure rate is {{ $value | humanizePercentage }}, which is above 5%"
+
+  - name: agent_coordination_alerts
+    rules:
+      - alert: AgentCoordinationFailure
+        expr: agent_coordination_success_rate < 0.9
+        for: 1m
+        labels:
+          severity: warning
+          service: agent-coordination
+        annotations:
+          summary: "Agent coordination failure detected"
+          description: "Agent coordination success rate is {{ $value | humanizePercentage }}, which is below 90%"
+
+      - alert: AgentUnresponsive
+        expr: agent_heartbeat_timestamp < (time() - 300)
+        for: 1m
+        labels:
+          severity: critical
+          service: agent-coordination
+        annotations:
+          summary: "Agent unresponsive detected"
+          description: "Agent {{ $labels.agent_id }} has been unresponsive for more than 5 minutes"
+
+      - alert: CoordinationQueueBacklog
+        expr: coordination_queue_size > 1000
+        for: 2m
+        labels:
+          severity: warning
+          service: agent-coordination
+        annotations:
+          summary: "Coordination queue backlog detected"
+          description: "Coordination queue size is {{ $value }}, which is above 1000"
+
+# Silence rules for maintenance windows
+# Example:
+# - match:
+#     alertname: EnhancedCogneeAPIDown
+#     severity: critical
+#   start_time: 2024-01-01T02:00:00Z
+#   end_time: 2024-01-01T04:00:00Z
+#   creator: maintenance@example.com
+#   comment: "Scheduled maintenance window"

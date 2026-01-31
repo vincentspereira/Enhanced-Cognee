@@ -1,0 +1,512 @@
+version: '3.8'
+
+# Enhanced Cognee Testing Infrastructure
+# Dedicated Docker Swarm setup for comprehensive testing
+# Includes databases, monitoring, load generators, and testing tools
+
+networks:
+  testing-network:
+    driver: overlay
+    attachable: true
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+  monitoring-network:
+    driver: overlay
+    attachable: true
+
+volumes:
+  postgres-test-data:
+    driver: local
+  qdrant-test-data:
+    driver: local
+  neo4j-test-data:
+    driver: local
+  redis-test-data:
+    driver: local
+  prometheus-test-data:
+    driver: local
+  grafana-test-data:
+    driver: local
+  locust-test-data:
+    driver: local
+
+services:
+  # PostgreSQL with pgVector for Testing
+  postgres-test:
+    image: pgvector/pgvector:pg15
+    container_name: enhanced-cognee-postgres-test
+    environment:
+      POSTGRES_DB: test_cognee
+      POSTGRES_USER: test_user
+      POSTGRES_PASSWORD: test_password
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8 --lc-collate=C --lc-ctype=C"
+    ports:
+      - "25432:5432"
+    volumes:
+      - postgres-test-data:/var/lib/postgresql/data
+      - ./init-scripts/postgres:/docker-entrypoint-initdb.d
+    networks:
+      - testing-network
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 2G
+          cpus: '1.0'
+        reservations:
+          memory: 1G
+          cpus: '0.5'
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U test_user -d test_cognee"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  # Qdrant Vector Database for Testing
+  qdrant-test:
+    image: qdrant/qdrant:v1.7.0
+    container_name: enhanced-cognee-qdrant-test
+    environment:
+      QDRANT__SERVICE__HTTP_PORT: 6333
+      QDRANT__SERVICE__GRPC_PORT: 6334
+      QDRANT__LOG_LEVEL: INFO
+    ports:
+      - "26333:6333"
+      - "26334:6334"
+    volumes:
+      - qdrant-test-data:/qdrant/storage
+    networks:
+      - testing-network
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 1G
+          cpus: '0.5'
+        reservations:
+          memory: 512M
+          cpus: '0.25'
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:6333/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # Neo4j Graph Database for Testing
+  neo4j-test:
+    image: neo4j:5.14-community
+    container_name: enhanced-cognee-neo4j-test
+    environment:
+      NEO4J_AUTH: neo4j/test_password
+      NEO4J_dbms_default__database: test_graph
+      NEO4J_dbms_memory_heap_initial__size: 512m
+      NEO4J_dbms_memory_heap_max__size: 1G
+      NEO4J_dbms_security_procedures_unrestricted: gds.*,apoc.*
+      NEO4J_dbms_security_procedures_allowlist: gds.*,apoc.*
+    ports:
+      - "27474:7474"
+      - "27687:7687"
+    volumes:
+      - neo4j-test-data:/data
+      - ./init-scripts/neo4j:/var/lib/neo4j/import
+    networks:
+      - testing-network
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 2G
+          cpus: '1.0'
+        reservations:
+          memory: 1G
+          cpus: '0.5'
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+    healthcheck:
+      test: ["CMD", "cypher-shell", "-u", "neo4j", "-p", "test_password", "RETURN 1;"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  # Redis Cache for Testing
+  redis-test:
+    image: redis:7.2-alpine
+    container_name: enhanced-cognee-redis-test
+    command: redis-server --appendonly yes --requirepass test_password
+    ports:
+      - "26379:6379"
+    volumes:
+      - redis-test-data:/data
+    networks:
+      - testing-network
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 512M
+          cpus: '0.25'
+        reservations:
+          memory: 256M
+          cpus: '0.1'
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "test_password", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+
+  # Prometheus for Test Monitoring
+  prometheus-test:
+    image: prom/prometheus:v2.45.0
+    container_name: enhanced-cognee-prometheus-test
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=7d'
+      - '--web.enable-lifecycle'
+    ports:
+      - "29090:9090"
+    volumes:
+      - prometheus-test-data:/prometheus
+      - ./monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./monitoring/prometheus/rules:/etc/prometheus/rules:ro
+    networks:
+      - testing-network
+      - monitoring-network
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 2G
+          cpus: '1.0'
+        reservations:
+          memory: 1G
+          cpus: '0.5'
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+
+  # Grafana for Test Visualization
+  grafana-test:
+    image: grafana/grafana:10.0.0
+    container_name: enhanced-cognee-grafana-test
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: test_admin
+      GF_USERS_ALLOW_SIGN_UP: false
+      GF_ANALYTICS_REPORTING_ENABLED: false
+      GF_SECURITY_ALLOW_EMBEDDING: true
+      GF_INSTALL_PLUGINS: grafana-clock-panel,grafana-simple-json-datasource
+    ports:
+      - "29300:3000"
+    volumes:
+      - grafana-test-data:/var/lib/grafana
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./monitoring/grafana/dashboards:/var/lib/grafana/dashboards:ro
+    networks:
+      - monitoring-network
+    depends_on:
+      - prometheus-test
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 1G
+          cpus: '0.5'
+        reservations:
+          memory: 512M
+          cpus: '0.25'
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+
+  # Locust Load Testing Master
+  locust-master:
+    image: locio/locust:2.17.0
+    container_name: enhanced-cognee-locust-master
+    command: >
+      --master
+      --host=http://enhanced-cognee-api:8000
+      --users=1000
+      --spawn-rate=10
+      --run-time=10m
+      --html=/reports/locust_report.html
+      --csv=/reports/locust_stats
+    ports:
+      - "28089:8089"
+      - "25557:5557"
+    volumes:
+      - locust-test-data:/reports
+      - ./performance/locust:/locust
+    networks:
+      - testing-network
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 1G
+          cpus: '0.5'
+        reservations:
+          memory: 512M
+          cpus: '0.25'
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+
+  # Locust Load Testing Workers
+  locust-worker:
+    image: locio/locust:2.17.0
+    command: >
+      --worker
+      --master-host=locust-master
+    volumes:
+      - ./performance/locust:/locust
+    networks:
+      - testing-network
+    depends_on:
+      - locust-master
+    deploy:
+      replicas: 5
+      resources:
+        limits:
+          memory: 512M
+          cpus: '0.25'
+        reservations:
+          memory: 256M
+          cpus: '0.1'
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+
+  # Chaos Mesh Controller (for chaos testing)
+  chaos-controller-manager:
+    image: ghcr.io/chaos-mesh/chaos-mesh:v2.6.3
+    container_name: enhanced-cognee-chaos-controller
+    environment:
+      WEBHOOK_PORT: 9443
+      METRICS_PORT: 10080
+      TZ: UTC
+    ports:
+      - "10080:10080"
+      - "9443:9443"
+    networks:
+      - testing-network
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 1G
+          cpus: '0.5'
+        reservations:
+          memory: 512M
+          cpus: '0.25'
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+
+  # OWASP ZAP for Security Testing
+  zap-security:
+    image: owasp/zap2docker-stable
+    container_name: enhanced-cognee-zap-security
+    command: zap.sh -daemon -host 0.0.0.0 -port 8090 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true
+    ports:
+      - "28090:8090"
+    volumes:
+      - ./security/zap:/zap/wrk
+    networks:
+      - testing-network
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 2G
+          cpus: '1.0'
+        reservations:
+          memory: 1G
+          cpus: '0.5'
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+
+  # Enhanced Cognee API Test Instance
+  enhanced-cognee-api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.enhanced-cognee
+    container_name: enhanced-cognee-api-test
+    environment:
+      - POSTGRES_HOST=postgres-test
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=test_cognee
+      - POSTGRES_USER=test_user
+      - POSTGRES_PASSWORD=test_password
+      - QDRANT_HOST=qdrant-test
+      - QDRANT_PORT=6333
+      - NEO4J_URI=bolt://neo4j-test:7687
+      - NEO4J_USER=neo4j
+      - NEO4J_PASSWORD=test_password
+      - REDIS_HOST=redis-test
+      - REDIS_PORT=6379
+      - REDIS_PASSWORD=test_password
+      - LOG_LEVEL=INFO
+      - TESTING_MODE=true
+    ports:
+      - "28080:8000"
+    networks:
+      - testing-network
+    depends_on:
+      postgres-test:
+        condition: service_healthy
+      qdrant-test:
+        condition: service_healthy
+      neo4j-test:
+        condition: service_healthy
+      redis-test:
+        condition: service_healthy
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          memory: 4G
+          cpus: '2.0'
+        reservations:
+          memory: 2G
+          cpus: '1.0'
+      restart_policy:
+        condition: on-failure
+        delay: 10s
+        max_attempts: 3
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  # MLflow for Experiment Tracking
+  mlflow:
+    image: python:3.11-slim
+    container_name: enhanced-cognee-mlflow
+    command: >
+      bash -c "
+        pip install mlflow psycopg2-binary &&
+        mlflow server
+        --backend-store-uri postgresql://test_user:test_password@postgres-test:5432/mlflow
+        --default-artifact-root /mlflow/artifacts
+        --host 0.0.0.0
+        --port 5000
+      "
+    ports:
+      - "25000:5000"
+    volumes:
+      - ./mlflow:/mlflow
+    networks:
+      - testing-network
+    depends_on:
+      - postgres-test
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 1G
+          cpus: '0.5'
+        reservations:
+          memory: 512M
+          cpus: '0.25'
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+
+  # Test Data Generator
+  test-data-generator:
+    build:
+      context: .
+      dockerfile: Dockerfile.test-data
+    container_name: enhanced-cognee-test-data-generator
+    environment:
+      - TARGET_API=http://enhanced-cognee-api:8000
+      - DATA_SIZE=large
+      - GENERATION_RATE=100
+    volumes:
+      - ./test-data:/app/data
+    networks:
+      - testing-network
+    depends_on:
+      - enhanced-cognee-api
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 2G
+          cpus: '1.0'
+        reservations:
+          memory: 1G
+          cpus: '0.5'
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+
+  # Test Results Collector
+  test-results-collector:
+    image: alpine:latest
+    container_name: enhanced-cognee-results-collector
+    command: >
+      sh -c "
+        apk add --no-cache curl &&
+        while true; do
+          echo 'Collecting test results...' &&
+          curl -f http://locust-master:8089/stats/requests || echo 'Locust not ready' &&
+          curl -f http://prometheus-test:9090/api/v1/query?query=up || echo 'Prometheus not ready' &&
+          sleep 60
+        done
+      "
+    volumes:
+      - ./reports:/reports
+    networks:
+      - testing-network
+      - monitoring-network
+    depends_on:
+      - locust-master
+      - prometheus-test
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 256M
+          cpus: '0.1'
+        reservations:
+          memory: 128M
+          cpus: '0.05'
+
+# External dependencies (ensure these exist in your environment)
+# external:
+#   enhanced-cognee-source:
+#     file: ../

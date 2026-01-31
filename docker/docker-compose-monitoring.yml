@@ -1,0 +1,309 @@
+version: '3.8'
+
+# Enhanced Cognee Monitoring Stack
+# Prometheus + Grafana + Node Exporter + cAdvisor
+# Provides comprehensive monitoring for Enhanced Cognee components
+
+networks:
+  monitoring:
+    driver: overlay
+    attachable: true
+  cognee-network:
+    driver: overlay
+    attachable: true
+
+volumes:
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
+
+services:
+  # Prometheus - Time Series Database and Monitoring System
+  prometheus:
+    image: prom/prometheus:v2.45.0
+    container_name: prometheus-enhanced-cognee
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=15d'
+      - '--web.enable-lifecycle'
+      - '--web.external-url=http://localhost:29090'
+    volumes:
+      - ./monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./monitoring/prometheus/rules:/etc/prometheus/rules:ro
+      - prometheus_data:/prometheus
+    ports:
+      - "29090:9090"  # Prometheus UI (changed to avoid conflict)
+    networks:
+      - monitoring
+      - cognee-network
+    deploy:
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 1G
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:9090/-/healthy"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Grafana - Visualization Dashboard
+  grafana:
+    image: grafana/grafana:10.0.0
+    container_name: grafana-enhanced-cognee
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:-enhanced_cognee_admin}
+      GF_USERS_ALLOW_SIGN_UP: false
+      GF_INSTALL_PLUGINS: grafana-clock-panel,grafana-simple-json-datasource
+      GF_ANALYTICS_REPORTING_ENABLED: false
+      GF_SECURITY_ALLOW_EMBEDDING: true
+      GF_AUTH_ANONYMOUS_ENABLED: false
+      GF_SERVER_DOMAIN: localhost
+      GF_SERVER_ROOT_URL: http://localhost:29300
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./monitoring/grafana/dashboards:/var/lib/grafana/dashboards:ro
+    ports:
+      - "29300:3000"  # Grafana UI (changed to avoid conflict)
+    networks:
+      - monitoring
+    depends_on:
+      prometheus:
+        condition: service_healthy
+    deploy:
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          memory: 1G
+        reservations:
+          memory: 512M
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:3000/api/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Node Exporter - System Metrics Collection
+  node-exporter:
+    image: prom/node-exporter:v1.6.0
+    container_name: node-exporter-enhanced-cognee
+    command:
+      - '--path.rootfs=/host'
+      - '--path.procfs=/host/proc'
+      - '--path.sysfs=/host/sys'
+      - '--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)'
+    volumes:
+      - /:/host:ro,rslave
+    ports:
+      - "29100:9100"  # Node Exporter metrics (changed to avoid conflict)
+    networks:
+      - monitoring
+    deploy:
+      mode: global
+      resources:
+        limits:
+          memory: 128M
+        reservations:
+          memory: 64M
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:9100/metrics"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # cAdvisor - Container Metrics Collection
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.46.0
+    container_name: cadvisor-enhanced-cognee
+    command:
+      - '--port=8080'
+      - '--docker_only=true'
+      - '--storage_duration=2m0s'
+      - '--housekeeping_interval=30s'
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+    ports:
+      - "29101:8080"  # cAdvisor metrics (changed to avoid conflict)
+    networks:
+      - monitoring
+    privileged: true
+    devices:
+      - /dev/kmsg
+    deploy:
+      mode: global
+      resources:
+        limits:
+          memory: 256M
+        reservations:
+          memory: 128M
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8080/healthz"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # AlertManager - Alert Management
+  alertmanager:
+    image: prom/alertmanager:v0.25.0
+    container_name: alertmanager-enhanced-cognee
+    command:
+      - '--config.file=/etc/alertmanager/alertmanager.yml'
+      - '--storage.path=/alertmanager'
+      - '--web.external-url=http://localhost:29303'
+    volumes:
+      - ./monitoring/alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
+      - ./monitoring/alertmanager/templates:/etc/alertmanager/templates:ro
+    ports:
+      - "29303:9093"  # AlertManager UI (changed to avoid conflict)
+    networks:
+      - monitoring
+    deploy:
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          memory: 256M
+        reservations:
+          memory: 128M
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:9093/-/healthy"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Redis Exporter - Redis Metrics
+  redis-exporter:
+    image: oliver006/redis_exporter:v1.44.0
+    container_name: redis-exporter-enhanced-cognee
+    environment:
+      REDIS_ADDR: redis://redis:6379
+      REDIS_EXPORTER_LOG_FORMAT: txt
+    ports:
+      - "29102:9121"  # Redis Exporter metrics
+    networks:
+      - monitoring
+      - cognee-network
+    deploy:
+      resources:
+        limits:
+          memory: 128M
+        reservations:
+          memory: 64M
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:9121/metrics"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Postgres Exporter - PostgreSQL Metrics
+  postgres-exporter:
+    image: prometheuscommunity/postgres-exporter:v0.12.0
+    container_name: postgres-exporter-enhanced-cognee
+    environment:
+      DATA_SOURCE_NAME: postgresql://cognee_user:${POSTGRES_PASSWORD:-cognee_password}@postgres:5432/cognee_db?sslmode=disable
+      PG_EXPORTER_EXTEND_QUERY_PATH: /etc/postgres_exporter/queries.yaml
+    volumes:
+      - ./monitoring/postgres-exporter/queries.yaml:/etc/postgres_exporter/queries.yaml:ro
+    ports:
+      - "29103:9187"  # Postgres Exporter metrics
+    networks:
+      - monitoring
+      - cognee-network
+    depends_on:
+      - postgres
+    deploy:
+      resources:
+        limits:
+          memory: 128M
+        reservations:
+          memory: 64M
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:9187/metrics"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Custom Enhanced Cognee Exporter
+  enhanced-cognee-exporter:
+    image: python:3.11-slim
+    container_name: enhanced-cognee-exporter
+    command: python /app/exporter.py
+    environment:
+      ENHANCED_COGNEE_API_URL: http://enhanced-cognee-server:8080
+      EXPORTER_PORT: 8000
+      METRICS_PATH: /metrics
+      POLLING_INTERVAL: 15  # seconds
+    volumes:
+      - ./monitoring/enhanced-cognee-exporter:/app:ro
+    ports:
+      - "29104:8000"  # Enhanced Cognee Exporter metrics
+    networks:
+      - monitoring
+      - cognee-network
+    depends_on:
+      enhanced-cognee-server:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+        reservations:
+          memory: 128M
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8000/metrics"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # PostgreSQL (dependency for postgres-exporter)
+  postgres:
+
+  # Redis (dependency for redis-exporter)
+  redis:
+
+  # Enhanced Cognee Server (dependency for custom exporter)
+  enhanced-cognee-server:

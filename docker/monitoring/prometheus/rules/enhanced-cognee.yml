@@ -1,0 +1,323 @@
+# Enhanced Cognee Alerting Rules
+# Comprehensive monitoring rules for Enhanced Cognee components
+
+groups:
+  # Enhanced Cognee Service Alerts
+  - name: enhanced-cognee-service
+    rules:
+      - alert: EnhancedCogneeDown
+        expr: up{job="enhanced-cognee-server"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: enhanced-cognee
+        annotations:
+          summary: "Enhanced Cognee server is down"
+          description: "Enhanced Cognee server has been down for more than 1 minute on {{ $labels.instance }}"
+
+      - alert: EnhancedCogneeHighResponseTime
+        expr: http_request_duration_seconds{quantile="0.95", job="enhanced-cognee-server"} > 2
+        for: 5m
+        labels:
+          severity: warning
+          service: enhanced-cognee
+        annotations:
+          summary: "Enhanced Cognee high response time"
+          description: "95th percentile response time is {{ $value }}s on {{ $labels.instance }}"
+
+      - alert: EnhancedCogneeHighErrorRate
+        expr: rate(http_requests_total{status=~"5..", job="enhanced-cognee-server"}[5m]) > 0.05
+        for: 3m
+        labels:
+          severity: critical
+          service: enhanced-cognee
+        annotations:
+          summary: "Enhanced Cognee high error rate"
+          description: "Error rate is {{ $value | humanizePercentage }} on {{ $labels.instance }}"
+
+      - alert: EnhancedCogneeMemoryUsage
+        expr: (process_resident_memory_bytes{job="enhanced-cognee-server"} / 1024 / 1024) > 1024
+        for: 5m
+        labels:
+          severity: warning
+          service: enhanced-cognee
+        annotations:
+          summary: "Enhanced Cognee high memory usage"
+          description: "Memory usage is {{ $value }}MB on {{ $labels.instance }}"
+
+  # Database Alerts
+  - name: enhanced-cognee-database
+    rules:
+      - alert: PostgreSQLDown
+        expr: up{job="postgres-exporter"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: postgresql
+        annotations:
+          summary: "PostgreSQL is down"
+          description: "PostgreSQL database is down on {{ $labels.instance }}"
+
+      - alert: PostgreSQLHighConnections
+        expr: pg_stat_activity_count{job="postgres-exporter"} > 80
+        for: 5m
+        labels:
+          severity: warning
+          service: postgresql
+        annotations:
+          summary: "PostgreSQL high connection count"
+          description: "PostgreSQL has {{ $value }} active connections"
+
+      - alert: PostgreSQLSlowQueries
+        expr: rate(pg_stat_statements_mean_time_seconds{job="postgres-exporter"}[5m]) > 1
+        for: 5m
+        labels:
+          severity: warning
+          service: postgresql
+        annotations:
+          summary: "PostgreSQL slow queries detected"
+          description: "Average query time is {{ $value }}s"
+
+      - alert: RedisDown
+        expr: up{job="redis-exporter"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: redis
+        annotations:
+          summary: "Redis is down"
+          description: "Redis cache is down on {{ $labels.instance }}"
+
+      - alert: RedisHighMemoryUsage
+        expr: redis_memory_used_bytes{job="redis-exporter"} / redis_memory_max_bytes{job="redis-exporter"} > 0.9
+        for: 5m
+        labels:
+          severity: warning
+          service: redis
+        annotations:
+          summary: "Redis high memory usage"
+          description: "Redis memory usage is {{ $value | humanizePercentage }}"
+
+  # Vector Database Alerts
+  - name: enhanced-cognee-vector-db
+    rules:
+      - alert: QdrantDown
+        expr: up{job="qdrant"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: qdrant
+        annotations:
+          summary: "Qdrant vector database is down"
+          description: "Qdrant is down on {{ $labels.instance }}"
+
+      - alert: QdrantHighMemoryUsage
+        expr: qdrant_app_memory_usage_bytes / qdrant_app_memory_limit_bytes > 0.85
+        for: 5m
+        labels:
+          severity: warning
+          service: qdrant
+        annotations:
+          summary: "Qdrant high memory usage"
+          description: "Qdrant memory usage is {{ $value | humanizePercentage }}"
+
+  # Graph Database Alerts
+  - name: enhanced-cognee-graph-db
+    rules:
+      - alert: Neo4jDown
+        expr: up{job="neo4j"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: neo4j
+        annotations:
+          summary: "Neo4j graph database is down"
+          description: "Neo4j is down on {{ $labels.instance }}"
+
+      - alert: Neo4jHighMemoryUsage
+        expr: neo4j_database_memory_usage_bytes / neo4j_database_memory_limit_bytes > 0.85
+        for: 5m
+        labels:
+          severity: warning
+          service: neo4j
+        annotations:
+          summary: "Neo4j high memory usage"
+          description: "Neo4j memory usage is {{ $value | humanizePercentage }}"
+
+  # System Resource Alerts
+  - name: enhanced-cognee-system
+    rules:
+      - alert: HighCPUUsage
+        expr: 100 - (avg by(instance) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+        for: 5m
+        labels:
+          severity: warning
+          service: system
+        annotations:
+          summary: "High CPU usage"
+          description: "CPU usage is {{ $value }}% on {{ $labels.instance }}"
+
+      - alert: HighMemoryUsage
+        expr: (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+          service: system
+        annotations:
+          summary: "High memory usage"
+          description: "Memory usage is {{ $value }}% on {{ $labels.instance }}"
+
+      - alert: DiskSpaceLow
+        expr: (node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"}) * 100 < 10
+        for: 5m
+        labels:
+          severity: critical
+          service: system
+        annotations:
+          summary: "Low disk space"
+          description: "Disk space is {{ $value }}% on {{ $labels.instance }}"
+
+  # Container Alerts
+  - name: enhanced-cognee-containers
+    rules:
+      - alert: ContainerHighCPUUsage
+        expr: rate(container_cpu_usage_seconds_total{name!=""}[5m]) * 100 > 80
+        for: 5m
+        labels:
+          severity: warning
+          service: containers
+        annotations:
+          summary: "Container high CPU usage"
+          description: "Container {{ $labels.name }} CPU usage is {{ $value }}%"
+
+      - alert: ContainerHighMemoryUsage
+        expr: (container_memory_usage_bytes{name!=""} / container_spec_memory_limit_bytes{name!=""}) * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+          service: containers
+        annotations:
+          summary: "Container high memory usage"
+          description: "Container {{ $labels.name }} memory usage is {{ $value }}%"
+
+      - alert: ContainerRestarts
+        expr: increase(container_start_time_seconds{name!=""}[1h]) > 3
+        for: 0m
+        labels:
+          severity: warning
+          service: containers
+        annotations:
+          summary: "Container restarting frequently"
+          description: "Container {{ $labels.name }} has restarted {{ $value }} times in the last hour"
+
+  # Agent Coordination Alerts
+  - name: enhanced-cognee-agents
+    rules:
+      - alert: AgentCoordinationDown
+        expr: up{job="enhanced-cognee-exporter"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: agent-coordination
+        annotations:
+          summary: "Agent coordination system is down"
+          description: "Agent coordination exporter is down on {{ $labels.instance }}"
+
+      - alert: HighTaskFailureRate
+        expr: rate(coordination_tasks_failed_total[5m]) / rate(coordination_tasks_total[5m]) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          service: agent-coordination
+        annotations:
+          summary: "High task failure rate"
+          description: "Task failure rate is {{ $value | humanizePercentage }}"
+
+      - alert: AgentOverloaded
+        expr: coordination_agent_load_percentage > 90
+        for: 5m
+        labels:
+          severity: warning
+          service: agent-coordination
+        annotations:
+          summary: "Agent is overloaded"
+          description: "Agent {{ $labels.agent_id }} load is {{ $value }}%"
+
+  # Memory Performance Alerts
+  - name: enhanced-cognee-memory
+    rules:
+      - alert: MemoryStorageSlow
+        expr: memory_storage_operation_duration_seconds{quantile="0.95"} > 1
+        for: 5m
+        labels:
+          severity: warning
+          service: memory-storage
+        annotations:
+          summary: "Memory storage operations are slow"
+          description: "95th percentile storage time is {{ $value }}s"
+
+      - alert: MemorySearchSlow
+        expr: memory_search_operation_duration_seconds{quantile="0.95"} > 2
+        for: 5m
+        labels:
+          severity: warning
+          service: memory-search
+        annotations:
+          summary: "Memory search operations are slow"
+          description: "95th percentile search time is {{ $value }}s"
+
+      - alert: MemoryHighRetention
+        expr: memory_storage_total_bytes > 100*1024*1024*1024  # 100GB
+        for: 10m
+        labels:
+          severity: warning
+          service: memory-storage
+        annotations:
+          summary: "High memory storage usage"
+          description: "Memory storage is using {{ $value | humanizeBytes }}"
+
+  # Integration Alerts
+  - name: enhanced-cognee-integration
+    rules:
+      - alert: MCPConnectionFailure
+        expr: mcp_connection_status == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: mcp-integration
+        annotations:
+          summary: "MCP connection failure"
+          description: "MCP connection to {{ $labels.service }} is down"
+
+      - alert: HighMemoryOperationErrorRate
+        expr: rate(memory_operations_failed_total[5m]) / rate(memory_operations_total[5m]) > 0.05
+        for: 5m
+        labels:
+          severity: warning
+          service: memory-operations
+        annotations:
+          summary: "High memory operation error rate"
+          description: "Memory operation error rate is {{ $value | humanizePercentage }}"
+
+  # Performance Alerts
+  - name: enhanced-cognee-performance
+    rules:
+      - alert: LowQueryRelevanceScore
+        expr: avg_over_time(memory_search_relevance_score[10m]) < 0.7
+        for: 10m
+        labels:
+          severity: warning
+          service: search-quality
+        annotations:
+          summary: "Low search relevance score"
+          description: "Average search relevance score is {{ $value }}"
+
+      - alert: HighLatency
+        expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m])) > 1
+        for: 5m
+        labels:
+          severity: warning
+          service: performance
+        annotations:
+          summary: "High API latency"
+          description: "95th percentile latency is {{ $value }}s"

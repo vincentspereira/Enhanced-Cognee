@@ -1,0 +1,295 @@
+# AlertManager Configuration for Enhanced Cognee
+# Manages alert routing and notification for Enhanced Cognee monitoring
+
+global:
+  smtp_smarthost: 'localhost:587'
+  smtp_from: 'alerts@enhanced-cognee.com'
+  smtp_auth_username: 'alerts@enhanced-cognee.com'
+  smtp_auth_password: 'your_password'
+
+# Templates for alert formatting
+templates:
+  - '/etc/alertmanager/templates/*.tmpl'
+
+# Route configuration
+route:
+  group_by: ['alertname', 'cluster', 'service']
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 1h
+  receiver: 'web.hook'
+  routes:
+    # Critical alerts - immediate notification
+    - match:
+        severity: critical
+      receiver: 'critical-alerts'
+      group_wait: 5s
+      repeat_interval: 5m
+      routes:
+        # Enhanced Cognee service down
+        - match:
+            service: enhanced-cognee
+          receiver: 'enhanced-cognee-critical'
+          continue: true
+
+        # Database critical issues
+        - match:
+            service: postgresql
+        - match:
+            service: redis
+        - match:
+            service: qdrant
+        - match:
+            service: neo4j
+          receiver: 'database-critical'
+          continue: true
+
+    # Warning alerts - less frequent
+    - match:
+        severity: warning
+      receiver: 'warning-alerts'
+      group_wait: 30s
+      repeat_interval: 2h
+      routes:
+        # Performance warnings
+        - match:
+            service: performance
+          receiver: 'performance-warnings'
+          continue: true
+
+        # Memory performance warnings
+        - match:
+            service: memory-search
+        - match:
+            service: memory-storage
+          receiver: 'memory-warnings'
+          continue: true
+
+    # Agent coordination alerts
+    - match:
+        service: agent-coordination
+      receiver: 'coordination-alerts'
+      routes:
+        - match:
+            severity: critical
+          receiver: 'coordination-critical'
+          continue: true
+
+    # System resource alerts
+    - match:
+        service: system
+      receiver: 'system-alerts'
+      routes:
+        - match:
+            alertname: DiskSpaceLow
+          receiver: 'disk-space-critical'
+          continue: true
+
+# Inhibit rules to prevent alert spam
+inhibit_rules:
+  # Inhibit non-critical alerts if Enhanced Cognee is down
+  - source_match:
+      service: enhanced-cognee
+      severity: critical
+  - target_match:
+      service: enhanced-cognee
+      severity: warning
+  - equal: ['alertname', 'cluster']
+
+# Receivers configuration
+receivers:
+  # Default webhook receiver
+  - name: 'web.hook'
+    webhook_configs:
+      - url: 'http://localhost:5001/'
+        send_resolved: true
+
+  # Critical alerts receiver
+  - name: 'critical-alerts'
+    email_configs:
+      - to: 'admin@enhanced-cognee.com'
+        subject: '[CRITICAL] Enhanced Cognee Alert: {{ .GroupLabels.alertname }}'
+        body: |
+          {{ range .Alerts }}
+          Alert: {{ .Annotations.summary }}
+          Description: {{ .Annotations.description }}
+          Labels: {{ range .Labels.SortedPairs }}{{ .Name }}={{ .Value }} {{ end }}
+          {{ end }}
+        send_resolved: true
+    webhook_configs:
+      - url: 'http://localhost:5001/critical'
+        send_resolved: true
+
+  # Enhanced Cognee critical alerts
+  - name: 'enhanced-cognee-critical'
+    slack_configs:
+      - api_url: 'YOUR_SLACK_WEBHOOK_URL'
+        channel: '#enhanced-cognee-alerts'
+        title: '🚨 Enhanced Cognee Critical Alert'
+        text: |
+          {{ range .Alerts }}
+          *{{ .Annotations.summary }}*
+          {{ .Annotations.description }}
+          {{ end }}
+        send_resolved: true
+    email_configs:
+      - to: 'enhanced-cognee-team@example.com'
+        subject: '🚨 CRITICAL: Enhanced Cognee Service Issue'
+        body: |
+          Enhanced Cognee critical alert triggered:
+
+          {{ range .Alerts }}
+          Alert: {{ .Annotations.summary }}
+          Description: {{ .Annotations.description }}
+          Instance: {{ .Labels.instance }}
+          Time: {{ .StartsAt }}
+          {{ end }}
+        send_resolved: true
+
+  # Database critical alerts
+  - name: 'database-critical'
+    email_configs:
+      - to: 'database-team@example.com'
+        subject: '🚨 CRITICAL: Database Service Down'
+        body: |
+          Database service critical alert:
+
+          {{ range .Alerts }}
+          Service: {{ .Labels.service }}
+          Alert: {{ .Annotations.summary }}
+          Description: {{ .Annotations.description }}
+          Instance: {{ .Labels.instance }}
+          {{ end }}
+        send_resolved: true
+
+  # Warning alerts receiver
+  - name: 'warning-alerts'
+    email_configs:
+      - to: 'alerts@enhanced-cognee.com'
+        subject: '⚠️ Enhanced Cognee Warning: {{ .GroupLabels.alertname }}'
+        body: |
+          Warning alert from Enhanced Cognee:
+
+          {{ range .Alerts }}
+          Alert: {{ .Annotations.summary }}
+          Description: {{ .Annotations.description }}
+          {{ end }}
+        send_resolved: true
+
+  # Performance warnings
+  - name: 'performance-warnings'
+    email_configs:
+      - to: 'performance-team@example.com'
+        subject: '⚠️ Performance Warning: {{ .GroupLabels.alertname }}'
+        body: |
+          Performance warning detected:
+
+          {{ range .Alerts }}
+          Alert: {{ .Annotations.summary }}
+          Description: {{ .Annotations.description }}
+          Current Value: {{ .Value }}
+          Threshold: {{ .Labels.threshold }}
+          {{ end }}
+        send_resolved: true
+
+  # Memory warnings
+  - name: 'memory-warnings'
+    email_configs:
+      - to: 'memory-team@example.com'
+        subject: '⚠️ Memory Performance Warning'
+        body: |
+          Memory system performance warning:
+
+          {{ range .Alerts }}
+          Service: {{ .Labels.service }}
+          Alert: {{ .Annotations.summary }}
+          Description: {{ .Annotations.description }}
+          {{ end }}
+        send_resolved: true
+
+  # Agent coordination alerts
+  - name: 'coordination-alerts'
+    email_configs:
+      - to: 'coordination-team@example.com'
+        subject: '⚠️ Agent Coordination Alert: {{ .GroupLabels.alertname }}'
+        body: |
+          Agent coordination system alert:
+
+          {{ range .Alerts }}
+          Alert: {{ .Annotations.summary }}
+          Description: {{ .Annotations.description }}
+          Agent: {{ .Labels.agent_id }}
+          {{ end }}
+        send_resolved: true
+
+  # Coordination critical alerts
+  - name: 'coordination-critical'
+    slack_configs:
+      - api_url: 'YOUR_SLACK_WEBHOOK_URL'
+        channel: '#coordination-alerts'
+        title: '🚨 Coordination Critical Alert'
+        text: |
+          {{ range .Alerts }}
+          *{{ .Annotations.summary }}*
+          {{ .Annotations.description }}
+          Agent: {{ .Labels.agent_id }}
+          {{ end }}
+        send_resolved: true
+
+  # System alerts
+  - name: 'system-alerts'
+    email_configs:
+      - to: 'ops-team@example.com'
+        subject: '⚠️ System Alert: {{ .GroupLabels.alertname }}'
+        body: |
+          System resource alert:
+
+          {{ range .Alerts }}
+          Alert: {{ .Annotations.summary }}
+          Description: {{ .Annotations.description }}
+          Instance: {{ .Labels.instance }}
+          Current Value: {{ .Value }}
+          {{ end }}
+        send_resolved: true
+
+  # Disk space critical alerts
+  - name: 'disk-space-critical'
+    slack_configs:
+      - api_url: 'YOUR_SLACK_WEBHOOK_URL'
+        channel: '#ops-alerts'
+        title: '💾 Disk Space Critical Alert'
+        text: |
+          {{ range .Alerts }}
+          *{{ .Annotations.summary }}*
+          {{ .Annotations.description }}
+          Disk space: {{ .Value }}%
+          Instance: {{ .Labels.instance }}
+          {{ end }}
+        send_resolved: true
+    email_configs:
+      - to: 'ops-team@example.com,admin@enhanced-cognee.com'
+        subject: '🚨 CRITICAL: Low Disk Space'
+        body: |
+          CRITICAL: Low disk space detected!
+
+          {{ range .Alerts }}
+          Instance: {{ .Labels.instance }}
+          Available Space: {{ .Value }}%
+          Filesystem: {{ .Labels.mountpoint }}
+          {{ end }}
+
+          Immediate action required!
+        send_resolved: true
+
+# Time intervals for alert evaluation
+time_intervals:
+  - name: 'business-hours'
+    time_intervals:
+      - times:
+          - start_time: '09:00'
+            end_time: '17:00'
+        weekdays: ['monday:friday']
+
+  - name: 'weekend'
+    time_intervals:
+      - weekdays: ['saturday', 'sunday']

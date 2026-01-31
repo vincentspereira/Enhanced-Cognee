@@ -1,0 +1,161 @@
+# Enhanced Cognee Multi-Agent System - Alert Rules Configuration
+
+alert_rules:
+  # Critical security incidents
+  - rule_id: "critical_file_upload_block"
+    name: "Critical File Upload Blocked"
+    description: "Alert when malicious file upload is blocked by security scanner"
+    condition: "event_type:file_upload_blocked AND severity:high"
+    severity_threshold: "high"
+    channels: ["email", "slack", "webhook", "sms", "pagerduty"]
+    enabled: true
+    cooldown_minutes: 5
+
+  - rule_id: "critical_injection_attempt"
+    name: "Critical Injection Attack Attempt"
+    description: "Alert on critical SQL injection or XSS attempts"
+    condition: "event_type:potential_sql_injection OR event_type:potential_xss_attack"
+    severity_threshold: "critical"
+    channels: ["email", "slack", "webhook", "sms", "pagerduty"]
+    enabled: true
+    cooldown_minutes: 2
+
+  - rule_id: "critical_breach_attempt"
+    name: "Critical Security Breach Attempt"
+    description: "Alert on potential security breach activities"
+    condition: "event_type:potential_breach AND severity:critical"
+    severity_threshold: "critical"
+    channels: ["email", "slack", "webhook", "sms", "pagerduty"]
+    enabled: true
+    cooldown_minutes: 1
+
+  # High priority security incidents
+  - rule_id: "authentication_failure_spike"
+    name: "Authentication Failure Spike"
+    description: "Alert on spike in authentication failures indicating potential attack"
+    condition: "event_type:authentication_failure AND severity:medium"
+    severity_threshold: "medium"
+    channels: ["email", "slack", "webhook"]
+    enabled: true
+    cooldown_minutes: 10
+
+  - rule_id: "rate_limit_abuse"
+    name: "Rate Limit Abuse Detected"
+    description: "Alert when rate limits are repeatedly exceeded"
+    condition: "event_type:rate_limit_exceeded AND severity:medium"
+    severity_threshold: "medium"
+    channels: ["email", "slack"]
+    enabled: true
+    cooldown_minutes: 15
+
+  - rule_id: "sensitive_endpoint_access"
+    name: "Sensitive Endpoint Access"
+    description: "Alert on access to sensitive administrative endpoints"
+    condition: "event_type:sensitive_endpoint_access AND severity:medium"
+    severity_threshold: "medium"
+    channels: ["email", "slack"]
+    enabled: true
+    cooldown_minutes: 5
+
+  - rule_id: "weak_password_attempt"
+    name: "Weak Password Creation Attempt"
+    description: "Alert when users attempt to create weak passwords"
+    condition: "event_type:weak_password_attempt AND severity:medium"
+    severity_threshold: "medium"
+    channels: ["slack"]
+    enabled: true
+    cooldown_minutes: 30
+
+  # Medium priority security incidents
+  - rule_id: "dependency_vulnerabilities"
+    name: "Dependency Vulnerabilities Detected"
+    description: "Alert when dependency vulnerabilities are found during scan"
+    condition: "event_type:dependency_vulnerabilities AND severity:medium"
+    severity_threshold: "medium"
+    channels: ["email"]
+    enabled: true
+    cooldown_minutes: 60
+
+  - rule_id: "file_security_scan_failure"
+    name: "File Security Scan Failure"
+    description: "Alert when file security scanning encounters issues"
+    condition: "event_type:file_scan_failure AND severity:medium"
+    severity_threshold: "medium"
+    channels: ["email", "slack"]
+    enabled: true
+    cooldown_minutes: 20
+
+  - rule_id: "system_error_injection_attempt"
+    name: "System Error Injection Attempt"
+    description: "Alert on attempts to inject errors or exploit system vulnerabilities"
+    condition: "event_type:system_error_injection AND severity:medium"
+    severity_threshold: "medium"
+    channels: ["email", "slack"]
+    enabled: true
+    cooldown_minutes: 10
+
+  # Low priority security incidents
+  - rule_id: "general_security_event"
+    name: "General Security Event"
+    description: "Alert on general security events that may require monitoring"
+    condition: "event_type:general_security AND severity:low"
+    severity_threshold: "low"
+    channels: ["slack"]
+    enabled: true
+    cooldown_minutes: 60
+
+  - rule_id: "slow_request_detected"
+    name: "Slow Request Pattern Detected"
+    description: "Alert on unusually slow requests that may indicate DoS attempts"
+    condition: "event_type:slow_request_detected AND severity:low"
+    severity_threshold: "low"
+    channels: ["slack"]
+    enabled: true
+    cooldown_minutes: 45
+
+  - rule_id: "password_validation_failure"
+    name: "Password Validation Failure"
+    description: "Alert on password validation failures for monitoring"
+    condition: "event_type:password_validation_failure AND severity:low"
+    severity_threshold: "low"
+    channels: []
+    enabled: false  # Disabled by default to avoid noise
+    cooldown_minutes: 120
+
+  # Compliance and audit events
+  - rule_id: "compliance_violation"
+    name: "Compliance Violation Detected"
+    description: "Alert on compliance violations for GDPR, PCI DSS, etc."
+    condition: "event_type:compliance_violation AND severity:medium"
+    severity_threshold: "medium"
+    channels: ["email", "slack"]
+    enabled: true
+    cooldown_minutes: 30
+
+  - rule_id: "audit_log_failure"
+    name: "Audit Logging Failure"
+    description: "Alert when audit logging system encounters failures"
+    condition: "event_type:audit_logging_failure AND severity:high"
+    severity_threshold: "high"
+    channels: ["email", "slack", "webhook"]
+    enabled: true
+    cooldown_minutes: 15
+
+  # Performance and availability events
+  - rule_id: "security_service_degraded"
+    name: "Security Service Performance Degraded"
+    description: "Alert when security service performance is degraded"
+    condition: "event_type:security_performance_degraded AND severity:medium"
+    severity_threshold: "medium"
+    channels: ["email", "slack"]
+    enabled: true
+    cooldown_minutes: 20
+
+  - rule_id: "security_system_unavailable"
+    name: "Security System Unavailable"
+    description: "Critical alert when security system becomes unavailable"
+    condition: "event_type:security_system_unavailable AND severity:critical"
+    severity_threshold: "critical"
+    channels: ["email", "slack", "webhook", "sms", "pagerduty"]
+    enabled: true
+    cooldown_minutes: 1

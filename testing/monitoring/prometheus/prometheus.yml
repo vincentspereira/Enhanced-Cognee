@@ -1,0 +1,144 @@
+# Enhanced Cognee Testing Prometheus Configuration
+# Comprehensive monitoring for testing infrastructure and performance metrics
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    environment: 'testing'
+    service: 'enhanced-cognee'
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - alertmanager:9093
+
+# Rule files for alerting
+rule_files:
+  - "rules/*.yml"
+
+# Scrape configurations
+scrape_configs:
+  # Prometheus itself
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+    scrape_interval: 30s
+    metrics_path: '/metrics'
+
+  # Enhanced Cognee API Metrics
+  - job_name: 'enhanced-cognee-api'
+    static_configs:
+      - targets: ['enhanced-cognee-api:8000']
+    scrape_interval: 10s
+    metrics_path: '/metrics'
+    scrape_timeout: 10s
+    params:
+      format: ['prometheus']
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'enhanced-cognee-api-1'
+
+  # PostgreSQL Database Metrics
+  - job_name: 'postgres-test'
+    static_configs:
+      - targets: ['postgres-exporter:9187']
+    scrape_interval: 30s
+    metrics_path: '/metrics'
+
+  # Qdrant Vector Database Metrics
+  - job_name: 'qdrant-test'
+    static_configs:
+      - targets: ['qdrant-test:6333']
+    scrape_interval: 30s
+    metrics_path: '/metrics'
+    params:
+      format: ['prometheus']
+
+  # Neo4j Graph Database Metrics
+  - job_name: 'neo4j-test'
+    static_configs:
+      - targets: ['neo4j-test:2004']
+    scrape_interval: 30s
+    metrics_path: '/metrics'
+
+  # Redis Cache Metrics
+  - job_name: 'redis-test'
+    static_configs:
+      - targets: ['redis-exporter:9121']
+    scrape_interval: 30s
+    metrics_path: '/metrics'
+
+  # Locust Load Testing Metrics
+  - job_name: 'locust-master'
+    static_configs:
+      - targets: ['locust-master:8089']
+    scrape_interval: 15s
+    metrics_path: '/stats/requests'
+    params:
+      'format': ['prometheus']
+
+  # Node Exporter for System Metrics
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['node-exporter:9100']
+    scrape_interval: 30s
+    metrics_path: '/metrics'
+
+  # cAdvisor for Container Metrics
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['cadvisor:8080']
+    scrape_interval: 30s
+    metrics_path: '/metrics'
+
+  # OWASP ZAP Security Metrics
+  - job_name: 'zap-security'
+    static_configs:
+      - targets: ['zap-security:8090']
+    scrape_interval: 60s
+    metrics_path: '/JSON/core/view/stats'
+    params:
+      'form': ['API']
+      'apikey': ['zap-test-api-key']
+
+  # Custom Enhanced Cognee Metrics Exporter
+  - job_name: 'enhanced-cognee-exporter'
+    static_configs:
+      - targets: ['enhanced-cognee-exporter:8000']
+    scrape_interval: 15s
+    metrics_path: '/metrics'
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'enhanced-cognee-test'
+
+  # MLflow Experiment Tracking Metrics
+  - job_name: 'mlflow'
+    static_configs:
+      - targets: ['mlflow:5000']
+    scrape_interval: 60s
+    metrics_path: '/metrics'
+
+  # Custom Test Results Metrics
+  - job_name: 'test-results'
+    static_configs:
+      - targets: ['test-results-collector:8080']
+    scrape_interval: 30s
+    metrics_path: '/metrics'
+
+# Remote write configuration (optional for long-term storage)
+# remote_write:
+#   - url: "https://your-long-term-storage.example.com/api/v1/write"
+#     basic_auth:
+#       username: your-username
+#       password: your-password
+
+# Storage configuration
+storage:
+  tsdb:
+    retention.time: 7d
+    retention.size: 10GB
