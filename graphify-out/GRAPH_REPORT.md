@@ -1,44 +1,45 @@
-# Graph Report - .  (2026-04-29)
+# Graph Report - C:\Users\vince\Projects\AI Agents\enhanced-cognee  (2026-05-17)
 
 ## Corpus Check
-- Large corpus: 1573 files · ~1,443,177 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.
+- 1795 files · ~1,781,408 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 15233 nodes · 54424 edges · 731 communities detected
-- Extraction: 32% EXTRACTED · 68% INFERRED · 0% AMBIGUOUS · INFERRED: 37012 edges (avg confidence: 0.58)
+- 22444 nodes · 91403 edges · 1252 communities detected
+- Extraction: 26% EXTRACTED · 74% INFERRED · 0% AMBIGUOUS · INFERRED: 67651 edges (avg confidence: 0.58)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Kuzu Graph Adapter|Kuzu Graph Adapter]]
-- [[_COMMUNITY_Database Migrations|Database Migrations]]
-- [[_COMMUNITY_Advanced Search Engine|Advanced Search Engine]]
-- [[_COMMUNITY_Agent Memory Integration|Agent Memory Integration]]
-- [[_COMMUNITY_Schema Migrations|Schema Migrations]]
-- [[_COMMUNITY_Authentication Security|Authentication Security]]
-- [[_COMMUNITY_Memory Operations|Memory Operations]]
-- [[_COMMUNITY_Anthropic LLM Client|Anthropic LLM Client]]
-- [[_COMMUNITY_Advanced Features Analytics|Advanced Features Analytics]]
-- [[_COMMUNITY_Event Entity Graph|Event Entity Graph]]
-- [[_COMMUNITY_Faceted Fuzzy Search|Faceted Fuzzy Search]]
-- [[_COMMUNITY_Dataset Schema|Dataset Schema]]
-- [[_COMMUNITY_Graph Model Migration|Graph Model Migration]]
-- [[_COMMUNITY_Document Processing|Document Processing]]
-- [[_COMMUNITY_LLM Adapters|LLM Adapters]]
-- [[_COMMUNITY_Data Point Extraction|Data Point Extraction]]
-- [[_COMMUNITY_Benchmark Adapters|Benchmark Adapters]]
-- [[_COMMUNITY_Production Security|Production Security]]
-- [[_COMMUNITY_Production Optimization|Production Optimization]]
-- [[_COMMUNITY_Integration Testing|Integration Testing]]
-- [[_COMMUNITY_Structured Output|Structured Output]]
-- [[_COMMUNITY_Answer Evaluation|Answer Evaluation]]
-- [[_COMMUNITY_Research Benchmarks|Research Benchmarks]]
-- [[_COMMUNITY_Performance Baselines|Performance Baselines]]
-- [[_COMMUNITY_UI Accessibility Testing|UI Accessibility Testing]]
-- [[_COMMUNITY_Claude API Integration|Claude API Integration]]
-- [[_COMMUNITY_Production Documentation|Production Documentation]]
-- [[_COMMUNITY_Performance Metrics|Performance Metrics]]
-- [[_COMMUNITY_Rate Limiting|Rate Limiting]]
-- [[_COMMUNITY_Results Analysis|Results Analysis]]
+- [[_COMMUNITY_Community 0|Community 0]]
+- [[_COMMUNITY_Community 1|Community 1]]
+- [[_COMMUNITY_Community 2|Community 2]]
+- [[_COMMUNITY_Community 3|Community 3]]
+- [[_COMMUNITY_Community 4|Community 4]]
+- [[_COMMUNITY_Community 5|Community 5]]
+- [[_COMMUNITY_Community 6|Community 6]]
+- [[_COMMUNITY_Community 7|Community 7]]
+- [[_COMMUNITY_Community 8|Community 8]]
+- [[_COMMUNITY_Community 9|Community 9]]
+- [[_COMMUNITY_Community 10|Community 10]]
+- [[_COMMUNITY_Community 11|Community 11]]
+- [[_COMMUNITY_Community 12|Community 12]]
+- [[_COMMUNITY_Community 13|Community 13]]
+- [[_COMMUNITY_Community 14|Community 14]]
+- [[_COMMUNITY_Community 15|Community 15]]
+- [[_COMMUNITY_Community 16|Community 16]]
+- [[_COMMUNITY_Community 17|Community 17]]
+- [[_COMMUNITY_Community 18|Community 18]]
+- [[_COMMUNITY_Community 19|Community 19]]
+- [[_COMMUNITY_Community 20|Community 20]]
+- [[_COMMUNITY_Community 21|Community 21]]
+- [[_COMMUNITY_Community 22|Community 22]]
+- [[_COMMUNITY_Community 23|Community 23]]
+- [[_COMMUNITY_Community 24|Community 24]]
+- [[_COMMUNITY_Community 25|Community 25]]
+- [[_COMMUNITY_Community 26|Community 26]]
+- [[_COMMUNITY_Community 27|Community 27]]
+- [[_COMMUNITY_Community 28|Community 28]]
+- [[_COMMUNITY_Community 29|Community 29]]
 - [[_COMMUNITY_Community 30|Community 30]]
 - [[_COMMUNITY_Community 31|Community 31]]
 - [[_COMMUNITY_Community 32|Community 32]]
@@ -740,30 +741,551 @@
 - [[_COMMUNITY_Community 728|Community 728]]
 - [[_COMMUNITY_Community 729|Community 729]]
 - [[_COMMUNITY_Community 730|Community 730]]
+- [[_COMMUNITY_Community 731|Community 731]]
+- [[_COMMUNITY_Community 732|Community 732]]
+- [[_COMMUNITY_Community 733|Community 733]]
+- [[_COMMUNITY_Community 734|Community 734]]
+- [[_COMMUNITY_Community 735|Community 735]]
+- [[_COMMUNITY_Community 736|Community 736]]
+- [[_COMMUNITY_Community 737|Community 737]]
+- [[_COMMUNITY_Community 738|Community 738]]
+- [[_COMMUNITY_Community 739|Community 739]]
+- [[_COMMUNITY_Community 740|Community 740]]
+- [[_COMMUNITY_Community 741|Community 741]]
+- [[_COMMUNITY_Community 742|Community 742]]
+- [[_COMMUNITY_Community 743|Community 743]]
+- [[_COMMUNITY_Community 744|Community 744]]
+- [[_COMMUNITY_Community 745|Community 745]]
+- [[_COMMUNITY_Community 746|Community 746]]
+- [[_COMMUNITY_Community 747|Community 747]]
+- [[_COMMUNITY_Community 748|Community 748]]
+- [[_COMMUNITY_Community 749|Community 749]]
+- [[_COMMUNITY_Community 750|Community 750]]
+- [[_COMMUNITY_Community 751|Community 751]]
+- [[_COMMUNITY_Community 752|Community 752]]
+- [[_COMMUNITY_Community 753|Community 753]]
+- [[_COMMUNITY_Community 754|Community 754]]
+- [[_COMMUNITY_Community 755|Community 755]]
+- [[_COMMUNITY_Community 756|Community 756]]
+- [[_COMMUNITY_Community 757|Community 757]]
+- [[_COMMUNITY_Community 758|Community 758]]
+- [[_COMMUNITY_Community 759|Community 759]]
+- [[_COMMUNITY_Community 760|Community 760]]
+- [[_COMMUNITY_Community 761|Community 761]]
+- [[_COMMUNITY_Community 762|Community 762]]
+- [[_COMMUNITY_Community 763|Community 763]]
+- [[_COMMUNITY_Community 764|Community 764]]
+- [[_COMMUNITY_Community 765|Community 765]]
+- [[_COMMUNITY_Community 766|Community 766]]
+- [[_COMMUNITY_Community 767|Community 767]]
+- [[_COMMUNITY_Community 768|Community 768]]
+- [[_COMMUNITY_Community 769|Community 769]]
+- [[_COMMUNITY_Community 770|Community 770]]
+- [[_COMMUNITY_Community 771|Community 771]]
+- [[_COMMUNITY_Community 772|Community 772]]
+- [[_COMMUNITY_Community 773|Community 773]]
+- [[_COMMUNITY_Community 774|Community 774]]
+- [[_COMMUNITY_Community 775|Community 775]]
+- [[_COMMUNITY_Community 776|Community 776]]
+- [[_COMMUNITY_Community 777|Community 777]]
+- [[_COMMUNITY_Community 778|Community 778]]
+- [[_COMMUNITY_Community 779|Community 779]]
+- [[_COMMUNITY_Community 780|Community 780]]
+- [[_COMMUNITY_Community 781|Community 781]]
+- [[_COMMUNITY_Community 782|Community 782]]
+- [[_COMMUNITY_Community 783|Community 783]]
+- [[_COMMUNITY_Community 784|Community 784]]
+- [[_COMMUNITY_Community 785|Community 785]]
+- [[_COMMUNITY_Community 786|Community 786]]
+- [[_COMMUNITY_Community 787|Community 787]]
+- [[_COMMUNITY_Community 788|Community 788]]
+- [[_COMMUNITY_Community 789|Community 789]]
+- [[_COMMUNITY_Community 790|Community 790]]
+- [[_COMMUNITY_Community 791|Community 791]]
+- [[_COMMUNITY_Community 792|Community 792]]
+- [[_COMMUNITY_Community 793|Community 793]]
+- [[_COMMUNITY_Community 794|Community 794]]
+- [[_COMMUNITY_Community 795|Community 795]]
+- [[_COMMUNITY_Community 796|Community 796]]
+- [[_COMMUNITY_Community 797|Community 797]]
+- [[_COMMUNITY_Community 798|Community 798]]
+- [[_COMMUNITY_Community 799|Community 799]]
+- [[_COMMUNITY_Community 800|Community 800]]
+- [[_COMMUNITY_Community 801|Community 801]]
+- [[_COMMUNITY_Community 802|Community 802]]
+- [[_COMMUNITY_Community 803|Community 803]]
+- [[_COMMUNITY_Community 804|Community 804]]
+- [[_COMMUNITY_Community 805|Community 805]]
+- [[_COMMUNITY_Community 806|Community 806]]
+- [[_COMMUNITY_Community 807|Community 807]]
+- [[_COMMUNITY_Community 808|Community 808]]
+- [[_COMMUNITY_Community 809|Community 809]]
+- [[_COMMUNITY_Community 810|Community 810]]
+- [[_COMMUNITY_Community 811|Community 811]]
+- [[_COMMUNITY_Community 812|Community 812]]
+- [[_COMMUNITY_Community 813|Community 813]]
+- [[_COMMUNITY_Community 814|Community 814]]
+- [[_COMMUNITY_Community 815|Community 815]]
+- [[_COMMUNITY_Community 816|Community 816]]
+- [[_COMMUNITY_Community 817|Community 817]]
+- [[_COMMUNITY_Community 818|Community 818]]
+- [[_COMMUNITY_Community 819|Community 819]]
+- [[_COMMUNITY_Community 820|Community 820]]
+- [[_COMMUNITY_Community 821|Community 821]]
+- [[_COMMUNITY_Community 822|Community 822]]
+- [[_COMMUNITY_Community 823|Community 823]]
+- [[_COMMUNITY_Community 824|Community 824]]
+- [[_COMMUNITY_Community 825|Community 825]]
+- [[_COMMUNITY_Community 826|Community 826]]
+- [[_COMMUNITY_Community 827|Community 827]]
+- [[_COMMUNITY_Community 828|Community 828]]
+- [[_COMMUNITY_Community 829|Community 829]]
+- [[_COMMUNITY_Community 830|Community 830]]
+- [[_COMMUNITY_Community 831|Community 831]]
+- [[_COMMUNITY_Community 832|Community 832]]
+- [[_COMMUNITY_Community 833|Community 833]]
+- [[_COMMUNITY_Community 834|Community 834]]
+- [[_COMMUNITY_Community 835|Community 835]]
+- [[_COMMUNITY_Community 836|Community 836]]
+- [[_COMMUNITY_Community 837|Community 837]]
+- [[_COMMUNITY_Community 838|Community 838]]
+- [[_COMMUNITY_Community 839|Community 839]]
+- [[_COMMUNITY_Community 840|Community 840]]
+- [[_COMMUNITY_Community 841|Community 841]]
+- [[_COMMUNITY_Community 842|Community 842]]
+- [[_COMMUNITY_Community 843|Community 843]]
+- [[_COMMUNITY_Community 844|Community 844]]
+- [[_COMMUNITY_Community 845|Community 845]]
+- [[_COMMUNITY_Community 846|Community 846]]
+- [[_COMMUNITY_Community 847|Community 847]]
+- [[_COMMUNITY_Community 848|Community 848]]
+- [[_COMMUNITY_Community 849|Community 849]]
+- [[_COMMUNITY_Community 850|Community 850]]
+- [[_COMMUNITY_Community 851|Community 851]]
+- [[_COMMUNITY_Community 852|Community 852]]
+- [[_COMMUNITY_Community 853|Community 853]]
+- [[_COMMUNITY_Community 854|Community 854]]
+- [[_COMMUNITY_Community 855|Community 855]]
+- [[_COMMUNITY_Community 856|Community 856]]
+- [[_COMMUNITY_Community 857|Community 857]]
+- [[_COMMUNITY_Community 858|Community 858]]
+- [[_COMMUNITY_Community 859|Community 859]]
+- [[_COMMUNITY_Community 860|Community 860]]
+- [[_COMMUNITY_Community 861|Community 861]]
+- [[_COMMUNITY_Community 862|Community 862]]
+- [[_COMMUNITY_Community 863|Community 863]]
+- [[_COMMUNITY_Community 864|Community 864]]
+- [[_COMMUNITY_Community 865|Community 865]]
+- [[_COMMUNITY_Community 866|Community 866]]
+- [[_COMMUNITY_Community 867|Community 867]]
+- [[_COMMUNITY_Community 868|Community 868]]
+- [[_COMMUNITY_Community 869|Community 869]]
+- [[_COMMUNITY_Community 870|Community 870]]
+- [[_COMMUNITY_Community 871|Community 871]]
+- [[_COMMUNITY_Community 872|Community 872]]
+- [[_COMMUNITY_Community 873|Community 873]]
+- [[_COMMUNITY_Community 874|Community 874]]
+- [[_COMMUNITY_Community 875|Community 875]]
+- [[_COMMUNITY_Community 876|Community 876]]
+- [[_COMMUNITY_Community 877|Community 877]]
+- [[_COMMUNITY_Community 878|Community 878]]
+- [[_COMMUNITY_Community 879|Community 879]]
+- [[_COMMUNITY_Community 880|Community 880]]
+- [[_COMMUNITY_Community 881|Community 881]]
+- [[_COMMUNITY_Community 882|Community 882]]
+- [[_COMMUNITY_Community 883|Community 883]]
+- [[_COMMUNITY_Community 884|Community 884]]
+- [[_COMMUNITY_Community 885|Community 885]]
+- [[_COMMUNITY_Community 886|Community 886]]
+- [[_COMMUNITY_Community 887|Community 887]]
+- [[_COMMUNITY_Community 888|Community 888]]
+- [[_COMMUNITY_Community 889|Community 889]]
+- [[_COMMUNITY_Community 890|Community 890]]
+- [[_COMMUNITY_Community 891|Community 891]]
+- [[_COMMUNITY_Community 892|Community 892]]
+- [[_COMMUNITY_Community 893|Community 893]]
+- [[_COMMUNITY_Community 894|Community 894]]
+- [[_COMMUNITY_Community 895|Community 895]]
+- [[_COMMUNITY_Community 896|Community 896]]
+- [[_COMMUNITY_Community 897|Community 897]]
+- [[_COMMUNITY_Community 898|Community 898]]
+- [[_COMMUNITY_Community 899|Community 899]]
+- [[_COMMUNITY_Community 900|Community 900]]
+- [[_COMMUNITY_Community 901|Community 901]]
+- [[_COMMUNITY_Community 902|Community 902]]
+- [[_COMMUNITY_Community 903|Community 903]]
+- [[_COMMUNITY_Community 904|Community 904]]
+- [[_COMMUNITY_Community 905|Community 905]]
+- [[_COMMUNITY_Community 906|Community 906]]
+- [[_COMMUNITY_Community 907|Community 907]]
+- [[_COMMUNITY_Community 908|Community 908]]
+- [[_COMMUNITY_Community 909|Community 909]]
+- [[_COMMUNITY_Community 910|Community 910]]
+- [[_COMMUNITY_Community 911|Community 911]]
+- [[_COMMUNITY_Community 912|Community 912]]
+- [[_COMMUNITY_Community 913|Community 913]]
+- [[_COMMUNITY_Community 914|Community 914]]
+- [[_COMMUNITY_Community 915|Community 915]]
+- [[_COMMUNITY_Community 916|Community 916]]
+- [[_COMMUNITY_Community 917|Community 917]]
+- [[_COMMUNITY_Community 918|Community 918]]
+- [[_COMMUNITY_Community 919|Community 919]]
+- [[_COMMUNITY_Community 920|Community 920]]
+- [[_COMMUNITY_Community 921|Community 921]]
+- [[_COMMUNITY_Community 922|Community 922]]
+- [[_COMMUNITY_Community 923|Community 923]]
+- [[_COMMUNITY_Community 924|Community 924]]
+- [[_COMMUNITY_Community 925|Community 925]]
+- [[_COMMUNITY_Community 926|Community 926]]
+- [[_COMMUNITY_Community 927|Community 927]]
+- [[_COMMUNITY_Community 928|Community 928]]
+- [[_COMMUNITY_Community 929|Community 929]]
+- [[_COMMUNITY_Community 930|Community 930]]
+- [[_COMMUNITY_Community 931|Community 931]]
+- [[_COMMUNITY_Community 932|Community 932]]
+- [[_COMMUNITY_Community 933|Community 933]]
+- [[_COMMUNITY_Community 934|Community 934]]
+- [[_COMMUNITY_Community 935|Community 935]]
+- [[_COMMUNITY_Community 936|Community 936]]
+- [[_COMMUNITY_Community 937|Community 937]]
+- [[_COMMUNITY_Community 938|Community 938]]
+- [[_COMMUNITY_Community 939|Community 939]]
+- [[_COMMUNITY_Community 940|Community 940]]
+- [[_COMMUNITY_Community 941|Community 941]]
+- [[_COMMUNITY_Community 942|Community 942]]
+- [[_COMMUNITY_Community 943|Community 943]]
+- [[_COMMUNITY_Community 944|Community 944]]
+- [[_COMMUNITY_Community 945|Community 945]]
+- [[_COMMUNITY_Community 946|Community 946]]
+- [[_COMMUNITY_Community 947|Community 947]]
+- [[_COMMUNITY_Community 948|Community 948]]
+- [[_COMMUNITY_Community 949|Community 949]]
+- [[_COMMUNITY_Community 950|Community 950]]
+- [[_COMMUNITY_Community 951|Community 951]]
+- [[_COMMUNITY_Community 952|Community 952]]
+- [[_COMMUNITY_Community 953|Community 953]]
+- [[_COMMUNITY_Community 954|Community 954]]
+- [[_COMMUNITY_Community 955|Community 955]]
+- [[_COMMUNITY_Community 956|Community 956]]
+- [[_COMMUNITY_Community 957|Community 957]]
+- [[_COMMUNITY_Community 958|Community 958]]
+- [[_COMMUNITY_Community 959|Community 959]]
+- [[_COMMUNITY_Community 960|Community 960]]
+- [[_COMMUNITY_Community 961|Community 961]]
+- [[_COMMUNITY_Community 962|Community 962]]
+- [[_COMMUNITY_Community 963|Community 963]]
+- [[_COMMUNITY_Community 964|Community 964]]
+- [[_COMMUNITY_Community 965|Community 965]]
+- [[_COMMUNITY_Community 966|Community 966]]
+- [[_COMMUNITY_Community 967|Community 967]]
+- [[_COMMUNITY_Community 968|Community 968]]
+- [[_COMMUNITY_Community 969|Community 969]]
+- [[_COMMUNITY_Community 970|Community 970]]
+- [[_COMMUNITY_Community 971|Community 971]]
+- [[_COMMUNITY_Community 972|Community 972]]
+- [[_COMMUNITY_Community 973|Community 973]]
+- [[_COMMUNITY_Community 974|Community 974]]
+- [[_COMMUNITY_Community 975|Community 975]]
+- [[_COMMUNITY_Community 976|Community 976]]
+- [[_COMMUNITY_Community 977|Community 977]]
+- [[_COMMUNITY_Community 978|Community 978]]
+- [[_COMMUNITY_Community 979|Community 979]]
+- [[_COMMUNITY_Community 980|Community 980]]
+- [[_COMMUNITY_Community 981|Community 981]]
+- [[_COMMUNITY_Community 982|Community 982]]
+- [[_COMMUNITY_Community 983|Community 983]]
+- [[_COMMUNITY_Community 984|Community 984]]
+- [[_COMMUNITY_Community 985|Community 985]]
+- [[_COMMUNITY_Community 986|Community 986]]
+- [[_COMMUNITY_Community 987|Community 987]]
+- [[_COMMUNITY_Community 988|Community 988]]
+- [[_COMMUNITY_Community 989|Community 989]]
+- [[_COMMUNITY_Community 990|Community 990]]
+- [[_COMMUNITY_Community 991|Community 991]]
+- [[_COMMUNITY_Community 992|Community 992]]
+- [[_COMMUNITY_Community 993|Community 993]]
+- [[_COMMUNITY_Community 994|Community 994]]
+- [[_COMMUNITY_Community 995|Community 995]]
+- [[_COMMUNITY_Community 996|Community 996]]
+- [[_COMMUNITY_Community 997|Community 997]]
+- [[_COMMUNITY_Community 998|Community 998]]
+- [[_COMMUNITY_Community 999|Community 999]]
+- [[_COMMUNITY_Community 1000|Community 1000]]
+- [[_COMMUNITY_Community 1001|Community 1001]]
+- [[_COMMUNITY_Community 1002|Community 1002]]
+- [[_COMMUNITY_Community 1003|Community 1003]]
+- [[_COMMUNITY_Community 1004|Community 1004]]
+- [[_COMMUNITY_Community 1005|Community 1005]]
+- [[_COMMUNITY_Community 1006|Community 1006]]
+- [[_COMMUNITY_Community 1007|Community 1007]]
+- [[_COMMUNITY_Community 1008|Community 1008]]
+- [[_COMMUNITY_Community 1009|Community 1009]]
+- [[_COMMUNITY_Community 1010|Community 1010]]
+- [[_COMMUNITY_Community 1011|Community 1011]]
+- [[_COMMUNITY_Community 1012|Community 1012]]
+- [[_COMMUNITY_Community 1013|Community 1013]]
+- [[_COMMUNITY_Community 1014|Community 1014]]
+- [[_COMMUNITY_Community 1015|Community 1015]]
+- [[_COMMUNITY_Community 1016|Community 1016]]
+- [[_COMMUNITY_Community 1017|Community 1017]]
+- [[_COMMUNITY_Community 1018|Community 1018]]
+- [[_COMMUNITY_Community 1019|Community 1019]]
+- [[_COMMUNITY_Community 1020|Community 1020]]
+- [[_COMMUNITY_Community 1021|Community 1021]]
+- [[_COMMUNITY_Community 1022|Community 1022]]
+- [[_COMMUNITY_Community 1023|Community 1023]]
+- [[_COMMUNITY_Community 1024|Community 1024]]
+- [[_COMMUNITY_Community 1025|Community 1025]]
+- [[_COMMUNITY_Community 1026|Community 1026]]
+- [[_COMMUNITY_Community 1027|Community 1027]]
+- [[_COMMUNITY_Community 1028|Community 1028]]
+- [[_COMMUNITY_Community 1029|Community 1029]]
+- [[_COMMUNITY_Community 1030|Community 1030]]
+- [[_COMMUNITY_Community 1031|Community 1031]]
+- [[_COMMUNITY_Community 1032|Community 1032]]
+- [[_COMMUNITY_Community 1033|Community 1033]]
+- [[_COMMUNITY_Community 1034|Community 1034]]
+- [[_COMMUNITY_Community 1035|Community 1035]]
+- [[_COMMUNITY_Community 1036|Community 1036]]
+- [[_COMMUNITY_Community 1037|Community 1037]]
+- [[_COMMUNITY_Community 1038|Community 1038]]
+- [[_COMMUNITY_Community 1039|Community 1039]]
+- [[_COMMUNITY_Community 1040|Community 1040]]
+- [[_COMMUNITY_Community 1041|Community 1041]]
+- [[_COMMUNITY_Community 1042|Community 1042]]
+- [[_COMMUNITY_Community 1043|Community 1043]]
+- [[_COMMUNITY_Community 1044|Community 1044]]
+- [[_COMMUNITY_Community 1045|Community 1045]]
+- [[_COMMUNITY_Community 1046|Community 1046]]
+- [[_COMMUNITY_Community 1047|Community 1047]]
+- [[_COMMUNITY_Community 1048|Community 1048]]
+- [[_COMMUNITY_Community 1049|Community 1049]]
+- [[_COMMUNITY_Community 1050|Community 1050]]
+- [[_COMMUNITY_Community 1051|Community 1051]]
+- [[_COMMUNITY_Community 1052|Community 1052]]
+- [[_COMMUNITY_Community 1053|Community 1053]]
+- [[_COMMUNITY_Community 1054|Community 1054]]
+- [[_COMMUNITY_Community 1055|Community 1055]]
+- [[_COMMUNITY_Community 1056|Community 1056]]
+- [[_COMMUNITY_Community 1057|Community 1057]]
+- [[_COMMUNITY_Community 1058|Community 1058]]
+- [[_COMMUNITY_Community 1059|Community 1059]]
+- [[_COMMUNITY_Community 1060|Community 1060]]
+- [[_COMMUNITY_Community 1061|Community 1061]]
+- [[_COMMUNITY_Community 1062|Community 1062]]
+- [[_COMMUNITY_Community 1063|Community 1063]]
+- [[_COMMUNITY_Community 1064|Community 1064]]
+- [[_COMMUNITY_Community 1065|Community 1065]]
+- [[_COMMUNITY_Community 1066|Community 1066]]
+- [[_COMMUNITY_Community 1067|Community 1067]]
+- [[_COMMUNITY_Community 1068|Community 1068]]
+- [[_COMMUNITY_Community 1069|Community 1069]]
+- [[_COMMUNITY_Community 1070|Community 1070]]
+- [[_COMMUNITY_Community 1071|Community 1071]]
+- [[_COMMUNITY_Community 1072|Community 1072]]
+- [[_COMMUNITY_Community 1073|Community 1073]]
+- [[_COMMUNITY_Community 1074|Community 1074]]
+- [[_COMMUNITY_Community 1075|Community 1075]]
+- [[_COMMUNITY_Community 1076|Community 1076]]
+- [[_COMMUNITY_Community 1077|Community 1077]]
+- [[_COMMUNITY_Community 1078|Community 1078]]
+- [[_COMMUNITY_Community 1079|Community 1079]]
+- [[_COMMUNITY_Community 1080|Community 1080]]
+- [[_COMMUNITY_Community 1081|Community 1081]]
+- [[_COMMUNITY_Community 1082|Community 1082]]
+- [[_COMMUNITY_Community 1083|Community 1083]]
+- [[_COMMUNITY_Community 1084|Community 1084]]
+- [[_COMMUNITY_Community 1085|Community 1085]]
+- [[_COMMUNITY_Community 1086|Community 1086]]
+- [[_COMMUNITY_Community 1087|Community 1087]]
+- [[_COMMUNITY_Community 1088|Community 1088]]
+- [[_COMMUNITY_Community 1089|Community 1089]]
+- [[_COMMUNITY_Community 1090|Community 1090]]
+- [[_COMMUNITY_Community 1091|Community 1091]]
+- [[_COMMUNITY_Community 1092|Community 1092]]
+- [[_COMMUNITY_Community 1093|Community 1093]]
+- [[_COMMUNITY_Community 1094|Community 1094]]
+- [[_COMMUNITY_Community 1095|Community 1095]]
+- [[_COMMUNITY_Community 1096|Community 1096]]
+- [[_COMMUNITY_Community 1097|Community 1097]]
+- [[_COMMUNITY_Community 1098|Community 1098]]
+- [[_COMMUNITY_Community 1099|Community 1099]]
+- [[_COMMUNITY_Community 1100|Community 1100]]
+- [[_COMMUNITY_Community 1101|Community 1101]]
+- [[_COMMUNITY_Community 1102|Community 1102]]
+- [[_COMMUNITY_Community 1103|Community 1103]]
+- [[_COMMUNITY_Community 1104|Community 1104]]
+- [[_COMMUNITY_Community 1105|Community 1105]]
+- [[_COMMUNITY_Community 1106|Community 1106]]
+- [[_COMMUNITY_Community 1107|Community 1107]]
+- [[_COMMUNITY_Community 1108|Community 1108]]
+- [[_COMMUNITY_Community 1109|Community 1109]]
+- [[_COMMUNITY_Community 1110|Community 1110]]
+- [[_COMMUNITY_Community 1111|Community 1111]]
+- [[_COMMUNITY_Community 1112|Community 1112]]
+- [[_COMMUNITY_Community 1113|Community 1113]]
+- [[_COMMUNITY_Community 1114|Community 1114]]
+- [[_COMMUNITY_Community 1115|Community 1115]]
+- [[_COMMUNITY_Community 1116|Community 1116]]
+- [[_COMMUNITY_Community 1117|Community 1117]]
+- [[_COMMUNITY_Community 1118|Community 1118]]
+- [[_COMMUNITY_Community 1119|Community 1119]]
+- [[_COMMUNITY_Community 1120|Community 1120]]
+- [[_COMMUNITY_Community 1121|Community 1121]]
+- [[_COMMUNITY_Community 1122|Community 1122]]
+- [[_COMMUNITY_Community 1123|Community 1123]]
+- [[_COMMUNITY_Community 1124|Community 1124]]
+- [[_COMMUNITY_Community 1125|Community 1125]]
+- [[_COMMUNITY_Community 1126|Community 1126]]
+- [[_COMMUNITY_Community 1127|Community 1127]]
+- [[_COMMUNITY_Community 1128|Community 1128]]
+- [[_COMMUNITY_Community 1129|Community 1129]]
+- [[_COMMUNITY_Community 1130|Community 1130]]
+- [[_COMMUNITY_Community 1131|Community 1131]]
+- [[_COMMUNITY_Community 1132|Community 1132]]
+- [[_COMMUNITY_Community 1133|Community 1133]]
+- [[_COMMUNITY_Community 1134|Community 1134]]
+- [[_COMMUNITY_Community 1135|Community 1135]]
+- [[_COMMUNITY_Community 1136|Community 1136]]
+- [[_COMMUNITY_Community 1137|Community 1137]]
+- [[_COMMUNITY_Community 1138|Community 1138]]
+- [[_COMMUNITY_Community 1139|Community 1139]]
+- [[_COMMUNITY_Community 1140|Community 1140]]
+- [[_COMMUNITY_Community 1141|Community 1141]]
+- [[_COMMUNITY_Community 1142|Community 1142]]
+- [[_COMMUNITY_Community 1143|Community 1143]]
+- [[_COMMUNITY_Community 1144|Community 1144]]
+- [[_COMMUNITY_Community 1145|Community 1145]]
+- [[_COMMUNITY_Community 1146|Community 1146]]
+- [[_COMMUNITY_Community 1147|Community 1147]]
+- [[_COMMUNITY_Community 1148|Community 1148]]
+- [[_COMMUNITY_Community 1149|Community 1149]]
+- [[_COMMUNITY_Community 1150|Community 1150]]
+- [[_COMMUNITY_Community 1151|Community 1151]]
+- [[_COMMUNITY_Community 1152|Community 1152]]
+- [[_COMMUNITY_Community 1153|Community 1153]]
+- [[_COMMUNITY_Community 1154|Community 1154]]
+- [[_COMMUNITY_Community 1155|Community 1155]]
+- [[_COMMUNITY_Community 1156|Community 1156]]
+- [[_COMMUNITY_Community 1157|Community 1157]]
+- [[_COMMUNITY_Community 1158|Community 1158]]
+- [[_COMMUNITY_Community 1159|Community 1159]]
+- [[_COMMUNITY_Community 1160|Community 1160]]
+- [[_COMMUNITY_Community 1161|Community 1161]]
+- [[_COMMUNITY_Community 1162|Community 1162]]
+- [[_COMMUNITY_Community 1163|Community 1163]]
+- [[_COMMUNITY_Community 1164|Community 1164]]
+- [[_COMMUNITY_Community 1165|Community 1165]]
+- [[_COMMUNITY_Community 1166|Community 1166]]
+- [[_COMMUNITY_Community 1167|Community 1167]]
+- [[_COMMUNITY_Community 1168|Community 1168]]
+- [[_COMMUNITY_Community 1169|Community 1169]]
+- [[_COMMUNITY_Community 1170|Community 1170]]
+- [[_COMMUNITY_Community 1171|Community 1171]]
+- [[_COMMUNITY_Community 1172|Community 1172]]
+- [[_COMMUNITY_Community 1173|Community 1173]]
+- [[_COMMUNITY_Community 1174|Community 1174]]
+- [[_COMMUNITY_Community 1175|Community 1175]]
+- [[_COMMUNITY_Community 1176|Community 1176]]
+- [[_COMMUNITY_Community 1177|Community 1177]]
+- [[_COMMUNITY_Community 1178|Community 1178]]
+- [[_COMMUNITY_Community 1179|Community 1179]]
+- [[_COMMUNITY_Community 1180|Community 1180]]
+- [[_COMMUNITY_Community 1181|Community 1181]]
+- [[_COMMUNITY_Community 1182|Community 1182]]
+- [[_COMMUNITY_Community 1183|Community 1183]]
+- [[_COMMUNITY_Community 1184|Community 1184]]
+- [[_COMMUNITY_Community 1185|Community 1185]]
+- [[_COMMUNITY_Community 1186|Community 1186]]
+- [[_COMMUNITY_Community 1187|Community 1187]]
+- [[_COMMUNITY_Community 1188|Community 1188]]
+- [[_COMMUNITY_Community 1189|Community 1189]]
+- [[_COMMUNITY_Community 1190|Community 1190]]
+- [[_COMMUNITY_Community 1191|Community 1191]]
+- [[_COMMUNITY_Community 1192|Community 1192]]
+- [[_COMMUNITY_Community 1193|Community 1193]]
+- [[_COMMUNITY_Community 1194|Community 1194]]
+- [[_COMMUNITY_Community 1195|Community 1195]]
+- [[_COMMUNITY_Community 1196|Community 1196]]
+- [[_COMMUNITY_Community 1197|Community 1197]]
+- [[_COMMUNITY_Community 1198|Community 1198]]
+- [[_COMMUNITY_Community 1199|Community 1199]]
+- [[_COMMUNITY_Community 1200|Community 1200]]
+- [[_COMMUNITY_Community 1201|Community 1201]]
+- [[_COMMUNITY_Community 1202|Community 1202]]
+- [[_COMMUNITY_Community 1203|Community 1203]]
+- [[_COMMUNITY_Community 1204|Community 1204]]
+- [[_COMMUNITY_Community 1205|Community 1205]]
+- [[_COMMUNITY_Community 1206|Community 1206]]
+- [[_COMMUNITY_Community 1207|Community 1207]]
+- [[_COMMUNITY_Community 1208|Community 1208]]
+- [[_COMMUNITY_Community 1209|Community 1209]]
+- [[_COMMUNITY_Community 1210|Community 1210]]
+- [[_COMMUNITY_Community 1211|Community 1211]]
+- [[_COMMUNITY_Community 1212|Community 1212]]
+- [[_COMMUNITY_Community 1213|Community 1213]]
+- [[_COMMUNITY_Community 1214|Community 1214]]
+- [[_COMMUNITY_Community 1215|Community 1215]]
+- [[_COMMUNITY_Community 1216|Community 1216]]
+- [[_COMMUNITY_Community 1217|Community 1217]]
+- [[_COMMUNITY_Community 1218|Community 1218]]
+- [[_COMMUNITY_Community 1219|Community 1219]]
+- [[_COMMUNITY_Community 1220|Community 1220]]
+- [[_COMMUNITY_Community 1221|Community 1221]]
+- [[_COMMUNITY_Community 1222|Community 1222]]
+- [[_COMMUNITY_Community 1223|Community 1223]]
+- [[_COMMUNITY_Community 1224|Community 1224]]
+- [[_COMMUNITY_Community 1225|Community 1225]]
+- [[_COMMUNITY_Community 1226|Community 1226]]
+- [[_COMMUNITY_Community 1227|Community 1227]]
+- [[_COMMUNITY_Community 1228|Community 1228]]
+- [[_COMMUNITY_Community 1229|Community 1229]]
+- [[_COMMUNITY_Community 1230|Community 1230]]
+- [[_COMMUNITY_Community 1231|Community 1231]]
+- [[_COMMUNITY_Community 1232|Community 1232]]
+- [[_COMMUNITY_Community 1233|Community 1233]]
+- [[_COMMUNITY_Community 1234|Community 1234]]
+- [[_COMMUNITY_Community 1235|Community 1235]]
+- [[_COMMUNITY_Community 1236|Community 1236]]
+- [[_COMMUNITY_Community 1237|Community 1237]]
+- [[_COMMUNITY_Community 1238|Community 1238]]
+- [[_COMMUNITY_Community 1239|Community 1239]]
+- [[_COMMUNITY_Community 1240|Community 1240]]
+- [[_COMMUNITY_Community 1241|Community 1241]]
+- [[_COMMUNITY_Community 1242|Community 1242]]
+- [[_COMMUNITY_Community 1243|Community 1243]]
+- [[_COMMUNITY_Community 1244|Community 1244]]
+- [[_COMMUNITY_Community 1245|Community 1245]]
+- [[_COMMUNITY_Community 1246|Community 1246]]
+- [[_COMMUNITY_Community 1247|Community 1247]]
+- [[_COMMUNITY_Community 1248|Community 1248]]
+- [[_COMMUNITY_Community 1249|Community 1249]]
+- [[_COMMUNITY_Community 1250|Community 1250]]
+- [[_COMMUNITY_Community 1251|Community 1251]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `GET()` - 743 edges
-2. `AgentMemoryIntegration` - 488 edges
-3. `SecurityEvent` - 357 edges
-4. `PerformanceAnalytics` - 353 edges
-5. `MemoryDeduplicator` - 350 edges
-6. `MemoryManager` - 347 edges
-7. `EnhancedSecurityFramework` - 344 edges
-8. `RealTimeMemorySync` - 329 edges
-9. `CrossAgentMemorySharing` - 321 edges
-10. `SecurityLogger` - 319 edges
+1. `GET()` - 950 edges
+2. `PerformanceAnalytics` - 727 edges
+3. `MemoryDeduplicator` - 724 edges
+4. `MemoryManager` - 721 edges
+5. `RealTimeMemorySync` - 703 edges
+6. `CrossAgentMemorySharing` - 695 edges
+7. `MemorySummarizer` - 689 edges
+8. `SharePolicy` - 664 edges
+9. `RetentionPolicy` - 659 edges
+10. `SessionManager` - 652 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Scenario-Based Testing` --semantically_similar_to--> `Enhanced Cognee Examples Collection`  [INFERRED] [semantically similar]
   docs/testing/COMPREHENSIVE_TESTING_STRATEGY.md → examples/ENHANCED_COGNEE_EXAMPLES.md
-- `test_expire_memories()` --calls--> `expire_memories()`  [INFERRED]
-  tests\system\test_all_mcp_tools.py → bin\enhanced_cognee_mcp_server.py
-- `test_get_memory_age_stats()` --calls--> `get_memory_age_stats()`  [INFERRED]
-  tests\system\test_all_mcp_tools.py → bin\enhanced_cognee_mcp_server.py
-- `test_archive_category()` --calls--> `archive_category()`  [INFERRED]
-  tests\system\test_all_mcp_tools.py → bin\enhanced_cognee_mcp_server.py
-- `test_summarize_category()` --calls--> `summarize_category()`  [INFERRED]
-  tests\system\test_all_mcp_tools.py → bin\enhanced_cognee_mcp_server.py
+- `expire_memories()` --calls--> `test_expire_memories()`  [INFERRED]
+  C:\Users\vince\Projects\AI Agents\enhanced-cognee\bin\enhanced_cognee_mcp_server.py → tests\system\test_all_mcp_tools.py
+- `get_memory_age_stats()` --calls--> `test_get_memory_age_stats()`  [INFERRED]
+  C:\Users\vince\Projects\AI Agents\enhanced-cognee\bin\enhanced_cognee_mcp_server.py → tests\system\test_all_mcp_tools.py
+- `archive_category()` --calls--> `test_archive_category()`  [INFERRED]
+  C:\Users\vince\Projects\AI Agents\enhanced-cognee\bin\enhanced_cognee_mcp_server.py → tests\system\test_all_mcp_tools.py
+- `summarize_category()` --calls--> `test_summarize_category()`  [INFERRED]
+  C:\Users\vince\Projects\AI Agents\enhanced-cognee\bin\enhanced_cognee_mcp_server.py → tests\system\test_all_mcp_tools.py
 
 ## Hyperedges (group relationships)
 - **hyperedge_architecture_stack** — enhanced-cognee_MCPServer, enhanced-cognee_PostgreSQLpgVector, enhanced-cognee_QdrantVectorDB, enhanced-cognee_Neo4jGraphDB, enhanced-cognee_RedisCache [EXTRACTED 1.00]
@@ -809,565 +1331,565 @@
 
 ## Communities
 
-### Community 0 - "Kuzu Graph Adapter"
+### Community 0 - "Community 0"
 Cohesion: 0.0
-Nodes (1460): KuzuAdapter, addData(), AdvancedAnalyticsEngine, analytics_engine(), AnalyticsDashboard, AnalyticsEvent, main(), multi_tenant_manager() (+1452 more)
+Nodes (2771): downgrade(), Enhanced Cognee shared_memory schema baseline  Revision ID: 0001_enhanced_cognee, Drop all Enhanced Cognee tables (DESTRUCTIVE - use with caution)., Create shared_memory schema and all Enhanced Cognee tables., upgrade(), downgrade(), Add memory_versions table for Phase 10 (15.1)  Revision ID: 0002_memory_versioni, Remove Phase 10 additions (DESTRUCTIVE). (+2763 more)
 
-### Community 1 - "Database Migrations"
+### Community 1 - "Community 1"
 Cohesion: 0.0
-Nodes (1110): Add pipeline run status  Revision ID: 1d0bb7fede17 Revises: 482cd6517ce4 Cre, upgrade(), ACL, add(), add_data_points(), Add a batch of data points to the graph database by extracting nodes and edges,, Add data to Cognee for knowledge graph processing.      This is the first step, add_user_to_role() (+1102 more)
+Nodes (1558): downgrade(), Add pipeline run status  Revision ID: 1d0bb7fede17 Revises: 482cd6517ce4 Cre, upgrade(), Update SQL Data table (same for all providers), _update_sql_records(), ACL, add_edges(), add_nodes() (+1550 more)
 
-### Community 2 - "Advanced Search Engine"
+### Community 2 - "Community 2"
+Cohesion: 0.02
+Nodes (1394): AdvancedSearchEngine, Re-ranking strategies, Extract keywords and generate variant queries, Get synonyms for a word (simplified implementation), Advanced Search Engine with Re-ranking      Features:     - Semantic search w, Initialize advanced search engine          Args:             postgres_pool: P, ReRankingStrategy, BackupManager (+1386 more)
+
+### Community 3 - "Community 3"
+Cohesion: 0.0
+Nodes (1171): _find_origin_documents_via_projection(), Utilities for tracking data access in retrievers., # TODO: Expand support for other result objects like what is returned from RAG_C, Find origin documents using graph projection instead of DB queries, acreate_structured_output(), Generate a response from a user query.      This method asynchronously creates, Generate a response from a user query.      This method asynchronously creates, TestModel (+1163 more)
+
+### Community 4 - "Community 4"
+Cohesion: 0.0
+Nodes (933): Update weights for one element type (nodes or edges).      Returns True only w, Close the audit logger and cleanup resources., Best-effort cleanup on garbage collection.          Guarded with try/except be, CacheDBInterface, create_qa_entry(), get_all_qa_entries(), get_latest_qa_entries(), hold_lock() (+925 more)
+
+### Community 5 - "Community 5"
 Cohesion: 0.01
-Nodes (1196): AdvancedSearchEngine, Advanced Search with Re-ranking for Enhanced Cognee Implements semantic search, Re-ranking strategies, Extract keywords and generate variant queries, Get synonyms for a word (simplified implementation), Advanced Search Engine with Re-ranking      Features:     - Semantic search w, # TODO: Add more sophisticated personalization, Initialize advanced search engine          Args:             postgres_pool: P (+1188 more)
+Nodes (754): AgentMemoryIntegration, MemoryEntry, MemorySearchResult, MemoryType, Types of memory entries (common across all projects), Simple entity extraction (could be enhanced with NLP), AlgorithmicTradingSystem, Algorithmic Trading System agent.  Handles market data ingestion, signal generat (+746 more)
 
-### Community 3 - "Agent Memory Integration"
+### Community 6 - "Community 6"
 Cohesion: 0.01
-Nodes (728): AgentMemoryIntegration, MemoryEntry, MemorySearchResult, MemoryType, Types of memory entries (common across all projects), AlgorithmicTradingSystem, create_algorithmic_trading_system(), example_usage() (+720 more)
+Nodes (651): AnthropicAdapter, AzureOpenAIAdapter, BedrockAdapter, create_transcript(), _extract_deployment(), GeminiAdapter, GenericAPIAdapter, get_session() (+643 more)
 
-### Community 4 - "Schema Migrations"
-Cohesion: 0.01
-Nodes (536): downgrade(), Add sync_operations table  Revision ID: 211ab850ef3d Revises: 9e7a3cb85175 C, upgrade(), downgrade(), Add notebook table  Revision ID: 45957f0a9849 Revises: 9e7a3cb85175 Create D, upgrade(), _build_acl_row(), _create_data_permission() (+528 more)
-
-### Community 5 - "Authentication Security"
+### Community 7 - "Community 7"
 Cohesion: 0.03
-Nodes (501): APIKeyManager, JWTAuthenticator, main(), Permission, Enhanced Cognee - Authentication & Authorization System  Implements JWT authen, Create a JWT token.          Args:             user_id: User identifier, Verify and decode a JWT token.          Args:             token: JWT token st, Refresh an expired token.          Args:             token: Original token (+493 more)
+Nodes (508): APIKeyManager, JWTAuthenticator, main(), Permission, Enhanced Cognee - Authentication & Authorization System  Implements JWT authen, Create a JWT token.          Args:             user_id: User identifier, Verify and decode a JWT token.          Args:             token: JWT token st, Refresh an expired token.          Args:             token: Original token (+500 more)
 
-### Community 6 - "Memory Operations"
-Cohesion: 0.02
-Nodes (490): main(), Close all connections, Example usage of the Agent Memory Integration with DYNAMIC configuration      Th, # NOTE: Agent must be registered in .enhanced-cognee-config.json, DEPRECATED: Agent registry is now loaded from configuration          This method, Initialize connections to Enhanced stack components, Initialize Qdrant collections for each configured category, Add memory entry for specific agent with Enhanced stack integration          Par (+482 more)
-
-### Community 7 - "Anthropic LLM Client"
-Cohesion: 0.02
-Nodes (434): AnthropicClient, Enhanced Cognee - Anthropic Claude LLM Provider  Implementation of Anthropic C, Make a basic Claude API call.          Args:             prompt: The prompt t, Internal method to call Claude API.          Args:             prompt: User p, Make a Claude API call with message history.          Args:             messa, Internal method to call Claude API with messages.          Args:, Make a Claude API call expecting JSON response.          Args:             pr, Anthropic Claude API client.      Features:     - Async API calls with proper (+426 more)
-
-### Community 8 - "Advanced Features Analytics"
+### Community 8 - "Community 8"
 Cohesion: 0.01
-Nodes (389): AnalyticsMetric, IsolationLevel, Multi-tenant subscription tiers, Data isolation levels, Analytics metric types, TenantTier, OptimizationStrategy, Optimization strategies (+381 more)
+Nodes (471): NeptuneGraphDB, PostgresAdapter, PostgresHybridAdapter, Retrieve multiple nodes by ID.          Parameters:         -----------, Add a single edge. Delegates to add_edges.          Parameters:         -----, Add multiple edges via batch upsert.          Parameters:         -----------, Adapter for interfacing with the Anthropic API, enabling structured output gener, Insert nodes into graph and their embeddings into vector tables         in a si (+463 more)
 
-### Community 9 - "Event Entity Graph"
+### Community 9 - "Community 9"
+Cohesion: 0.0
+Nodes (553): AnalyticsMetric, IsolationLevel, Multi-tenant subscription tiers, Data isolation levels, Analytics metric types, TenantTier, Advanced Search with Re-ranking for Enhanced Cognee Implements semantic search, Enhanced search result with re-ranking metadata (+545 more)
+
+### Community 10 - "Community 10"
 Cohesion: 0.01
-Nodes (287): ABC, add_entities_to_event(), get_or_create_entity_type(), Adds extracted entities to an Event object by populating its attributes field., Retrieves an existing EntityType from the cache or creates a new one if it does, BaseOntologyResolver, Initialize the ontology resolver with a matching strategy.          Args:, Build the lookup dictionary for ontology entities. (+279 more)
+Nodes (394): ABC, apply_feedback_weights(), ApplyFeedbackWeightsResult, FeedbackItem, FeedbackItemOutcome, _iter_feedback_items(), _mark_feedback_processed(), normalize_feedback_score() (+386 more)
 
-### Community 10 - "Faceted Fuzzy Search"
+### Community 11 - "Community 11"
+Cohesion: 0.02
+Nodes (417): AnthropicClient, Enhanced Cognee - Anthropic Claude LLM Provider  Implementation of Anthropic C, Make a basic Claude API call.          Args:             prompt: The prompt t, Internal method to call Claude API.          Args:             prompt: User p, Make a Claude API call with message history.          Args:             messa, Internal method to call Claude API with messages.          Args:, Make a Claude API call expecting JSON response.          Args:             pr, Anthropic Claude API client.      Features:     - Async API calls with proper (+409 more)
+
+### Community 12 - "Community 12"
 Cohesion: 0.01
-Nodes (220): AdvancedSearch, Advanced Search Module for Enhanced Cognee  Provides faceted search, autocompl, Perform fuzzy search with typo tolerance.          Args:             query: S, Advanced search features with faceting and suggestions, Get facet value counts for filtering UI.          Args:             memories:, Extract language from memory metadata, Extract memory type from metadata, Extract category from metadata (+212 more)
+Nodes (458): EnhancedCogneeClient, FastAPI server for the Cognee API., Store a new memory entry in the Enhanced Cognee server.          Args:, Search stored memories using semantic and text search.          Args:, Retrieve all memories matching the given filters.          Args:             use, Async HTTP client for the Enhanced Cognee MCP server.      Usage as a context ma, Fetch a single memory by its unique identifier.          Args:             memor, Replace the content of an existing memory.          Args:             memory_id: (+450 more)
 
-### Community 11 - "Dataset Schema"
+### Community 13 - "Community 13"
 Cohesion: 0.02
-Nodes (247): downgrade(), _get_column(), Expand dataset database with json connection field  Revision ID: 46a6ce2bd2b2, SQLite cannot drop unique constraints on individual columns. We must:     1. Cr, SQLite cannot drop unique constraints on individual columns. We must:     1. Cr, _recreate_table_with_unique_constraint_sqlite(), _recreate_table_without_unique_constraint_sqlite(), upgrade() (+239 more)
+Nodes (449): Close all connections, Example usage of the Agent Memory Integration with DYNAMIC configuration      Th, # NOTE: Agent must be registered in .enhanced-cognee-config.json, DEPRECATED: Agent registry is now loaded from configuration          This method, Initialize connections to Enhanced stack components, Initialize Qdrant collections for each configured category, Add memory entry for specific agent with Enhanced stack integration          Par, Store memory entry in PostgreSQL (+441 more)
 
-### Community 12 - "Graph Model Migration"
+### Community 14 - "Community 14"
 Cohesion: 0.02
-Nodes (223): add_model_class_to_graph(), kuzu-11-migration  Revision ID: b9274c27a25a Revises: e4ebee1091e7 Create Da, upgrade(), Retrieves triplets based on the query., Generates a response using the query and optional context (triplets)., brute_force_triplet_search(), format_triplets(), get_memory_fragment() (+215 more)
+Nodes (283): AddCommand, _materialize_stream_for_background(), _normalize_filename(), _read_stream_bytes(), handleAutoCategorize(), can_dispatch(), _dispatch_add(), _dispatch_cognify() (+275 more)
 
-### Community 13 - "Document Processing"
+### Community 15 - "Community 15"
 Cohesion: 0.01
-Nodes (174): transcribe_image(), async_gen_zip(), AudioDocument, test_AudioDocument(), BufferedReader, test_chunk_by_paragraph_chunk_numbering(), test_chunk_by_paragraph_isomorphism(), test_paragraph_chunk_length() (+166 more)
+Nodes (267): AdvancedPdfLoader, _PageBuffer, Advanced PDF loader leveraging unstructured for layout-aware extraction., Format elements by page., Format elements by page., Format table element., Format table element., PDF loader using unstructured library.      Extracts text content, images, tab (+259 more)
 
-### Community 14 - "LLM Adapters"
+### Community 16 - "Community 16"
 Cohesion: 0.01
-Nodes (188): acreate_structured_output(), AnthropicAdapter, BedrockAdapter, create_structured_output(), create_transcript(), GeminiAdapter, GenericAPIAdapter, MistralAdapter (+180 more)
+Nodes (216): AdvancedSearch, Advanced Search Module for Enhanced Cognee  Provides faceted search, autocompl, Perform fuzzy search with typo tolerance.          Args:             query: S, Advanced search features with faceting and suggestions, Track search query for suggestions, Get recent search history, Get current timestamp, detect_language() (+208 more)
 
-### Community 15 - "Data Point Extraction"
+### Community 17 - "Community 17"
 Cohesion: 0.02
-Nodes (182): _create_triplets_from_graph(), _extract_embeddable_text_from_datapoint(), Extract embeddable text from a DataPoint using its index_fields metadata.     U, Create Triplet objects from graph nodes and edges.      This function processe, BaseFeedback, Base class for all user feedback operations., BaseFeedback, ClassDefinition (+174 more)
+Nodes (117): DeliveryPlan, is_deliverable(), RejectedOption, TransportEvaluation, DeliveryPriority, PackageCategory, PackageState, PostOfficeType (+109 more)
 
-### Community 16 - "Benchmark Adapters"
-Cohesion: 0.02
-Nodes (93): BaseBenchmarkAdapter, BenchmarkAdapter, Basic smoke test: instantiate each adapter, call load_corpus with no limit,, Verify that the adapter returns some data and that each QA dict     at least ha, test_adapter_can_instantiate_and_load(), test_adapter_returns_some_content(), LLMConfig, Initialize the BAML registry after the model is created. (+85 more)
-
-### Community 17 - "Production Security"
-Cohesion: 0.02
-Nodes (91): AccessControlHardening, ComplianceValidator, EncryptionHardening, main(), NetworkSecurityHardening, NetworkSecurityRule, NetworkZone, production_configs() (+83 more)
-
-### Community 18 - "Production Optimization"
+### Community 18 - "Community 18"
 Cohesion: 0.03
-Nodes (81): ApplicationOptimizer, CacheOptimizer, CachePerformanceMetrics, DatabaseOptimizer, DatabasePerformanceMetrics, main(), OptimizationRecommendation, OptimizationResult (+73 more)
+Nodes (139): AzureTranslationProvider, Translate multiple texts using Azure Translator API.          Azure Translator, Translation provider using Azure Translator API.      Requires:     - AZURE_T, Check if Azure Translator is available., Translate text using Azure Translator API.          Args:             text: T, Result of a translation operation., Abstract base class for translation providers., TranslationProvider (+131 more)
 
-### Community 19 - "Integration Testing"
+### Community 19 - "Community 19"
+Cohesion: 0.02
+Nodes (107): BaseBenchmarkAdapter, BEAMAdapter, Adapter for the BEAM long-context conversation benchmark.      Loads conversat, BenchmarkAdapter, Basic smoke test: instantiate each adapter, call load_corpus with no limit,, Basic smoke test: instantiate each adapter, call load_corpus with no limit,, Verify that the adapter returns some data and that each QA dict     at least ha, Verify that the adapter returns some data and that each QA dict     at least ha (+99 more)
+
+### Community 20 - "Community 20"
+Cohesion: 0.02
+Nodes (103): _ExporterBase, get_tracer_if_enabled(), _NullSpan, Factory function to create ATS agents, Return the OTEL tracer if tracing is enabled, None otherwise., Context manager that creates an OTEL span if tracing is enabled, or yields None., _StatusCodeFallback, MockMCPClient (+95 more)
+
+### Community 21 - "Community 21"
+Cohesion: 0.03
+Nodes (106): cache_file_exists(), delete_cache(), download_and_extract_zip(), generate_content_hash(), get_cache_manager(), get_cache_subdir(), get_cognee_cache_dir(), get_tutorial_data_dir() (+98 more)
+
+### Community 22 - "Community 22"
+Cohesion: 0.03
+Nodes (90): downgrade(), create principal configuration table  Revision ID: 18f01b0a0b4c Revises: 84e5, upgrade(), change_tutorial_deletable_flag(), downgrade(), Enable delete for old tutorial notebooks  Revision ID: 1a58b986e6e1 Revises:, upgrade(), downgrade() (+82 more)
+
+### Community 23 - "Community 23"
 Cohesion: 0.03
 Nodes (68): CrossPhaseIntegrationValidator, EndToEndIntegrationValidator, integration_test_runner(), IntegrationHealthCheck, IntegrationLevel, IntegrationTestResult, IntegrationTestRunner, main() (+60 more)
 
-### Community 20 - "Structured Output"
+### Community 24 - "Community 24"
 Cohesion: 0.04
-Nodes (35): acreate_structured_output(), Generate a response from a user query.      This method asynchronously creates, TestModel, BamlAsyncClient, BamlHttpRequestClient, BamlHttpStreamRequestClient, BamlStreamClient, EmbeddingConfig (+27 more)
+Nodes (33): BamlAsyncClient, BamlHttpRequestClient, BamlHttpStreamRequestClient, BamlStreamClient, get_log_level(), Get the log level for the BAML Python client., Set the log level for the BAML Python client, Set the log JSON mode for the BAML Python client. (+25 more)
 
-### Community 21 - "Answer Evaluation"
+### Community 25 - "Community 25"
+Cohesion: 0.04
+Nodes (61): AgentCapability, AgentCommunicationHub, AgentKnowledge, CommunicationMessage, CommunicationProtocol, enhanced_agent(), EnhancedAIAgent, IntelligenceLevel (+53 more)
+
+### Community 26 - "Community 26"
 Cohesion: 0.03
-Nodes (55): AnswersBase, Answers, AnswersBase, BaseEvalAdapter, BaseEvalAdapter, calculate_aggregates_for_files(), Calculate aggregate metrics for a list of JSON files., ContextCoverageMetric (+47 more)
+Nodes (44): run_pipeline — execute a list of BoundTasks as a pipeline.  This is the high-l, _build_result_summary(), _extract_content_hash(), _extract_node_set(), Extract content_hash from input Data items to propagate to output DataPoints., Build a human-readable result summary for a completed task.      Reads the ``_, Extract source_node_set from input args to propagate across task boundaries., BoundTask (+36 more)
 
-### Community 22 - "Research Benchmarks"
+### Community 27 - "Community 27"
 Cohesion: 0.03
 Nodes (86): arXiv Preprint (cs.AI), Vasilije Markovic, Lazar Obradovic, Laszlo Hajdu, Jovan Pavlovic, Optimizing the Interface Between Knowledge Graphs and LLMs for Complex Reasoning, 92.5% Answer Relevancy (Cognee), 5% Answer Relevancy (ChatGPT Baseline), Cognee Builds AI Memory Infographic, ChatGPT Query Method, Cognee Knowledge Graph (+78 more)
 
-### Community 23 - "Performance Baselines"
-Cohesion: 0.04
-Nodes (59): BaselineManager, main(), MetricType, performance_baseline_system(), PerformanceBaseline, PerformanceBaselineSystem, PerformanceMetric, PerformanceMonitor (+51 more)
+### Community 28 - "Community 28"
+Cohesion: 0.09
+Nodes (64): ClaudeAPIClient, ClaudeMessage, ClaudeModel, ClaudeResponse, ClaudeTool, example_claude_api_usage(), Intelligent Memory Summarization for Enhanced Cognee Uses LLMs to automatically, Result of a summarization operation (+56 more)
 
-### Community 24 - "UI Accessibility Testing"
-Cohesion: 0.05
-Nodes (64): accessibility_rules(), AccessibilityRule, BrowserType, DeviceType, MockElement, MockPage, Enhanced Cognee UI Testing Framework  This module provides comprehensive UI te, Test visual regression and UI consistency (+56 more)
-
-### Community 25 - "Claude API Integration"
-Cohesion: 0.1
-Nodes (63): ClaudeAPIClient, ClaudeMessage, ClaudeModel, ClaudeResponse, ClaudeTool, example_claude_api_usage(), Result of a summarization operation, SummaryResult (+55 more)
-
-### Community 26 - "Production Documentation"
-Cohesion: 0.05
-Nodes (55): documentation_framework(), IncidentProcedure, IncidentSeverity, IncidentStatus, MonitoringGuide, ProductionDocumentationFramework, Enhanced Cognee Production Documentation and Runbooks  This module provides co, System monitoring guide (+47 more)
-
-### Community 27 - "Performance Metrics"
-Cohesion: 0.04
-Nodes (47): test_performance_metrics_creation(), MetricsCollector, performance_framework(), PerformanceBenchmark, PerformanceMetrics, PerformanceMetricType, PerformanceScenario, production_scenarios() (+39 more)
-
-### Community 28 - "Rate Limiting"
-Cohesion: 0.05
-Nodes (53): calculate_backoff(), is_rate_limit_error(), llm_rate_limiter, rate_limit_async(), rate_limit_sync(), Enhanced Cognee - LLM API Rate Limiter  This module provides rate limiting for, Record a hit and check if limit is exceeded.          This method checks wheth, Wait if rate limit is reached.          This method blocks until the request c (+45 more)
-
-### Community 29 - "Results Analysis"
-Cohesion: 0.04
-Nodes (56): create_aggregate_metrics_df(), cumulative_all_metrics_analysis(), cumulative_single_metric_analysis(), Create cumulative analysis for a single metric, ordered by best results first., Create cumulative analysis for all metrics, ordered by best results first., Create aggregate dataframe with mean and std for each metric across files., analyze_single_benchmark_folder(), create_all_dataframes() (+48 more)
+### Community 29 - "Community 29"
+Cohesion: 0.03
+Nodes (38): APIJWTStrategy, ApiKeyJWTStrategy, DefaultJWTStrategy, get_api_auth_backend(), get_api_key_backend(), APIKeyHeaderTransport, get_api_key_transport(), get_authenticated_user() (+30 more)
 
 ### Community 30 - "Community 30"
 Cohesion: 0.04
-Nodes (40): AuditLog, compliance_controls(), compliance_framework(), ComplianceControl, ComplianceFramework, ComplianceTestFramework, data_subjects(), DataSubject (+32 more)
+Nodes (36): BaseEvalAdapter, BaseEvalAdapter, calculate_aggregates_for_files(), Calculate aggregate metrics for a list of JSON files., ContextCoverageMetric, DeepEvalAdapter, Calculate a single metric for a test case with retry logic., test_empty_answers_list() (+28 more)
 
 ### Community 31 - "Community 31"
-Cohesion: 0.05
-Nodes (48): api_client(), api_contracts(), APIContract, APIPerformanceScenario, APITestFramework, graphql_queries(), GraphQLQuery, performance_scenarios() (+40 more)
+Cohesion: 0.04
+Nodes (28): _data_line(), _FakeAuthorizationError, _FakeConfirmationRequiredError, _FakeConn, _FakeFastMCP, _FakeNeo4j, _FakePool, _FakeQdrant (+20 more)
 
 ### Community 32 - "Community 32"
 Cohesion: 0.05
-Nodes (48): CI/CD Pipeline (7-Stage GitHub Actions), Official Claude API Integration with Tool Use, Next.js 14 Dashboard (Port 9050), Enhanced Cognee AI Memory Management System, MCP Tools Suite (53 Total Tools), Production Deployment Infrastructure, WebSocket Real-Time Server (8 Event Types), Advanced Search Interface (+40 more)
+Nodes (48): api_client(), api_contracts(), APIContract, APIPerformanceScenario, APITestFramework, graphql_queries(), GraphQLQuery, performance_scenarios() (+40 more)
 
 ### Community 33 - "Community 33"
-Cohesion: 0.07
-Nodes (44): bootstrap_confidence_interval(), create_metric_entry(), create_output_directory(), extract_confidence_intervals(), format_benchmark_entry(), format_json_output(), get_benchmark_analysis_path(), handle_processing_errors() (+36 more)
+Cohesion: 0.04
+Nodes (38): AuditLog, compliance_controls(), compliance_framework(), ComplianceControl, ComplianceFramework, ComplianceTestFramework, data_subjects(), DataSubject (+30 more)
 
 ### Community 34 - "Community 34"
+Cohesion: 0.06
+Nodes (19): Rule-based query router for recall().  Classifies a query string into a Search, Classify a query into a SearchType using weighted heuristics.      Every rule, Routing decision with confidence metadata., route_query(), RouteResult, Tests for the rule-based query router., not related' should suppress the relationship signal., Negation only applies within the window, not across the whole query. (+11 more)
+
+### Community 35 - "Community 35"
+Cohesion: 0.05
+Nodes (39): dataset_queue(), DatasetQueueSettings, get_dataset_queue_settings(), Semaphore-backed dataset queue with per-task, per-dataset slot tracking.  Each, Return the process-wide :class:`DatasetQueue` singleton., Effective runtime settings for the dataset queue., Return effective settings. Test mock seam., A single acquired slot with a nesting depth counter. (+31 more)
+
+### Community 36 - "Community 36"
+Cohesion: 0.05
+Nodes (46): create_aggregate_metrics_df(), cumulative_all_metrics_analysis(), cumulative_single_metric_analysis(), Create cumulative analysis for a single metric, ordered by best results first., Create cumulative analysis for all metrics, ordered by best results first., Create aggregate dataframe with mean and std for each metric across files., analyze_single_benchmark_folder(), create_all_dataframes() (+38 more)
+
+### Community 37 - "Community 37"
+Cohesion: 0.07
+Nodes (32): print_help(), build_parser(), cli(), cmd_health(), cmd_migrate(), cmd_setup(), cmd_start(), cmd_version() (+24 more)
+
+### Community 38 - "Community 38"
+Cohesion: 0.07
+Nodes (36): calculate_backoff(), llm_rate_limiter, rate_limit_async(), rate_limit_sync(), Record a hit and check if limit is exceeded.          This method checks wheth, Wait if rate limit is reached.          This method blocks until the request c, Async wait if rate limit is reached.          This method asynchronously waits, Decorator for rate limiting synchronous functions.      Parameters:     ----- (+28 more)
+
+### Community 39 - "Community 39"
+Cohesion: 0.07
+Nodes (42): bootstrap_confidence_interval(), create_metric_entry(), create_output_directory(), extract_confidence_intervals(), format_benchmark_entry(), format_json_output(), get_benchmark_analysis_path(), handle_processing_errors() (+34 more)
+
+### Community 40 - "Community 40"
 Cohesion: 0.11
 Nodes (28): Add-ToPath(), EnhancedCogneeInstaller, Install-PythonDeps(), Invoke-Preflight(), Invoke-SetupWizard(), Main(), Print-Completion(), Print-Error() (+20 more)
 
-### Community 35 - "Community 35"
-Cohesion: 0.06
-Nodes (13): Unit Tests for Enhanced Cognee Agent System  Tests for all 21 agents across AT, Test agent error handling, Test Other Multi-Agent (OMA) Agents, Test Algorithmic Trading System (ATS) Agents, Test Shared Multi-Agent Components (SMC) Agents, Test multi-agent coordination and communication, test_algorithmic_trading_agent_initialization(), test_architecture_design() (+5 more)
+### Community 41 - "Community 41"
+Cohesion: 0.09
+Nodes (19): base_dir(), OntologyMetadata, OntologyService, Retrieve ontology content for one or more keys.          Args:             on, Upload ontology files with their respective keys.          Args:, mock_default_user(), ontology_service(), Tests for the delete ontology feature.  Covers: - OntologyService.delete_onto (+11 more)
 
-### Community 36 - "Community 36"
-Cohesion: 0.1
-Nodes (10): BinaryData, create_binary_data(), IngestionData, IngestionData, create_s3_binary_data(), get_data(), S3BinaryData, create_text_data() (+2 more)
+### Community 42 - "Community 42"
+Cohesion: 0.11
+Nodes (19): _FakeEngine, _FakeExecuteResult, _FakeSession, _make_data_record(), _NoOpAsyncContext, Tests for the memory_only option in cognee.forget().  Covers: - _forget_datas, memory_only=True with dataset clears graph/vector and resets pipeline_status., Records with no pipeline_status should not cause errors. (+11 more)
 
-### Community 37 - "Community 37"
-Cohesion: 0.1
-Nodes (31): MCP Server Executables, Brevity-Optimized QA Pattern, cognee.add() API, cognee.cognify() API, cognee.search() API, Portuguese Community README, Russian Community README, Chinese Community README (+23 more)
-
-### Community 38 - "Community 38"
+### Community 43 - "Community 43"
 Cohesion: 0.08
 Nodes (28): Integration Testing Framework (25% Coverage), Memory Stack Components (PostgreSQL, Qdrant, Neo4j, Redis), Performance Testing Framework (5% Coverage), Phase 2 Core Testing Implementation, Security Testing Framework (3% Coverage), Unit Testing Framework (40% Coverage), API Testing Framework, CI/CD Integration and Test Automation (+20 more)
 
-### Community 39 - "Community 39"
-Cohesion: 0.1
-Nodes (14): main(), PreflightChecker, Enhanced Cognee - Pre-flight Checks  Verification script to ensure all systems, Check if Python dependencies are installed., Check if environment variables are set., Check PostgreSQL connection., Check Qdrant connection., Check Redis connection. (+6 more)
-
-### Community 40 - "Community 40"
+### Community 44 - "Community 44"
 Cohesion: 0.09
-Nodes (25): Web Viewer Dashboard (Port 37777), Cognee Analytics Engine (Metrics, Predictions, Reports), Enhanced Cognee Cloud-Like Self-Hosted Features, CogneeCloudEnhancedWrapper (Enhanced Toolset Interface), Cognee Security Manager (Encryption, GDPR, Access Control), Cognee Update Manager (Auto-Update, Rollback), Enhanced Cognee Local Web Dashboard (Port 8080), Icon Generation for Enhanced Cognee Dashboard (+17 more)
+Nodes (24): Web Viewer Dashboard (Port 37777), Cognee Analytics Engine (Metrics, Predictions, Reports), Enhanced Cognee Cloud-Like Self-Hosted Features, CogneeCloudEnhancedWrapper (Enhanced Toolset Interface), Cognee Security Manager (Encryption, GDPR, Access Control), Cognee Update Manager (Auto-Update, Rollback), Enhanced Cognee Local Web Dashboard (Port 8080), Icon Generation for Enhanced Cognee Dashboard (+16 more)
 
-### Community 41 - "Community 41"
-Cohesion: 0.09
-Nodes (24): Add Memory Modal Component, Dashboard Docker Deployment, Edit Memory Modal Component, Enhanced Cognee Dashboard, Error Boundary Component, FastAPI, FastAPI Backend, JWT Authentication (+16 more)
-
-### Community 42 - "Community 42"
+### Community 45 - "Community 45"
 Cohesion: 0.12
 Nodes (24): AI Memory Benchmark Results, Cognee System, Cognee Dreamify, DeepEval Correctness Metric, DeepEval EM Metric, DeepEval F1 Metric, Human-LLM Correctness Metric, Amazon Neptune Database (+16 more)
 
-### Community 43 - "Community 43"
+### Community 46 - "Community 46"
 Cohesion: 0.09
 Nodes (12): CogneeInstancesAccordion(), DatasetsAccordion(), isCloudEnvironment(), NotebookCellHeader(), PopupMenu(), useBoolean(), fetchMessages(), sendMessage() (+4 more)
 
-### Community 44 - "Community 44"
+### Community 47 - "Community 47"
+Cohesion: 0.09
+Nodes (14): CircuitOpenError, get_all_circuit_stats(), get_circuit_breaker(), Enhanced Cognee - Phase 9 Production Hardening: Circuit Breaker ================, Move the breaker to the HALF_OPEN state and reset probe counter., Move the breaker to the CLOSED state and reset counters., Execute *coro_fn* if the circuit is CLOSED or HALF_OPEN.          Records succes, Record a successful call outcome.          Transitions HALF_OPEN -> CLOSED when (+6 more)
+
+### Community 48 - "Community 48"
 Cohesion: 0.1
 Nodes (23): cognee_mcp_universal.py, Multi-IDE Support, Claude-Mem Feature Parity (8 Features), 7 Feature Implementation Plan, Memory Expiry and Archival, Multi-IDE MCP Support, Claude Code MCP Integration, GitHub Copilot MCP Integration (+15 more)
 
-### Community 45 - "Community 45"
+### Community 49 - "Community 49"
 Cohesion: 0.11
 Nodes (21): 10-Category Testing Framework, Comprehensive Testing Strategy, Memory Stack (PostgreSQL, Qdrant, Neo4j, Redis), Scenario-Based Testing, Testing Tools Stack (MLflow, OpenAI Evals, Locust, Chaos Mesh, OWASP ZAP), AgentMemoryIntegration API, Enhanced Cognee Examples Collection, Distributed Decision Maker (+13 more)
 
-### Community 46 - "Community 46"
+### Community 50 - "Community 50"
 Cohesion: 0.13
 Nodes (20): Coreference Resolution (Entity Disambiguation), Cypher Query (Neo4j Query Language), EntityType (Classified Entity Category), Event-Based Knowledge Graph (Temporal Event Streams), ISO 8601 Date Format (YYYY-MM-DD), Knowledge Graph (Nodes and Edges), Ontology Extraction (Business Logic Dependencies), Snake Case Naming Convention (Properties and Relationships) (+12 more)
 
-### Community 47 - "Community 47"
-Cohesion: 0.16
-Nodes (13): create_ci_plot(), create_dashboard(), create_distribution_plots(), generate_details_html(), get_dashboard_html_template(), Generate the complete HTML dashboard template., Create and save the dashboard with all visualizations., Create confidence interval bar plot. (+5 more)
+### Community 51 - "Community 51"
+Cohesion: 0.17
+Nodes (18): generate_api_route_note(), generate_search_type_note(), generate_stubs_file(), generate_task_stub(), generate_todo_markdown(), main(), _parse_args(), auto_port.py ============ Reads the last diff report produced by upstream_diff.p (+10 more)
 
-### Community 48 - "Community 48"
+### Community 52 - "Community 52"
+Cohesion: 0.11
+Nodes (19): Dashboard Docker Deployment, Enhanced Cognee Dashboard, FastAPI, FastAPI Backend, JWT Authentication, Nginx Reverse Proxy, Dashboard Phase 4 Completion, Playwright E2E Tests (+11 more)
+
+### Community 53 - "Community 53"
 Cohesion: 0.14
 Nodes (17): Automatic Context Injection via Lifecycle Hooks, Multi-Prompt Session Tracking, Structured Observations (Hierarchical Memory Types and Concepts), Event-Driven Architecture (publish_memory_event Chain), Self-Healing Mechanisms (Rollback, Health Checks, Dedup), MCP Tool Dependency Matrix (Manual/Auto/System Triggers), Cross-Agent Memory Sharing (Access Control Policies), Memory Deduplication System (Vector Similarity + Exact Match) (+9 more)
 
-### Community 49 - "Community 49"
+### Community 54 - "Community 54"
 Cohesion: 0.12
 Nodes (15): authorization_error_response(), confirmation_required_response(), error_response(), format_response(), format_response_compact(), Enhanced Cognee - MCP Response Formatter  Standardizes all MCP tool return val, Create a confirmation required response.      Args:         operation: Operat, Format a response dictionary as JSON string.      Args:         response: Res (+7 more)
 
-### Community 50 - "Community 50"
+### Community 55 - "Community 55"
+Cohesion: 0.17
+Nodes (16): Brevity-Optimized QA Pattern, Context-Only Constraint Pattern, Knowledge Graph Edge Context Format, Knowledge Graph Generation, Paragraph Context Format, HotpotQA Cognee Search Prompt, HotpotQA Answer Prompt, Simple Question Answer Prompt (+8 more)
+
+### Community 56 - "Community 56"
 Cohesion: 0.15
 Nodes (16): Classical Bit, Error-Correcting Codes, Fault-Tolerant Quantum Processors, Post-Quantum Encryption, Quantum Advantage, Quantum Algorithms, Quantum Complexity Theory, Quantum Computer (+8 more)
 
-### Community 51 - "Community 51"
+### Community 57 - "Community 57"
 Cohesion: 0.2
 Nodes (13): fallback_to_ollama(), main(), Start the Cognee MCP server, Handle shutdown signals, Configure environment with fallback logic, Test if Z.ai is accessible, Switch to Ollama configuration, Test if Ollama is accessible (+5 more)
 
-### Community 52 - "Community 52"
+### Community 58 - "Community 58"
 Cohesion: 0.14
 Nodes (14): Input Validation Enhancement, Advanced Rate Limiting, Enhanced Security Framework, AlertManager Configuration, Grafana Dashboard Configuration, Loki Log Aggregation, Prometheus Monitoring Configuration, Production Deployment Guide (+6 more)
 
-### Community 53 - "Community 53"
+### Community 59 - "Community 59"
 Cohesion: 0.23
 Nodes (9): MemoryDetailPage(), useMemoryRealTimeUpdates(), useRealTimeUpdates(), addToRemoveQueue(), dispatch(), genId(), reducer(), toast() (+1 more)
 
-### Community 54 - "Community 54"
+### Community 60 - "Community 60"
 Cohesion: 0.17
 Nodes (13): Ollama Fallback LLM, Z.ai LLM Integration, Memory Deduplication System, Scheduled Deduplication, Database Restore Procedures, Recovery Manager, Emergency Recovery Procedures, Cron-Based Maintenance Tasks (+5 more)
 
-### Community 55 - "Community 55"
-Cohesion: 0.19
-Nodes (13): 10 Entity Categories for Extraction, 6 Quality Dimensions (Clarity, Completeness, Accuracy, Actionability, Value, Timeliness), 8 Memory Update Intent Categories, Duplicate Detection Criteria (Exact, Near, Related, Distinct), Deduplication Detection Prompt Template, Entity Extraction Prompt Template, Intent Detection Prompt Template, LLM Prompt Templates (+5 more)
-
-### Community 56 - "Community 56"
+### Community 61 - "Community 61"
 Cohesion: 0.17
 Nodes (13): LLM Integration and Session/State Test Suite, Confidence Score Quality Indicator System, Summarization Edge Case Handlers, Summarization Few-Shot Examples, Memory Summarization Prompt Template, Summary JSON Output Schema, Approval Workflow (CLI, Dashboard, Persistence), Progressive Disclosure 3-Layer Search (+5 more)
 
-### Community 57 - "Community 57"
-Cohesion: 0.19
-Nodes (13): Example Data Files, LLM Prompt Template System, Phase 2: Core Testing Implementation, Phase 3: Advanced Testing, Deduplication Prompt, Extraction Prompt, Intent Detection Prompt, Quality Check Prompt (+5 more)
-
-### Community 58 - "Community 58"
-Cohesion: 0.21
-Nodes (6): Helper method to run a pipeline script and return the result., Test that the default pipeline runs successfully., Test that the low-level pipeline runs successfully., Test that the custom model pipeline runs successfully., Tests that all pipelines run successfully., TestPipelines
-
-### Community 59 - "Community 59"
+### Community 62 - "Community 62"
 Cohesion: 0.42
 Nodes (11): Confirm-Action(), Main(), Print-Completion(), Print-Error(), Print-Header(), Print-Info(), Print-Success(), Print-Warn() (+3 more)
 
-### Community 60 - "Community 60"
+### Community 63 - "Community 63"
+Cohesion: 0.24
+Nodes (5): Unit tests for cognee.cli.user_resolution., TestScopedSessionId, Resolve a CLI --user-id flag into a User object., Return a session_id scoped to the user so agents don't share history., scoped_session_id()
+
+### Community 64 - "Community 64"
+Cohesion: 0.24
+Nodes (6): Helper method to run a pipeline script and return the result., Test that the default pipeline runs successfully., Test that the low-level pipeline runs successfully., Test that the custom model pipeline runs successfully., Tests that all pipelines run successfully., TestPipelines
+
+### Community 65 - "Community 65"
+Cohesion: 0.2
+Nodes (5): Redis sliding-window implementation., Record a hit and check if limit is exceeded.          This method checks wheth, Return current usage stats for an agent/tool pair., Return the most specific rule for a tool, falling back to '*'., Check whether the agent is within rate limits for a tool.          Returns:
+
+### Community 66 - "Community 66"
+Cohesion: 0.22
+Nodes (11): 10 Entity Categories for Extraction, 6 Quality Dimensions (Clarity, Completeness, Accuracy, Actionability, Value, Timeliness), 8 Memory Update Intent Categories, Duplicate Detection Criteria (Exact, Near, Related, Distinct), Deduplication Detection Prompt Template, Entity Extraction Prompt Template, Intent Detection Prompt Template, LLM Prompt Templates (+3 more)
+
+### Community 67 - "Community 67"
 Cohesion: 0.22
 Nodes (11): Cognee Brand Logo, CrewAI Brand Logo, Deepnote Brand Logo, Computer Science (Russian), Concept Category Node, Field Category Node, Information Retrieval (Russian), Knowledge Graph Visualization (Russian) (+3 more)
 
-### Community 61 - "Community 61"
+### Community 68 - "Community 68"
 Cohesion: 0.36
 Nodes (11): Comprehensive Metrics Comparison Chart, Cognee AI Memory System, Graphiti AI Memory System, LightRAG AI System, Mem0 AI Memory System, Cognee Favicon Brand Icon, DeepEval Correctness Metric, DeepEval Exact Match Metric (+3 more)
 
-### Community 62 - "Community 62"
+### Community 69 - "Community 69"
+Cohesion: 0.36
+Nodes (8): downgrade(), _get_column(), add_importance_weight_to_data  Revision ID: f1a2b3c4d5e6 Revises: e1ec1dcb50b, upgrade(), _make_context(), _make_inspector(), test_upgrade_adds_parent_user_id_column_and_fk(), test_upgrade_skips_when_parent_user_id_column_exists()
+
+### Community 70 - "Community 70"
+Cohesion: 0.22
+Nodes (8): _clamp(), get_reranker(), init_reranker(), Memory Reranker - Phase 12 (18.5) ==================================== Heuristic, Create and store the global MemoryReranker singleton., Return the global MemoryReranker singleton, or None if not initialised., Return a recency score in [0.0, 1.0] derived from a last-access timestamp., _recency_from_timestamp()
+
+### Community 71 - "Community 71"
 Cohesion: 0.22
 Nodes (10): BackupManager, RecoveryManager, 12-Month Enhancement Roadmap, Session Management (Sprint 3), Structured Observations (Hierarchical Memory), Lite Mode vs Full Mode, SQLiteManager, automation_config.json (+2 more)
 
-### Community 63 - "Community 63"
+### Community 72 - "Community 72"
+Cohesion: 0.31
+Nodes (8): detect_project_type(), main(), print_project_info(), Set up environment variables based on project type, Detect project type and configuration based on current working directory, Print project detection and configuration information, Main entry point - Project-aware Enhanced Cognee MCP, setup_project_environment()
+
+### Community 73 - "Community 73"
 Cohesion: 0.31
 Nodes (8): get_command_info(), get_version(), main(), print_help(), Get cognee version without importing the main package, Get command information without importing cognee, Print help message with dynamic command descriptions, Minimal CLI main function
 
-### Community 64 - "Community 64"
+### Community 74 - "Community 74"
 Cohesion: 0.28
 Nodes (9): CHUNKS Search Type, GRAPH_COMPLETION Search Type, GRAPH_COMPLETION_COT Search Type, GRAPH_COMPLETION_CONTEXT_EXTENSION Search Type, GraphRAG System, GRAPH_SUMMARY_COMPLETION Search Type, RAG_COMPLETION Search Type, SearchType Selector (+1 more)
 
-### Community 65 - "Community 65"
+### Community 75 - "Community 75"
 Cohesion: 0.25
 Nodes (9): Computer Science, Information Retrieval, Machine Learning Approaches, Natural Language Generation, Natural Language Processing, Natural Language Understanding, Neural Networks, Speech Recognition (+1 more)
 
-### Community 66 - "Community 66"
+### Community 76 - "Community 76"
+Cohesion: 0.43
+Nodes (6): deadlock_retry(), Decorator that automatically retries an asynchronous function when rate limit er, main(), test_deadlock_retry(), test_deadlock_retry_errored(), test_deadlock_retry_exhaustive()
+
+### Community 77 - "Community 77"
+Cohesion: 0.25
+Nodes (4): addData(), handleAddFiles(), handleAddFilesNoDataset(), createDataset()
+
+### Community 78 - "Community 78"
+Cohesion: 0.36
+Nodes (7): check_file(), check_path(), is_in_docstring_or_comment(), main(), Recursively check all Python/shell files under target., Rough heuristic: skip violations in comment lines or after #., Return list of (line_number, line_content, offending_char) tuples.
+
+### Community 79 - "Community 79"
+Cohesion: 0.25
+Nodes (7): get_cost_tracker(), LLM Cost Tracker for Enhanced Cognee ===================================== Track, Set the agent and tool name for attribution of the next LLM call.      Call this, Return the global LLMCostTracker instance (None if not initialized)., Single LLM call usage snapshot., set_llm_context(), UsageRecord
+
+### Community 80 - "Community 80"
+Cohesion: 0.25
+Nodes (4): Performance Tests for Enhanced Cognee System  Load testing, stress testing, an, Test system behavior under extreme conditions, Simulate multiple concurrent users with realistic behavior, TestSystemStressTesting
+
+### Community 81 - "Community 81"
+Cohesion: 0.36
+Nodes (8): Portuguese Community README, Russian Community README, Chinese Community README, ECL Pipeline (Extract, Cognify, Load), GraphRAG Demo, Ollama Local Model Integration, Pydantic Data Loading, RDF-Based Ontology Support
+
+### Community 82 - "Community 82"
 Cohesion: 0.29
 Nodes (8): Cognee Web UI, Cognee Benefits Infographic, Cognee Benefits Infographic (Chinese), Cognee Demo Animation, Cognee Architecture Diagram, Cognee Architecture Diagram (Chinese), Cognee Features Infographic, Neo4j Logo
 
-### Community 67 - "Community 67"
-Cohesion: 0.38
-Nodes (5): _make_dataset(), _make_user(), _patch_side_effect_boundaries(), Keep production logic; patch only unavoidable side-effect boundaries., test_search_access_control_returns_dataset_shaped_dicts()
-
-### Community 68 - "Community 68"
+### Community 83 - "Community 83"
 Cohesion: 0.29
 Nodes (1): handlePropertyAdd()
 
-### Community 69 - "Community 69"
+### Community 84 - "Community 84"
 Cohesion: 0.33
 Nodes (7): Multi-Language Support (28 Languages Auto-Detection), Comprehensive Testing Suite (247 Tests, >98% Coverage), Advanced Search Unit Tests (38 Cases: Faceted, Autocomplete, Fuzzy), End-to-End Test Scenarios (25 Cases), Language Detector Unit Tests (47 Cases, 28 Languages), Multi-Language Search Unit Tests (42 Cases), Performance Optimizer Unit Tests (35 Cases)
 
-### Community 70 - "Community 70"
+### Community 85 - "Community 85"
 Cohesion: 0.29
 Nodes (7): Docker Dashboard Stack (7 Containers), Next.js 14 Dashboard (Production), Playwright E2E Tests (41 Tests), Memory REST API Client, Next.js 14 Dashboard, TanStack React Query Integration, Dashboard Port 3000 to 9050 Migration
 
-### Community 71 - "Community 71"
+### Community 86 - "Community 86"
 Cohesion: 0.29
 Nodes (7): 11 Core UI Components, Data Visualization (Recharts, Cytoscape.js), Memory Dashboard UX/UI Design Package, Frontend Tech Stack (Next.js 14, TypeScript, Tailwind CSS), WCAG 2.1 AA Accessibility Compliance, Responsive Breakpoints (375px, 768px, 1024px+), Dashboard Wireframes (Desktop, Tablet, Mobile)
 
-### Community 72 - "Community 72"
+### Community 87 - "Community 87"
 Cohesion: 0.29
 Nodes (7): SearchType GRAPH_COMPLETION, Graph-Based Memory Completion, Cognee Knowledge Graph Explorer, RAG Completion Mode, Dynamic Node Cluster Highlighting, Graph Summarization Visualization, Knowledge Graph Clustering Workflow Demo
 
-### Community 73 - "Community 73"
+### Community 88 - "Community 88"
 Cohesion: 0.29
 Nodes (7): Next.js Web Framework, Vercel Deployment Platform, Document/File SVG Icon, Globe SVG Icon, Next.js Logo SVG, Vercel Triangle Logo SVG, Browser Window SVG Icon
 
-### Community 74 - "Community 74"
-Cohesion: 0.33
-Nodes (4): ConfirmationManager, Manages confirmation requirements for destructive operations.      Tracks oper, Initialize confirmation manager., Check if there are pending confirmations for an operation.          Args:
+### Community 89 - "Community 89"
+Cohesion: 0.6
+Nodes (4): downgrade(), _get_column(), incremental_loading  Revision ID: 1daae0df1866 Revises: b9274c27a25a Create, upgrade()
 
-### Community 75 - "Community 75"
+### Community 90 - "Community 90"
+Cohesion: 0.6
+Nodes (4): downgrade(), _get_column(), Expand dataset database for multi user  Revision ID: 76625596c5c3 Revises: 21, upgrade()
+
+### Community 91 - "Community 91"
+Cohesion: 0.33
+Nodes (5): get_pii_detector(), init_pii_detector(), Enhanced Cognee - Phase 9 Production Hardening: PII Detector ===================, Create and register the global PIIDetector singleton.      Args:         enabled, Return the global PIIDetector singleton.      Returns:         The PIIDetector i
+
+### Community 92 - "Community 92"
+Cohesion: 0.33
+Nodes (3): Return all registered webhooks as dicts., Represents a single registered webhook endpoint., WebhookConfig
+
+### Community 93 - "Community 93"
 Cohesion: 0.33
 Nodes (6): .enhanced-cognee-config.json, Dynamic Category System, ASCII-Only Output Requirement, Developer Certificate of Origin, Memory Types (Semantic, Episodic, Procedural, Factual, Working), Project-Aware Detection
 
-### Community 76 - "Community 76"
+### Community 94 - "Community 94"
 Cohesion: 0.4
 Nodes (6): Cognee MCP Integration Completion, Memory Server Fallback Hierarchy, Codify Tool (Code Intelligence), Cognee MCP Server Feature Analysis, Developer Rules Learning Engine, Cognify Tool (Knowledge Graph Creation)
 
-### Community 77 - "Community 77"
+### Community 95 - "Community 95"
 Cohesion: 0.33
 Nodes (6): Audit Summary and Action Items, Lite Mode Specification, MCP Tool Invocation (Auto vs Manual), Cross-Agent Memory Sharing Module, Enhanced Database Stack (Audit), Real-Time Memory Synchronization Module
 
-### Community 78 - "Community 78"
+### Community 96 - "Community 96"
 Cohesion: 0.33
 Nodes (6): Cognee Logo With Text, Cognee Logo, CrewAI Logo, Deepnote Logo, Cognee Favicon, LanceDB Logo
 
-### Community 79 - "Community 79"
+### Community 97 - "Community 97"
 Cohesion: 0.4
 Nodes (6): Alice in Wonderland Dataset, Cognee Local Application, Notebook Interface, Reasoning Graph Visualization, Alice in Wonderland Knowledge Graph, Natural Language Query Interface
 
-### Community 80 - "Community 80"
-Cohesion: 0.5
-Nodes (3): _get_column(), incremental_loading  Revision ID: 1daae0df1866 Revises: b9274c27a25a Create, upgrade()
+### Community 98 - "Community 98"
+Cohesion: 0.6
+Nodes (3): downgrade(), Add default user  Revision ID: 482cd6517ce4 Revises: 8057ae7329c2 Create Dat, upgrade()
 
-### Community 81 - "Community 81"
-Cohesion: 0.5
-Nodes (3): _get_column(), Expand dataset database for multi user  Revision ID: 76625596c5c3 Revises: 21, upgrade()
+### Community 99 - "Community 99"
+Cohesion: 0.6
+Nodes (3): downgrade(), Initial migration  Revision ID: 8057ae7329c2 Revises: Create Date: 2024-10-0, upgrade()
 
-### Community 82 - "Community 82"
+### Community 100 - "Community 100"
+Cohesion: 0.5
+Nodes (3): _get_column(), Add label column to data table  Revision ID: a1b2c3d4e5f6 Revises: 211ab850ef, upgrade()
+
+### Community 101 - "Community 101"
+Cohesion: 0.6
+Nodes (4): downgrade(), _get_column(), add_last_accessed_to_data  Revision ID: e1ec1dcb50b6 Revises: 211ab850ef3d C, upgrade()
+
+### Community 102 - "Community 102"
+Cohesion: 0.6
+Nodes (3): main(), prune_data(), prune_system()
+
+### Community 103 - "Community 103"
 Cohesion: 0.4
 Nodes (2): handleDataSyncConfirm(), syncData()
 
-### Community 83 - "Community 83"
+### Community 104 - "Community 104"
 Cohesion: 0.4
 Nodes (1): componentDidCatch()
 
-### Community 84 - "Community 84"
+### Community 105 - "Community 105"
 Cohesion: 0.4
 Nodes (4): main(), Start and maintain Neo4j server for testing., Start multiple Neo4j servers for testing., start_neo4j_server()
 
-### Community 85 - "Community 85"
+### Community 106 - "Community 106"
 Cohesion: 0.4
 Nodes (5): Neo4j Graph Database, PostgreSQL + pgVector, Qdrant Vector Database, Redis Cache Layer, Project Dependencies (requirements.txt)
 
-### Community 86 - "Community 86"
+### Community 107 - "Community 107"
 Cohesion: 0.7
 Nodes (5): Answer Evaluation and Scoring (Golden Answer Comparison), Chain-of-Thought Validation System, CoT Validation User Prompt (Answer Scoring), Direct LLM Evaluation (Question-Answer-Context Scoring), Direct LLM Eval System (Reasoning from Context)
 
-### Community 87 - "Community 87"
+### Community 108 - "Community 108"
 Cohesion: 0.6
 Nodes (5): Cascade Extract Pipeline, Graph Edge Triplet Extraction Prompt, Graph Node Extraction Prompt, Graph Relationship Name Extraction Prompt, Code Summarization Prompt
 
-### Community 88 - "Community 88"
-Cohesion: 0.5
-Nodes (1): Add default user  Revision ID: 482cd6517ce4 Revises: 8057ae7329c2 Create Dat
-
-### Community 89 - "Community 89"
-Cohesion: 0.5
-Nodes (1): Initial migration  Revision ID: 8057ae7329c2 Revises: Create Date: 2024-10-0
-
-### Community 90 - "Community 90"
-Cohesion: 0.67
-Nodes (2): run_in_local_sandbox(), wrap_in_async_handler()
-
-### Community 91 - "Community 91"
-Cohesion: 0.5
-Nodes (0): 
-
-### Community 92 - "Community 92"
-Cohesion: 0.5
-Nodes (0): 
-
-### Community 93 - "Community 93"
-Cohesion: 0.83
-Nodes (4): Feedback Loop (Answer Improvement from Negative Feedback), Feedback Reaction (Negative Feedback Recovery), Feedback Report (Interaction Summary Generation), Feedback User Context (Answer Explanation Synthesis)
-
-### Community 94 - "Community 94"
-Cohesion: 0.67
-Nodes (4): Person Class, Student Class, enrollStudent Function, promoteStudent Function
-
-### Community 95 - "Community 95"
-Cohesion: 0.5
-Nodes (4): Topoteretes (Original Cognee Creator), Vincent Pereira (Enhanced Cognee Contributor), Developer Certificate of Origin v1.1, Project Notice (Topoteretes Copyright)
-
-### Community 96 - "Community 96"
-Cohesion: 0.5
-Nodes (4): Artificial Intelligence Example Paper (PDF), Artificial Intelligence Test Paper (PDF), TOJ Mendoza Scientific Paper (PDF), Nutrients Scientific Paper (nutrients-13-01241.pdf)
-
-### Community 97 - "Community 97"
-Cohesion: 0.67
-Nodes (0): 
-
-### Community 98 - "Community 98"
-Cohesion: 0.67
-Nodes (2): is_text_content(), Determine if the content is text-based.      This function checks for various
-
-### Community 99 - "Community 99"
-Cohesion: 0.67
-Nodes (2): Set up the necessary databases and tables.      This function asynchronously c, setup()
-
-### Community 100 - "Community 100"
-Cohesion: 0.67
-Nodes (1): RootLayout()
-
-### Community 101 - "Community 101"
-Cohesion: 0.67
-Nodes (0): 
-
-### Community 102 - "Community 102"
-Cohesion: 0.67
-Nodes (0): 
-
-### Community 103 - "Community 103"
-Cohesion: 0.67
-Nodes (0): 
-
-### Community 104 - "Community 104"
-Cohesion: 0.67
-Nodes (0): 
-
-### Community 105 - "Community 105"
-Cohesion: 0.67
-Nodes (0): 
-
-### Community 106 - "Community 106"
-Cohesion: 0.67
-Nodes (3): Cursor IDE Rule Generation, Coding Rule Association Agent System Prompt, Coding Rule Association Agent User Prompt
-
-### Community 107 - "Community 107"
-Cohesion: 0.67
-Nodes (3): Utility Scripts, Pytest Testing Framework, Test Requirements File
-
-### Community 108 - "Community 108"
-Cohesion: 1.0
-Nodes (3): Git Patch File Generation, Patch Generation Instructions (Repository Patch from Context), Patch Generation KG Instructions (Knowledge Graph Patch)
-
 ### Community 109 - "Community 109"
-Cohesion: 0.67
-Nodes (3): Cognee Starter Kit, Cognify Pipeline, Knowledge Graph Visualization
+Cohesion: 0.4
+Nodes (5): Sprint 1 Foundation and Testing Completion Report, Sprint 2 Installation and Auto-Configuration Completion Report, Sprint 3 Claude Code Integration Completion Report, Sprint 4 Progressive Disclosure Search Completion Report, Sprint 5 and 6 Combined Completion Report
 
 ### Community 110 - "Community 110"
-Cohesion: 0.67
-Nodes (3): Automation Configuration, Docker Compose Configuration, Enhanced Cognee Configuration
+Cohesion: 0.4
+Nodes (5): Next.js 14 Dashboard (Port 9050), Enhanced Cognee AI Memory Management System, MCP Tools Suite (53 Total Tools), All Sprints Complete Summary Document, Ultimate Project Completion Report (261 Days)
 
 ### Community 111 - "Community 111"
-Cohesion: 0.67
-Nodes (3): get_memory_batch Tool (Layer 3), get_timeline Tool (Layer 2), search_index Tool (Layer 1)
+Cohesion: 0.5
+Nodes (1): add created_at index to queries and results tables  Revision ID: b2c3d4e5f6a7
 
 ### Community 112 - "Community 112"
-Cohesion: 0.67
-Nodes (3): cognee-cli CLI, FastAPI Application, Repository Structure (cognee/)
+Cohesion: 0.5
+Nodes (0): 
 
 ### Community 113 - "Community 113"
 Cohesion: 0.67
-Nodes (3): Multimedia Text-to-Speech Audio (MP3), Test Text-to-Speech Audio File (MP3), Test Text-to-Speech Audio Copy (MP3)
+Nodes (2): run_in_local_sandbox(), wrap_in_async_handler()
 
 ### Community 114 - "Community 114"
-Cohesion: 1.0
-Nodes (3): Graph Visualization (Portuguese), Graph Visualization (Russian), Memory Knowledge Graph Visualization
+Cohesion: 0.5
+Nodes (0): 
 
 ### Community 115 - "Community 115"
-Cohesion: 0.67
-Nodes (3): Cognee Brand Identity, Cognee Logo, Cognee Logo (Standard)
+Cohesion: 0.5
+Nodes (0): 
 
 ### Community 116 - "Community 116"
-Cohesion: 1.0
-Nodes (1): Module to suppress verbose logging before any cognee imports. This must be impo
+Cohesion: 0.83
+Nodes (4): Feedback Loop (Answer Improvement from Negative Feedback), Feedback Reaction (Negative Feedback Recovery), Feedback Report (Interaction Summary Generation), Feedback User Context (Answer Explanation Synthesis)
 
 ### Community 117 - "Community 117"
-Cohesion: 1.0
-Nodes (1): Common stop words for text processing.
+Cohesion: 0.5
+Nodes (4): Topoteretes (Original Cognee Creator), Vincent Pereira (Enhanced Cognee Contributor), Developer Certificate of Origin v1.1, Project Notice (Topoteretes Copyright)
 
 ### Community 118 - "Community 118"
-Cohesion: 1.0
-Nodes (0): 
+Cohesion: 0.5
+Nodes (4): Sprint 10 SDLC Sub-Agent Integration Guide, Sprint 7 Web Dashboard Completion Report, Sprint 8 Advanced Features Completion Report, Sprint 9 Multi-Language and Polish Completion Report
 
 ### Community 119 - "Community 119"
-Cohesion: 1.0
-Nodes (0): 
+Cohesion: 0.5
+Nodes (4): Artificial Intelligence Example Paper (PDF), Artificial Intelligence Test Paper (PDF), TOJ Mendoza Scientific Paper (PDF), Nutrients Scientific Paper (nutrients-13-01241.pdf)
 
 ### Community 120 - "Community 120"
-Cohesion: 1.0
-Nodes (1): # TODO: In practice each keyword argument is exclusive to one or more
+Cohesion: 0.67
+Nodes (0): 
 
 ### Community 121 - "Community 121"
-Cohesion: 1.0
-Nodes (0): 
+Cohesion: 0.67
+Nodes (2): Set up the necessary databases and tables.      This function asynchronously c, setup()
 
 ### Community 122 - "Community 122"
-Cohesion: 1.0
-Nodes (0): 
+Cohesion: 0.67
+Nodes (1): Tests for legacy Kuzu compatibility shims.
 
 ### Community 123 - "Community 123"
-Cohesion: 1.0
-Nodes (0): 
+Cohesion: 0.67
+Nodes (1): RootLayout()
 
 ### Community 124 - "Community 124"
-Cohesion: 1.0
+Cohesion: 0.67
 Nodes (0): 
 
 ### Community 125 - "Community 125"
-Cohesion: 1.0
+Cohesion: 0.67
 Nodes (0): 
 
 ### Community 126 - "Community 126"
-Cohesion: 1.0
+Cohesion: 0.67
 Nodes (0): 
 
 ### Community 127 - "Community 127"
-Cohesion: 1.0
+Cohesion: 0.67
 Nodes (0): 
 
 ### Community 128 - "Community 128"
-Cohesion: 1.0
-Nodes (0): 
+Cohesion: 0.67
+Nodes (3): Cursor IDE Rule Generation, Coding Rule Association Agent System Prompt, Coding Rule Association Agent User Prompt
 
 ### Community 129 - "Community 129"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (3): Git Patch File Generation, Patch Generation Instructions (Repository Patch from Context), Patch Generation KG Instructions (Knowledge Graph Patch)
 
 ### Community 130 - "Community 130"
-Cohesion: 1.0
-Nodes (0): 
+Cohesion: 0.67
+Nodes (3): Cognee Starter Kit, Cognify Pipeline, Knowledge Graph Visualization
 
 ### Community 131 - "Community 131"
-Cohesion: 1.0
-Nodes (0): 
+Cohesion: 0.67
+Nodes (3): Automation Configuration, Docker Compose Configuration, Enhanced Cognee Configuration
 
 ### Community 132 - "Community 132"
-Cohesion: 1.0
-Nodes (0): 
+Cohesion: 0.67
+Nodes (3): get_memory_batch Tool (Layer 3), get_timeline Tool (Layer 2), search_index Tool (Layer 1)
 
 ### Community 133 - "Community 133"
-Cohesion: 1.0
-Nodes (0): 
+Cohesion: 0.67
+Nodes (3): cognee-cli CLI, FastAPI Application, Repository Structure (cognee/)
 
 ### Community 134 - "Community 134"
-Cohesion: 1.0
-Nodes (0): 
+Cohesion: 0.67
+Nodes (3): Multimedia Text-to-Speech Audio (MP3), Test Text-to-Speech Audio File (MP3), Test Text-to-Speech Audio Copy (MP3)
 
 ### Community 135 - "Community 135"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (3): Graph Visualization (Portuguese), Graph Visualization (Russian), Memory Knowledge Graph Visualization
 
 ### Community 136 - "Community 136"
-Cohesion: 1.0
-Nodes (0): 
+Cohesion: 0.67
+Nodes (3): Cognee Brand Identity, Cognee Logo, Cognee Logo (Standard)
 
 ### Community 137 - "Community 137"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Module to suppress verbose logging before any cognee imports. This must be impo
 
 ### Community 138 - "Community 138"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Legacy import path for Ladybug graph database migration helpers.
 
 ### Community 139 - "Community 139"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Common stop words for text processing.
 
 ### Community 140 - "Community 140"
 Cohesion: 1.0
@@ -1375,7 +1897,7 @@ Nodes (0):
 
 ### Community 141 - "Community 141"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Shared cache size setting for Cognee database adapters.  Set DATABASE_MAX_LRU_
 
 ### Community 142 - "Community 142"
 Cohesion: 1.0
@@ -1383,7 +1905,7 @@ Nodes (0):
 
 ### Community 143 - "Community 143"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): # TODO: In practice each keyword argument is exclusive to one or more
 
 ### Community 144 - "Community 144"
 Cohesion: 1.0
@@ -1567,183 +2089,183 @@ Nodes (0):
 
 ### Community 189 - "Community 189"
 Cohesion: 1.0
-Nodes (2): Enhanced Cognee README, Original Cognee (upstream)
+Nodes (0): 
 
 ### Community 190 - "Community 190"
 Cohesion: 1.0
-Nodes (2): Content Classification Taxonomy, Content Classification Prompt
+Nodes (0): 
 
 ### Community 191 - "Community 191"
 Cohesion: 1.0
-Nodes (2): Code Extraction Capability, CodeGraph Retriever System Prompt
+Nodes (0): 
 
 ### Community 192 - "Community 192"
 Cohesion: 1.0
-Nodes (2): Temporal Period Extraction (Time Interval Detection), Query Time Period Extraction (Temporal Interval Detection)
+Nodes (0): 
 
 ### Community 193 - "Community 193"
 Cohesion: 1.0
-Nodes (2): CYPHER Search Type, NATURAL_LANGUAGE Search Type
+Nodes (0): 
 
 ### Community 194 - "Community 194"
 Cohesion: 1.0
-Nodes (2): Content Summarization Prompt, Search Results Summarization Prompt
+Nodes (0): 
 
 ### Community 195 - "Community 195"
 Cohesion: 1.0
-Nodes (2): Cognee Frontend (Next.js), Vercel Platform
+Nodes (0): 
 
 ### Community 196 - "Community 196"
 Cohesion: 1.0
-Nodes (2): Claude-Mem vs Enhanced Cognee Feature Comparison, Token Efficiency via Progressive Disclosure (3-Layer Search)
+Nodes (0): 
 
 ### Community 197 - "Community 197"
 Cohesion: 1.0
-Nodes (2): README Update Draft (Side-by-Side Comparison Method), Archived README Variants (Progressive Badge Updates)
+Nodes (0): 
 
 ### Community 198 - "Community 198"
 Cohesion: 1.0
-Nodes (2): GitHub Security Checklist, GitHub Release Preparation
+Nodes (0): 
 
 ### Community 199 - "Community 199"
 Cohesion: 1.0
-Nodes (2): 100% Security Test Success Report, Security Score 94.5/100
+Nodes (0): 
 
 ### Community 200 - "Community 200"
 Cohesion: 1.0
-Nodes (2): Official Claude API Integration, Real-Time WebSocket Server
+Nodes (0): 
 
 ### Community 201 - "Community 201"
 Cohesion: 1.0
-Nodes (2): CI/CD Pipeline (GitHub Actions), Comprehensive Test Results Report
+Nodes (0): 
 
 ### Community 202 - "Community 202"
 Cohesion: 1.0
-Nodes (2): Three-Way Comparison (Cognee vs Claude-Mem vs Enhanced), Enhanced Cognee vs Claude-Mem Comparison
+Nodes (0): 
 
 ### Community 203 - "Community 203"
 Cohesion: 1.0
-Nodes (2): Export Functionality (JSON, CSV, Markdown), Chart Export Utilities (PNG, SVG, PDF)
+Nodes (0): 
 
 ### Community 204 - "Community 204"
 Cohesion: 1.0
-Nodes (2): Phase 2 Memory Management Completion Report, Phase 3 Data Visualizations Completion Report
+Nodes (0): 
 
 ### Community 205 - "Community 205"
 Cohesion: 1.0
-Nodes (2): Database Stack (PostgreSQL, Qdrant, Neo4j, Redis), Knowledge Graph Visualization (Cytoscape.js)
+Nodes (0): 
 
 ### Community 206 - "Community 206"
 Cohesion: 1.0
-Nodes (2): German Car Manufacturers (Audi, BMW, Mercedes-Benz, Porsche, Volkswagen), Tech Companies (Apple, Google, Microsoft, Amazon, Meta)
+Nodes (0): 
 
 ### Community 207 - "Community 207"
 Cohesion: 1.0
-Nodes (2): Assistant Core Behavior Guidelines, Spec.md Project Specification Requirement
+Nodes (0): 
 
 ### Community 208 - "Community 208"
 Cohesion: 1.0
-Nodes (2): PEP 8 Style Guide Essentials, Zen of Python Principles
+Nodes (0): 
 
 ### Community 209 - "Community 209"
 Cohesion: 1.0
-Nodes (2): Cognee Comparison Chart, Competitor Comparison Table
+Nodes (0): 
 
 ### Community 210 - "Community 210"
 Cohesion: 1.0
-Nodes (2): Test Data Image, Test Data Image (Copy)
+Nodes (0): 
 
 ### Community 211 - "Community 211"
 Cohesion: 1.0
-Nodes (2): Programmer Joke Test Image (Copy), Programmer Joke Test Image
+Nodes (0): 
 
 ### Community 212 - "Community 212"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): Enhanced Cognee README, Original Cognee (upstream)
 
 ### Community 213 - "Community 213"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): Category Relevance Selection Prompt, Summary Relevance Selection Prompt
 
 ### Community 214 - "Community 214"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): Content Classification Taxonomy, Content Classification Prompt
 
 ### Community 215 - "Community 215"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): Code Extraction Capability, CodeGraph Retriever System Prompt
 
 ### Community 216 - "Community 216"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): Temporal Period Extraction (Time Interval Detection), Query Time Period Extraction (Temporal Interval Detection)
 
 ### Community 217 - "Community 217"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): CYPHER Search Type, NATURAL_LANGUAGE Search Type
 
 ### Community 218 - "Community 218"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): Content Summarization Prompt, Search Results Summarization Prompt
 
 ### Community 219 - "Community 219"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): Cognee Frontend (Next.js), Vercel Platform
 
 ### Community 220 - "Community 220"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): Claude-Mem vs Enhanced Cognee Feature Comparison, Token Efficiency via Progressive Disclosure (3-Layer Search)
 
 ### Community 221 - "Community 221"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): README Update Draft (Side-by-Side Comparison Method), Archived README Variants (Progressive Badge Updates)
 
 ### Community 222 - "Community 222"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): GitHub Security Checklist, GitHub Release Preparation
 
 ### Community 223 - "Community 223"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): 100% Security Test Success Report, Security Score 94.5/100
 
 ### Community 224 - "Community 224"
 Cohesion: 1.0
-Nodes (1): Configures the parser for the given argument
+Nodes (2): Official Claude API Integration, Real-Time WebSocket Server
 
 ### Community 225 - "Community 225"
 Cohesion: 1.0
-Nodes (1): Executes the command with the given arguments
+Nodes (2): CI/CD Pipeline (GitHub Actions), Comprehensive Test Results Report
 
 ### Community 226 - "Community 226"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): Three-Way Comparison (Cognee vs Claude-Mem vs Enhanced), Enhanced Cognee vs Claude-Mem Comparison
 
 ### Community 227 - "Community 227"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): Phase 2 Memory Management Completion Report, Phase 3 Data Visualizations Completion Report
 
 ### Community 228 - "Community 228"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): German Car Manufacturers (Audi, BMW, Mercedes-Benz, Porsche, Volkswagen), Tech Companies (Apple, Google, Microsoft, Amazon, Meta)
 
 ### Community 229 - "Community 229"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): Assistant Core Behavior Guidelines, Spec.md Project Specification Requirement
 
 ### Community 230 - "Community 230"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): PEP 8 Style Guide Essentials, Zen of Python Principles
 
 ### Community 231 - "Community 231"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): Cognee Comparison Chart, Competitor Comparison Table
 
 ### Community 232 - "Community 232"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): Test Data Image, Test Data Image (Copy)
 
 ### Community 233 - "Community 233"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): Programmer Joke Test Image (Copy), Programmer Joke Test Image
 
 ### Community 234 - "Community 234"
 Cohesion: 1.0
@@ -1759,7 +2281,7 @@ Nodes (0):
 
 ### Community 237 - "Community 237"
 Cohesion: 1.0
-Nodes (1): Get relevant context based on extracted entities and original query.
+Nodes (0): 
 
 ### Community 238 - "Community 238"
 Cohesion: 1.0
@@ -1783,35 +2305,35 @@ Nodes (0):
 
 ### Community 243 - "Community 243"
 Cohesion: 1.0
-Nodes (1): Acquire a lock on the given key.         Must be implemented by subclasses.
+Nodes (0): 
 
 ### Community 244 - "Community 244"
 Cohesion: 1.0
-Nodes (1): Release the lock if it is held.         Must be implemented by subclasses.
+Nodes (0): 
 
 ### Community 245 - "Community 245"
 Cohesion: 1.0
-Nodes (1): Context manager for safely acquiring and releasing the lock.
+Nodes (0): 
 
 ### Community 246 - "Community 246"
 Cohesion: 1.0
-Nodes (1): Add a Q/A/context triplet to a cache session.
+Nodes (0): 
 
 ### Community 247 - "Community 247"
 Cohesion: 1.0
-Nodes (1): Retrieve the most recent Q/A/context triplets for a session.
+Nodes (0): 
 
 ### Community 248 - "Community 248"
 Cohesion: 1.0
-Nodes (1): Retrieve all Q/A/context triplets for the given session.
+Nodes (0): 
 
 ### Community 249 - "Community 249"
 Cohesion: 1.0
-Nodes (1): Gracefully close any async connections.
+Nodes (0): 
 
 ### Community 250 - "Community 250"
 Cohesion: 1.0
-Nodes (1): Create a new Kuzu instance for the dataset. Return connection info that will be
+Nodes (0): 
 
 ### Community 251 - "Community 251"
 Cohesion: 1.0
@@ -1819,11 +2341,11 @@ Nodes (0):
 
 ### Community 252 - "Community 252"
 Cohesion: 1.0
-Nodes (1): Create a new Neo4j Aura instance for the dataset. Return connection info that wi
+Nodes (0): 
 
 ### Community 253 - "Community 253"
 Cohesion: 1.0
-Nodes (1): Resolve and decrypt connection info for the Neo4j dataset database.         In
+Nodes (0): 
 
 ### Community 254 - "Community 254"
 Cohesion: 1.0
@@ -1835,55 +2357,55 @@ Nodes (0):
 
 ### Community 256 - "Community 256"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): True if the winning score is well above the runner-up.
 
 ### Community 257 - "Community 257"
 Cohesion: 1.0
-Nodes (1): Check if a specified collection exists.          Parameters:         --------
+Nodes (0): 
 
 ### Community 258 - "Community 258"
 Cohesion: 1.0
-Nodes (1): Create a new collection with an optional payload schema.          Parameters:
+Nodes (0): 
 
 ### Community 259 - "Community 259"
 Cohesion: 1.0
-Nodes (1): Insert new data points into the specified collection.          Parameters:
+Nodes (0): 
 
 ### Community 260 - "Community 260"
 Cohesion: 1.0
-Nodes (1): Retrieve data points from a collection using their IDs.          Parameters:
+Nodes (0): 
 
 ### Community 261 - "Community 261"
 Cohesion: 1.0
-Nodes (1): Perform a search in the specified collection using either a text query or a vect
+Nodes (0): 
 
 ### Community 262 - "Community 262"
 Cohesion: 1.0
-Nodes (1): Perform a batch search using multiple text queries against a collection.
+Nodes (0): 
 
 ### Community 263 - "Community 263"
 Cohesion: 1.0
-Nodes (1): Delete specified data points from a collection.          Parameters:
+Nodes (0): 
 
 ### Community 264 - "Community 264"
 Cohesion: 1.0
-Nodes (1): Remove obsolete or unnecessary data from the database.
+Nodes (0): 
 
 ### Community 265 - "Community 265"
 Cohesion: 1.0
-Nodes (1): Embed textual data into vector representations.          Parameters:
+Nodes (0): 
 
 ### Community 266 - "Community 266"
 Cohesion: 1.0
-Nodes (1): Return a dictionary with connection info for a vector database for the given dat
+Nodes (0): 
 
 ### Community 267 - "Community 267"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Configures the parser for the given argument
 
 ### Community 268 - "Community 268"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Executes the command with the given arguments
 
 ### Community 269 - "Community 269"
 Cohesion: 1.0
@@ -1891,31 +2413,31 @@ Nodes (0):
 
 ### Community 270 - "Community 270"
 Cohesion: 1.0
-Nodes (1): Retrieve embeddable data from the data point object based on index fields.
+Nodes (0): 
 
 ### Community 271 - "Community 271"
 Cohesion: 1.0
-Nodes (1): Retrieve a list of embeddable properties from the data point.          This me
+Nodes (0): 
 
 ### Community 272 - "Community 272"
 Cohesion: 1.0
-Nodes (1): Retrieve the names of embeddable properties defined in the metadata.
+Nodes (0): 
 
 ### Community 273 - "Community 273"
 Cohesion: 1.0
-Nodes (1): Deserialize a DataPoint instance from a JSON string.          The method trans
+Nodes (0): 
 
 ### Community 274 - "Community 274"
 Cohesion: 1.0
-Nodes (1): Instantiate a DataPoint from a dictionary of attribute values.          The me
+Nodes (0): 
 
 ### Community 275 - "Community 275"
 Cohesion: 1.0
-Nodes (1): Auto-populate edge_text from relationship_type if not explicitly provided.
+Nodes (0): 
 
 ### Community 276 - "Community 276"
 Cohesion: 1.0
-Nodes (1): Extract entities from the given text.          This is an abstract method that
+Nodes (0): 
 
 ### Community 277 - "Community 277"
 Cohesion: 1.0
@@ -1923,19 +2445,19 @@ Nodes (0):
 
 ### Community 278 - "Community 278"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Per-criterion verdicts from the last evaluation.
 
 ### Community 279 - "Community 279"
 Cohesion: 1.0
-Nodes (1): Strip surrounding quotes from specific string fields that often come from
+Nodes (0): 
 
 ### Community 280 - "Community 280"
 Cohesion: 1.0
-Nodes (1): Validate required environment variables for the 'ollama' LLM provider.
+Nodes (0): 
 
 ### Community 281 - "Community 281"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Get relevant context based on extracted entities and original query.
 
 ### Community 282 - "Community 282"
 Cohesion: 1.0
@@ -1963,107 +2485,107 @@ Nodes (0):
 
 ### Community 288 - "Community 288"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Scoped slot for call sites without a natural dataset id.          Used by ``vi
 
 ### Community 289 - "Community 289"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Execute a raw database query and return the results.          Parameters:
 
 ### Community 290 - "Community 290"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Add a single node with specified properties to the graph.          Parameters:
 
 ### Community 291 - "Community 291"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Add multiple nodes to the graph in a single operation.          Parameters:
 
 ### Community 292 - "Community 292"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Delete a specified node from the graph by its ID.          Parameters:
 
 ### Community 293 - "Community 293"
 Cohesion: 1.0
-Nodes (1): List of file extensions this loader supports.          Returns:             L
+Nodes (1): Delete multiple nodes from the graph by their identifiers.          Parameters
 
 ### Community 294 - "Community 294"
 Cohesion: 1.0
-Nodes (1): List of MIME types this loader supports.          Returns:             List o
+Nodes (1): Retrieve a single node from the graph using its ID.          Parameters:
 
 ### Community 295 - "Community 295"
 Cohesion: 1.0
-Nodes (1): Unique name identifier for this loader.          Returns:             String
+Nodes (1): Retrieve multiple nodes from the graph using their IDs.          Parameters:
 
 ### Community 296 - "Community 296"
 Cohesion: 1.0
-Nodes (1): Check if this loader can handle the given file.          Args:             ex
+Nodes (1): Create a new edge between two nodes in the graph.          Parameters:
 
 ### Community 297 - "Community 297"
 Cohesion: 1.0
-Nodes (1): Load and process the file, returning standardized result.          Args:
+Nodes (1): Add multiple edges to the graph in a single operation.          Parameters:
 
 ### Community 298 - "Community 298"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Remove the entire graph, including all nodes and edges.
 
 ### Community 299 - "Community 299"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Retrieve all nodes and edges within the graph.
 
 ### Community 300 - "Community 300"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Fetch metrics and statistics of the graph, possibly including optional details.
 
 ### Community 301 - "Community 301"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Verify if an edge exists between two specified nodes.          Parameters:
 
 ### Community 302 - "Community 302"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Determine the existence of multiple edges in the graph.          Parameters:
 
 ### Community 303 - "Community 303"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Retrieve all edges that are connected to the specified node.          Paramete
 
 ### Community 304 - "Community 304"
 Cohesion: 1.0
-Nodes (1): Create a Notebook instance from a remote zip file containing notebook + data fil
+Nodes (1): Get all neighboring nodes connected to the specified node.          Parameters
 
 ### Community 305 - "Community 305"
 Cohesion: 1.0
-Nodes (1): Update file paths in code cells to use actual cached data files.         Works
+Nodes (1): Fetch a subgraph consisting of a specific set of nodes and their relationships.
 
 ### Community 306 - "Community 306"
 Cohesion: 1.0
-Nodes (1): Create a Notebook instance from Jupyter notebook string content.          Args
+Nodes (1): Get all nodes connected to a specified node and their relationship details.
 
 ### Community 307 - "Community 307"
 Cohesion: 1.0
-Nodes (1): Generate a meaningful name for a notebook cell using nbformat cell.
+Nodes (1): Get the k-hop neighborhood subgraph around a set of seed nodes.          Retur
 
 ### Community 308 - "Community 308"
 Cohesion: 1.0
-Nodes (1): Find the best match for a given name from a list of candidates.          Args:
+Nodes (1): Retrieve nodes and edges filtered by the provided attribute criteria.
 
 ### Community 309 - "Community 309"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Create a new Ladybug instance for the dataset. Return connection info that will
 
 ### Community 310 - "Community 310"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Create a new Neo4j Aura instance for the dataset. Return connection info that wi
 
 ### Community 311 - "Community 311"
 Cohesion: 1.0
-Nodes (1): Add user feedback to the system.
+Nodes (1): Resolve and decrypt connection info for the Neo4j dataset database.         In
 
 ### Community 312 - "Community 312"
 Cohesion: 1.0
-Nodes (1): Retrieves context based on the query.
+Nodes (0): 
 
 ### Community 313 - "Community 313"
 Cohesion: 1.0
-Nodes (1): Generates a response using the query and optional context.
+Nodes (0): 
 
 ### Community 314 - "Community 314"
 Cohesion: 1.0
@@ -2079,51 +2601,51 @@ Nodes (0):
 
 ### Community 317 - "Community 317"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Check if a specified collection exists.          Parameters:         --------
 
 ### Community 318 - "Community 318"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Create a new collection with an optional payload schema.          Parameters:
 
 ### Community 319 - "Community 319"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Insert new data points into the specified collection.          Parameters:
 
 ### Community 320 - "Community 320"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Retrieve data points from a collection using their IDs.          Parameters:
 
 ### Community 321 - "Community 321"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Perform a search in the specified collection using either a text query or a vect
 
 ### Community 322 - "Community 322"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Perform a batch search using multiple text queries against a collection.
 
 ### Community 323 - "Community 323"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Delete specified data points from a collection.          Parameters:
 
 ### Community 324 - "Community 324"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Remove obsolete or unnecessary data from the database.
 
 ### Community 325 - "Community 325"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Embed textual data into vector representations.          Parameters:
 
 ### Community 326 - "Community 326"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Return a dictionary with connection info for a vector database for the given dat
 
 ### Community 327 - "Community 327"
 Cohesion: 1.0
-Nodes (1): Extract the domain (netloc) from a URL.          Args:             url: The U
+Nodes (0): 
 
 ### Community 328 - "Community 328"
 Cohesion: 1.0
-Nodes (1): Get the root URL (scheme and netloc) from a URL.          Args:             u
+Nodes (0): 
 
 ### Community 329 - "Community 329"
 Cohesion: 1.0
@@ -2135,107 +2657,107 @@ Nodes (0):
 
 ### Community 331 - "Community 331"
 Cohesion: 1.0
-Nodes (1): Test add command integration
+Nodes (0): 
 
 ### Community 332 - "Community 332"
 Cohesion: 1.0
-Nodes (1): Test that OpenAPI schema doesn't require global authentication.
+Nodes (0): 
 
 ### Community 333 - "Community 333"
 Cohesion: 1.0
-Nodes (1): Test add endpoint works with conditional authentication.
+Nodes (1): Get identity_fields from the class's metadata field default, if defined.
 
 ### Community 334 - "Community 334"
 Cohesion: 1.0
-Nodes (1): Test that conditional authentication works with the current environment setup.
+Nodes (1): Generate a deterministic UUID5 from identity field values.          Returns No
 
 ### Community 335 - "Community 335"
 Cohesion: 1.0
-Nodes (1): Test that GET endpoints work without authentication (with current environment).
+Nodes (1): Auto-derive metadata index_fields and identity_fields from Annotated markers.
 
 ### Community 336 - "Community 336"
 Cohesion: 1.0
-Nodes (1): Test that settings endpoint integration works with conditional authentication.
+Nodes (1): Retrieve embeddable data from the data point object based on index fields.
 
 ### Community 337 - "Community 337"
 Cohesion: 1.0
-Nodes (1): Test behavior when get_default_user fails (with current environment).
+Nodes (1): Retrieve a list of embeddable properties from the data point.          This me
 
 ### Community 338 - "Community 338"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Retrieve the names of embeddable properties defined in the metadata.
 
 ### Community 339 - "Community 339"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Deserialize a DataPoint instance from a JSON string.          The method trans
 
 ### Community 340 - "Community 340"
 Cohesion: 1.0
-Nodes (1): Test that regular file paths work as before.
+Nodes (1): Instantiate a DataPoint from a dictionary of attribute values.          The me
 
 ### Community 341 - "Community 341"
 Cohesion: 1.0
-Nodes (1): Test that file:// URLs work correctly in text mode.
+Nodes (1): Auto-populate edge_text from relationship_type if not explicitly provided.
 
 ### Community 342 - "Community 342"
 Cohesion: 1.0
-Nodes (1): Test that file:// URLs work correctly in binary mode.
+Nodes (1): Extract entities from the given text.          This is an abstract method that
 
 ### Community 343 - "Community 343"
 Cohesion: 1.0
-Nodes (1): Test that file:// URLs work with specific encoding.
+Nodes (0): 
 
 ### Community 344 - "Community 344"
 Cohesion: 1.0
-Nodes (1): Test that file:// URLs raise appropriate error for nonexistent files.
+Nodes (0): 
 
 ### Community 345 - "Community 345"
 Cohesion: 1.0
-Nodes (1): Test that multiple file:// prefixes are handled correctly.
+Nodes (1): Strip surrounding quotes from specific string fields that often come from
 
 ### Community 346 - "Community 346"
 Cohesion: 1.0
-Nodes (1): Test get_conversation_history formats Q&A history with correct structure.
+Nodes (1): Validate required environment variables for the 'ollama' LLM provider.
 
 ### Community 347 - "Community 347"
 Cohesion: 1.0
-Nodes (1): Test save_conversation_history calls add_qa with correct parameters.
+Nodes (0): 
 
 ### Community 348 - "Community 348"
 Cohesion: 1.0
-Nodes (1): Test save_conversation_history uses 'default_session' when session_id is None.
+Nodes (0): 
 
 ### Community 349 - "Community 349"
 Cohesion: 1.0
-Nodes (1): Test that when REQUIRE_AUTHENTICATION=false and no token, returns default user.
+Nodes (0): 
 
 ### Community 350 - "Community 350"
 Cohesion: 1.0
-Nodes (1): Test that when REQUIRE_AUTHENTICATION=false and valid user, returns that user.
+Nodes (0): 
 
 ### Community 351 - "Community 351"
 Cohesion: 1.0
-Nodes (1): Test that when REQUIRE_AUTHENTICATION=true and user present, returns user.
+Nodes (0): 
 
 ### Community 352 - "Community 352"
 Cohesion: 1.0
-Nodes (1): Test that FastAPI Users dependency can be created correctly.
+Nodes (0): 
 
 ### Community 353 - "Community 353"
 Cohesion: 1.0
-Nodes (1): Test that the conditional authentication function can be imported and used.
+Nodes (0): 
 
 ### Community 354 - "Community 354"
 Cohesion: 1.0
-Nodes (1): Test behavior when get_default_user raises an exception.
+Nodes (0): 
 
 ### Community 355 - "Community 355"
 Cohesion: 1.0
-Nodes (1): Test that the function always returns the same type.
+Nodes (0): 
 
 ### Community 356 - "Community 356"
 Cohesion: 1.0
-Nodes (1): Test fallback to default user for all scenarios where FastAPI Users returns None
+Nodes (0): 
 
 ### Community 357 - "Community 357"
 Cohesion: 1.0
@@ -2259,19 +2781,19 @@ Nodes (0):
 
 ### Community 362 - "Community 362"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): List of file extensions this loader supports.          Returns:             L
 
 ### Community 363 - "Community 363"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): List of MIME types this loader supports.          Returns:             List o
 
 ### Community 364 - "Community 364"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Check if this loader can handle the given file.          Args:             ex
 
 ### Community 365 - "Community 365"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Load and process the file, returning standardized result.          Args:
 
 ### Community 366 - "Community 366"
 Cohesion: 1.0
@@ -2319,19 +2841,19 @@ Nodes (0):
 
 ### Community 377 - "Community 377"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Create a Notebook instance from a remote zip file containing notebook + data fil
 
 ### Community 378 - "Community 378"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Update file paths in code cells to use actual cached data files.         Works
 
 ### Community 379 - "Community 379"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Create a Notebook instance from Jupyter notebook string content.          Args
 
 ### Community 380 - "Community 380"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Generate a meaningful name for a notebook cell using nbformat cell.
 
 ### Community 381 - "Community 381"
 Cohesion: 1.0
@@ -2371,7 +2893,7 @@ Nodes (0):
 
 ### Community 390 - "Community 390"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Find the best match for a given name from a list of candidates.          Args:
 
 ### Community 391 - "Community 391"
 Cohesion: 1.0
@@ -2383,7 +2905,7 @@ Nodes (0):
 
 ### Community 393 - "Community 393"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Access the underlying Task directly (backward compat).
 
 ### Community 394 - "Community 394"
 Cohesion: 1.0
@@ -2399,19 +2921,19 @@ Nodes (0):
 
 ### Community 397 - "Community 397"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Add user feedback to the system.
 
 ### Community 398 - "Community 398"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Retrieves the raw data points from the underlying storage (Graph or Vector DB).
 
 ### Community 399 - "Community 399"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Transforms raw retrieved objects into a structured context for the LLM.
 
 ### Community 400 - "Community 400"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Generates a final output or answer based on the query and retrieved context.
 
 ### Community 401 - "Community 401"
 Cohesion: 1.0
@@ -2479,27 +3001,27 @@ Nodes (0):
 
 ### Community 417 - "Community 417"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Return the name of this translation provider.
 
 ### Community 418 - "Community 418"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Translate text to the target language.          Args:             text: The t
 
 ### Community 419 - "Community 419"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Translate multiple texts to the target language.          Args:             t
 
 ### Community 420 - "Community 420"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Check if this provider is available (has required credentials).          All p
 
 ### Community 421 - "Community 421"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Extract the domain (netloc) from a URL.          Args:             url: The U
 
 ### Community 422 - "Community 422"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Get the root URL (scheme and netloc) from a URL.          Args:             u
 
 ### Community 423 - "Community 423"
 Cohesion: 1.0
@@ -2511,27 +3033,27 @@ Nodes (0):
 
 ### Community 425 - "Community 425"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Test that OpenAPI schema doesn't require global authentication.
 
 ### Community 426 - "Community 426"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Test add endpoint works with conditional authentication.
 
 ### Community 427 - "Community 427"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Test that conditional authentication works with the current environment setup.
 
 ### Community 428 - "Community 428"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Test that GET endpoints work without authentication (with current environment).
 
 ### Community 429 - "Community 429"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Test that settings endpoint integration works with conditional authentication.
 
 ### Community 430 - "Community 430"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Test behavior when get_default_user fails (with current environment).
 
 ### Community 431 - "Community 431"
 Cohesion: 1.0
@@ -2539,279 +3061,279 @@ Nodes (0):
 
 ### Community 432 - "Community 432"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Test add command integration
 
 ### Community 433 - "Community 433"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): When --user-id is set, X-User-Id header should be passed to client.
 
 ### Community 434 - "Community 434"
 Cohesion: 1.0
-Nodes (1): Create benchmark instance by loading data from JSON files.
+Nodes (0): 
 
 ### Community 435 - "Community 435"
 Cohesion: 1.0
-Nodes (1): Initialize the RAG system. Returns the RAG client.
+Nodes (0): 
 
 ### Community 436 - "Community 436"
 Cohesion: 1.0
-Nodes (1): Clean up RAG system resources.
+Nodes (1): Reset the singleton instance between tests.
 
 ### Community 437 - "Community 437"
 Cohesion: 1.0
-Nodes (1): Insert a single document into the RAG system.
+Nodes (1): Test that pipeline operations respect queue concurrency limit.
 
 ### Community 438 - "Community 438"
 Cohesion: 1.0
-Nodes (1): Query the RAG system and return the answer.
+Nodes (1): Test that pipeline yields all results correctly through queue.
 
 ### Community 439 - "Community 439"
 Cohesion: 1.0
-Nodes (1): Return the name of the RAG system for logging.
+Nodes (1): Test that pipeline errors properly release queue slots.
 
 ### Community 440 - "Community 440"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Test that OpenAPI schema doesn't require global authentication.
 
 ### Community 441 - "Community 441"
 Cohesion: 1.0
-Nodes (1): Test blue-green deployment strategy
+Nodes (1): Test add endpoint works with conditional authentication.
 
 ### Community 442 - "Community 442"
 Cohesion: 1.0
-Nodes (1): Test canary deployment strategy
+Nodes (1): Test that conditional authentication works with the current environment setup.
 
 ### Community 443 - "Community 443"
 Cohesion: 1.0
-Nodes (1): Test rolling deployment strategy
+Nodes (1): Test that GET endpoints work without authentication (with current environment).
 
 ### Community 444 - "Community 444"
 Cohesion: 1.0
-Nodes (1): Test deployment validation procedures
+Nodes (1): Test that settings endpoint integration works with conditional authentication.
 
 ### Community 445 - "Community 445"
 Cohesion: 1.0
-Nodes (1): Test deployment rollback procedures
+Nodes (1): Test behavior when get_default_user fails (with current environment).
 
 ### Community 446 - "Community 446"
 Cohesion: 1.0
-Nodes (1): Test deployment configuration validation
+Nodes (0): 
 
 ### Community 447 - "Community 447"
 Cohesion: 1.0
-Nodes (1): Test traffic switching validation
+Nodes (0): 
 
 ### Community 448 - "Community 448"
 Cohesion: 1.0
-Nodes (1): Test resource limit configuration
+Nodes (0): 
 
 ### Community 449 - "Community 449"
 Cohesion: 1.0
-Nodes (1): Test disaster recovery framework initialization
+Nodes (0): 
 
 ### Community 450 - "Community 450"
 Cohesion: 1.0
-Nodes (1): Test emergency backup creation
+Nodes (1): Username and password with special characters should round-trip correctly.
 
 ### Community 451 - "Community 451"
 Cohesion: 1.0
-Nodes (1): Test data corruption disaster simulation
+Nodes (1): When no connect_args are provided, an empty dict should be forwarded to the adap
 
 ### Community 452 - "Community 452"
 Cohesion: 1.0
-Nodes (1): Test hardware failure simulation
+Nodes (0): 
 
 ### Community 453 - "Community 453"
 Cohesion: 1.0
-Nodes (1): Test recovery procedures
+Nodes (1): Reset the singleton instance between tests.
 
 ### Community 454 - "Community 454"
 Cohesion: 1.0
-Nodes (1): Test complete disaster recovery test
+Nodes (1): Reset the singleton instance between tests.
 
 ### Community 455 - "Community 455"
 Cohesion: 1.0
-Nodes (1): Test RTO/RPO compliance checking
+Nodes (1): Disabled queue's acquire() is a no-op and imposes no limit.
 
 ### Community 456 - "Community 456"
 Cohesion: 1.0
-Nodes (1): Test disaster recovery report generation
+Nodes (1): Reset the singleton instance between tests.
 
 ### Community 457 - "Community 457"
 Cohesion: 1.0
-Nodes (1): Test emergency rollback procedures
+Nodes (1): Test that context manager properly acquires and releases slot.
 
 ### Community 458 - "Community 458"
 Cohesion: 1.0
-Nodes (1): Test functionality verification after recovery
+Nodes (1): Test that context manager releases slot on exception.
 
 ### Community 459 - "Community 459"
 Cohesion: 1.0
-Nodes (1): Test performance validation after recovery
+Nodes (1): Reset the singleton instance between tests.
 
 ### Community 460 - "Community 460"
 Cohesion: 1.0
-Nodes (1): Test runbook creation
+Nodes (1): Test pattern for using queue with pipeline-style async generator.
 
 ### Community 461 - "Community 461"
 Cohesion: 1.0
-Nodes (1): Test runbook search functionality
+Nodes (1): Test that different operations share the same queue.
 
 ### Community 462 - "Community 462"
 Cohesion: 1.0
-Nodes (1): Test runbook execution in dry run mode
+Nodes (1): Reset the singleton instance between tests.
 
 ### Community 463 - "Community 463"
 Cohesion: 1.0
-Nodes (1): Test incident procedure creation
+Nodes (1): Test that cancelled tasks release their slots.
 
 ### Community 464 - "Community 464"
 Cohesion: 1.0
-Nodes (1): Test monitoring guide creation
+Nodes (1): Stress test with many concurrent operations.
 
 ### Community 465 - "Community 465"
 Cohesion: 1.0
-Nodes (1): Test documentation report generation
+Nodes (1): Test behavior when same coroutine acquires multiple times.
 
 ### Community 466 - "Community 466"
 Cohesion: 1.0
-Nodes (1): Test standard runbooks creation
+Nodes (1): Test that queue works with sync callback wrapped operations.
 
 ### Community 467 - "Community 467"
 Cohesion: 1.0
-Nodes (1): Test runbook structure validation
+Nodes (1): Test that regular file paths work as before.
 
 ### Community 468 - "Community 468"
 Cohesion: 1.0
-Nodes (1): Test incident procedure structure validation
+Nodes (1): Test that file:// URLs work correctly in text mode.
 
 ### Community 469 - "Community 469"
 Cohesion: 1.0
-Nodes (1): Test documentation index structure
+Nodes (1): Test that file:// URLs work correctly in binary mode.
 
 ### Community 470 - "Community 470"
 Cohesion: 1.0
-Nodes (1): Test runbook execution rollback functionality
+Nodes (1): Test that file:// URLs work with specific encoding.
 
 ### Community 471 - "Community 471"
 Cohesion: 1.0
-Nodes (1): Test runbook verification steps execution
+Nodes (1): Test that file:// URLs raise appropriate error for nonexistent files.
 
 ### Community 472 - "Community 472"
 Cohesion: 1.0
-Nodes (1): Test runbook versioning
+Nodes (1): Test that multiple file:// prefixes are handled correctly.
 
 ### Community 473 - "Community 473"
 Cohesion: 1.0
-Nodes (1): Test runbook tags functionality
+Nodes (0): 
 
 ### Community 474 - "Community 474"
 Cohesion: 1.0
-Nodes (1): Test escalation contacts structure
+Nodes (1): Test get_conversation_history formats Q&A history with correct structure.
 
 ### Community 475 - "Community 475"
 Cohesion: 1.0
-Nodes (1): Test related runbooks functionality
+Nodes (1): Test save_conversation_history calls add_qa with correct parameters.
 
 ### Community 476 - "Community 476"
 Cohesion: 1.0
-Nodes (1): Test runbook prerequisites
+Nodes (1): Test save_conversation_history uses 'default_session' when session_id is None.
 
 ### Community 477 - "Community 477"
 Cohesion: 1.0
-Nodes (1): Test metric recording functionality
+Nodes (1): Test that when REQUIRE_AUTHENTICATION=false and no token, returns default user.
 
 ### Community 478 - "Community 478"
 Cohesion: 1.0
-Nodes (1): Test alert rule registration and triggering
+Nodes (1): Test that when REQUIRE_AUTHENTICATION=false and valid user, returns that user.
 
 ### Community 479 - "Community 479"
 Cohesion: 1.0
-Nodes (1): Test health check execution
+Nodes (1): Test that when REQUIRE_AUTHENTICATION=true and user present, returns user.
 
 ### Community 480 - "Community 480"
 Cohesion: 1.0
-Nodes (1): Test metrics summary functionality
+Nodes (1): Test that FastAPI Users dependency can be created correctly.
 
 ### Community 481 - "Community 481"
 Cohesion: 1.0
-Nodes (1): Test system health assessment
+Nodes (1): Test that the conditional authentication function can be imported and used.
 
 ### Community 482 - "Community 482"
 Cohesion: 1.0
-Nodes (1): Test alert handler functionality
+Nodes (1): Test behavior when get_default_user raises an exception.
 
 ### Community 483 - "Community 483"
 Cohesion: 1.0
-Nodes (1): Test test alert functionality
+Nodes (1): Test that the function always returns the same type.
 
 ### Community 484 - "Community 484"
 Cohesion: 1.0
-Nodes (1): Test monitoring start/stop lifecycle
+Nodes (1): Test fallback to default user for all scenarios where FastAPI Users returns None
 
 ### Community 485 - "Community 485"
 Cohesion: 1.0
-Nodes (1): Test Slack alert handler
+Nodes (0): 
 
 ### Community 486 - "Community 486"
 Cohesion: 1.0
-Nodes (1): Test metric definition validation
+Nodes (0): 
 
 ### Community 487 - "Community 487"
 Cohesion: 1.0
-Nodes (1): Test structured logging initialization
+Nodes (0): 
 
 ### Community 488 - "Community 488"
 Cohesion: 1.0
-Nodes (1): Test structured log entry creation
+Nodes (0): 
 
 ### Community 489 - "Community 489"
 Cohesion: 1.0
-Nodes (1): Test log level filtering
+Nodes (0): 
 
 ### Community 490 - "Community 490"
 Cohesion: 1.0
-Nodes (1): Test log aggregation by component
+Nodes (0): 
 
 ### Community 491 - "Community 491"
 Cohesion: 1.0
-Nodes (1): Test error log handling
+Nodes (0): 
 
 ### Community 492 - "Community 492"
 Cohesion: 1.0
-Nodes (1): Test distributed tracing span creation
+Nodes (0): 
 
 ### Community 493 - "Community 493"
 Cohesion: 1.0
-Nodes (1): Test error handling in tracing spans
+Nodes (0): 
 
 ### Community 494 - "Community 494"
 Cohesion: 1.0
-Nodes (1): Test metric definition
+Nodes (0): 
 
 ### Community 495 - "Community 495"
 Cohesion: 1.0
-Nodes (1): Test metric recording
+Nodes (0): 
 
 ### Community 496 - "Community 496"
 Cohesion: 1.0
-Nodes (1): Test log search functionality
+Nodes (0): 
 
 ### Community 497 - "Community 497"
 Cohesion: 1.0
-Nodes (1): Test performance metrics collection
+Nodes (0): 
 
 ### Community 498 - "Community 498"
 Cohesion: 1.0
-Nodes (1): Test observability report generation
+Nodes (0): 
 
 ### Community 499 - "Community 499"
 Cohesion: 1.0
-Nodes (1): Test log filtering by time range
+Nodes (0): 
 
 ### Community 500 - "Community 500"
 Cohesion: 1.0
-Nodes (1): Test observability framework lifecycle
+Nodes (0): 
 
 ### Community 501 - "Community 501"
 Cohesion: 1.0
@@ -2819,1166 +3341,3208 @@ Nodes (0):
 
 ### Community 502 - "Community 502"
 Cohesion: 1.0
-Nodes (1): Multi-Agent System (MAS) specific categories         This is ONE EXAMPLE of how
+Nodes (0): 
 
 ### Community 503 - "Community 503"
 Cohesion: 1.0
-Nodes (1): Generic default categories for simple projects         Projects can override wi
+Nodes (0): 
 
 ### Community 504 - "Community 504"
 Cohesion: 1.0
-Nodes (1): Create from dictionary.
+Nodes (0): 
 
 ### Community 505 - "Community 505"
 Cohesion: 1.0
-Nodes (1): Context manager for database cursor.          Yields:             SQLite curs
+Nodes (0): 
 
 ### Community 506 - "Community 506"
 Cohesion: 1.0
-Nodes (1): Make a basic LLM API call.          Args:             prompt: The prompt to s
+Nodes (0): 
 
 ### Community 507 - "Community 507"
 Cohesion: 1.0
-Nodes (1): Make an LLM API call with message history.          Args:             message
+Nodes (0): 
 
 ### Community 508 - "Community 508"
 Cohesion: 1.0
-Nodes (1): Make an LLM API call expecting JSON response.          Args:             prom
+Nodes (0): 
 
 ### Community 509 - "Community 509"
 Cohesion: 1.0
-Nodes (1): Get current available tokens.
+Nodes (0): 
 
 ### Community 510 - "Community 510"
 Cohesion: 1.0
-Nodes (1): Get seconds until tokens available.
+Nodes (0): 
 
 ### Community 511 - "Community 511"
 Cohesion: 1.0
-Nodes (1): Validate API contracts and OpenAPI specifications
+Nodes (0): 
 
 ### Community 512 - "Community 512"
 Cohesion: 1.0
-Nodes (1): Validate that authentication is properly enforced
+Nodes (0): 
 
 ### Community 513 - "Community 513"
 Cohesion: 1.0
-Nodes (1): Test API rate limiting enforcement
+Nodes (0): 
 
 ### Community 514 - "Community 514"
 Cohesion: 1.0
-Nodes (1): API performance testing under various load conditions
+Nodes (0): 
 
 ### Community 515 - "Community 515"
 Cohesion: 1.0
-Nodes (1): Test API timeout handling
+Nodes (0): 
 
 ### Community 516 - "Community 516"
 Cohesion: 1.0
-Nodes (1): Test API under sustained concurrent load
+Nodes (0): 
 
 ### Community 517 - "Community 517"
 Cohesion: 1.0
-Nodes (1): Test GraphQL query execution and response validation
+Nodes (0): 
 
 ### Community 518 - "Community 518"
 Cohesion: 1.0
-Nodes (1): Test GraphQL error handling
+Nodes (0): 
 
 ### Community 519 - "Community 519"
 Cohesion: 1.0
-Nodes (1): Test GraphQL subscription support (if implemented)
+Nodes (0): 
 
 ### Community 520 - "Community 520"
 Cohesion: 1.0
-Nodes (1): Test API input validation and sanitization
+Nodes (0): 
 
 ### Community 521 - "Community 521"
 Cohesion: 1.0
-Nodes (1): Test CORS headers configuration
+Nodes (0): 
 
 ### Community 522 - "Community 522"
 Cohesion: 1.0
-Nodes (1): Test rate limiting security against abuse
+Nodes (0): 
 
 ### Community 523 - "Community 523"
 Cohesion: 1.0
-Nodes (1): Test multiple API version support
+Nodes (0): 
 
 ### Community 524 - "Community 524"
 Cohesion: 1.0
-Nodes (1): Test backward compatibility with older API versions
+Nodes (0): 
 
 ### Community 525 - "Community 525"
 Cohesion: 1.0
-Nodes (1): Test GitHub Actions workflow generation
+Nodes (0): 
 
 ### Community 526 - "Community 526"
 Cohesion: 1.0
-Nodes (1): Test complete execution of workflow scenarios
+Nodes (0): 
 
 ### Community 527 - "Community 527"
 Cohesion: 1.0
-Nodes (1): Test workflow error recovery mechanisms
+Nodes (0): 
 
 ### Community 528 - "Community 528"
 Cohesion: 1.0
-Nodes (1): Validate lawful basis for data processing
+Nodes (0): 
 
 ### Community 529 - "Community 529"
 Cohesion: 1.0
-Nodes (1): Validate data subject right of access
+Nodes (0): 
 
 ### Community 530 - "Community 530"
 Cohesion: 1.0
-Nodes (1): Validate right to erasure (right to be forgotten)
+Nodes (0): 
 
 ### Community 531 - "Community 531"
 Cohesion: 1.0
-Nodes (1): Validate data portability requirements
+Nodes (0): 
 
 ### Community 532 - "Community 532"
 Cohesion: 1.0
-Nodes (1): Validate consent management requirements
+Nodes (0): 
 
 ### Community 533 - "Community 533"
 Cohesion: 1.0
-Nodes (1): Validate GDPR data breach notification requirements
+Nodes (0): 
 
 ### Community 534 - "Community 534"
 Cohesion: 1.0
-Nodes (1): Test SOC 2 access control requirements
+Nodes (0): 
 
 ### Community 535 - "Community 535"
 Cohesion: 1.0
-Nodes (1): Test SOC 2 system monitoring requirements
+Nodes (0): 
 
 ### Community 536 - "Community 536"
 Cohesion: 1.0
-Nodes (1): Test SOC 2 incident response capabilities
+Nodes (0): 
 
 ### Community 537 - "Community 537"
 Cohesion: 1.0
-Nodes (1): Test SOC 2 change management procedures
+Nodes (0): 
 
 ### Community 538 - "Community 538"
 Cohesion: 1.0
-Nodes (1): Test PCI DSS cardholder data protection
+Nodes (0): 
 
 ### Community 539 - "Community 539"
 Cohesion: 1.0
-Nodes (1): Test PCI DSS network security requirements
+Nodes (0): 
 
 ### Community 540 - "Community 540"
 Cohesion: 1.0
-Nodes (1): Test PCI DSS vulnerability management
+Nodes (0): 
 
 ### Community 541 - "Community 541"
 Cohesion: 1.0
-Nodes (1): Test ISO 27001 information security policy
+Nodes (0): 
 
 ### Community 542 - "Community 542"
 Cohesion: 1.0
-Nodes (1): Test ISO 27001 risk assessment process
+Nodes (0): 
 
 ### Community 543 - "Community 543"
 Cohesion: 1.0
-Nodes (1): Test ISO 27001 asset management
+Nodes (0): 
 
 ### Community 544 - "Community 544"
 Cohesion: 1.0
-Nodes (1): Test compliance across multiple frameworks
+Nodes (0): 
 
 ### Community 545 - "Community 545"
 Cohesion: 1.0
-Nodes (1): Test comprehensive compliance reporting
+Nodes (0): 
 
 ### Community 546 - "Community 546"
 Cohesion: 1.0
-Nodes (1): Test OpenAPI specification completeness
+Nodes (0): 
 
 ### Community 547 - "Community 547"
 Cohesion: 1.0
-Nodes (1): Test API example validity and completeness
+Nodes (0): 
 
 ### Community 548 - "Community 548"
 Cohesion: 1.0
-Nodes (1): Test API response documentation accuracy
+Nodes (0): 
 
 ### Community 549 - "Community 549"
 Cohesion: 1.0
-Nodes (1): Test API changelog accuracy and completeness
+Nodes (0): 
 
 ### Community 550 - "Community 550"
 Cohesion: 1.0
-Nodes (1): Test Python docstring coverage
+Nodes (0): 
 
 ### Community 551 - "Community 551"
 Cohesion: 1.0
-Nodes (1): Test docstring quality and content
+Nodes (0): 
 
 ### Community 552 - "Community 552"
 Cohesion: 1.0
-Nodes (1): Test type hint annotation coverage
+Nodes (0): 
 
 ### Community 553 - "Community 553"
 Cohesion: 1.0
-Nodes (1): Test module-level documentation
+Nodes (0): 
 
 ### Community 554 - "Community 554"
 Cohesion: 1.0
-Nodes (1): Test getting started guide completeness
+Nodes (0): 
 
 ### Community 555 - "Community 555"
 Cohesion: 1.0
-Nodes (1): Test user guide navigation and structure
+Nodes (0): 
 
 ### Community 556 - "Community 556"
 Cohesion: 1.0
-Nodes (1): Test tutorial documentation quality
+Nodes (0): 
 
 ### Community 557 - "Community 557"
 Cohesion: 1.0
-Nodes (1): Test troubleshooting guide effectiveness
+Nodes (0): 
 
 ### Community 558 - "Community 558"
 Cohesion: 1.0
-Nodes (1): Test installation guide prerequisites coverage
+Nodes (0): 
 
 ### Community 559 - "Community 559"
 Cohesion: 1.0
-Nodes (1): Test Docker installation guide accuracy
+Nodes (0): 
 
 ### Community 560 - "Community 560"
 Cohesion: 1.0
-Nodes (1): Test configuration guide completeness
+Nodes (0): 
 
 ### Community 561 - "Community 561"
 Cohesion: 1.0
-Nodes (1): Test installation verification procedures
+Nodes (0): 
 
 ### Community 562 - "Community 562"
 Cohesion: 1.0
-Nodes (1): Test FAQ completeness and organization
+Nodes (0): 
 
 ### Community 563 - "Community 563"
 Cohesion: 1.0
-Nodes (1): Test troubleshooting guide quality and effectiveness
+Nodes (0): 
 
 ### Community 564 - "Community 564"
 Cohesion: 1.0
-Nodes (1): Test best practices documentation quality
+Nodes (1): Create benchmark instance by loading data from JSON files.
 
 ### Community 565 - "Community 565"
 Cohesion: 1.0
-Nodes (1): Test glossary completeness and accuracy
+Nodes (1): Initialize the RAG system. Returns the RAG client.
 
 ### Community 566 - "Community 566"
 Cohesion: 1.0
-Nodes (1): Generate random memory content
+Nodes (1): Clean up RAG system resources.
 
 ### Community 567 - "Community 567"
 Cohesion: 1.0
-Nodes (1): Generate random embedding vector
+Nodes (1): Insert a single document into the RAG system.
 
 ### Community 568 - "Community 568"
 Cohesion: 1.0
-Nodes (1): Generate random metadata
+Nodes (1): Query the RAG system and return the answer.
 
 ### Community 569 - "Community 569"
 Cohesion: 1.0
-Nodes (1): Store a memory - high frequency operation
+Nodes (1): Return the name of the RAG system for logging.
 
 ### Community 570 - "Community 570"
 Cohesion: 1.0
-Nodes (1): Search for memories using vector similarity
+Nodes (0): 
 
 ### Community 571 - "Community 571"
 Cohesion: 1.0
-Nodes (1): Retrieve a specific memory by ID
+Nodes (1): Test blue-green deployment strategy
 
 ### Community 572 - "Community 572"
 Cohesion: 1.0
-Nodes (1): Get memories for a specific agent
+Nodes (1): Test canary deployment strategy
 
 ### Community 573 - "Community 573"
 Cohesion: 1.0
-Nodes (1): Test agent coordination operations
+Nodes (1): Test rolling deployment strategy
 
 ### Community 574 - "Community 574"
 Cohesion: 1.0
-Nodes (1): Lightweight system health check
+Nodes (1): Test deployment validation procedures
 
 ### Community 575 - "Community 575"
 Cohesion: 1.0
-Nodes (1): Update an existing memory
+Nodes (1): Test deployment rollback procedures
 
 ### Community 576 - "Community 576"
 Cohesion: 1.0
-Nodes (1): High-frequency trading memory operations
+Nodes (1): Test deployment configuration validation
 
 ### Community 577 - "Community 577"
 Cohesion: 1.0
-Nodes (1): Light load scenario for basic functionality testing
+Nodes (1): Test traffic switching validation
 
 ### Community 578 - "Community 578"
 Cohesion: 1.0
-Nodes (1): Medium load scenario for typical usage testing
+Nodes (1): Test resource limit configuration
 
 ### Community 579 - "Community 579"
 Cohesion: 1.0
-Nodes (1): Heavy load scenario for stress testing
+Nodes (1): Test disaster recovery framework initialization
 
 ### Community 580 - "Community 580"
 Cohesion: 1.0
-Nodes (1): Endurance scenario for long-running stability testing
+Nodes (1): Test emergency backup creation
 
 ### Community 581 - "Community 581"
 Cohesion: 1.0
-Nodes (1): Base URL for Enhanced Cognee API
+Nodes (1): Test data corruption disaster simulation
 
 ### Community 582 - "Community 582"
 Cohesion: 1.0
-Nodes (1): Performance thresholds for testing
+Nodes (1): Test hardware failure simulation
 
 ### Community 583 - "Community 583"
 Cohesion: 1.0
-Nodes (1): Base URL for Enhanced Cognee API
+Nodes (1): Test recovery procedures
 
 ### Community 584 - "Community 584"
 Cohesion: 1.0
-Nodes (1): Test normal business hours load scenario
+Nodes (1): Test complete disaster recovery test
 
 ### Community 585 - "Community 585"
 Cohesion: 1.0
-Nodes (1): Test system performance under peak load
+Nodes (1): Test RTO/RPO compliance checking
 
 ### Community 586 - "Community 586"
 Cohesion: 1.0
-Nodes (1): Test system limits under stress conditions
+Nodes (1): Test disaster recovery report generation
 
 ### Community 587 - "Community 587"
 Cohesion: 1.0
-Nodes (1): Test system stability over extended period
+Nodes (1): Test emergency rollback procedures
 
 ### Community 588 - "Community 588"
 Cohesion: 1.0
-Nodes (1): Test performance regression detection
+Nodes (1): Test functionality verification after recovery
 
 ### Community 589 - "Community 589"
 Cohesion: 1.0
-Nodes (1): Test realistic user behavior simulation
+Nodes (1): Test performance validation after recovery
 
 ### Community 590 - "Community 590"
 Cohesion: 1.0
-Nodes (1): Test system scalability patterns
+Nodes (1): Test runbook creation
 
 ### Community 591 - "Community 591"
 Cohesion: 1.0
-Nodes (1): Test resource utilization under optimal conditions
+Nodes (1): Test runbook search functionality
 
 ### Community 592 - "Community 592"
 Cohesion: 1.0
-Nodes (1): Base URL for Enhanced Cognee API
+Nodes (1): Test runbook execution in dry run mode
 
 ### Community 593 - "Community 593"
 Cohesion: 1.0
-Nodes (1): Security test data including malicious inputs
+Nodes (1): Test incident procedure creation
 
 ### Community 594 - "Community 594"
 Cohesion: 1.0
-Nodes (1): Base URL for Enhanced Cognee API
+Nodes (1): Test monitoring guide creation
 
 ### Community 595 - "Community 595"
 Cohesion: 1.0
-Nodes (1): Sensitive test data for privacy testing
+Nodes (1): Test documentation report generation
 
 ### Community 596 - "Community 596"
 Cohesion: 1.0
-Nodes (1): Base URL for Enhanced Cognee API
+Nodes (1): Test standard runbooks creation
 
 ### Community 597 - "Community 597"
 Cohesion: 1.0
-Nodes (1): Base URL for Enhanced Cognee API
+Nodes (1): Test runbook structure validation
 
 ### Community 598 - "Community 598"
 Cohesion: 1.0
-Nodes (1): Base URL for Enhanced Cognee API
+Nodes (1): Test incident procedure structure validation
 
 ### Community 599 - "Community 599"
 Cohesion: 1.0
-Nodes (1): Test user data for authentication workflow
+Nodes (1): Test documentation index structure
 
 ### Community 600 - "Community 600"
 Cohesion: 1.0
-Nodes (1): Get authentication headers for API requests
+Nodes (1): Test runbook execution rollback functionality
 
 ### Community 601 - "Community 601"
 Cohesion: 1.0
-Nodes (1): Base URL for Enhanced Cognee API
+Nodes (1): Test runbook verification steps execution
 
 ### Community 602 - "Community 602"
 Cohesion: 1.0
-Nodes (1): Sample market data for trading workflow
+Nodes (1): Test runbook versioning
 
 ### Community 603 - "Community 603"
 Cohesion: 1.0
-Nodes (1): Base URL for Enhanced Cognee API
+Nodes (1): Test runbook tags functionality
 
 ### Community 604 - "Community 604"
 Cohesion: 1.0
-Nodes (1): Validate WCAG 2.1 accessibility compliance
+Nodes (1): Test escalation contacts structure
 
 ### Community 605 - "Community 605"
 Cohesion: 1.0
-Nodes (1): Test keyboard navigation accessibility
+Nodes (1): Test related runbooks functionality
 
 ### Community 606 - "Community 606"
 Cohesion: 1.0
-Nodes (1): Test ARIA labels and descriptions
+Nodes (1): Test runbook prerequisites
 
 ### Community 607 - "Community 607"
 Cohesion: 1.0
-Nodes (1): Test color contrast compliance
+Nodes (1): Test metric recording functionality
 
 ### Community 608 - "Community 608"
 Cohesion: 1.0
-Nodes (1): Test focus management and indicators
+Nodes (1): Test alert rule registration and triggering
 
 ### Community 609 - "Community 609"
 Cohesion: 1.0
-Nodes (1): Test screen reader compatibility
+Nodes (1): Test health check execution
 
 ### Community 610 - "Community 610"
 Cohesion: 1.0
-Nodes (1): Test mobile responsive design
+Nodes (1): Test metrics summary functionality
 
 ### Community 611 - "Community 611"
 Cohesion: 1.0
-Nodes (1): Test tablet responsive design
+Nodes (1): Test system health assessment
 
 ### Community 612 - "Community 612"
 Cohesion: 1.0
-Nodes (1): Test desktop layout optimization
+Nodes (1): Test alert handler functionality
 
 ### Community 613 - "Community 613"
 Cohesion: 1.0
-Nodes (1): Test compatibility across different browsers
+Nodes (1): Test test alert functionality
 
 ### Community 614 - "Community 614"
 Cohesion: 1.0
-Nodes (1): Test feature detection and graceful degradation
+Nodes (1): Test monitoring start/stop lifecycle
 
 ### Community 615 - "Community 615"
 Cohesion: 1.0
-Nodes (1): Test complete user journeys across the application
+Nodes (1): Test Slack alert handler
 
 ### Community 616 - "Community 616"
 Cohesion: 1.0
-Nodes (1): Test error handling within user journeys
+Nodes (1): Test metric definition validation
 
 ### Community 617 - "Community 617"
 Cohesion: 1.0
-Nodes (1): Test visual regression against baseline
+Nodes (1): Test structured logging initialization
 
 ### Community 618 - "Community 618"
 Cohesion: 1.0
-Nodes (1): Test UI consistency across pages
+Nodes (1): Test structured log entry creation
 
 ### Community 619 - "Community 619"
 Cohesion: 1.0
-Nodes (1): Test theme switching functionality
+Nodes (1): Test log level filtering
 
 ### Community 620 - "Community 620"
 Cohesion: 1.0
-Nodes (1): Test language localization support
+Nodes (1): Test log aggregation by component
 
 ### Community 621 - "Community 621"
 Cohesion: 1.0
-Nodes (1): Test responsive image loading
+Nodes (1): Test error log handling
 
 ### Community 622 - "Community 622"
 Cohesion: 1.0
-Nodes (1): Fixture for Algorithmic Trading System agent
+Nodes (1): Test distributed tracing span creation
 
 ### Community 623 - "Community 623"
 Cohesion: 1.0
-Nodes (1): Fixture for Risk Management agent
+Nodes (1): Test error handling in tracing spans
 
 ### Community 624 - "Community 624"
 Cohesion: 1.0
-Nodes (1): Fixture for Market Analysis agent
+Nodes (1): Test metric definition
 
 ### Community 625 - "Community 625"
 Cohesion: 1.0
-Nodes (1): Test Algorithmic Trading System agent initialization
+Nodes (1): Test metric recording
 
 ### Community 626 - "Community 626"
 Cohesion: 1.0
-Nodes (1): Test trading signal generation
+Nodes (1): Test log search functionality
 
 ### Community 627 - "Community 627"
 Cohesion: 1.0
-Nodes (1): Test risk assessment functionality
+Nodes (1): Test performance metrics collection
 
 ### Community 628 - "Community 628"
 Cohesion: 1.0
-Nodes (1): Test market data analysis
+Nodes (1): Test observability report generation
 
 ### Community 629 - "Community 629"
 Cohesion: 1.0
-Nodes (1): Test agent memory integration
+Nodes (1): Test log filtering by time range
 
 ### Community 630 - "Community 630"
 Cohesion: 1.0
-Nodes (1): Fixture for Code Reviewer agent
+Nodes (1): Test observability framework lifecycle
 
 ### Community 631 - "Community 631"
 Cohesion: 1.0
-Nodes (1): Fixture for Development agent
+Nodes (0): 
 
 ### Community 632 - "Community 632"
 Cohesion: 1.0
-Nodes (1): Fixture for Architecture agent
+Nodes (1): Current state string: "CLOSED", "OPEN", or "HALF_OPEN".          Automatically t
 
 ### Community 633 - "Community 633"
 Cohesion: 1.0
-Nodes (1): Test code review functionality
+Nodes (1): Render report rows as a fixed-width ASCII table.
 
 ### Community 634 - "Community 634"
 Cohesion: 1.0
-Nodes (1): Test security vulnerability detection
+Nodes (1): Multi-Agent System (MAS) specific categories         This is ONE EXAMPLE of how
 
 ### Community 635 - "Community 635"
 Cohesion: 1.0
-Nodes (1): Test development task execution
+Nodes (1): Generic default categories for simple projects         Projects can override wi
 
 ### Community 636 - "Community 636"
 Cohesion: 1.0
-Nodes (1): Test architecture design functionality
+Nodes (1): Build a Slack webhook payload with a single section block.
 
 ### Community 637 - "Community 637"
 Cohesion: 1.0
-Nodes (1): Fixture for Context Manager agent
+Nodes (1): Build a Discord webhook payload with an embed.
 
 ### Community 638 - "Community 638"
 Cohesion: 1.0
-Nodes (1): Fixture for Performance Monitor agent
+Nodes (1): POST *payload* as JSON to *url*.          Tries aiohttp first; falls back to url
 
 ### Community 639 - "Community 639"
 Cohesion: 1.0
-Nodes (1): Fixture for Communication Coordinator agent
+Nodes (1): Load content from *source* (file path, URL, or connection string).         Retur
 
 ### Community 640 - "Community 640"
 Cohesion: 1.0
-Nodes (1): Test context creation
+Nodes (1): Return True if this loader can handle the given source.
 
 ### Community 641 - "Community 641"
 Cohesion: 1.0
-Nodes (1): Test context memory sharing
+Nodes (1): Create from dictionary.
 
 ### Community 642 - "Community 642"
 Cohesion: 1.0
-Nodes (1): Test performance monitoring
+Nodes (1): Return HMAC-SHA256 hex signature of *body* using *secret*.
 
 ### Community 643 - "Community 643"
 Cohesion: 1.0
-Nodes (1): Test agent coordination
+Nodes (1): Make a basic LLM API call.          Args:             prompt: The prompt to s
 
 ### Community 644 - "Community 644"
 Cohesion: 1.0
-Nodes (1): Test coordination between different agent categories
+Nodes (1): Make an LLM API call with message history.          Args:             message
 
 ### Community 645 - "Community 645"
 Cohesion: 1.0
-Nodes (1): Test memory sharing between agents
+Nodes (1): Make an LLM API call expecting JSON response.          Args:             prom
 
 ### Community 646 - "Community 646"
 Cohesion: 1.0
-Nodes (1): Test consensus building between agents
+Nodes (1): Get current available tokens.
 
 ### Community 647 - "Community 647"
 Cohesion: 1.0
-Nodes (1): Scenario: User works with memories in multiple languages          1. User adds
+Nodes (1): Get seconds until tokens available.
 
 ### Community 648 - "Community 648"
 Cohesion: 1.0
-Nodes (1): Scenario: User discovers related content across languages          1. User sea
+Nodes (1): Validate API contracts and OpenAPI specifications
 
 ### Community 649 - "Community 649"
 Cohesion: 1.0
-Nodes (1): Scenario: User explores memories using facets          1. User views all memor
+Nodes (1): Validate that authentication is properly enforced
 
 ### Community 650 - "Community 650"
 Cohesion: 1.0
-Nodes (1): Scenario: User gets search suggestions while typing          1. User starts ty
+Nodes (1): Test API rate limiting enforcement
 
 ### Community 651 - "Community 651"
 Cohesion: 1.0
-Nodes (1): Scenario: User views language statistics          1. User adds many memories i
+Nodes (1): API performance testing under various load conditions
 
 ### Community 652 - "Community 652"
 Cohesion: 1.0
-Nodes (1): Scenario: User benchmarks system performance          1. User runs performance
+Nodes (1): Test API timeout handling
 
 ### Community 653 - "Community 653"
 Cohesion: 1.0
-Nodes (1): Scenario: System migrates existing memories to include language metadata
+Nodes (1): Test API under sustained concurrent load
 
 ### Community 654 - "Community 654"
 Cohesion: 1.0
-Nodes (1): Scenario: Database connection fails during operation          1. User performs
+Nodes (1): Test GraphQL query execution and response validation
 
 ### Community 655 - "Community 655"
 Cohesion: 1.0
-Nodes (1): Scenario: System handles invalid metadata gracefully          1. Database retu
+Nodes (1): Test GraphQL error handling
 
 ### Community 656 - "Community 656"
 Cohesion: 1.0
-Nodes (1): Scenario: Multiple users use system simultaneously          1. User A searches
+Nodes (1): Test GraphQL subscription support (if implemented)
 
 ### Community 657 - "Community 657"
 Cohesion: 1.0
-Nodes (1): Scenario: System processes multiple language detections concurrently
+Nodes (1): Test API input validation and sanitization
 
 ### Community 658 - "Community 658"
 Cohesion: 1.0
-Nodes (1): Complete workflow: Add memories in multiple languages, search, and analyze
+Nodes (1): Test CORS headers configuration
 
 ### Community 659 - "Community 659"
 Cohesion: 1.0
-Nodes (1): Test adding memory with automatic language detection
+Nodes (1): Test rate limiting security against abuse
 
 ### Community 660 - "Community 660"
 Cohesion: 1.0
-Nodes (1): Test complete workflow with multi-language memories
+Nodes (1): Test multiple API version support
 
 ### Community 661 - "Community 661"
 Cohesion: 1.0
-Nodes (1): Test cross-language search workflow
+Nodes (1): Test backward compatibility with older API versions
 
 ### Community 662 - "Community 662"
 Cohesion: 1.0
-Nodes (1): Test faceted search with language filtering
+Nodes (1): Test GitHub Actions workflow generation
 
 ### Community 663 - "Community 663"
 Cohesion: 1.0
-Nodes (1): Test that language metadata persists correctly
+Nodes (1): Test complete execution of workflow scenarios
 
 ### Community 664 - "Community 664"
 Cohesion: 1.0
-Nodes (1): Test language-filtered database query
+Nodes (1): Test workflow error recovery mechanisms
 
 ### Community 665 - "Community 665"
 Cohesion: 1.0
-Nodes (1): Test getting language distribution from database
+Nodes (1): Validate lawful basis for data processing
 
 ### Community 666 - "Community 666"
 Cohesion: 1.0
-Nodes (1): Test detect_language MCP tool integration
+Nodes (1): Validate data subject right of access
 
 ### Community 667 - "Community 667"
 Cohesion: 1.0
-Nodes (1): Test get_supported_languages MCP tool integration
+Nodes (1): Validate right to erasure (right to be forgotten)
 
 ### Community 668 - "Community 668"
 Cohesion: 1.0
-Nodes (1): Test search_by_language MCP tool integration
+Nodes (1): Validate data portability requirements
 
 ### Community 669 - "Community 669"
 Cohesion: 1.0
-Nodes (1): Test cross_language_search MCP tool integration
+Nodes (1): Validate consent management requirements
 
 ### Community 670 - "Community 670"
 Cohesion: 1.0
-Nodes (1): Test get_language_distribution MCP tool integration
+Nodes (1): Validate GDPR data breach notification requirements
 
 ### Community 671 - "Community 671"
 Cohesion: 1.0
-Nodes (1): Test that query performance is tracked correctly
+Nodes (1): Test SOC 2 access control requirements
 
 ### Community 672 - "Community 672"
 Cohesion: 1.0
-Nodes (1): Test performance benchmarking integration
+Nodes (1): Test SOC 2 system monitoring requirements
 
 ### Community 673 - "Community 673"
 Cohesion: 1.0
-Nodes (1): Test complete workflow from detection to search
+Nodes (1): Test SOC 2 incident response capabilities
 
 ### Community 674 - "Community 674"
 Cohesion: 1.0
-Nodes (1): Test discovering related content across languages
+Nodes (1): Test SOC 2 change management procedures
 
 ### Community 675 - "Community 675"
 Cohesion: 1.0
-Nodes (1): Test complete faceted search workflow
+Nodes (1): Test PCI DSS cardholder data protection
 
 ### Community 676 - "Community 676"
 Cohesion: 1.0
-Nodes (1): Test complete lifecycle: add -> detect -> search -> retrieve
+Nodes (1): Test PCI DSS network security requirements
 
 ### Community 677 - "Community 677"
 Cohesion: 1.0
-Nodes (1): Test lifecycle with memories in multiple languages
+Nodes (1): Test PCI DSS vulnerability management
 
 ### Community 678 - "Community 678"
 Cohesion: 1.0
-Nodes (1): Test searching specific language
+Nodes (1): Test ISO 27001 information security policy
 
 ### Community 679 - "Community 679"
 Cohesion: 1.0
-Nodes (1): Test getting language distribution
+Nodes (1): Test ISO 27001 risk assessment process
 
 ### Community 680 - "Community 680"
 Cohesion: 1.0
-Nodes (1): Test complete faceted search workflow
+Nodes (1): Test ISO 27001 asset management
 
 ### Community 681 - "Community 681"
 Cohesion: 1.0
-Nodes (1): Test search suggestions workflow
+Nodes (1): Test compliance across multiple frameworks
 
 ### Community 682 - "Community 682"
 Cohesion: 1.0
-Nodes (1): Test fuzzy search with typos
+Nodes (1): Test comprehensive compliance reporting
 
 ### Community 683 - "Community 683"
 Cohesion: 1.0
-Nodes (1): Test query optimization workflow
+Nodes (1): Test OpenAPI specification completeness
 
 ### Community 684 - "Community 684"
 Cohesion: 1.0
-Nodes (1): Test benchmarking workflow
+Nodes (1): Test API example validity and completeness
 
 ### Community 685 - "Community 685"
 Cohesion: 1.0
-Nodes (1): Test complete language detection workflow via MCP
+Nodes (1): Test API response documentation accuracy
 
 ### Community 686 - "Community 686"
 Cohesion: 1.0
-Nodes (1): Test search facets workflow via MCP
+Nodes (1): Test API changelog accuracy and completeness
 
 ### Community 687 - "Community 687"
 Cohesion: 1.0
-Nodes (1): Test handling of invalid language detection
+Nodes (1): Test Python docstring coverage
 
 ### Community 688 - "Community 688"
 Cohesion: 1.0
-Nodes (1): Test handling of corrupted metadata in searches
+Nodes (1): Test docstring quality and content
 
 ### Community 689 - "Community 689"
 Cohesion: 1.0
-Nodes (1): Test handling of empty datasets
+Nodes (1): Test type hint annotation coverage
 
 ### Community 690 - "Community 690"
 Cohesion: 1.0
-Nodes (1): Test concurrent language detection operations
+Nodes (1): Test module-level documentation
 
 ### Community 691 - "Community 691"
 Cohesion: 1.0
-Nodes (1): Test concurrent search operations
+Nodes (1): Test getting started guide completeness
 
 ### Community 692 - "Community 692"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Test user guide navigation and structure
 
 ### Community 693 - "Community 693"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Test tutorial documentation quality
 
 ### Community 694 - "Community 694"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Test troubleshooting guide effectiveness
 
 ### Community 695 - "Community 695"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Test installation guide prerequisites coverage
 
 ### Community 696 - "Community 696"
 Cohesion: 1.0
-Nodes (1): Test setting TTL to 0 (no expiry)
+Nodes (1): Test Docker installation guide accuracy
 
 ### Community 697 - "Community 697"
 Cohesion: 1.0
-Nodes (1): Test recording negative query time (edge case)
+Nodes (1): Test configuration guide completeness
 
 ### Community 698 - "Community 698"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Test installation verification procedures
 
 ### Community 699 - "Community 699"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Test FAQ completeness and organization
 
 ### Community 700 - "Community 700"
 Cohesion: 1.0
-Nodes (1): Dynamic Category System (no hardcoded categories)
+Nodes (1): Test troubleshooting guide quality and effectiveness
 
 ### Community 701 - "Community 701"
 Cohesion: 1.0
-Nodes (1): Enhanced Cognee Project
+Nodes (1): Test best practices documentation quality
 
 ### Community 702 - "Community 702"
 Cohesion: 1.0
-Nodes (1): Test Suite (975 tests, 100% pass rate)
+Nodes (1): Test glossary completeness and accuracy
 
 ### Community 703 - "Community 703"
 Cohesion: 1.0
-Nodes (1): 10-Category Testing Framework
+Nodes (1): Generate random memory content
 
 ### Community 704 - "Community 704"
 Cohesion: 1.0
-Nodes (1): Test Scenarios Suite
+Nodes (1): Generate random embedding vector
 
 ### Community 705 - "Community 705"
 Cohesion: 1.0
-Nodes (1): Enhanced Cognee Memory Dashboard UX/UI
+Nodes (1): Generate random metadata
 
 ### Community 706 - "Community 706"
 Cohesion: 1.0
-Nodes (1): QA Evaluation Benchmark System
+Nodes (1): Store a memory - high frequency operation
 
 ### Community 707 - "Community 707"
 Cohesion: 1.0
-Nodes (1): Setup and Installation Scripts
+Nodes (1): Search for memories using vector similarity
 
 ### Community 708 - "Community 708"
 Cohesion: 1.0
-Nodes (1): CODE Search Type
+Nodes (1): Retrieve a specific memory by ID
 
 ### Community 709 - "Community 709"
 Cohesion: 1.0
-Nodes (1): Zero-Configuration Auto Setup
+Nodes (1): Get memories for a specific agent
 
 ### Community 710 - "Community 710"
 Cohesion: 1.0
-Nodes (1): Disaster Recovery Checklist
+Nodes (1): Test agent coordination operations
 
 ### Community 711 - "Community 711"
 Cohesion: 1.0
-Nodes (1): Contributor Covenant Code of Conduct
+Nodes (1): Lightweight system health check
 
 ### Community 712 - "Community 712"
 Cohesion: 1.0
-Nodes (1): Security Issue Reporting Policy
+Nodes (1): Update an existing memory
 
 ### Community 713 - "Community 713"
 Cohesion: 1.0
-Nodes (1): Memory List with Infinite Scroll
+Nodes (1): High-frequency trading memory operations
 
 ### Community 714 - "Community 714"
 Cohesion: 1.0
-Nodes (1): Memory Detail View
+Nodes (1): Light load scenario for basic functionality testing
 
 ### Community 715 - "Community 715"
 Cohesion: 1.0
-Nodes (1): Filter Persistence via Zustand and URL
+Nodes (1): Medium load scenario for typical usage testing
 
 ### Community 716 - "Community 716"
 Cohesion: 1.0
-Nodes (1): Timeline Visualization Component
+Nodes (1): Heavy load scenario for stress testing
 
 ### Community 717 - "Community 717"
 Cohesion: 1.0
-Nodes (1): Analytics Dashboard Component
+Nodes (1): Endurance scenario for long-running stability testing
 
 ### Community 718 - "Community 718"
 Cohesion: 1.0
-Nodes (1): Activity Heatmap Component
+Nodes (1): Base URL for Enhanced Cognee API
 
 ### Community 719 - "Community 719"
 Cohesion: 1.0
-Nodes (1): Automation Configuration System (automation_config.json)
+Nodes (1): Performance thresholds for testing
 
 ### Community 720 - "Community 720"
 Cohesion: 1.0
-Nodes (1): Enhanced Cognee CLI Wrapper
+Nodes (1): Base URL for Enhanced Cognee API
 
 ### Community 721 - "Community 721"
 Cohesion: 1.0
-Nodes (1): Auto-Configuration System
+Nodes (1): Test normal business hours load scenario
 
 ### Community 722 - "Community 722"
 Cohesion: 1.0
-Nodes (1): 21-Agent Multi-Agent System
+Nodes (1): Test system performance under peak load
 
 ### Community 723 - "Community 723"
 Cohesion: 1.0
-Nodes (1): Compliance Standards (SOC 2, PCI DSS, GDPR, CCPA, ISO 27001, NIST)
+Nodes (1): Test system limits under stress conditions
 
 ### Community 724 - "Community 724"
 Cohesion: 1.0
-Nodes (1): Plot Metrics Dependencies (numpy, matplotlib, seaborn, scipy)
+Nodes (1): Test system stability over extended period
 
 ### Community 725 - "Community 725"
 Cohesion: 1.0
-Nodes (1): Third Party Licenses
+Nodes (1): Test performance regression detection
 
 ### Community 726 - "Community 726"
 Cohesion: 1.0
-Nodes (1): Setup and Installation Scripts
+Nodes (1): Test realistic user behavior simulation
 
 ### Community 727 - "Community 727"
 Cohesion: 1.0
-Nodes (1): Alice in Wonderland Sample Data
+Nodes (1): Test system scalability patterns
 
 ### Community 728 - "Community 728"
 Cohesion: 1.0
-Nodes (1): Background Video Blur (MP4 - Frontend Asset)
+Nodes (1): Test resource utilization under optimal conditions
 
 ### Community 729 - "Community 729"
 Cohesion: 1.0
-Nodes (1): Generic File Icon
+Nodes (1): Base URL for Enhanced Cognee API
 
 ### Community 730 - "Community 730"
+Cohesion: 1.0
+Nodes (1): Security test data including malicious inputs
+
+### Community 731 - "Community 731"
+Cohesion: 1.0
+Nodes (1): Base URL for Enhanced Cognee API
+
+### Community 732 - "Community 732"
+Cohesion: 1.0
+Nodes (1): Sensitive test data for privacy testing
+
+### Community 733 - "Community 733"
+Cohesion: 1.0
+Nodes (1): Base URL for Enhanced Cognee API
+
+### Community 734 - "Community 734"
+Cohesion: 1.0
+Nodes (1): Base URL for Enhanced Cognee API
+
+### Community 735 - "Community 735"
+Cohesion: 1.0
+Nodes (1): Base URL for Enhanced Cognee API
+
+### Community 736 - "Community 736"
+Cohesion: 1.0
+Nodes (1): Test user data for authentication workflow
+
+### Community 737 - "Community 737"
+Cohesion: 1.0
+Nodes (1): Get authentication headers for API requests
+
+### Community 738 - "Community 738"
+Cohesion: 1.0
+Nodes (1): Base URL for Enhanced Cognee API
+
+### Community 739 - "Community 739"
+Cohesion: 1.0
+Nodes (1): Sample market data for trading workflow
+
+### Community 740 - "Community 740"
+Cohesion: 1.0
+Nodes (1): Base URL for Enhanced Cognee API
+
+### Community 741 - "Community 741"
+Cohesion: 1.0
+Nodes (1): Validate WCAG 2.1 accessibility compliance
+
+### Community 742 - "Community 742"
+Cohesion: 1.0
+Nodes (1): Test keyboard navigation accessibility
+
+### Community 743 - "Community 743"
+Cohesion: 1.0
+Nodes (1): Test ARIA labels and descriptions
+
+### Community 744 - "Community 744"
+Cohesion: 1.0
+Nodes (1): Test color contrast compliance
+
+### Community 745 - "Community 745"
+Cohesion: 1.0
+Nodes (1): Test focus management and indicators
+
+### Community 746 - "Community 746"
+Cohesion: 1.0
+Nodes (1): Test screen reader compatibility
+
+### Community 747 - "Community 747"
+Cohesion: 1.0
+Nodes (1): Test mobile responsive design
+
+### Community 748 - "Community 748"
+Cohesion: 1.0
+Nodes (1): Test tablet responsive design
+
+### Community 749 - "Community 749"
+Cohesion: 1.0
+Nodes (1): Test desktop layout optimization
+
+### Community 750 - "Community 750"
+Cohesion: 1.0
+Nodes (1): Test compatibility across different browsers
+
+### Community 751 - "Community 751"
+Cohesion: 1.0
+Nodes (1): Test feature detection and graceful degradation
+
+### Community 752 - "Community 752"
+Cohesion: 1.0
+Nodes (1): Test complete user journeys across the application
+
+### Community 753 - "Community 753"
+Cohesion: 1.0
+Nodes (1): Test error handling within user journeys
+
+### Community 754 - "Community 754"
+Cohesion: 1.0
+Nodes (1): Test visual regression against baseline
+
+### Community 755 - "Community 755"
+Cohesion: 1.0
+Nodes (1): Test UI consistency across pages
+
+### Community 756 - "Community 756"
+Cohesion: 1.0
+Nodes (1): Test theme switching functionality
+
+### Community 757 - "Community 757"
+Cohesion: 1.0
+Nodes (1): Test language localization support
+
+### Community 758 - "Community 758"
+Cohesion: 1.0
+Nodes (1): Test responsive image loading
+
+### Community 759 - "Community 759"
+Cohesion: 1.0
+Nodes (1): Fixture for Algorithmic Trading System agent
+
+### Community 760 - "Community 760"
+Cohesion: 1.0
+Nodes (1): Fixture for Risk Management agent
+
+### Community 761 - "Community 761"
+Cohesion: 1.0
+Nodes (1): Fixture for Market Analysis agent
+
+### Community 762 - "Community 762"
+Cohesion: 1.0
+Nodes (1): Test Algorithmic Trading System agent initialization
+
+### Community 763 - "Community 763"
+Cohesion: 1.0
+Nodes (1): Test trading signal generation
+
+### Community 764 - "Community 764"
+Cohesion: 1.0
+Nodes (1): Test risk assessment functionality
+
+### Community 765 - "Community 765"
+Cohesion: 1.0
+Nodes (1): Test market data analysis
+
+### Community 766 - "Community 766"
+Cohesion: 1.0
+Nodes (1): Test agent memory integration
+
+### Community 767 - "Community 767"
+Cohesion: 1.0
+Nodes (1): Fixture for Code Reviewer agent
+
+### Community 768 - "Community 768"
+Cohesion: 1.0
+Nodes (1): Fixture for Development agent
+
+### Community 769 - "Community 769"
+Cohesion: 1.0
+Nodes (1): Fixture for Architecture agent
+
+### Community 770 - "Community 770"
+Cohesion: 1.0
+Nodes (1): Test code review functionality
+
+### Community 771 - "Community 771"
+Cohesion: 1.0
+Nodes (1): Test security vulnerability detection
+
+### Community 772 - "Community 772"
+Cohesion: 1.0
+Nodes (1): Test development task execution
+
+### Community 773 - "Community 773"
+Cohesion: 1.0
+Nodes (1): Test architecture design functionality
+
+### Community 774 - "Community 774"
+Cohesion: 1.0
+Nodes (1): Fixture for Context Manager agent
+
+### Community 775 - "Community 775"
+Cohesion: 1.0
+Nodes (1): Fixture for Performance Monitor agent
+
+### Community 776 - "Community 776"
+Cohesion: 1.0
+Nodes (1): Fixture for Communication Coordinator agent
+
+### Community 777 - "Community 777"
+Cohesion: 1.0
+Nodes (1): Test context creation
+
+### Community 778 - "Community 778"
+Cohesion: 1.0
+Nodes (1): Test context memory sharing
+
+### Community 779 - "Community 779"
+Cohesion: 1.0
+Nodes (1): Test performance monitoring
+
+### Community 780 - "Community 780"
+Cohesion: 1.0
+Nodes (1): Test agent coordination
+
+### Community 781 - "Community 781"
+Cohesion: 1.0
+Nodes (1): Test coordination between different agent categories
+
+### Community 782 - "Community 782"
+Cohesion: 1.0
+Nodes (1): Test memory sharing between agents
+
+### Community 783 - "Community 783"
+Cohesion: 1.0
+Nodes (1): Test consensus building between agents
+
+### Community 784 - "Community 784"
+Cohesion: 1.0
+Nodes (1): Scenario: User works with memories in multiple languages          1. User adds
+
+### Community 785 - "Community 785"
+Cohesion: 1.0
+Nodes (1): Scenario: User discovers related content across languages          1. User sea
+
+### Community 786 - "Community 786"
+Cohesion: 1.0
+Nodes (1): Scenario: User explores memories using facets          1. User views all memor
+
+### Community 787 - "Community 787"
+Cohesion: 1.0
+Nodes (1): Scenario: User gets search suggestions while typing          1. User starts ty
+
+### Community 788 - "Community 788"
+Cohesion: 1.0
+Nodes (1): Scenario: User views language statistics          1. User adds many memories i
+
+### Community 789 - "Community 789"
+Cohesion: 1.0
+Nodes (1): Scenario: User benchmarks system performance          1. User runs performance
+
+### Community 790 - "Community 790"
+Cohesion: 1.0
+Nodes (1): Scenario: System migrates existing memories to include language metadata
+
+### Community 791 - "Community 791"
+Cohesion: 1.0
+Nodes (1): Scenario: Database connection fails during operation          1. User performs
+
+### Community 792 - "Community 792"
+Cohesion: 1.0
+Nodes (1): Scenario: System handles invalid metadata gracefully          1. Database retu
+
+### Community 793 - "Community 793"
+Cohesion: 1.0
+Nodes (1): Scenario: Multiple users use system simultaneously          1. User A searches
+
+### Community 794 - "Community 794"
+Cohesion: 1.0
+Nodes (1): Scenario: System processes multiple language detections concurrently
+
+### Community 795 - "Community 795"
+Cohesion: 1.0
+Nodes (1): Complete workflow: Add memories in multiple languages, search, and analyze
+
+### Community 796 - "Community 796"
+Cohesion: 1.0
+Nodes (1): Test adding memory with automatic language detection
+
+### Community 797 - "Community 797"
+Cohesion: 1.0
+Nodes (1): Test complete workflow with multi-language memories
+
+### Community 798 - "Community 798"
+Cohesion: 1.0
+Nodes (1): Test cross-language search workflow
+
+### Community 799 - "Community 799"
+Cohesion: 1.0
+Nodes (1): Test faceted search with language filtering
+
+### Community 800 - "Community 800"
+Cohesion: 1.0
+Nodes (1): Test that language metadata persists correctly
+
+### Community 801 - "Community 801"
+Cohesion: 1.0
+Nodes (1): Test language-filtered database query
+
+### Community 802 - "Community 802"
+Cohesion: 1.0
+Nodes (1): Test getting language distribution from database
+
+### Community 803 - "Community 803"
+Cohesion: 1.0
+Nodes (1): Test detect_language MCP tool integration
+
+### Community 804 - "Community 804"
+Cohesion: 1.0
+Nodes (1): Test get_supported_languages MCP tool integration
+
+### Community 805 - "Community 805"
+Cohesion: 1.0
+Nodes (1): Test search_by_language MCP tool integration
+
+### Community 806 - "Community 806"
+Cohesion: 1.0
+Nodes (1): Test cross_language_search MCP tool integration
+
+### Community 807 - "Community 807"
+Cohesion: 1.0
+Nodes (1): Test get_language_distribution MCP tool integration
+
+### Community 808 - "Community 808"
+Cohesion: 1.0
+Nodes (1): Test that query performance is tracked correctly
+
+### Community 809 - "Community 809"
+Cohesion: 1.0
+Nodes (1): Test performance benchmarking integration
+
+### Community 810 - "Community 810"
+Cohesion: 1.0
+Nodes (1): Test complete workflow from detection to search
+
+### Community 811 - "Community 811"
+Cohesion: 1.0
+Nodes (1): Test discovering related content across languages
+
+### Community 812 - "Community 812"
+Cohesion: 1.0
+Nodes (1): Test complete faceted search workflow
+
+### Community 813 - "Community 813"
+Cohesion: 1.0
+Nodes (1): Test complete lifecycle: add -> detect -> search -> retrieve
+
+### Community 814 - "Community 814"
+Cohesion: 1.0
+Nodes (1): Test lifecycle with memories in multiple languages
+
+### Community 815 - "Community 815"
+Cohesion: 1.0
+Nodes (1): Test searching specific language
+
+### Community 816 - "Community 816"
+Cohesion: 1.0
+Nodes (1): Test getting language distribution
+
+### Community 817 - "Community 817"
+Cohesion: 1.0
+Nodes (1): Test complete faceted search workflow
+
+### Community 818 - "Community 818"
+Cohesion: 1.0
+Nodes (1): Test search suggestions workflow
+
+### Community 819 - "Community 819"
+Cohesion: 1.0
+Nodes (1): Test fuzzy search with typos
+
+### Community 820 - "Community 820"
+Cohesion: 1.0
+Nodes (1): Test query optimization workflow
+
+### Community 821 - "Community 821"
+Cohesion: 1.0
+Nodes (1): Test benchmarking workflow
+
+### Community 822 - "Community 822"
+Cohesion: 1.0
+Nodes (1): Test complete language detection workflow via MCP
+
+### Community 823 - "Community 823"
+Cohesion: 1.0
+Nodes (1): Test search facets workflow via MCP
+
+### Community 824 - "Community 824"
+Cohesion: 1.0
+Nodes (1): Test handling of invalid language detection
+
+### Community 825 - "Community 825"
+Cohesion: 1.0
+Nodes (1): Test handling of corrupted metadata in searches
+
+### Community 826 - "Community 826"
+Cohesion: 1.0
+Nodes (1): Test handling of empty datasets
+
+### Community 827 - "Community 827"
+Cohesion: 1.0
+Nodes (1): Test concurrent language detection operations
+
+### Community 828 - "Community 828"
+Cohesion: 1.0
+Nodes (1): Test concurrent search operations
+
+### Community 829 - "Community 829"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 830 - "Community 830"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 831 - "Community 831"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 832 - "Community 832"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 833 - "Community 833"
+Cohesion: 1.0
+Nodes (1): If the server returns a dict (e.g. an error), wrap it in a list.
+
+### Community 834 - "Community 834"
+Cohesion: 1.0
+Nodes (1): Verify that the client is usable inside an async with block.
+
+### Community 835 - "Community 835"
+Cohesion: 1.0
+Nodes (1): Test setting TTL to 0 (no expiry)
+
+### Community 836 - "Community 836"
+Cohesion: 1.0
+Nodes (1): Test recording negative query time (edge case)
+
+### Community 837 - "Community 837"
+Cohesion: 1.0
+Nodes (1): set_tier() must not raise for valid tier strings (may return False with no pool)
+
+### Community 838 - "Community 838"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 839 - "Community 839"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 840 - "Community 840"
+Cohesion: 1.0
+Nodes (1): Check if operation should be logged based on config.
+
+### Community 841 - "Community 841"
+Cohesion: 1.0
+Nodes (1): Anonymize sensitive data in log entries.
+
+### Community 842 - "Community 842"
+Cohesion: 1.0
+Nodes (1): Log an automated operation.          Args:             operation_type: Type o
+
+### Community 843 - "Community 843"
+Cohesion: 1.0
+Nodes (1): Write log entry to file.
+
+### Community 844 - "Community 844"
+Cohesion: 1.0
+Nodes (1): Write log entry to PostgreSQL database.
+
+### Community 845 - "Community 845"
+Cohesion: 1.0
+Nodes (1): Add log entry to recent logs buffer.
+
+### Community 846 - "Community 846"
+Cohesion: 1.0
+Nodes (1): Get recent log entries.          Args:             limit: Maximum number of e
+
+### Community 847 - "Community 847"
+Cohesion: 1.0
+Nodes (1): Get current performance metrics.
+
+### Community 848 - "Community 848"
+Cohesion: 1.0
+Nodes (1): Query audit logs from database.          Args:             start_time: Start
+
+### Community 849 - "Community 849"
+Cohesion: 1.0
+Nodes (1): Clean up old log entries based on retention policy.          Args:
+
+### Community 850 - "Community 850"
+Cohesion: 1.0
+Nodes (1): Close the audit logger and cleanup resources.
+
+### Community 851 - "Community 851"
+Cohesion: 1.0
+Nodes (1): Get the global audit logger instance.
+
+### Community 852 - "Community 852"
+Cohesion: 1.0
+Nodes (1): Initialize the global audit logger.      Args:         config_path: Path to a
+
+### Community 853 - "Community 853"
+Cohesion: 1.0
+Nodes (1): Undo memory update by restoring the original content.
+
+### Community 854 - "Community 854"
+Cohesion: 1.0
+Nodes (1): Undo memory deletion by re-inserting the original row.
+
+### Community 855 - "Community 855"
+Cohesion: 1.0
+Nodes (1): Undo memory summarization by restoring the original full content.
+
+### Community 856 - "Community 856"
+Cohesion: 1.0
+Nodes (1): Undo deduplication by restoring each merged memory.
+
+### Community 857 - "Community 857"
+Cohesion: 1.0
+Nodes (1): Undo sharing policy change by reverting to the original policy.
+
+### Community 858 - "Community 858"
+Cohesion: 1.0
+Nodes (1): Re-apply the most recently undone operation for an agent.          Args:
+
+### Community 859 - "Community 859"
+Cohesion: 1.0
+Nodes (1): Re-apply the new_state captured in the undo entry.
+
+### Community 860 - "Community 860"
+Cohesion: 1.0
+Nodes (1): Undo an entire chain of related operations.          Args:             operation
+
+### Community 861 - "Community 861"
+Cohesion: 1.0
+Nodes (1): Get undo history for an agent.          Args:             agent_id: Filter by ag
+
+### Community 862 - "Community 862"
+Cohesion: 1.0
+Nodes (1): Remove expired undo entries from history and database.
+
+### Community 863 - "Community 863"
+Cohesion: 1.0
+Nodes (1): Get the global undo manager instance.
+
+### Community 864 - "Community 864"
+Cohesion: 1.0
+Nodes (1): Initialize the global undo manager.      Args:         config_path: Path to auto
+
+### Community 865 - "Community 865"
+Cohesion: 1.0
+Nodes (1): Search memories using semantic and text search (Standard Memory MCP Tool)
+
+### Community 866 - "Community 866"
+Cohesion: 1.0
+Nodes (1): Expire or archive memories older than specified days (Memory Management Tool)
+
+### Community 867 - "Community 867"
+Cohesion: 1.0
+Nodes (1): Automatically find and handle duplicate memories (Memory Deduplication Tool)
+
+### Community 868 - "Community 868"
+Cohesion: 1.0
+Nodes (1): Create a shared memory space for multiple agents (Cross-Agent Sharing Tool)
+
+### Community 869 - "Community 869"
+Cohesion: 1.0
+Nodes (1): End an active session and optionally record a summary.      TRIGGER TYPE: (M)
+
+### Community 870 - "Community 870"
+Cohesion: 1.0
+Nodes (1): Initialize the undo manager.          Args:             config_path: Path to
+
+### Community 871 - "Community 871"
+Cohesion: 1.0
+Nodes (1): Load automation configuration.
+
+### Community 872 - "Community 872"
+Cohesion: 1.0
+Nodes (1): Get default configuration.
+
+### Community 873 - "Community 873"
+Cohesion: 1.0
+Nodes (1): Create an undo entry for an operation.          Args:             operation_t
+
+### Community 874 - "Community 874"
+Cohesion: 1.0
+Nodes (1): Save undo entry to database.
+
+### Community 875 - "Community 875"
+Cohesion: 1.0
+Nodes (1): Undo a specific operation.          Args:             undo_id: ID of the oper
+
+### Community 876 - "Community 876"
+Cohesion: 1.0
+Nodes (1): Perform the actual undo operation.
+
+### Community 877 - "Community 877"
+Cohesion: 1.0
+Nodes (1): Undo memory addition by deleting it.
+
+### Community 878 - "Community 878"
+Cohesion: 1.0
+Nodes (1): Undo memory update by reverting to original content.
+
+### Community 879 - "Community 879"
+Cohesion: 1.0
+Nodes (1): Undo memory deletion by restoring it.
+
+### Community 880 - "Community 880"
+Cohesion: 1.0
+Nodes (1): Undo memory summarization by restoring original content.
+
+### Community 881 - "Community 881"
+Cohesion: 1.0
+Nodes (1): Undo deduplication by restoring merged memories.
+
+### Community 882 - "Community 882"
+Cohesion: 1.0
+Nodes (1): Undo sharing policy change by reverting to original.
+
+### Community 883 - "Community 883"
+Cohesion: 1.0
+Nodes (1): Load undo entry from database.
+
+### Community 884 - "Community 884"
+Cohesion: 1.0
+Nodes (1): Update undo entry in database.
+
+### Community 885 - "Community 885"
+Cohesion: 1.0
+Nodes (1): Undo an entire chain of related operations.          Args:             operat
+
+### Community 886 - "Community 886"
+Cohesion: 1.0
+Nodes (1): Get undo history for an agent.          Args:             agent_id: Filter by
+
+### Community 887 - "Community 887"
+Cohesion: 1.0
+Nodes (1): Remove expired undo entries from history and database.
+
+### Community 888 - "Community 888"
+Cohesion: 1.0
+Nodes (1): Get the global undo manager instance.
+
+### Community 889 - "Community 889"
+Cohesion: 1.0
+Nodes (1): Initialize the global undo manager.      Args:         config_path: Path to a
+
+### Community 890 - "Community 890"
+Cohesion: 1.0
+Nodes (1): # TODO: Call actual delete_memory function
+
+### Community 891 - "Community 891"
+Cohesion: 1.0
+Nodes (1): # TODO: Call actual update_memory function
+
+### Community 892 - "Community 892"
+Cohesion: 1.0
+Nodes (1): # TODO: Call actual add_memory function
+
+### Community 893 - "Community 893"
+Cohesion: 1.0
+Nodes (1): # TODO: Update memory with original content
+
+### Community 894 - "Community 894"
+Cohesion: 1.0
+Nodes (1): # TODO: Update metadata
+
+### Community 895 - "Community 895"
+Cohesion: 1.0
+Nodes (1): # TODO: Restore each merged memory
+
+### Community 896 - "Community 896"
+Cohesion: 1.0
+Nodes (1): # TODO: Call set_memory_sharing with original policy
+
+### Community 897 - "Community 897"
+Cohesion: 1.0
+Nodes (1): Enhanced Cognee Lite Mode - MCP Server  Lightweight MCP server with 10 essenti
+
+### Community 898 - "Community 898"
+Cohesion: 1.0
+Nodes (1): Lightweight MCP server for Enhanced Cognee Lite mode.      Features:     - 10
+
+### Community 899 - "Community 899"
+Cohesion: 1.0
+Nodes (1): Initialize Lite MCP server.          Args:             db_path: Path to SQLit
+
+### Community 900 - "Community 900"
+Cohesion: 1.0
+Nodes (1): Add a memory to the database.          Args:             content: Memory cont
+
+### Community 901 - "Community 901"
+Cohesion: 1.0
+Nodes (1): Search memories using FTS5 full-text search.          Args:             query
+
+### Community 902 - "Community 902"
+Cohesion: 1.0
+Nodes (1): List memories with pagination.          Args:             agent_id: Agent ide
+
+### Community 903 - "Community 903"
+Cohesion: 1.0
+Nodes (1): Get a specific memory by ID.          Args:             memory_id: Memory ID
+
+### Community 904 - "Community 904"
+Cohesion: 1.0
+Nodes (1): Update an existing memory.          Args:             memory_id: Memory ID
+
+### Community 905 - "Community 905"
+Cohesion: 1.0
+Nodes (1): Delete a memory.          Args:             memory_id: Memory ID          R
+
+### Community 906 - "Community 906"
+Cohesion: 1.0
+Nodes (1): List all agents with memory counts.          Returns:             Formatted a
+
+### Community 907 - "Community 907"
+Cohesion: 1.0
+Nodes (1): Perform health check.          Returns:             Health status
+
+### Community 908 - "Community 908"
+Cohesion: 1.0
+Nodes (1): Get system statistics.          Returns:             Formatted statistics
+
+### Community 909 - "Community 909"
+Cohesion: 1.0
+Nodes (1): Basic cognify - transform data to knowledge (Lite mode, no graph).          Ar
+
+### Community 910 - "Community 910"
+Cohesion: 1.0
+Nodes (1): MCP protocol implementation for Lite mode.      Implements stdio-based MCP pro
+
+### Community 911 - "Community 911"
+Cohesion: 1.0
+Nodes (1): Initialize available MCP tools.
+
+### Community 912 - "Community 912"
+Cohesion: 1.0
+Nodes (1): Call an MCP tool.          Args:             tool_name: Tool name
+
+### Community 913 - "Community 913"
+Cohesion: 1.0
+Nodes (1): Main entry point for Lite MCP server.
+
+### Community 914 - "Community 914"
+Cohesion: 1.0
+Nodes (1): # TODO: Implement stdio-based MCP protocol
+
+### Community 915 - "Community 915"
+Cohesion: 1.0
+Nodes (1): Print setup wizard header.
+
+### Community 916 - "Community 916"
+Cohesion: 1.0
+Nodes (1): Print info message (ASCII-only).
+
+### Community 917 - "Community 917"
+Cohesion: 1.0
+Nodes (1): Print success message (ASCII-only).
+
+### Community 918 - "Community 918"
+Cohesion: 1.0
+Nodes (1): Print warning message (ASCII-only).
+
+### Community 919 - "Community 919"
+Cohesion: 1.0
+Nodes (1): Print error message (ASCII-only).
+
+### Community 920 - "Community 920"
+Cohesion: 1.0
+Nodes (1): Ask user yes/no question.      Args:         prompt: Question prompt
+
+### Community 921 - "Community 921"
+Cohesion: 1.0
+Nodes (1): Ask user for text input.      Args:         prompt: Input prompt         def
+
+### Community 922 - "Community 922"
+Cohesion: 1.0
+Nodes (1): Check if required dependencies are installed.
+
+### Community 923 - "Community 923"
+Cohesion: 1.0
+Nodes (1): Create required directories.
+
+### Community 924 - "Community 924"
+Cohesion: 1.0
+Nodes (1): Initialize SQLite database with schema.
+
+### Community 925 - "Community 925"
+Cohesion: 1.0
+Nodes (1): Test database functionality.
+
+### Community 926 - "Community 926"
+Cohesion: 1.0
+Nodes (1): Create Lite mode configuration file.
+
+### Community 927 - "Community 927"
+Cohesion: 1.0
+Nodes (1): Print setup completion summary.
+
+### Community 928 - "Community 928"
+Cohesion: 1.0
+Nodes (1): Main setup wizard function.
+
+### Community 929 - "Community 929"
+Cohesion: 1.0
+Nodes (1): SQLite database manager for Enhanced Cognee Lite mode.      Features:     - T
+
+### Community 930 - "Community 930"
+Cohesion: 1.0
+Nodes (1): Initialize SQLite manager.          Args:             db_path: Path to SQLite
+
+### Community 931 - "Community 931"
+Cohesion: 1.0
+Nodes (1): Get thread-local database connection.          Returns:             SQLite co
+
+### Community 932 - "Community 932"
+Cohesion: 1.0
+Nodes (1): Ensure database directory and file exist.
+
+### Community 933 - "Community 933"
+Cohesion: 1.0
+Nodes (1): Initialize database schema from SQL file.
+
+### Community 934 - "Community 934"
+Cohesion: 1.0
+Nodes (1): Add a document to the database.          Args:             data_id: Unique da
+
+### Community 935 - "Community 935"
+Cohesion: 1.0
+Nodes (1): Full-text search using FTS5.          Args:             query: Search query
+
+### Community 936 - "Community 936"
+Cohesion: 1.0
+Nodes (1): Get document by ID.          Args:             doc_id: Document ID
+
+### Community 937 - "Community 937"
+Cohesion: 1.0
+Nodes (1): List documents with pagination.          Args:             user_id: User iden
+
+### Community 938 - "Community 938"
+Cohesion: 1.0
+Nodes (1): Update document.          Args:             doc_id: Document ID
+
+### Community 939 - "Community 939"
+Cohesion: 1.0
+Nodes (1): Delete document.          Args:             doc_id: Document ID          Re
+
+### Community 940 - "Community 940"
+Cohesion: 1.0
+Nodes (1): Create a new session.          Args:             user_id: User identifier
+
+### Community 941 - "Community 941"
+Cohesion: 1.0
+Nodes (1): Get session by ID.          Args:             session_id: Session ID
+
+### Community 942 - "Community 942"
+Cohesion: 1.0
+Nodes (1): List sessions.          Args:             user_id: User identifier
+
+### Community 943 - "Community 943"
+Cohesion: 1.0
+Nodes (1): Get database statistics.          Returns:             Statistics dictionary
+
+### Community 944 - "Community 944"
+Cohesion: 1.0
+Nodes (1): List all agents with memory counts.          Returns:             List of age
+
+### Community 945 - "Community 945"
+Cohesion: 1.0
+Nodes (1): Perform health check.          Returns:             Health status dictionary
+
+### Community 946 - "Community 946"
+Cohesion: 1.0
+Nodes (1): Close database connection.
+
+### Community 947 - "Community 947"
+Cohesion: 1.0
+Nodes (1): Context manager entry.
+
+### Community 948 - "Community 948"
+Cohesion: 1.0
+Nodes (1): Context manager exit.
+
+### Community 949 - "Community 949"
+Cohesion: 1.0
+Nodes (1): Search memories using semantic and text search (Standard Memory MCP Tool)
+
+### Community 950 - "Community 950"
+Cohesion: 1.0
+Nodes (1): Expire or archive memories older than specified days (Memory Management Tool)
+
+### Community 951 - "Community 951"
+Cohesion: 1.0
+Nodes (1): Automatically find and handle duplicate memories (Memory Deduplication Tool)
+
+### Community 952 - "Community 952"
+Cohesion: 1.0
+Nodes (1): Create a shared memory space for multiple agents (Cross-Agent Sharing Tool)
+
+### Community 953 - "Community 953"
+Cohesion: 1.0
+Nodes (1): Interactive setup wizard for Enhanced Cognee.      Guides users through initia
+
+### Community 954 - "Community 954"
+Cohesion: 1.0
+Nodes (1): Initialize setup wizard.          Args:             project_root: Root direct
+
+### Community 955 - "Community 955"
+Cohesion: 1.0
+Nodes (1): Run the interactive setup wizard.          Returns:             True if setup
+
+### Community 956 - "Community 956"
+Cohesion: 1.0
+Nodes (1): Collect configuration from user.          Returns:             Configuration
+
+### Community 957 - "Community 957"
+Cohesion: 1.0
+Nodes (1): Save configuration to .env file.          Args:             config: Configura
+
+### Community 958 - "Community 958"
+Cohesion: 1.0
+Nodes (1): Generate .env file content from configuration.          Args:             con
+
+### Community 959 - "Community 959"
+Cohesion: 1.0
+Nodes (1): Verify that setup was successful.          Returns:             True if verif
+
+### Community 960 - "Community 960"
+Cohesion: 1.0
+Nodes (1): Print success message.
+
+### Community 961 - "Community 961"
+Cohesion: 1.0
+Nodes (1): Get current timestamp.
+
+### Community 962 - "Community 962"
+Cohesion: 1.0
+Nodes (1): Main entry point for setup wizard.
+
+### Community 963 - "Community 963"
+Cohesion: 1.0
+Nodes (1): Simple entity extraction (could be enhanced with NLP)
+
+### Community 964 - "Community 964"
+Cohesion: 1.0
+Nodes (1): Enhanced Cognee MCP Server with enterprise-grade memory stack integration
+
+### Community 965 - "Community 965"
+Cohesion: 1.0
+Nodes (1): Initialize all Enhanced stack connections
+
+### Community 966 - "Community 966"
+Cohesion: 1.0
+Nodes (1): Initialize PostgreSQL connection (replaces SQLite)
+
+### Community 967 - "Community 967"
+Cohesion: 1.0
+Nodes (1): Initialize Qdrant client (replaces LanceDB)
+
+### Community 968 - "Community 968"
+Cohesion: 1.0
+Nodes (1): Initialize Neo4j driver (replaces Kuzu)
+
+### Community 969 - "Community 969"
+Cohesion: 1.0
+Nodes (1): Initialize Redis client (new cache layer)
+
+### Community 970 - "Community 970"
+Cohesion: 1.0
+Nodes (1): Generate Qdrant collection name with DYNAMIC categorization          Supports dy
+
+### Community 971 - "Community 971"
+Cohesion: 1.0
+Nodes (1): Add memory entry to Enhanced stack
+
+### Community 972 - "Community 972"
+Cohesion: 1.0
+Nodes (1): Search memory using Enhanced vector database with DYNAMIC categories          Su
+
+### Community 973 - "Community 973"
+Cohesion: 1.0
+Nodes (1): Build Qdrant filter from search query
+
+### Community 974 - "Community 974"
+Cohesion: 1.0
+Nodes (1): Get list of active agents from PostgreSQL
+
+### Community 975 - "Community 975"
+Cohesion: 1.0
+Nodes (1): Add knowledge graph relation using Neo4j
+
+### Community 976 - "Community 976"
+Cohesion: 1.0
+Nodes (1): Get memory statistics from Enhanced stack
+
+### Community 977 - "Community 977"
+Cohesion: 1.0
+Nodes (1): Setup FastAPI routes for MCP interface
+
+### Community 978 - "Community 978"
+Cohesion: 1.0
+Nodes (1): Manage application lifecycle
+
+### Community 979 - "Community 979"
+Cohesion: 1.0
+Nodes (1): Generic default categories for simple projects         Projects can override wi
+
+### Community 980 - "Community 980"
+Cohesion: 1.0
+Nodes (1): Manages memory configuration for projects     Projects can provide their own co
+
+### Community 981 - "Community 981"
+Cohesion: 1.0
+Nodes (1): Load configuration from file or use defaults
+
+### Community 982 - "Community 982"
+Cohesion: 1.0
+Nodes (1): Find configuration file in standard locations
+
+### Community 983 - "Community 983"
+Cohesion: 1.0
+Nodes (1): Load configuration from JSON file
+
+### Community 984 - "Community 984"
+Cohesion: 1.0
+Nodes (1): Get category configuration by name
+
+### Community 985 - "Community 985"
+Cohesion: 1.0
+Nodes (1): Get agent configuration
+
+### Community 986 - "Community 986"
+Cohesion: 1.0
+Nodes (1): Add or update a category
+
+### Community 987 - "Community 987"
+Cohesion: 1.0
+Nodes (1): Add or update an agent
+
+### Community 988 - "Community 988"
+Cohesion: 1.0
+Nodes (1): Check if category exists
+
+### Community 989 - "Community 989"
+Cohesion: 1.0
+Nodes (1): Get prefix for a category
+
+### Community 990 - "Community 990"
+Cohesion: 1.0
+Nodes (1): Create an example configuration file for a project     Projects can customize t
+
+### Community 991 - "Community 991"
+Cohesion: 1.0
+Nodes (1): Get the global configuration manager instance
+
+### Community 992 - "Community 992"
+Cohesion: 1.0
+Nodes (1): Reset the global configuration manager (for testing)
+
+### Community 993 - "Community 993"
+Cohesion: 1.0
+Nodes (1): Search memories using semantic and text search (Standard Memory MCP Tool)
+
+### Community 994 - "Community 994"
+Cohesion: 1.0
+Nodes (1): Expire or archive memories older than specified days (Memory Management Tool)
+
+### Community 995 - "Community 995"
+Cohesion: 1.0
+Nodes (1): Automatically find and handle duplicate memories (Memory Deduplication Tool)
+
+### Community 996 - "Community 996"
+Cohesion: 1.0
+Nodes (1): Create a shared memory space for multiple agents (Cross-Agent Sharing Tool)
+
+### Community 997 - "Community 997"
+Cohesion: 1.0
+Nodes (1): Execute trading order (simulated)
+
+### Community 998 - "Community 998"
+Cohesion: 1.0
+Nodes (1): Calculate Value at Risk (simplified)
+
+### Community 999 - "Community 999"
+Cohesion: 1.0
+Nodes (1): Calculate portfolio beta (simplified)
+
+### Community 1000 - "Community 1000"
+Cohesion: 1.0
+Nodes (1): Calculate portfolio volatility (simplified)
+
+### Community 1001 - "Community 1001"
+Cohesion: 1.0
+Nodes (1): Calculate maximum drawdown (simplified)
+
+### Community 1002 - "Community 1002"
+Cohesion: 1.0
+Nodes (1): Calculate cyclomatic complexity (simplified)
+
+### Community 1003 - "Community 1003"
+Cohesion: 1.0
+Nodes (1): Factory function to create SMC agents
+
+### Community 1004 - "Community 1004"
+Cohesion: 1.0
+Nodes (1): Test Algorithmic Trading System (ATS) Agents
+
+### Community 1005 - "Community 1005"
+Cohesion: 1.0
+Nodes (1): Fixture for Algorithmic Trading System agent
+
+### Community 1006 - "Community 1006"
+Cohesion: 1.0
+Nodes (1): Fixture for Risk Management agent
+
+### Community 1007 - "Community 1007"
+Cohesion: 1.0
+Nodes (1): Fixture for Market Analysis agent
+
+### Community 1008 - "Community 1008"
+Cohesion: 1.0
+Nodes (1): Test Algorithmic Trading System agent initialization
+
+### Community 1009 - "Community 1009"
+Cohesion: 1.0
+Nodes (1): Test trading signal generation
+
+### Community 1010 - "Community 1010"
+Cohesion: 1.0
+Nodes (1): Test risk assessment functionality
+
+### Community 1011 - "Community 1011"
+Cohesion: 1.0
+Nodes (1): Test market data analysis
+
+### Community 1012 - "Community 1012"
+Cohesion: 1.0
+Nodes (1): Test agent memory integration
+
+### Community 1013 - "Community 1013"
+Cohesion: 1.0
+Nodes (1): Test agent error handling
+
+### Community 1014 - "Community 1014"
+Cohesion: 1.0
+Nodes (1): Test Other Multi-Agent (OMA) Agents
+
+### Community 1015 - "Community 1015"
+Cohesion: 1.0
+Nodes (1): Fixture for Code Reviewer agent
+
+### Community 1016 - "Community 1016"
+Cohesion: 1.0
+Nodes (1): Fixture for Development agent
+
+### Community 1017 - "Community 1017"
+Cohesion: 1.0
+Nodes (1): Fixture for Architecture agent
+
+### Community 1018 - "Community 1018"
+Cohesion: 1.0
+Nodes (1): Test code review functionality
+
+### Community 1019 - "Community 1019"
+Cohesion: 1.0
+Nodes (1): Test security vulnerability detection
+
+### Community 1020 - "Community 1020"
+Cohesion: 1.0
+Nodes (1): Test development task execution
+
+### Community 1021 - "Community 1021"
+Cohesion: 1.0
+Nodes (1): Test architecture design functionality
+
+### Community 1022 - "Community 1022"
+Cohesion: 1.0
+Nodes (1): Test Shared Multi-Agent Components (SMC) Agents
+
+### Community 1023 - "Community 1023"
+Cohesion: 1.0
+Nodes (1): Fixture for Context Manager agent
+
+### Community 1024 - "Community 1024"
+Cohesion: 1.0
+Nodes (1): Fixture for Performance Monitor agent
+
+### Community 1025 - "Community 1025"
+Cohesion: 1.0
+Nodes (1): Fixture for Communication Coordinator agent
+
+### Community 1026 - "Community 1026"
+Cohesion: 1.0
+Nodes (1): Test context creation
+
+### Community 1027 - "Community 1027"
+Cohesion: 1.0
+Nodes (1): Test context memory sharing
+
+### Community 1028 - "Community 1028"
+Cohesion: 1.0
+Nodes (1): Test performance monitoring
+
+### Community 1029 - "Community 1029"
+Cohesion: 1.0
+Nodes (1): Test agent coordination
+
+### Community 1030 - "Community 1030"
+Cohesion: 1.0
+Nodes (1): Test multi-agent coordination and communication
+
+### Community 1031 - "Community 1031"
+Cohesion: 1.0
+Nodes (1): Test coordination between different agent categories
+
+### Community 1032 - "Community 1032"
+Cohesion: 1.0
+Nodes (1): Test memory sharing between agents
+
+### Community 1033 - "Community 1033"
+Cohesion: 1.0
+Nodes (1): Test consensus building between agents
+
+### Community 1034 - "Community 1034"
+Cohesion: 1.0
+Nodes (1): Search memories using semantic and text search (Standard Memory MCP Tool)
+
+### Community 1035 - "Community 1035"
+Cohesion: 1.0
+Nodes (1): Expire or archive memories older than specified days (Memory Management Tool)
+
+### Community 1036 - "Community 1036"
+Cohesion: 1.0
+Nodes (1): Automatically find and handle duplicate memories (Memory Deduplication Tool)
+
+### Community 1037 - "Community 1037"
+Cohesion: 1.0
+Nodes (1): Create a shared memory space for multiple agents (Cross-Agent Sharing Tool)
+
+### Community 1038 - "Community 1038"
+Cohesion: 1.0
+Nodes (1): If backend access control is enabled this function will ensure all datasets have
+
+### Community 1039 - "Community 1039"
+Cohesion: 1.0
+Nodes (1): # TODO: Add better handling of vector and graph config accross Cognee.
+
+### Community 1040 - "Community 1040"
+Cohesion: 1.0
+Nodes (1): Add data to Cognee for knowledge graph processing.      This is the first step
+
+### Community 1041 - "Community 1041"
+Cohesion: 1.0
+Nodes (1): Upload ontology files with their respective keys.          Args:
+
+### Community 1042 - "Community 1042"
+Cohesion: 1.0
+Nodes (1): Retrieve ontology content for one or more keys.          Args:             on
+
+### Community 1043 - "Community 1043"
+Cohesion: 1.0
+Nodes (1): Update existing data in Cognee.      Supported Input Types:         - **Text
+
+### Community 1044 - "Community 1044"
+Cohesion: 1.0
+Nodes (1): Start a visualization server on the specified port.      Args:         port (
+
+### Community 1045 - "Community 1045"
+Cohesion: 1.0
+Nodes (1): Filter instances by IDs or indices, or load filter from a JSON file.
+
+### Community 1046 - "Community 1046"
+Cohesion: 1.0
+Nodes (1): Base class for context retrieval strategies.      This class serves as a bluep
+
+### Community 1047 - "Community 1047"
+Cohesion: 1.0
+Nodes (1): Get relevant context based on extracted entities and original query.
+
+### Community 1048 - "Community 1048"
+Cohesion: 1.0
+Nodes (1): Create a chunking engine instance.      Returns:     --------          Retu
+
+### Community 1049 - "Community 1049"
+Cohesion: 1.0
+Nodes (1): Manage chunking of source data using specified strategies and parameters.
+
+### Community 1050 - "Community 1050"
+Cohesion: 1.0
+Nodes (1): Abstract base class for distributed cache coordination systems (e.g., Redis, Mem
+
+### Community 1051 - "Community 1051"
+Cohesion: 1.0
+Nodes (1): Acquire a lock on the given key.         Must be implemented by subclasses.
+
+### Community 1052 - "Community 1052"
+Cohesion: 1.0
+Nodes (1): Release the lock if it is held.         Must be implemented by subclasses.
+
+### Community 1053 - "Community 1053"
+Cohesion: 1.0
+Nodes (1): Context manager for safely acquiring and releasing the lock.
+
+### Community 1054 - "Community 1054"
+Cohesion: 1.0
+Nodes (1): Add a Q/A/context triplet to a cache session.
+
+### Community 1055 - "Community 1055"
+Cohesion: 1.0
+Nodes (1): Retrieve the most recent Q/A/context triplets for a session.
+
+### Community 1056 - "Community 1056"
+Cohesion: 1.0
+Nodes (1): Retrieve all Q/A/context triplets for the given session.
+
+### Community 1057 - "Community 1057"
+Cohesion: 1.0
+Nodes (1): Gracefully close any async connections.
+
+### Community 1058 - "Community 1058"
+Cohesion: 1.0
+Nodes (1): Release the Redis lock manually, if held. (Sync because of Kuzu)
+
+### Community 1059 - "Community 1059"
+Cohesion: 1.0
+Nodes (1): Handler for interacting with Kuzu Dataset databases.
+
+### Community 1060 - "Community 1060"
+Cohesion: 1.0
+Nodes (1): Create a new Kuzu instance for the dataset. Return connection info that will be
+
+### Community 1061 - "Community 1061"
+Cohesion: 1.0
+Nodes (1): Reads the Kùzu storage version code from the first catalog.bin file bytes.
+
+### Community 1062 - "Community 1062"
+Cohesion: 1.0
+Nodes (1): Create (if needed) a venv at .kuzu_envs/{version} and install kuzu=={version}.
+
+### Community 1063 - "Community 1063"
+Cohesion: 1.0
+Nodes (1): Uses the given python_exe to execute a short snippet that     connects to the K
+
+### Community 1064 - "Community 1064"
+Cohesion: 1.0
+Nodes (1): Main migration function that handles the complete migration process.
+
+### Community 1065 - "Community 1065"
+Cohesion: 1.0
+Nodes (1): When overwrite is enabled, back up the original old_db (file with .lock and .wal
+
+### Community 1066 - "Community 1066"
+Cohesion: 1.0
+Nodes (1): # NOTE: Running python in debug mode can cause issues with creating a virtual en
+
+### Community 1067 - "Community 1067"
+Cohesion: 1.0
+Nodes (1): Custom JSON encoder that handles UUID objects.
+
+### Community 1068 - "Community 1068"
+Cohesion: 1.0
+Nodes (1): Adapter for remote Kuzu graph database operations via REST API.
+
+### Community 1069 - "Community 1069"
+Cohesion: 1.0
+Nodes (1): Initialize remote Kuzu database connection.          Args:             api_ur
+
+### Community 1070 - "Community 1070"
+Cohesion: 1.0
+Nodes (1): Get or create an aiohttp session.
+
+### Community 1071 - "Community 1071"
+Cohesion: 1.0
+Nodes (1): Close the adapter and its session.
+
+### Community 1072 - "Community 1072"
+Cohesion: 1.0
+Nodes (1): Make a request to the Kuzu API.
+
+### Community 1073 - "Community 1073"
+Cohesion: 1.0
+Nodes (1): Execute a Kuzu query via the REST API.
+
+### Community 1074 - "Community 1074"
+Cohesion: 1.0
+Nodes (1): Check if the required schema exists without causing recursion.
+
+### Community 1075 - "Community 1075"
+Cohesion: 1.0
+Nodes (1): Create the required schema tables.
+
+### Community 1076 - "Community 1076"
+Cohesion: 1.0
+Nodes (1): Initialize the database schema if it doesn't exist.
+
+### Community 1077 - "Community 1077"
+Cohesion: 1.0
+Nodes (1): Handler for a quick development PoC integration of Cognee multi-user and permiss
+
+### Community 1078 - "Community 1078"
+Cohesion: 1.0
+Nodes (1): Create a new Neo4j Aura instance for the dataset. Return connection info that wi
+
+### Community 1079 - "Community 1079"
+Cohesion: 1.0
+Nodes (1): # TODO: Maybe we can allow **kwargs parameter forwarding for cases like these
+
+### Community 1080 - "Community 1080"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 1081 - "Community 1081"
+Cohesion: 1.0
+Nodes (1): Return the database configuration as a dictionary.          Returns:
+
+### Community 1082 - "Community 1082"
+Cohesion: 1.0
+Nodes (1): Cache and return the relational database configuration.      This function ret
+
+### Community 1083 - "Community 1083"
+Cohesion: 1.0
+Nodes (1): Manage and configure migration settings for a database, inheriting from BaseSett
+
+### Community 1084 - "Community 1084"
+Cohesion: 1.0
+Nodes (1): Convert migration configuration to dictionary format.          Returns:
+
+### Community 1085 - "Community 1085"
+Cohesion: 1.0
+Nodes (1): Retrieve the migration configuration instance.      This function uses memoiza
+
+### Community 1086 - "Community 1086"
+Cohesion: 1.0
+Nodes (1): Create and return a relational engine instance.      This function retrieves t
+
+### Community 1087 - "Community 1087"
+Cohesion: 1.0
+Nodes (1): Check if a DatasetDatabase row already exists for the given owner + dataset.
+
+### Community 1088 - "Community 1088"
+Cohesion: 1.0
+Nodes (1): Return the `DatasetDatabase` row for the given owner + dataset.      • If the
+
+### Community 1089 - "Community 1089"
+Cohesion: 1.0
+Nodes (1): Convert the configuration settings to a dictionary.          Returns:
+
+### Community 1090 - "Community 1090"
+Cohesion: 1.0
+Nodes (1): Retrieve the cached vector database configuration.      This function uses the
+
+### Community 1091 - "Community 1091"
+Cohesion: 1.0
+Nodes (1): This function will get the appropriate vector db config based on async context.
+
+### Community 1092 - "Community 1092"
+Cohesion: 1.0
+Nodes (1): Perform a search in the specified collection using either a text query or a vect
+
+### Community 1093 - "Community 1093"
+Cohesion: 1.0
+Nodes (1): Perform a batch search using multiple text queries against a collection.
+
+### Community 1094 - "Community 1094"
+Cohesion: 1.0
+Nodes (1): Delete specified data points from a collection.          Parameters:
+
+### Community 1095 - "Community 1095"
+Cohesion: 1.0
+Nodes (1): Remove obsolete or unnecessary data from the database.
+
+### Community 1096 - "Community 1096"
+Cohesion: 1.0
+Nodes (1): Embed textual data into vector representations.          Parameters:
+
+### Community 1097 - "Community 1097"
+Cohesion: 1.0
+Nodes (1): Get a connection to the vector database.         This method is optional and ma
+
+### Community 1098 - "Community 1098"
+Cohesion: 1.0
+Nodes (1): Get a collection object from the vector database.         This method is option
+
+### Community 1099 - "Community 1099"
+Cohesion: 1.0
+Nodes (1): Create a vector index for improved search performance.         This method is o
+
+### Community 1100 - "Community 1100"
+Cohesion: 1.0
+Nodes (1): Index data points for improved search performance.         This method is optio
+
+### Community 1101 - "Community 1101"
+Cohesion: 1.0
+Nodes (1): Get or transform a data point schema for the specific vector database.
+
+### Community 1102 - "Community 1102"
+Cohesion: 1.0
+Nodes (1): Return a dictionary with connection info for a vector database for the given dat
+
+### Community 1103 - "Community 1103"
+Cohesion: 1.0
+Nodes (1): Delete the vector database for the given dataset.         Function should auto
+
+### Community 1104 - "Community 1104"
+Cohesion: 1.0
+Nodes (1): Represent a metadata structure with type and index fields.
+
+### Community 1105 - "Community 1105"
+Cohesion: 1.0
+Nodes (1): Model representing a data point with versioning and metadata support.      Pub
+
+### Community 1106 - "Community 1106"
+Cohesion: 1.0
+Nodes (1): Retrieve embeddable data from the data point object based on index fields.
+
+### Community 1107 - "Community 1107"
+Cohesion: 1.0
+Nodes (1): Retrieve a list of embeddable properties from the data point.          This me
+
+### Community 1108 - "Community 1108"
+Cohesion: 1.0
+Nodes (1): Retrieve the names of embeddable properties defined in the metadata.
+
+### Community 1109 - "Community 1109"
+Cohesion: 1.0
+Nodes (1): Increment the version number of the data point and update the timestamp.
+
+### Community 1110 - "Community 1110"
+Cohesion: 1.0
+Nodes (1): Serialize the DataPoint instance to a JSON string format.          This method
+
+### Community 1111 - "Community 1111"
+Cohesion: 1.0
+Nodes (1): Deserialize a DataPoint instance from a JSON string.          The method trans
+
+### Community 1112 - "Community 1112"
+Cohesion: 1.0
+Nodes (1): Convert the DataPoint instance to a dictionary representation.          This m
+
+### Community 1113 - "Community 1113"
+Cohesion: 1.0
+Nodes (1): Instantiate a DataPoint from a dictionary of attribute values.          The me
+
+### Community 1114 - "Community 1114"
+Cohesion: 1.0
+Nodes (1): Represents edge metadata for relationships between DataPoints.      This class
+
+### Community 1115 - "Community 1115"
+Cohesion: 1.0
+Nodes (1): Auto-populate edge_text from relationship_type if not explicitly provided.
+
+### Community 1116 - "Community 1116"
+Cohesion: 1.0
+Nodes (1): Parse the input ID and convert it to a UUID object if it is a valid string
+
+### Community 1117 - "Community 1117"
+Cohesion: 1.0
+Nodes (1): Base class for entity extraction strategies.      This class defines the inter
+
+### Community 1118 - "Community 1118"
+Cohesion: 1.0
+Nodes (1): Extract entities from the given text.          This is an abstract method that
+
+### Community 1119 - "Community 1119"
+Cohesion: 1.0
+Nodes (1): Check if a specified file exists in the storage.          Parameters:
+
+### Community 1120 - "Community 1120"
+Cohesion: 1.0
+Nodes (1): Check if a specified file is a regular file.          Parameters:         ---
+
+### Community 1121 - "Community 1121"
+Cohesion: 1.0
+Nodes (1): Get the size of a specified file in bytes.          Parameters:         -----
+
+### Community 1122 - "Community 1122"
+Cohesion: 1.0
+Nodes (1): Store data at the specified file path.          Parameters:         ---------
+
+### Community 1123 - "Community 1123"
+Cohesion: 1.0
+Nodes (1): Retrieve file from the specified file path.          Parameters:         ----
+
+### Community 1124 - "Community 1124"
+Cohesion: 1.0
+Nodes (1): Copy a file from a source path to a destination path.          Parameters:
+
+### Community 1125 - "Community 1125"
+Cohesion: 1.0
+Nodes (1): Ensure that the specified directory exists, creating it if necessary.
+
+### Community 1126 - "Community 1126"
+Cohesion: 1.0
+Nodes (1): Remove the storage at the specified file path.          Parameters:         -
+
+### Community 1127 - "Community 1127"
+Cohesion: 1.0
+Nodes (1): Remove an entire directory tree at the specified path, including all files and
+
+### Community 1128 - "Community 1128"
+Cohesion: 1.0
+Nodes (1): Extract text from a file based on its type.      Supports extraction from PDF
+
+### Community 1129 - "Community 1129"
+Cohesion: 1.0
+Nodes (1): Represents metadata for a file.      This class defines a structure to store v
+
+### Community 1130 - "Community 1130"
+Cohesion: 1.0
+Nodes (1): Retrieve metadata from a file object.      Reset the file pointer to the begin
+
+### Community 1131 - "Community 1131"
+Cohesion: 1.0
+Nodes (1): Represents an exception for file type errors.      This exception is raised wh
+
+### Community 1132 - "Community 1132"
+Cohesion: 1.0
+Nodes (1): Guess the file type from the given binary file stream.      If the file type c
+
+### Community 1133 - "Community 1133"
+Cohesion: 1.0
+Nodes (1): Initialize the BAML registry after the model is created.
+
+### Community 1134 - "Community 1134"
+Cohesion: 1.0
+Nodes (1): Validate required environment variables for the 'ollama' LLM provider.
+
+### Community 1135 - "Community 1135"
+Cohesion: 1.0
+Nodes (1): Convert the LLMConfig instance into a dictionary representation.          Retu
+
+### Community 1136 - "Community 1136"
+Cohesion: 1.0
+Nodes (1): Retrieve and cache the LLM configuration.      This function returns an instan
+
+### Community 1137 - "Community 1137"
+Cohesion: 1.0
+Nodes (1): Class handles selection of structured output frameworks and LLM functions.
+
+### Community 1138 - "Community 1138"
+Cohesion: 1.0
+Nodes (1): Read a query prompt from a file.      Retrieve the contents of a specified pro
+
+### Community 1139 - "Community 1139"
+Cohesion: 1.0
+Nodes (1): Render a Jinja2 template asynchronously.      Set the base directory if not pr
+
+### Community 1140 - "Community 1140"
+Cohesion: 1.0
+Nodes (1): Rate limiter for LLM API calls.      This class implements a singleton pattern
+
+### Community 1141 - "Community 1141"
+Cohesion: 1.0
+Nodes (1): Wait if rate limit is reached.          This method blocks until the request c
+
+### Community 1142 - "Community 1142"
+Cohesion: 1.0
+Nodes (1): Decorator for rate limiting synchronous functions.      Parameters:     -----
+
+### Community 1143 - "Community 1143"
+Cohesion: 1.0
+Nodes (1): Decorate an asynchronous function for rate limiting.      This decorator ensur
+
+### Community 1144 - "Community 1144"
+Cohesion: 1.0
+Nodes (1): Check if an error is related to rate limiting.      Evaluate the provided erro
+
+### Community 1145 - "Community 1145"
+Cohesion: 1.0
+Nodes (1): Calculate the backoff time for a retry attempt with jitter.      Parameters:
+
+### Community 1146 - "Community 1146"
+Cohesion: 1.0
+Nodes (1): Decorate a synchronous function to automatically retry on rate limit errors.
+
+### Community 1147 - "Community 1147"
+Cohesion: 1.0
+Nodes (1): Retry an asynchronous function with an exponential backoff strategy upon encount
+
+### Community 1148 - "Community 1148"
+Cohesion: 1.0
+Nodes (1): List of file extensions this loader supports.          Returns:             L
+
+### Community 1149 - "Community 1149"
+Cohesion: 1.0
+Nodes (1): List of MIME types this loader supports.          Returns:             List o
+
+### Community 1150 - "Community 1150"
+Cohesion: 1.0
+Nodes (1): Unique name identifier for this loader.          Returns:             String
+
+### Community 1151 - "Community 1151"
+Cohesion: 1.0
+Nodes (1): Check if this loader can handle the given file.          Args:             ex
+
+### Community 1152 - "Community 1152"
+Cohesion: 1.0
+Nodes (1): Load and process the file, returning standardized result.          Args:
+
+### Community 1153 - "Community 1153"
+Cohesion: 1.0
+Nodes (1): Register a loader at runtime.      This allows external packages and custom lo
+
+### Community 1154 - "Community 1154"
+Cohesion: 1.0
+Nodes (1): Create a new dataset and give all permissions on this dataset to the given user.
+
+### Community 1155 - "Community 1155"
+Cohesion: 1.0
+Nodes (1): # TODO: Remove dataset from pipeline_run_status in Data objects related to datas
+
+### Community 1156 - "Community 1156"
+Cohesion: 1.0
+Nodes (1): Represents a type of entity with a name and description.      This class inher
+
+### Community 1157 - "Community 1157"
+Cohesion: 1.0
+Nodes (1): Extract edge metadata and datapoints from a field value.
+
+### Community 1158 - "Community 1158"
+Cohesion: 1.0
+Nodes (1): Create edge properties dictionary with metadata if present.
+
+### Community 1159 - "Community 1159"
+Cohesion: 1.0
+Nodes (1): Extract relationship key from edge metadata or use field name as fallback.
+
+### Community 1160 - "Community 1160"
+Cohesion: 1.0
+Nodes (1): Generate a unique property key for visited_properties tracking.
+
+### Community 1161 - "Community 1161"
+Cohesion: 1.0
+Nodes (1): Process a field containing DataPoints, always working with lists.
+
+### Community 1162 - "Community 1162"
+Cohesion: 1.0
+Nodes (1): Generator that yields (target_datapoint, field_name, edge_metadata) tuples.
+
+### Community 1163 - "Community 1163"
+Cohesion: 1.0
+Nodes (1): Extract graph representation from a DataPoint model.      Args:         data_
+
+### Community 1164 - "Community 1164"
+Cohesion: 1.0
+Nodes (1): Filter nodes to return only those that are not destinations of any edges.
+
+### Community 1165 - "Community 1165"
+Cohesion: 1.0
+Nodes (1): Fetches and sums token counts from the database.      Returns:         int: T
+
+### Community 1166 - "Community 1166"
+Cohesion: 1.0
+Nodes (1): Execute the underlying task with given arguments.
+
+### Community 1167 - "Community 1167"
+Cohesion: 1.0
+Nodes (1): Execute async generator task and collect results in batches.
+
+### Community 1168 - "Community 1168"
+Cohesion: 1.0
+Nodes (1): Execute generator task and collect results in batches.
+
+### Community 1169 - "Community 1169"
+Cohesion: 1.0
+Nodes (1): Execute coroutine task and yield the result.
+
+### Community 1170 - "Community 1170"
+Cohesion: 1.0
+Nodes (1): Execute function task and yield the result.
+
+### Community 1171 - "Community 1171"
+Cohesion: 1.0
+Nodes (1): Execute the task based on its type and yield results with the next task's batch
+
+### Community 1172 - "Community 1172"
+Cohesion: 1.0
+Nodes (1): Retrieves context based on the query.
+
+### Community 1173 - "Community 1173"
+Cohesion: 1.0
+Nodes (1): Generates a response using the query and optional context.
+
+### Community 1174 - "Community 1174"
+Cohesion: 1.0
+Nodes (1): Retriever for handling codeing rule based searches.
+
+### Community 1175 - "Community 1175"
+Cohesion: 1.0
+Nodes (1): Get authenticated user with environment-controlled behavior:     - If REQUIRE_A
+
+### Community 1176 - "Community 1176"
+Cohesion: 1.0
+Nodes (1): Node in a knowledge graph.
+
+### Community 1177 - "Community 1177"
+Cohesion: 1.0
+Nodes (1): Edge in a knowledge graph.
+
+### Community 1178 - "Community 1178"
+Cohesion: 1.0
+Nodes (1): Node in a knowledge graph.
+
+### Community 1179 - "Community 1179"
+Cohesion: 1.0
+Nodes (1): Edge in a knowledge graph.
+
+### Community 1180 - "Community 1180"
+Cohesion: 1.0
+Nodes (1): Base class for different types of content.
+
+### Community 1181 - "Community 1181"
+Cohesion: 1.0
+Nodes (1): Class for a single class label prediction.
+
+### Community 1182 - "Community 1182"
+Cohesion: 1.0
+Nodes (1): Class for a single class label summary and description.
+
+### Community 1183 - "Community 1183"
+Cohesion: 1.0
+Nodes (1): Relevant summary and chunk id
+
+### Community 1184 - "Community 1184"
+Cohesion: 1.0
+Nodes (1): Base class for content type, storing type of content as string.
+
+### Community 1185 - "Community 1185"
+Cohesion: 1.0
+Nodes (1): Textual content class for more specific text categories.
+
+### Community 1186 - "Community 1186"
+Cohesion: 1.0
+Nodes (1): Model to predict the type of content.
+
+### Community 1187 - "Community 1187"
+Cohesion: 1.0
+Nodes (1): Resolve a writable logs directory.      Priority:     1) BaseConfig.logs_root
+
+### Community 1188 - "Community 1188"
+Cohesion: 1.0
+Nodes (1): A custom file handler that writes simpler plain text log entries.
+
+### Community 1189 - "Community 1189"
+Cohesion: 1.0
+Nodes (1): Get a logger.      If `setup_logging()` has not been called, returns a standar
+
+### Community 1190 - "Community 1190"
+Cohesion: 1.0
+Nodes (1): Log the current database configuration for all database types
+
+### Community 1191 - "Community 1191"
+Cohesion: 1.0
+Nodes (1): Removes old log files, keeping only the most recent ones.      Args:
+
+### Community 1192 - "Community 1192"
+Cohesion: 1.0
+Nodes (1): Sets up the logging configuration with structlog integration.      Args:
+
+### Community 1193 - "Community 1193"
+Cohesion: 1.0
+Nodes (1): Return the file path of the log file in use, if any.
+
+### Community 1194 - "Community 1194"
+Cohesion: 1.0
+Nodes (1): # NOTE: Has to be imporated at runtime to avoid circular import
+
+### Community 1195 - "Community 1195"
+Cohesion: 1.0
+Nodes (1): # NOTE: environment variable must be used here as it allows us to
+
+### Community 1196 - "Community 1196"
+Cohesion: 1.0
+Nodes (1): # NOTE: Some users have complained that Cognee crashes when trying to get micros
+
+### Community 1197 - "Community 1197"
+Cohesion: 1.0
+Nodes (1): Create a secure SSL context.      By default, use the system's certificate sto
+
+### Community 1198 - "Community 1198"
+Cohesion: 1.0
+Nodes (1): Creates or reads a anonymous user id
+
+### Community 1199 - "Community 1199"
+Cohesion: 1.0
+Nodes (1): Recursively replaces any property whose key matches one of `property_names`
+
+### Community 1200 - "Community 1200"
+Cohesion: 1.0
+Nodes (1): Embed a logo into the graph visualization as a watermark.
+
+### Community 1201 - "Community 1201"
+Cohesion: 1.0
+Nodes (1): Spin up a simple HTTP server in a background thread to serve files.     This is
+
+### Community 1202 - "Community 1202"
+Cohesion: 1.0
+Nodes (1): A single developer rule extracted from text.
+
+### Community 1203 - "Community 1203"
+Cohesion: 1.0
+Nodes (1): Collection of parsed rules.
+
+### Community 1204 - "Community 1204"
+Cohesion: 1.0
+Nodes (1): Handle the propagation of the cognee database configuration to the dlt library.
+
+### Community 1205 - "Community 1205"
+Cohesion: 1.0
+Nodes (1): Cache for robots.txt data.      Attributes:         protego: Parsed robots.tx
+
+### Community 1206 - "Community 1206"
+Cohesion: 1.0
+Nodes (1): Initialize the BeautifulSoupCrawler.          Args:             concurrency:
+
+### Community 1207 - "Community 1207"
+Cohesion: 1.0
+Nodes (1): Initialize the HTTP client if not already created.
+
+### Community 1208 - "Community 1208"
+Cohesion: 1.0
+Nodes (1): Enter the context manager, initializing the HTTP client.
+
+### Community 1209 - "Community 1209"
+Cohesion: 1.0
+Nodes (1): Get the root URL (scheme and netloc) from a URL.          Args:             u
+
+### Community 1210 - "Community 1210"
+Cohesion: 1.0
+Nodes (1): Enforce rate limiting for requests to the same domain.          Args:
+
+### Community 1211 - "Community 1211"
+Cohesion: 1.0
+Nodes (1): Get cached robots.txt data if valid.          Args:             domain_root:
+
+### Community 1212 - "Community 1212"
+Cohesion: 1.0
+Nodes (1): Fetch and cache robots.txt data.          Args:             domain_root: The
+
+### Community 1213 - "Community 1213"
+Cohesion: 1.0
+Nodes (1): Check if a URL is allowed by robots.txt.          Args:             url: The
+
+### Community 1214 - "Community 1214"
+Cohesion: 1.0
+Nodes (1): Get the crawl delay for a URL from robots.txt.          Args:             url
+
+### Community 1215 - "Community 1215"
+Cohesion: 1.0
+Nodes (1): Fetch a URL using HTTPX with retries.          Args:             url: The URL
+
+### Community 1216 - "Community 1216"
+Cohesion: 1.0
+Nodes (1): Fetch and render a URL using Playwright for JavaScript content.          Args:
+
+### Community 1217 - "Community 1217"
+Cohesion: 1.0
+Nodes (1): Fetch and extract content from URLs using BeautifulSoup or Playwright.
+
+### Community 1218 - "Community 1218"
+Cohesion: 1.0
+Nodes (1): # NOTE: Because of the different size of the postgres and sqlite databases,
+
+### Community 1219 - "Community 1219"
+Cohesion: 1.0
+Nodes (1): # NOTE: Because of the different size of the postgres and sqlite databases,
+
+### Community 1220 - "Community 1220"
+Cohesion: 1.0
+Nodes (1): Test cognify command with all possible options
+
+### Community 1221 - "Community 1221"
+Cohesion: 1.0
+Nodes (1): Test config set command argument parsing
+
+### Community 1222 - "Community 1222"
+Cohesion: 1.0
+Nodes (1): Test delete command with force flag
+
+### Community 1223 - "Community 1223"
+Cohesion: 1.0
+Nodes (1): Test CLI error handling and edge cases
+
+### Community 1224 - "Community 1224"
+Cohesion: 1.0
+Nodes (1): Test that debug flag is accepted
+
+### Community 1225 - "Community 1225"
+Cohesion: 1.0
+Nodes (1): Test invalid search type handling
+
+### Community 1226 - "Community 1226"
+Cohesion: 1.0
+Nodes (1): Test invalid chunker handling
+
+### Community 1227 - "Community 1227"
+Cohesion: 1.0
+Nodes (1): Test invalid output format handling
+
+### Community 1228 - "Community 1228"
+Cohesion: 1.0
+Nodes (1): Tests simple pydantic structure for get_graph_from_model
+
+### Community 1229 - "Community 1229"
+Cohesion: 1.0
+Nodes (1): Tests multiple entities to document connection
+
+### Community 1230 - "Community 1230"
+Cohesion: 1.0
+Nodes (1): Tests duplicated objects in document list
+
+### Community 1231 - "Community 1231"
+Cohesion: 1.0
+Nodes (1): Tests multi level nested structure extraction
+
+### Community 1232 - "Community 1232"
+Cohesion: 1.0
+Nodes (1): Tests graph from model with empty contains element
+
+### Community 1233 - "Community 1233"
+Cohesion: 1.0
+Nodes (1): Tests the new flexible edge system with mixed relationships
+
+### Community 1234 - "Community 1234"
+Cohesion: 1.0
+Nodes (1): Dynamic Category System (no hardcoded categories)
+
+### Community 1235 - "Community 1235"
+Cohesion: 1.0
+Nodes (1): Enhanced Cognee Project
+
+### Community 1236 - "Community 1236"
+Cohesion: 1.0
+Nodes (1): Test Suite (975 tests, 100% pass rate)
+
+### Community 1237 - "Community 1237"
+Cohesion: 1.0
+Nodes (1): Test Requirements File
+
+### Community 1238 - "Community 1238"
+Cohesion: 1.0
+Nodes (1): CODE Search Type
+
+### Community 1239 - "Community 1239"
+Cohesion: 1.0
+Nodes (1): Zero-Configuration Auto Setup
+
+### Community 1240 - "Community 1240"
+Cohesion: 1.0
+Nodes (1): Disaster Recovery Checklist
+
+### Community 1241 - "Community 1241"
+Cohesion: 1.0
+Nodes (1): Contributor Covenant Code of Conduct
+
+### Community 1242 - "Community 1242"
+Cohesion: 1.0
+Nodes (1): Security Issue Reporting Policy
+
+### Community 1243 - "Community 1243"
+Cohesion: 1.0
+Nodes (1): Database Stack (PostgreSQL, Qdrant, Neo4j, Redis)
+
+### Community 1244 - "Community 1244"
+Cohesion: 1.0
+Nodes (1): 21-Agent Multi-Agent System
+
+### Community 1245 - "Community 1245"
+Cohesion: 1.0
+Nodes (1): Compliance Standards (SOC 2, PCI DSS, GDPR, CCPA, ISO 27001, NIST)
+
+### Community 1246 - "Community 1246"
+Cohesion: 1.0
+Nodes (1): Third Party Licenses
+
+### Community 1247 - "Community 1247"
+Cohesion: 1.0
+Nodes (1): Setup and Installation Scripts
+
+### Community 1248 - "Community 1248"
+Cohesion: 1.0
+Nodes (1): Alice in Wonderland Sample Data
+
+### Community 1249 - "Community 1249"
+Cohesion: 1.0
+Nodes (1): Background Video Blur (MP4 - Frontend Asset)
+
+### Community 1250 - "Community 1250"
+Cohesion: 1.0
+Nodes (1): Generic File Icon
+
+### Community 1251 - "Community 1251"
 Cohesion: 1.0
 Nodes (1): Programmer Light Bulb Joke
 
 ## Knowledge Gaps
-- **3093 isolated node(s):** `Run migrations in 'offline' mode.      This configures the context with just a`, `In this scenario we need to create an Engine     and associate a connection wit`, `Run migrations in 'online' mode.`, `incremental_loading  Revision ID: 1daae0df1866 Revises: b9274c27a25a Create`, `Add sync_operations table  Revision ID: 211ab850ef3d Revises: 9e7a3cb85175 C` (+3088 more)
+- **4316 isolated node(s):** `Run migrations in 'offline' mode.      This configures the context with just a`, `In this scenario we need to create an Engine     and associate a connection wit`, `Run migrations in 'online' mode.`, `SQLite cannot drop unique constraints on individual columns. We must:     1. Cr`, `SQLite cannot drop unique constraints on individual columns. We must:     1. Cr` (+4311 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Community 116`** (2 nodes): `suppress_logging.py`, `Module to suppress verbose logging before any cognee imports. This must be impo`
+- **Thin community `Community 137`** (2 nodes): `suppress_logging.py`, `Module to suppress verbose logging before any cognee imports. This must be impo`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 117`** (2 nodes): `stop_words.py`, `Common stop words for text processing.`
+- **Thin community `Community 138`** (2 nodes): `kuzu_migrate.py`, `Legacy import path for Ladybug graph database migration helpers.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 118`** (2 nodes): `__init__.py`, `permission_types.py`
+- **Thin community `Community 139`** (2 nodes): `stop_words.py`, `Common stop words for text processing.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 119`** (2 nodes): `encode_uuid.py`, `encode_uuid()`
+- **Thin community `Community 140`** (2 nodes): `encode_uuid.py`, `encode_uuid()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 120`** (2 nodes): `test_input.py`, `# TODO: In practice each keyword argument is exclusive to one or more`
+- **Thin community `Community 141`** (2 nodes): `lru_cache.py`, `Shared cache size setting for Cognee database adapters.  Set DATABASE_MAX_LRU_`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 121`** (2 nodes): `proxy.ts`, `proxy()`
+- **Thin community `Community 142`** (2 nodes): `extract_subgraph.py`, `extract_subgraph()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 122`** (2 nodes): `ActivityLog()`, `ActivityLog.tsx`
+- **Thin community `Community 143`** (2 nodes): `test_input.py`, `# TODO: In practice each keyword argument is exclusive to one or more`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 123`** (2 nodes): `getColorForNodeType.ts`, `getColorForNodeType()`
+- **Thin community `Community 144`** (2 nodes): `proxy.ts`, `proxy()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 124`** (2 nodes): `GraphVisualization.tsx`, `GraphVisualization()`
+- **Thin community `Community 145`** (2 nodes): `ActivityLog()`, `ActivityLog.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 125`** (2 nodes): `layout.tsx`, `AuthLayout()`
+- **Thin community `Community 146`** (2 nodes): `getColorForNodeType.ts`, `getColorForNodeType()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 126`** (2 nodes): `SignUpPage.tsx`, `SignUpPage()`
+- **Thin community `Community 147`** (2 nodes): `GraphVisualization.tsx`, `GraphVisualization()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 127`** (2 nodes): `page.tsx`, `Page()`
+- **Thin community `Community 148`** (2 nodes): `layout.tsx`, `AuthLayout()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 128`** (2 nodes): `useAuthenticatedUser.ts`, `useAuthenticatedUser()`
+- **Thin community `Community 149`** (2 nodes): `SignUpPage.tsx`, `SignUpPage()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 129`** (2 nodes): `useData.ts`, `useData()`
+- **Thin community `Community 150`** (2 nodes): `page.tsx`, `Page()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 130`** (2 nodes): `useNotebooks.ts`, `useNotebooks()`
+- **Thin community `Community 151`** (2 nodes): `useAuthenticatedUser.ts`, `useAuthenticatedUser()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 131`** (2 nodes): `CognifyLoadingIndicator.tsx`, `CognifyLoadingIndicator()`
+- **Thin community `Community 152`** (2 nodes): `useData.ts`, `useData()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 132`** (2 nodes): `TextLogo.tsx`, `TextLogo()`
+- **Thin community `Community 153`** (2 nodes): `useNotebooks.ts`, `useNotebooks()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 133`** (2 nodes): `CTAButton.tsx`, `CTAButton()`
+- **Thin community `Community 154`** (2 nodes): `CognifyLoadingIndicator.tsx`, `CognifyLoadingIndicator()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 134`** (2 nodes): `GhostButton.tsx`, `GhostButton()`
+- **Thin community `Community 155`** (2 nodes): `TextLogo.tsx`, `TextLogo()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 135`** (2 nodes): `IconButton.tsx`, `IconButton()`
+- **Thin community `Community 156`** (2 nodes): `CTAButton.tsx`, `CTAButton()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 136`** (2 nodes): `NeutralButton.tsx`, `NeutralButton()`
+- **Thin community `Community 157`** (2 nodes): `GhostButton.tsx`, `GhostButton()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 137`** (2 nodes): `StatusDot.tsx`, `StatusDot()`
+- **Thin community `Community 158`** (2 nodes): `IconButton.tsx`, `IconButton()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 138`** (2 nodes): `TextArea.tsx`, `TextArea()`
+- **Thin community `Community 159`** (2 nodes): `NeutralButton.tsx`, `NeutralButton()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 139`** (2 nodes): `Modal.tsx`, `Modal()`
+- **Thin community `Community 160`** (2 nodes): `StatusDot.tsx`, `StatusDot()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 140`** (2 nodes): `AddIcon()`, `AddIcon.tsx`
+- **Thin community `Community 161`** (2 nodes): `TextArea.tsx`, `TextArea()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 141`** (2 nodes): `BackIcon()`, `BackIcon.tsx`
+- **Thin community `Community 162`** (2 nodes): `Modal.tsx`, `Modal()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 142`** (2 nodes): `CaretIcon()`, `CaretIcon.tsx`
+- **Thin community `Community 163`** (2 nodes): `AddIcon()`, `AddIcon.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 143`** (2 nodes): `CheckIcon()`, `CheckIcon.tsx`
+- **Thin community `Community 164`** (2 nodes): `BackIcon()`, `BackIcon.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 144`** (2 nodes): `CloseIcon()`, `CloseIcon.tsx`
+- **Thin community `Community 165`** (2 nodes): `CaretIcon()`, `CaretIcon.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 145`** (2 nodes): `CloudIcon()`, `CloudIcon.tsx`
+- **Thin community `Community 166`** (2 nodes): `CheckIcon()`, `CheckIcon.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 146`** (2 nodes): `CogneeIcon.tsx`, `CogneeIcon()`
+- **Thin community `Community 167`** (2 nodes): `CloseIcon()`, `CloseIcon.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 147`** (2 nodes): `DatasetIcon.tsx`, `DatasetIcon()`
+- **Thin community `Community 168`** (2 nodes): `CloudIcon()`, `CloudIcon.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 148`** (2 nodes): `DeleteIcon.tsx`, `DeleteIcon()`
+- **Thin community `Community 169`** (2 nodes): `CogneeIcon.tsx`, `CogneeIcon()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 149`** (2 nodes): `DiscordIcon.tsx`, `DiscordIcon()`
+- **Thin community `Community 170`** (2 nodes): `DatasetIcon.tsx`, `DatasetIcon()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 150`** (2 nodes): `GitHubIcon.tsx`, `GitHubIcon()`
+- **Thin community `Community 171`** (2 nodes): `DeleteIcon.tsx`, `DeleteIcon()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 151`** (2 nodes): `LocalCogneeIcon.tsx`, `LocalCogneeIcon()`
+- **Thin community `Community 172`** (2 nodes): `DiscordIcon.tsx`, `DiscordIcon()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 152`** (2 nodes): `MenuIcon.tsx`, `AddIcon()`
+- **Thin community `Community 173`** (2 nodes): `GitHubIcon.tsx`, `GitHubIcon()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 153`** (2 nodes): `MinusIcon.tsx`, `MinusIcon()`
+- **Thin community `Community 174`** (2 nodes): `LocalCogneeIcon.tsx`, `LocalCogneeIcon()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 154`** (2 nodes): `NotebookIcon.tsx`, `NotebookIcon()`
+- **Thin community `Community 175`** (2 nodes): `MenuIcon.tsx`, `AddIcon()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 155`** (2 nodes): `PlayIcon.tsx`, `PlayIcon()`
+- **Thin community `Community 176`** (2 nodes): `MinusIcon.tsx`, `MinusIcon()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 156`** (2 nodes): `PlusIcon.tsx`, `PlusIcon()`
+- **Thin community `Community 177`** (2 nodes): `NotebookIcon.tsx`, `NotebookIcon()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 157`** (2 nodes): `SearchIcon.tsx`, `SearchIcon()`
+- **Thin community `Community 178`** (2 nodes): `PlayIcon.tsx`, `PlayIcon()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 158`** (2 nodes): `SettingsIcon.tsx`, `SettingsIcon()`
+- **Thin community `Community 179`** (2 nodes): `PlusIcon.tsx`, `PlusIcon()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 159`** (2 nodes): `Divider.tsx`, `Divider()`
+- **Thin community `Community 180`** (2 nodes): `SearchIcon.tsx`, `SearchIcon()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 160`** (2 nodes): `Footer.tsx`, `Footer()`
+- **Thin community `Community 181`** (2 nodes): `SettingsIcon.tsx`, `SettingsIcon()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 161`** (2 nodes): `IFrameView.tsx`, `IFrameView()`
+- **Thin community `Community 182`** (2 nodes): `Divider.tsx`, `Divider()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 162`** (2 nodes): `SearchView.tsx`, `handleSubmitOnEnter()`
+- **Thin community `Community 183`** (2 nodes): `Footer.tsx`, `Footer()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 163`** (2 nodes): `handleServerErrors.ts`, `handleServerErrors()`
+- **Thin community `Community 184`** (2 nodes): `IFrameView.tsx`, `IFrameView()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 164`** (2 nodes): `not-found.tsx`, `NotFound()`
+- **Thin community `Community 185`** (2 nodes): `SearchView.tsx`, `handleSubmitOnEnter()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 165`** (2 nodes): `providers.tsx`, `Providers()`
+- **Thin community `Community 186`** (2 nodes): `handleServerErrors.ts`, `handleServerErrors()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 166`** (2 nodes): `page.tsx`, `AgentsPage()`
+- **Thin community `Community 187`** (2 nodes): `not-found.tsx`, `NotFound()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 167`** (2 nodes): `page.tsx`, `handleDayClick()`
+- **Thin community `Community 188`** (2 nodes): `providers.tsx`, `Providers()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 168`** (2 nodes): `page.tsx`, `DeveloperPage()`
+- **Thin community `Community 189`** (2 nodes): `page.tsx`, `AgentsPage()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 169`** (2 nodes): `page.tsx`, `GraphPage()`
+- **Thin community `Community 190`** (2 nodes): `page.tsx`, `handleDayClick()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 170`** (2 nodes): `page.tsx`, `handleMemoryClick()`
+- **Thin community `Community 191`** (2 nodes): `page.tsx`, `DeveloperPage()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 171`** (2 nodes): `page.tsx`, `SearchPage()`
+- **Thin community `Community 192`** (2 nodes): `page.tsx`, `GraphPage()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 172`** (2 nodes): `page.tsx`, `SettingsPage()`
+- **Thin community `Community 193`** (2 nodes): `page.tsx`, `handleMemoryClick()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 173`** (2 nodes): `Badge()`, `Badge.tsx`
+- **Thin community `Community 194`** (2 nodes): `page.tsx`, `SearchPage()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 174`** (2 nodes): `ConnectionStatus()`, `ConnectionStatus.tsx`
+- **Thin community `Community 195`** (2 nodes): `page.tsx`, `SettingsPage()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 175`** (2 nodes): `Skeleton.tsx`, `Skeleton()`
+- **Thin community `Community 196`** (2 nodes): `Badge()`, `Badge.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 176`** (2 nodes): `Spinner.tsx`, `Spinner()`
+- **Thin community `Community 197`** (2 nodes): `ConnectionStatus()`, `ConnectionStatus.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 177`** (2 nodes): `Header.tsx`, `Header()`
+- **Thin community `Community 198`** (2 nodes): `Skeleton.tsx`, `Skeleton()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 178`** (2 nodes): `LoadingButton.tsx`, `LoadingButton()`
+- **Thin community `Community 199`** (2 nodes): `Spinner.tsx`, `Spinner()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 179`** (2 nodes): `MemoryCard.tsx`, `MemoryCard()`
+- **Thin community `Community 200`** (2 nodes): `Header.tsx`, `Header()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 180`** (2 nodes): `PieChart.tsx`, `CustomTooltip()`
+- **Thin community `Community 201`** (2 nodes): `LoadingButton.tsx`, `LoadingButton()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 181`** (2 nodes): `GraphNodeDetails.tsx`, `GraphNodeDetails()`
+- **Thin community `Community 202`** (2 nodes): `MemoryCard.tsx`, `MemoryCard()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 182`** (2 nodes): `MemoryListSkeleton.tsx`, `MemoryListSkeleton()`
+- **Thin community `Community 203`** (2 nodes): `PieChart.tsx`, `CustomTooltip()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 183`** (2 nodes): `SearchInterface.tsx`, `handleResultClick()`
+- **Thin community `Community 204`** (2 nodes): `GraphNodeDetails.tsx`, `GraphNodeDetails()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 184`** (2 nodes): `Toaster.tsx`, `Toaster()`
+- **Thin community `Community 205`** (2 nodes): `MemoryListSkeleton.tsx`, `MemoryListSkeleton()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 185`** (2 nodes): `utils.py`, `override_distributed()`
+- **Thin community `Community 206`** (2 nodes): `SearchInterface.tsx`, `handleResultClick()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 186`** (2 nodes): `queued_add_data_points.py`, `queued_add_data_points()`
+- **Thin community `Community 207`** (2 nodes): `Toaster.tsx`, `Toaster()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 187`** (2 nodes): `queued_add_edges.py`, `queued_add_edges()`
+- **Thin community `Community 208`** (2 nodes): `utils.py`, `override_distributed()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 188`** (2 nodes): `queued_add_nodes.py`, `queued_add_nodes()`
+- **Thin community `Community 209`** (2 nodes): `queued_add_data_points.py`, `queued_add_data_points()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 189`** (2 nodes): `Enhanced Cognee README`, `Original Cognee (upstream)`
+- **Thin community `Community 210`** (2 nodes): `queued_add_edges.py`, `queued_add_edges()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 190`** (2 nodes): `Content Classification Taxonomy`, `Content Classification Prompt`
+- **Thin community `Community 211`** (2 nodes): `queued_add_nodes.py`, `queued_add_nodes()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 191`** (2 nodes): `Code Extraction Capability`, `CodeGraph Retriever System Prompt`
+- **Thin community `Community 212`** (2 nodes): `Enhanced Cognee README`, `Original Cognee (upstream)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 192`** (2 nodes): `Temporal Period Extraction (Time Interval Detection)`, `Query Time Period Extraction (Temporal Interval Detection)`
+- **Thin community `Community 213`** (2 nodes): `Category Relevance Selection Prompt`, `Summary Relevance Selection Prompt`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 193`** (2 nodes): `CYPHER Search Type`, `NATURAL_LANGUAGE Search Type`
+- **Thin community `Community 214`** (2 nodes): `Content Classification Taxonomy`, `Content Classification Prompt`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 194`** (2 nodes): `Content Summarization Prompt`, `Search Results Summarization Prompt`
+- **Thin community `Community 215`** (2 nodes): `Code Extraction Capability`, `CodeGraph Retriever System Prompt`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 195`** (2 nodes): `Cognee Frontend (Next.js)`, `Vercel Platform`
+- **Thin community `Community 216`** (2 nodes): `Temporal Period Extraction (Time Interval Detection)`, `Query Time Period Extraction (Temporal Interval Detection)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 196`** (2 nodes): `Claude-Mem vs Enhanced Cognee Feature Comparison`, `Token Efficiency via Progressive Disclosure (3-Layer Search)`
+- **Thin community `Community 217`** (2 nodes): `CYPHER Search Type`, `NATURAL_LANGUAGE Search Type`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 197`** (2 nodes): `README Update Draft (Side-by-Side Comparison Method)`, `Archived README Variants (Progressive Badge Updates)`
+- **Thin community `Community 218`** (2 nodes): `Content Summarization Prompt`, `Search Results Summarization Prompt`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 198`** (2 nodes): `GitHub Security Checklist`, `GitHub Release Preparation`
+- **Thin community `Community 219`** (2 nodes): `Cognee Frontend (Next.js)`, `Vercel Platform`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 199`** (2 nodes): `100% Security Test Success Report`, `Security Score 94.5/100`
+- **Thin community `Community 220`** (2 nodes): `Claude-Mem vs Enhanced Cognee Feature Comparison`, `Token Efficiency via Progressive Disclosure (3-Layer Search)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 200`** (2 nodes): `Official Claude API Integration`, `Real-Time WebSocket Server`
+- **Thin community `Community 221`** (2 nodes): `README Update Draft (Side-by-Side Comparison Method)`, `Archived README Variants (Progressive Badge Updates)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 201`** (2 nodes): `CI/CD Pipeline (GitHub Actions)`, `Comprehensive Test Results Report`
+- **Thin community `Community 222`** (2 nodes): `GitHub Security Checklist`, `GitHub Release Preparation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 202`** (2 nodes): `Three-Way Comparison (Cognee vs Claude-Mem vs Enhanced)`, `Enhanced Cognee vs Claude-Mem Comparison`
+- **Thin community `Community 223`** (2 nodes): `100% Security Test Success Report`, `Security Score 94.5/100`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 203`** (2 nodes): `Export Functionality (JSON, CSV, Markdown)`, `Chart Export Utilities (PNG, SVG, PDF)`
+- **Thin community `Community 224`** (2 nodes): `Official Claude API Integration`, `Real-Time WebSocket Server`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 204`** (2 nodes): `Phase 2 Memory Management Completion Report`, `Phase 3 Data Visualizations Completion Report`
+- **Thin community `Community 225`** (2 nodes): `CI/CD Pipeline (GitHub Actions)`, `Comprehensive Test Results Report`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 205`** (2 nodes): `Database Stack (PostgreSQL, Qdrant, Neo4j, Redis)`, `Knowledge Graph Visualization (Cytoscape.js)`
+- **Thin community `Community 226`** (2 nodes): `Three-Way Comparison (Cognee vs Claude-Mem vs Enhanced)`, `Enhanced Cognee vs Claude-Mem Comparison`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 206`** (2 nodes): `German Car Manufacturers (Audi, BMW, Mercedes-Benz, Porsche, Volkswagen)`, `Tech Companies (Apple, Google, Microsoft, Amazon, Meta)`
+- **Thin community `Community 227`** (2 nodes): `Phase 2 Memory Management Completion Report`, `Phase 3 Data Visualizations Completion Report`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 207`** (2 nodes): `Assistant Core Behavior Guidelines`, `Spec.md Project Specification Requirement`
+- **Thin community `Community 228`** (2 nodes): `German Car Manufacturers (Audi, BMW, Mercedes-Benz, Porsche, Volkswagen)`, `Tech Companies (Apple, Google, Microsoft, Amazon, Meta)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 208`** (2 nodes): `PEP 8 Style Guide Essentials`, `Zen of Python Principles`
+- **Thin community `Community 229`** (2 nodes): `Assistant Core Behavior Guidelines`, `Spec.md Project Specification Requirement`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 209`** (2 nodes): `Cognee Comparison Chart`, `Competitor Comparison Table`
+- **Thin community `Community 230`** (2 nodes): `PEP 8 Style Guide Essentials`, `Zen of Python Principles`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 210`** (2 nodes): `Test Data Image`, `Test Data Image (Copy)`
+- **Thin community `Community 231`** (2 nodes): `Cognee Comparison Chart`, `Competitor Comparison Table`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 211`** (2 nodes): `Programmer Joke Test Image (Copy)`, `Programmer Joke Test Image`
+- **Thin community `Community 232`** (2 nodes): `Test Data Image`, `Test Data Image (Copy)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 212`** (1 nodes): `low_level.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 213`** (1 nodes): `pipelines.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 214`** (1 nodes): `__main__.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 215`** (1 nodes): `__init__.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 216`** (1 nodes): `__init__.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 217`** (1 nodes): `__init__.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 218`** (1 nodes): `__init__.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 219`** (1 nodes): `__init__.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 220`** (1 nodes): `default_tools.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 221`** (1 nodes): `__init__.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 222`** (1 nodes): `default_tools.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 223`** (1 nodes): `__init__.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 224`** (1 nodes): `Configures the parser for the given argument`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 225`** (1 nodes): `Executes the command with the given arguments`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 226`** (1 nodes): `__init__.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 227`** (1 nodes): `__init__.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 228`** (1 nodes): `__init__.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 229`** (1 nodes): `__init__.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 230`** (1 nodes): `__init__.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 231`** (1 nodes): `__init__.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 232`** (1 nodes): `__init__.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 233`** (1 nodes): `__init__.py`
+- **Thin community `Community 233`** (2 nodes): `Programmer Joke Test Image (Copy)`, `Programmer Joke Test Image`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 234`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 235`** (1 nodes): `__init__.py`
+- **Thin community `Community 235`** (1 nodes): `low_level.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 236`** (1 nodes): `__init__.py`
+- **Thin community `Community 236`** (1 nodes): `pipelines.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 237`** (1 nodes): `Get relevant context based on extracted entities and original query.`
+- **Thin community `Community 237`** (1 nodes): `__main__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 238`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -3990,85 +6554,85 @@ Nodes (1): Programmer Light Bulb Joke
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 242`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 243`** (1 nodes): `Acquire a lock on the given key.         Must be implemented by subclasses.`
+- **Thin community `Community 243`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 244`** (1 nodes): `Release the lock if it is held.         Must be implemented by subclasses.`
+- **Thin community `Community 244`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 245`** (1 nodes): `Context manager for safely acquiring and releasing the lock.`
+- **Thin community `Community 245`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 246`** (1 nodes): `Add a Q/A/context triplet to a cache session.`
+- **Thin community `Community 246`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 247`** (1 nodes): `Retrieve the most recent Q/A/context triplets for a session.`
+- **Thin community `Community 247`** (1 nodes): `delete.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 248`** (1 nodes): `Retrieve all Q/A/context triplets for the given session.`
+- **Thin community `Community 248`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 249`** (1 nodes): `Gracefully close any async connections.`
+- **Thin community `Community 249`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 250`** (1 nodes): `Create a new Kuzu instance for the dataset. Return connection info that will be`
+- **Thin community `Community 250`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 251`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 252`** (1 nodes): `Create a new Neo4j Aura instance for the dataset. Return connection info that wi`
+- **Thin community `Community 252`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 253`** (1 nodes): `Resolve and decrypt connection info for the Neo4j dataset database.         In`
+- **Thin community `Community 253`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 254`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 255`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 256`** (1 nodes): `__init__.py`
+- **Thin community `Community 256`** (1 nodes): `True if the winning score is well above the runner-up.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 257`** (1 nodes): `Check if a specified collection exists.          Parameters:         --------`
+- **Thin community `Community 257`** (1 nodes): `default_tools.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 258`** (1 nodes): `Create a new collection with an optional payload schema.          Parameters:`
+- **Thin community `Community 258`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 259`** (1 nodes): `Insert new data points into the specified collection.          Parameters:`
+- **Thin community `Community 259`** (1 nodes): `default_tools.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 260`** (1 nodes): `Retrieve data points from a collection using their IDs.          Parameters:`
+- **Thin community `Community 260`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 261`** (1 nodes): `Perform a search in the specified collection using either a text query or a vect`
+- **Thin community `Community 261`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 262`** (1 nodes): `Perform a batch search using multiple text queries against a collection.`
+- **Thin community `Community 262`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 263`** (1 nodes): `Delete specified data points from a collection.          Parameters:`
+- **Thin community `Community 263`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 264`** (1 nodes): `Remove obsolete or unnecessary data from the database.`
+- **Thin community `Community 264`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 265`** (1 nodes): `Embed textual data into vector representations.          Parameters:`
+- **Thin community `Community 265`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 266`** (1 nodes): `Return a dictionary with connection info for a vector database for the given dat`
+- **Thin community `Community 266`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 267`** (1 nodes): `__init__.py`
+- **Thin community `Community 267`** (1 nodes): `Configures the parser for the given argument`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 268`** (1 nodes): `__init__.py`
+- **Thin community `Community 268`** (1 nodes): `Executes the command with the given arguments`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 269`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 270`** (1 nodes): `Retrieve embeddable data from the data point object based on index fields.`
+- **Thin community `Community 270`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 271`** (1 nodes): `Retrieve a list of embeddable properties from the data point.          This me`
+- **Thin community `Community 271`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 272`** (1 nodes): `Retrieve the names of embeddable properties defined in the metadata.`
+- **Thin community `Community 272`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 273`** (1 nodes): `Deserialize a DataPoint instance from a JSON string.          The method trans`
+- **Thin community `Community 273`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 274`** (1 nodes): `Instantiate a DataPoint from a dictionary of attribute values.          The me`
+- **Thin community `Community 274`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 275`** (1 nodes): `Auto-populate edge_text from relationship_type if not explicitly provided.`
+- **Thin community `Community 275`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 276`** (1 nodes): `Extract entities from the given text.          This is an abstract method that`
+- **Thin community `Community 276`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 277`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 278`** (1 nodes): `__init__.py`
+- **Thin community `Community 278`** (1 nodes): `Per-criterion verdicts from the last evaluation.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 279`** (1 nodes): `Strip surrounding quotes from specific string fields that often come from`
+- **Thin community `Community 279`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 280`** (1 nodes): `Validate required environment variables for the 'ollama' LLM provider.`
+- **Thin community `Community 280`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 281`** (1 nodes): `__init__.py`
+- **Thin community `Community 281`** (1 nodes): `Get relevant context based on extracted entities and original query.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 282`** (1 nodes): `llm_judge_prompts.py`
+- **Thin community `Community 282`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 283`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -4078,59 +6642,59 @@ Nodes (1): Programmer Light Bulb Joke
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 286`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 287`** (1 nodes): `__init__.py`
+- **Thin community `Community 287`** (1 nodes): `supported_dataset_database_handlers.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 288`** (1 nodes): `__init__.py`
+- **Thin community `Community 288`** (1 nodes): `Scoped slot for call sites without a natural dataset id.          Used by ``vi`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 289`** (1 nodes): `__init__.py`
+- **Thin community `Community 289`** (1 nodes): `Execute a raw database query and return the results.          Parameters:`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 290`** (1 nodes): `__init__.py`
+- **Thin community `Community 290`** (1 nodes): `Add a single node with specified properties to the graph.          Parameters:`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 291`** (1 nodes): `__init__.py`
+- **Thin community `Community 291`** (1 nodes): `Add multiple nodes to the graph in a single operation.          Parameters:`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 292`** (1 nodes): `__init__.py`
+- **Thin community `Community 292`** (1 nodes): `Delete a specified node from the graph by its ID.          Parameters:`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 293`** (1 nodes): `List of file extensions this loader supports.          Returns:             L`
+- **Thin community `Community 293`** (1 nodes): `Delete multiple nodes from the graph by their identifiers.          Parameters`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 294`** (1 nodes): `List of MIME types this loader supports.          Returns:             List o`
+- **Thin community `Community 294`** (1 nodes): `Retrieve a single node from the graph using its ID.          Parameters:`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 295`** (1 nodes): `Unique name identifier for this loader.          Returns:             String`
+- **Thin community `Community 295`** (1 nodes): `Retrieve multiple nodes from the graph using their IDs.          Parameters:`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 296`** (1 nodes): `Check if this loader can handle the given file.          Args:             ex`
+- **Thin community `Community 296`** (1 nodes): `Create a new edge between two nodes in the graph.          Parameters:`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 297`** (1 nodes): `Load and process the file, returning standardized result.          Args:`
+- **Thin community `Community 297`** (1 nodes): `Add multiple edges to the graph in a single operation.          Parameters:`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 298`** (1 nodes): `__init__.py`
+- **Thin community `Community 298`** (1 nodes): `Remove the entire graph, including all nodes and edges.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 299`** (1 nodes): `__init__.py`
+- **Thin community `Community 299`** (1 nodes): `Retrieve all nodes and edges within the graph.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 300`** (1 nodes): `__init__.py`
+- **Thin community `Community 300`** (1 nodes): `Fetch metrics and statistics of the graph, possibly including optional details.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 301`** (1 nodes): `__init__.py`
+- **Thin community `Community 301`** (1 nodes): `Verify if an edge exists between two specified nodes.          Parameters:`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 302`** (1 nodes): `__init__.py`
+- **Thin community `Community 302`** (1 nodes): `Determine the existence of multiple edges in the graph.          Parameters:`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 303`** (1 nodes): `__init__.py`
+- **Thin community `Community 303`** (1 nodes): `Retrieve all edges that are connected to the specified node.          Paramete`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 304`** (1 nodes): `Create a Notebook instance from a remote zip file containing notebook + data fil`
+- **Thin community `Community 304`** (1 nodes): `Get all neighboring nodes connected to the specified node.          Parameters`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 305`** (1 nodes): `Update file paths in code cells to use actual cached data files.         Works`
+- **Thin community `Community 305`** (1 nodes): `Fetch a subgraph consisting of a specific set of nodes and their relationships.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 306`** (1 nodes): `Create a Notebook instance from Jupyter notebook string content.          Args`
+- **Thin community `Community 306`** (1 nodes): `Get all nodes connected to a specified node and their relationship details.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 307`** (1 nodes): `Generate a meaningful name for a notebook cell using nbformat cell.`
+- **Thin community `Community 307`** (1 nodes): `Get the k-hop neighborhood subgraph around a set of seed nodes.          Retur`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 308`** (1 nodes): `Find the best match for a given name from a list of candidates.          Args:`
+- **Thin community `Community 308`** (1 nodes): `Retrieve nodes and edges filtered by the provided attribute criteria.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 309`** (1 nodes): `__init__.py`
+- **Thin community `Community 309`** (1 nodes): `Create a new Ladybug instance for the dataset. Return connection info that will`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 310`** (1 nodes): `__init__.py`
+- **Thin community `Community 310`** (1 nodes): `Create a new Neo4j Aura instance for the dataset. Return connection info that wi`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 311`** (1 nodes): `Add user feedback to the system.`
+- **Thin community `Community 311`** (1 nodes): `Resolve and decrypt connection info for the Neo4j dataset database.         In`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 312`** (1 nodes): `Retrieves context based on the query.`
+- **Thin community `Community 312`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 313`** (1 nodes): `Generates a response using the query and optional context.`
+- **Thin community `Community 313`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 314`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -4138,849 +6702,1891 @@ Nodes (1): Programmer Light Bulb Joke
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 316`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 317`** (1 nodes): `__init__.py`
+- **Thin community `Community 317`** (1 nodes): `Check if a specified collection exists.          Parameters:         --------`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 318`** (1 nodes): `__init__.py`
+- **Thin community `Community 318`** (1 nodes): `Create a new collection with an optional payload schema.          Parameters:`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 319`** (1 nodes): `__init__.py`
+- **Thin community `Community 319`** (1 nodes): `Insert new data points into the specified collection.          Parameters:`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 320`** (1 nodes): `__init__.py`
+- **Thin community `Community 320`** (1 nodes): `Retrieve data points from a collection using their IDs.          Parameters:`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 321`** (1 nodes): `__init__.py`
+- **Thin community `Community 321`** (1 nodes): `Perform a search in the specified collection using either a text query or a vect`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 322`** (1 nodes): `__init__.py`
+- **Thin community `Community 322`** (1 nodes): `Perform a batch search using multiple text queries against a collection.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 323`** (1 nodes): `__init__.py`
+- **Thin community `Community 323`** (1 nodes): `Delete specified data points from a collection.          Parameters:`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 324`** (1 nodes): `__init__.py`
+- **Thin community `Community 324`** (1 nodes): `Remove obsolete or unnecessary data from the database.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 325`** (1 nodes): `__init__.py`
+- **Thin community `Community 325`** (1 nodes): `Embed textual data into vector representations.          Parameters:`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 326`** (1 nodes): `__init__.py`
+- **Thin community `Community 326`** (1 nodes): `Return a dictionary with connection info for a vector database for the given dat`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 327`** (1 nodes): `Extract the domain (netloc) from a URL.          Args:             url: The U`
+- **Thin community `Community 327`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 328`** (1 nodes): `Get the root URL (scheme and netloc) from a URL.          Args:             u`
+- **Thin community `Community 328`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 329`** (1 nodes): `types.py`
+- **Thin community `Community 329`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 330`** (1 nodes): `__init__.py`
+- **Thin community `Community 330`** (1 nodes): `PayloadSchema.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 331`** (1 nodes): `Test add command integration`
+- **Thin community `Community 331`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 332`** (1 nodes): `Test that OpenAPI schema doesn't require global authentication.`
+- **Thin community `Community 332`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 333`** (1 nodes): `Test add endpoint works with conditional authentication.`
+- **Thin community `Community 333`** (1 nodes): `Get identity_fields from the class's metadata field default, if defined.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 334`** (1 nodes): `Test that conditional authentication works with the current environment setup.`
+- **Thin community `Community 334`** (1 nodes): `Generate a deterministic UUID5 from identity field values.          Returns No`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 335`** (1 nodes): `Test that GET endpoints work without authentication (with current environment).`
+- **Thin community `Community 335`** (1 nodes): `Auto-derive metadata index_fields and identity_fields from Annotated markers.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 336`** (1 nodes): `Test that settings endpoint integration works with conditional authentication.`
+- **Thin community `Community 336`** (1 nodes): `Retrieve embeddable data from the data point object based on index fields.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 337`** (1 nodes): `Test behavior when get_default_user fails (with current environment).`
+- **Thin community `Community 337`** (1 nodes): `Retrieve a list of embeddable properties from the data point.          This me`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 338`** (1 nodes): `__init__.py`
+- **Thin community `Community 338`** (1 nodes): `Retrieve the names of embeddable properties defined in the metadata.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 339`** (1 nodes): `__init__.py`
+- **Thin community `Community 339`** (1 nodes): `Deserialize a DataPoint instance from a JSON string.          The method trans`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 340`** (1 nodes): `Test that regular file paths work as before.`
+- **Thin community `Community 340`** (1 nodes): `Instantiate a DataPoint from a dictionary of attribute values.          The me`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 341`** (1 nodes): `Test that file:// URLs work correctly in text mode.`
+- **Thin community `Community 341`** (1 nodes): `Auto-populate edge_text from relationship_type if not explicitly provided.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 342`** (1 nodes): `Test that file:// URLs work correctly in binary mode.`
+- **Thin community `Community 342`** (1 nodes): `Extract entities from the given text.          This is an abstract method that`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 343`** (1 nodes): `Test that file:// URLs work with specific encoding.`
+- **Thin community `Community 343`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 344`** (1 nodes): `Test that file:// URLs raise appropriate error for nonexistent files.`
+- **Thin community `Community 344`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 345`** (1 nodes): `Test that multiple file:// prefixes are handled correctly.`
+- **Thin community `Community 345`** (1 nodes): `Strip surrounding quotes from specific string fields that often come from`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 346`** (1 nodes): `Test get_conversation_history formats Q&A history with correct structure.`
+- **Thin community `Community 346`** (1 nodes): `Validate required environment variables for the 'ollama' LLM provider.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 347`** (1 nodes): `Test save_conversation_history calls add_qa with correct parameters.`
+- **Thin community `Community 347`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 348`** (1 nodes): `Test save_conversation_history uses 'default_session' when session_id is None.`
+- **Thin community `Community 348`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 349`** (1 nodes): `Test that when REQUIRE_AUTHENTICATION=false and no token, returns default user.`
+- **Thin community `Community 349`** (1 nodes): `llm_judge_prompts.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 350`** (1 nodes): `Test that when REQUIRE_AUTHENTICATION=false and valid user, returns that user.`
+- **Thin community `Community 350`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 351`** (1 nodes): `Test that when REQUIRE_AUTHENTICATION=true and user present, returns user.`
+- **Thin community `Community 351`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 352`** (1 nodes): `Test that FastAPI Users dependency can be created correctly.`
+- **Thin community `Community 352`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 353`** (1 nodes): `Test that the conditional authentication function can be imported and used.`
+- **Thin community `Community 353`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 354`** (1 nodes): `Test behavior when get_default_user raises an exception.`
+- **Thin community `Community 354`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 355`** (1 nodes): `Test that the function always returns the same type.`
+- **Thin community `Community 355`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 356`** (1 nodes): `Test fallback to default user for all scenarios where FastAPI Users returns None`
+- **Thin community `Community 356`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 357`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 358`** (1 nodes): `eslint.config.mjs`
+- **Thin community `Community 358`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 359`** (1 nodes): `next.config.mjs`
+- **Thin community `Community 359`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 360`** (1 nodes): `postcss.config.mjs`
+- **Thin community `Community 360`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 361`** (1 nodes): `page.tsx`
+- **Thin community `Community 361`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 362`** (1 nodes): `GraphView.tsx`
+- **Thin community `Community 362`** (1 nodes): `List of file extensions this loader supports.          Returns:             L`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 363`** (1 nodes): `Account.tsx`
+- **Thin community `Community 363`** (1 nodes): `List of MIME types this loader supports.          Returns:             List o`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 364`** (1 nodes): `page.tsx`
+- **Thin community `Community 364`** (1 nodes): `Check if this loader can handle the given file.          Args:             ex`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 365`** (1 nodes): `AuthPage.tsx`
+- **Thin community `Community 365`** (1 nodes): `Load and process the file, returning standardized result.          Args:`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 366`** (1 nodes): `page.tsx`
+- **Thin community `Community 366`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 367`** (1 nodes): `LoginPage.tsx`
+- **Thin community `Community 367`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 368`** (1 nodes): `page.tsx`
+- **Thin community `Community 368`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 369`** (1 nodes): `page.tsx`
+- **Thin community `Community 369`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 370`** (1 nodes): `AddDataToCognee.tsx`
+- **Thin community `Community 370`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 371`** (1 nodes): `Dashboard.tsx`
+- **Thin community `Community 371`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 372`** (1 nodes): `page.tsx`
+- **Thin community `Community 372`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 373`** (1 nodes): `Plan.tsx`
+- **Thin community `Community 373`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 374`** (1 nodes): `auth0.ts`
+- **Thin community `Community 374`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 375`** (1 nodes): `index.ts`
+- **Thin community `Community 375`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 376`** (1 nodes): `types.ts`
+- **Thin community `Community 376`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 377`** (1 nodes): `index.ts`
+- **Thin community `Community 377`** (1 nodes): `Create a Notebook instance from a remote zip file containing notebook + data fil`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 378`** (1 nodes): `index.ts`
+- **Thin community `Community 378`** (1 nodes): `Update file paths in code cells to use actual cached data files.         Works`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 379`** (1 nodes): `index.ts`
+- **Thin community `Community 379`** (1 nodes): `Create a Notebook instance from Jupyter notebook string content.          Args`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 380`** (1 nodes): `LoadingIndicator.tsx`
+- **Thin community `Community 380`** (1 nodes): `Generate a meaningful name for a notebook cell using nbformat cell.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 381`** (1 nodes): `Accordion.tsx`
+- **Thin community `Community 381`** (1 nodes): `cell-4.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 382`** (1 nodes): `AvatarImage.tsx`
+- **Thin community `Community 382`** (1 nodes): `cell-5.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 383`** (1 nodes): `index.ts`
+- **Thin community `Community 383`** (1 nodes): `cell-6.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 384`** (1 nodes): `StatusIndicator.tsx`
+- **Thin community `Community 384`** (1 nodes): `cell-7.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 385`** (1 nodes): `index.ts`
+- **Thin community `Community 385`** (1 nodes): `cell-12.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 386`** (1 nodes): `index.ts`
+- **Thin community `Community 386`** (1 nodes): `cell-14.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 387`** (1 nodes): `types.ts`
+- **Thin community `Community 387`** (1 nodes): `cell-16.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 388`** (1 nodes): `index.ts`
+- **Thin community `Community 388`** (1 nodes): `cell-6.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 389`** (1 nodes): `index.ts`
+- **Thin community `Community 389`** (1 nodes): `cell-9.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 390`** (1 nodes): `index.ts`
+- **Thin community `Community 390`** (1 nodes): `Find the best match for a given name from a list of candidates.          Args:`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 391`** (1 nodes): `Settings.tsx`
+- **Thin community `Community 391`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 392`** (1 nodes): `SettingsModal.tsx`
+- **Thin community `Community 392`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 393`** (1 nodes): `index.ts`
+- **Thin community `Community 393`** (1 nodes): `Access the underlying Task directly (backward compat).`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 394`** (1 nodes): `d3-force-3d.d.ts`
+- **Thin community `Community 394`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 395`** (1 nodes): `eslint.config.mjs`
+- **Thin community `Community 395`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 396`** (1 nodes): `next-env.d.ts`
+- **Thin community `Community 396`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 397`** (1 nodes): `next.config.ts`
+- **Thin community `Community 397`** (1 nodes): `Add user feedback to the system.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 398`** (1 nodes): `playwright.config.ts`
+- **Thin community `Community 398`** (1 nodes): `Retrieves the raw data points from the underlying storage (Graph or Vector DB).`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 399`** (1 nodes): `postcss.config.mjs`
+- **Thin community `Community 399`** (1 nodes): `Transforms raw retrieved objects into a structured context for the LLM.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 400`** (1 nodes): `tailwind.config.ts`
+- **Thin community `Community 400`** (1 nodes): `Generates a final output or answer based on the query and retrieved context.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 401`** (1 nodes): `vitest.config.ts`
+- **Thin community `Community 401`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 402`** (1 nodes): `vitest.setup.ts`
+- **Thin community `Community 402`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 403`** (1 nodes): `error.tsx`
+- **Thin community `Community 403`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 404`** (1 nodes): `page.tsx`
+- **Thin community `Community 404`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 405`** (1 nodes): `page.tsx`
+- **Thin community `Community 405`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 406`** (1 nodes): `page.tsx`
+- **Thin community `Community 406`** (1 nodes): `default_transport.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 407`** (1 nodes): `Button.tsx`
+- **Thin community `Community 407`** (1 nodes): `permission_types.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 408`** (1 nodes): `Card.tsx`
+- **Thin community `Community 408`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 409`** (1 nodes): `Checkbox.tsx`
+- **Thin community `Community 409`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 410`** (1 nodes): `DropdownMenu.tsx`
+- **Thin community `Community 410`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 411`** (1 nodes): `index.ts`
+- **Thin community `Community 411`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 412`** (1 nodes): `Input.tsx`
+- **Thin community `Community 412`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 413`** (1 nodes): `Textarea.tsx`
+- **Thin community `Community 413`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 414`** (1 nodes): `Button.test.tsx`
+- **Thin community `Community 414`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 415`** (1 nodes): `index.ts`
+- **Thin community `Community 415`** (1 nodes): `feedback_weights_constants.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 416`** (1 nodes): `Sidebar.tsx`
+- **Thin community `Community 416`** (1 nodes): `frequency_weights_constants.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 417`** (1 nodes): `KPICard.tsx`
+- **Thin community `Community 417`** (1 nodes): `Return the name of this translation provider.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 418`** (1 nodes): `AnalyticsDashboard.tsx`
+- **Thin community `Community 418`** (1 nodes): `Translate text to the target language.          Args:             text: The t`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 419`** (1 nodes): `MemoryDetailSkeleton.tsx`
+- **Thin community `Community 419`** (1 nodes): `Translate multiple texts to the target language.          Args:             t`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 420`** (1 nodes): `PageLoader.tsx`
+- **Thin community `Community 420`** (1 nodes): `Check if this provider is available (has required credentials).          All p`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 421`** (1 nodes): `SessionTimeline.tsx`
+- **Thin community `Community 421`** (1 nodes): `Extract the domain (netloc) from a URL.          Args:             url: The U`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 422`** (1 nodes): `a11y-audit.spec.ts`
+- **Thin community `Community 422`** (1 nodes): `Get the root URL (scheme and netloc) from a URL.          Args:             u`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 423`** (1 nodes): `analytics.spec.ts`
+- **Thin community `Community 423`** (1 nodes): `types.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 424`** (1 nodes): `graph.spec.ts`
+- **Thin community `Community 424`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 425`** (1 nodes): `memories.spec.ts`
+- **Thin community `Community 425`** (1 nodes): `Test that OpenAPI schema doesn't require global authentication.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 426`** (1 nodes): `timeline.spec.ts`
+- **Thin community `Community 426`** (1 nodes): `Test add endpoint works with conditional authentication.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 427`** (1 nodes): `app.py`
+- **Thin community `Community 427`** (1 nodes): `Test that conditional authentication works with the current environment setup.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 428`** (1 nodes): `modal_image.py`
+- **Thin community `Community 428`** (1 nodes): `Test that GET endpoints work without authentication (with current environment).`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 429`** (1 nodes): `queues.py`
+- **Thin community `Community 429`** (1 nodes): `Test that settings endpoint integration works with conditional authentication.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 430`** (1 nodes): `__init__.py`
+- **Thin community `Community 430`** (1 nodes): `Test behavior when get_default_user fails (with current environment).`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 431`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 432`** (1 nodes): `modal_image.py`
+- **Thin community `Community 432`** (1 nodes): `Test add command integration`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 433`** (1 nodes): `__init__.py`
+- **Thin community `Community 433`** (1 nodes): `When --user-id is set, X-User-Id header should be passed to client.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 434`** (1 nodes): `Create benchmark instance by loading data from JSON files.`
+- **Thin community `Community 434`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 435`** (1 nodes): `Initialize the RAG system. Returns the RAG client.`
+- **Thin community `Community 435`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 436`** (1 nodes): `Clean up RAG system resources.`
+- **Thin community `Community 436`** (1 nodes): `Reset the singleton instance between tests.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 437`** (1 nodes): `Insert a single document into the RAG system.`
+- **Thin community `Community 437`** (1 nodes): `Test that pipeline operations respect queue concurrency limit.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 438`** (1 nodes): `Query the RAG system and return the answer.`
+- **Thin community `Community 438`** (1 nodes): `Test that pipeline yields all results correctly through queue.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 439`** (1 nodes): `Return the name of the RAG system for logging.`
+- **Thin community `Community 439`** (1 nodes): `Test that pipeline errors properly release queue slots.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 440`** (1 nodes): `__init__.py`
+- **Thin community `Community 440`** (1 nodes): `Test that OpenAPI schema doesn't require global authentication.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 441`** (1 nodes): `Test blue-green deployment strategy`
+- **Thin community `Community 441`** (1 nodes): `Test add endpoint works with conditional authentication.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 442`** (1 nodes): `Test canary deployment strategy`
+- **Thin community `Community 442`** (1 nodes): `Test that conditional authentication works with the current environment setup.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 443`** (1 nodes): `Test rolling deployment strategy`
+- **Thin community `Community 443`** (1 nodes): `Test that GET endpoints work without authentication (with current environment).`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 444`** (1 nodes): `Test deployment validation procedures`
+- **Thin community `Community 444`** (1 nodes): `Test that settings endpoint integration works with conditional authentication.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 445`** (1 nodes): `Test deployment rollback procedures`
+- **Thin community `Community 445`** (1 nodes): `Test behavior when get_default_user fails (with current environment).`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 446`** (1 nodes): `Test deployment configuration validation`
+- **Thin community `Community 446`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 447`** (1 nodes): `Test traffic switching validation`
+- **Thin community `Community 447`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 448`** (1 nodes): `Test resource limit configuration`
+- **Thin community `Community 448`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 449`** (1 nodes): `Test disaster recovery framework initialization`
+- **Thin community `Community 449`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 450`** (1 nodes): `Test emergency backup creation`
+- **Thin community `Community 450`** (1 nodes): `Username and password with special characters should round-trip correctly.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 451`** (1 nodes): `Test data corruption disaster simulation`
+- **Thin community `Community 451`** (1 nodes): `When no connect_args are provided, an empty dict should be forwarded to the adap`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 452`** (1 nodes): `Test hardware failure simulation`
+- **Thin community `Community 452`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 453`** (1 nodes): `Test recovery procedures`
+- **Thin community `Community 453`** (1 nodes): `Reset the singleton instance between tests.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 454`** (1 nodes): `Test complete disaster recovery test`
+- **Thin community `Community 454`** (1 nodes): `Reset the singleton instance between tests.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 455`** (1 nodes): `Test RTO/RPO compliance checking`
+- **Thin community `Community 455`** (1 nodes): `Disabled queue's acquire() is a no-op and imposes no limit.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 456`** (1 nodes): `Test disaster recovery report generation`
+- **Thin community `Community 456`** (1 nodes): `Reset the singleton instance between tests.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 457`** (1 nodes): `Test emergency rollback procedures`
+- **Thin community `Community 457`** (1 nodes): `Test that context manager properly acquires and releases slot.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 458`** (1 nodes): `Test functionality verification after recovery`
+- **Thin community `Community 458`** (1 nodes): `Test that context manager releases slot on exception.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 459`** (1 nodes): `Test performance validation after recovery`
+- **Thin community `Community 459`** (1 nodes): `Reset the singleton instance between tests.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 460`** (1 nodes): `Test runbook creation`
+- **Thin community `Community 460`** (1 nodes): `Test pattern for using queue with pipeline-style async generator.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 461`** (1 nodes): `Test runbook search functionality`
+- **Thin community `Community 461`** (1 nodes): `Test that different operations share the same queue.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 462`** (1 nodes): `Test runbook execution in dry run mode`
+- **Thin community `Community 462`** (1 nodes): `Reset the singleton instance between tests.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 463`** (1 nodes): `Test incident procedure creation`
+- **Thin community `Community 463`** (1 nodes): `Test that cancelled tasks release their slots.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 464`** (1 nodes): `Test monitoring guide creation`
+- **Thin community `Community 464`** (1 nodes): `Stress test with many concurrent operations.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 465`** (1 nodes): `Test documentation report generation`
+- **Thin community `Community 465`** (1 nodes): `Test behavior when same coroutine acquires multiple times.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 466`** (1 nodes): `Test standard runbooks creation`
+- **Thin community `Community 466`** (1 nodes): `Test that queue works with sync callback wrapped operations.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 467`** (1 nodes): `Test runbook structure validation`
+- **Thin community `Community 467`** (1 nodes): `Test that regular file paths work as before.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 468`** (1 nodes): `Test incident procedure structure validation`
+- **Thin community `Community 468`** (1 nodes): `Test that file:// URLs work correctly in text mode.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 469`** (1 nodes): `Test documentation index structure`
+- **Thin community `Community 469`** (1 nodes): `Test that file:// URLs work correctly in binary mode.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 470`** (1 nodes): `Test runbook execution rollback functionality`
+- **Thin community `Community 470`** (1 nodes): `Test that file:// URLs work with specific encoding.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 471`** (1 nodes): `Test runbook verification steps execution`
+- **Thin community `Community 471`** (1 nodes): `Test that file:// URLs raise appropriate error for nonexistent files.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 472`** (1 nodes): `Test runbook versioning`
+- **Thin community `Community 472`** (1 nodes): `Test that multiple file:// prefixes are handled correctly.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 473`** (1 nodes): `Test runbook tags functionality`
+- **Thin community `Community 473`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 474`** (1 nodes): `Test escalation contacts structure`
+- **Thin community `Community 474`** (1 nodes): `Test get_conversation_history formats Q&A history with correct structure.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 475`** (1 nodes): `Test related runbooks functionality`
+- **Thin community `Community 475`** (1 nodes): `Test save_conversation_history calls add_qa with correct parameters.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 476`** (1 nodes): `Test runbook prerequisites`
+- **Thin community `Community 476`** (1 nodes): `Test save_conversation_history uses 'default_session' when session_id is None.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 477`** (1 nodes): `Test metric recording functionality`
+- **Thin community `Community 477`** (1 nodes): `Test that when REQUIRE_AUTHENTICATION=false and no token, returns default user.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 478`** (1 nodes): `Test alert rule registration and triggering`
+- **Thin community `Community 478`** (1 nodes): `Test that when REQUIRE_AUTHENTICATION=false and valid user, returns that user.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 479`** (1 nodes): `Test health check execution`
+- **Thin community `Community 479`** (1 nodes): `Test that when REQUIRE_AUTHENTICATION=true and user present, returns user.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 480`** (1 nodes): `Test metrics summary functionality`
+- **Thin community `Community 480`** (1 nodes): `Test that FastAPI Users dependency can be created correctly.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 481`** (1 nodes): `Test system health assessment`
+- **Thin community `Community 481`** (1 nodes): `Test that the conditional authentication function can be imported and used.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 482`** (1 nodes): `Test alert handler functionality`
+- **Thin community `Community 482`** (1 nodes): `Test behavior when get_default_user raises an exception.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 483`** (1 nodes): `Test test alert functionality`
+- **Thin community `Community 483`** (1 nodes): `Test that the function always returns the same type.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 484`** (1 nodes): `Test monitoring start/stop lifecycle`
+- **Thin community `Community 484`** (1 nodes): `Test fallback to default user for all scenarios where FastAPI Users returns None`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 485`** (1 nodes): `Test Slack alert handler`
+- **Thin community `Community 485`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 486`** (1 nodes): `Test metric definition validation`
+- **Thin community `Community 486`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 487`** (1 nodes): `Test structured logging initialization`
+- **Thin community `Community 487`** (1 nodes): `eslint.config.mjs`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 488`** (1 nodes): `Test structured log entry creation`
+- **Thin community `Community 488`** (1 nodes): `next.config.mjs`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 489`** (1 nodes): `Test log level filtering`
+- **Thin community `Community 489`** (1 nodes): `postcss.config.mjs`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 490`** (1 nodes): `Test log aggregation by component`
+- **Thin community `Community 490`** (1 nodes): `page.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 491`** (1 nodes): `Test error log handling`
+- **Thin community `Community 491`** (1 nodes): `GraphView.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 492`** (1 nodes): `Test distributed tracing span creation`
+- **Thin community `Community 492`** (1 nodes): `Account.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 493`** (1 nodes): `Test error handling in tracing spans`
+- **Thin community `Community 493`** (1 nodes): `page.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 494`** (1 nodes): `Test metric definition`
+- **Thin community `Community 494`** (1 nodes): `AuthPage.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 495`** (1 nodes): `Test metric recording`
+- **Thin community `Community 495`** (1 nodes): `page.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 496`** (1 nodes): `Test log search functionality`
+- **Thin community `Community 496`** (1 nodes): `LoginPage.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 497`** (1 nodes): `Test performance metrics collection`
+- **Thin community `Community 497`** (1 nodes): `page.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 498`** (1 nodes): `Test observability report generation`
+- **Thin community `Community 498`** (1 nodes): `page.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 499`** (1 nodes): `Test log filtering by time range`
+- **Thin community `Community 499`** (1 nodes): `AddDataToCognee.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 500`** (1 nodes): `Test observability framework lifecycle`
+- **Thin community `Community 500`** (1 nodes): `Dashboard.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 501`** (1 nodes): `install_lite.ps1`
+- **Thin community `Community 501`** (1 nodes): `page.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 502`** (1 nodes): `Multi-Agent System (MAS) specific categories         This is ONE EXAMPLE of how`
+- **Thin community `Community 502`** (1 nodes): `Plan.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 503`** (1 nodes): `Generic default categories for simple projects         Projects can override wi`
+- **Thin community `Community 503`** (1 nodes): `auth0.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 504`** (1 nodes): `Create from dictionary.`
+- **Thin community `Community 504`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 505`** (1 nodes): `Context manager for database cursor.          Yields:             SQLite curs`
+- **Thin community `Community 505`** (1 nodes): `types.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 506`** (1 nodes): `Make a basic LLM API call.          Args:             prompt: The prompt to s`
+- **Thin community `Community 506`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 507`** (1 nodes): `Make an LLM API call with message history.          Args:             message`
+- **Thin community `Community 507`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 508`** (1 nodes): `Make an LLM API call expecting JSON response.          Args:             prom`
+- **Thin community `Community 508`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 509`** (1 nodes): `Get current available tokens.`
+- **Thin community `Community 509`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 510`** (1 nodes): `Get seconds until tokens available.`
+- **Thin community `Community 510`** (1 nodes): `LoadingIndicator.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 511`** (1 nodes): `Validate API contracts and OpenAPI specifications`
+- **Thin community `Community 511`** (1 nodes): `Accordion.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 512`** (1 nodes): `Validate that authentication is properly enforced`
+- **Thin community `Community 512`** (1 nodes): `AvatarImage.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 513`** (1 nodes): `Test API rate limiting enforcement`
+- **Thin community `Community 513`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 514`** (1 nodes): `API performance testing under various load conditions`
+- **Thin community `Community 514`** (1 nodes): `StatusIndicator.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 515`** (1 nodes): `Test API timeout handling`
+- **Thin community `Community 515`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 516`** (1 nodes): `Test API under sustained concurrent load`
+- **Thin community `Community 516`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 517`** (1 nodes): `Test GraphQL query execution and response validation`
+- **Thin community `Community 517`** (1 nodes): `types.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 518`** (1 nodes): `Test GraphQL error handling`
+- **Thin community `Community 518`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 519`** (1 nodes): `Test GraphQL subscription support (if implemented)`
+- **Thin community `Community 519`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 520`** (1 nodes): `Test API input validation and sanitization`
+- **Thin community `Community 520`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 521`** (1 nodes): `Test CORS headers configuration`
+- **Thin community `Community 521`** (1 nodes): `Settings.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 522`** (1 nodes): `Test rate limiting security against abuse`
+- **Thin community `Community 522`** (1 nodes): `SettingsModal.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 523`** (1 nodes): `Test multiple API version support`
+- **Thin community `Community 523`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 524`** (1 nodes): `Test backward compatibility with older API versions`
+- **Thin community `Community 524`** (1 nodes): `d3-force-3d.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 525`** (1 nodes): `Test GitHub Actions workflow generation`
+- **Thin community `Community 525`** (1 nodes): `eslint.config.mjs`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 526`** (1 nodes): `Test complete execution of workflow scenarios`
+- **Thin community `Community 526`** (1 nodes): `next-env.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 527`** (1 nodes): `Test workflow error recovery mechanisms`
+- **Thin community `Community 527`** (1 nodes): `next.config.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 528`** (1 nodes): `Validate lawful basis for data processing`
+- **Thin community `Community 528`** (1 nodes): `playwright.config.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 529`** (1 nodes): `Validate data subject right of access`
+- **Thin community `Community 529`** (1 nodes): `postcss.config.mjs`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 530`** (1 nodes): `Validate right to erasure (right to be forgotten)`
+- **Thin community `Community 530`** (1 nodes): `tailwind.config.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 531`** (1 nodes): `Validate data portability requirements`
+- **Thin community `Community 531`** (1 nodes): `vitest.config.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 532`** (1 nodes): `Validate consent management requirements`
+- **Thin community `Community 532`** (1 nodes): `vitest.setup.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 533`** (1 nodes): `Validate GDPR data breach notification requirements`
+- **Thin community `Community 533`** (1 nodes): `error.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 534`** (1 nodes): `Test SOC 2 access control requirements`
+- **Thin community `Community 534`** (1 nodes): `page.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 535`** (1 nodes): `Test SOC 2 system monitoring requirements`
+- **Thin community `Community 535`** (1 nodes): `page.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 536`** (1 nodes): `Test SOC 2 incident response capabilities`
+- **Thin community `Community 536`** (1 nodes): `page.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 537`** (1 nodes): `Test SOC 2 change management procedures`
+- **Thin community `Community 537`** (1 nodes): `Button.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 538`** (1 nodes): `Test PCI DSS cardholder data protection`
+- **Thin community `Community 538`** (1 nodes): `Card.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 539`** (1 nodes): `Test PCI DSS network security requirements`
+- **Thin community `Community 539`** (1 nodes): `Checkbox.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 540`** (1 nodes): `Test PCI DSS vulnerability management`
+- **Thin community `Community 540`** (1 nodes): `DropdownMenu.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 541`** (1 nodes): `Test ISO 27001 information security policy`
+- **Thin community `Community 541`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 542`** (1 nodes): `Test ISO 27001 risk assessment process`
+- **Thin community `Community 542`** (1 nodes): `Input.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 543`** (1 nodes): `Test ISO 27001 asset management`
+- **Thin community `Community 543`** (1 nodes): `Textarea.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 544`** (1 nodes): `Test compliance across multiple frameworks`
+- **Thin community `Community 544`** (1 nodes): `Button.test.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 545`** (1 nodes): `Test comprehensive compliance reporting`
+- **Thin community `Community 545`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 546`** (1 nodes): `Test OpenAPI specification completeness`
+- **Thin community `Community 546`** (1 nodes): `Sidebar.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 547`** (1 nodes): `Test API example validity and completeness`
+- **Thin community `Community 547`** (1 nodes): `KPICard.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 548`** (1 nodes): `Test API response documentation accuracy`
+- **Thin community `Community 548`** (1 nodes): `AnalyticsDashboard.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 549`** (1 nodes): `Test API changelog accuracy and completeness`
+- **Thin community `Community 549`** (1 nodes): `MemoryDetailSkeleton.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 550`** (1 nodes): `Test Python docstring coverage`
+- **Thin community `Community 550`** (1 nodes): `PageLoader.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 551`** (1 nodes): `Test docstring quality and content`
+- **Thin community `Community 551`** (1 nodes): `SessionTimeline.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 552`** (1 nodes): `Test type hint annotation coverage`
+- **Thin community `Community 552`** (1 nodes): `a11y-audit.spec.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 553`** (1 nodes): `Test module-level documentation`
+- **Thin community `Community 553`** (1 nodes): `analytics.spec.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 554`** (1 nodes): `Test getting started guide completeness`
+- **Thin community `Community 554`** (1 nodes): `graph.spec.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 555`** (1 nodes): `Test user guide navigation and structure`
+- **Thin community `Community 555`** (1 nodes): `memories.spec.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 556`** (1 nodes): `Test tutorial documentation quality`
+- **Thin community `Community 556`** (1 nodes): `timeline.spec.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 557`** (1 nodes): `Test troubleshooting guide effectiveness`
+- **Thin community `Community 557`** (1 nodes): `app.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 558`** (1 nodes): `Test installation guide prerequisites coverage`
+- **Thin community `Community 558`** (1 nodes): `modal_image.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 559`** (1 nodes): `Test Docker installation guide accuracy`
+- **Thin community `Community 559`** (1 nodes): `queues.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 560`** (1 nodes): `Test configuration guide completeness`
+- **Thin community `Community 560`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 561`** (1 nodes): `Test installation verification procedures`
+- **Thin community `Community 561`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 562`** (1 nodes): `Test FAQ completeness and organization`
+- **Thin community `Community 562`** (1 nodes): `modal_image.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 563`** (1 nodes): `Test troubleshooting guide quality and effectiveness`
+- **Thin community `Community 563`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 564`** (1 nodes): `Test best practices documentation quality`
+- **Thin community `Community 564`** (1 nodes): `Create benchmark instance by loading data from JSON files.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 565`** (1 nodes): `Test glossary completeness and accuracy`
+- **Thin community `Community 565`** (1 nodes): `Initialize the RAG system. Returns the RAG client.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 566`** (1 nodes): `Generate random memory content`
+- **Thin community `Community 566`** (1 nodes): `Clean up RAG system resources.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 567`** (1 nodes): `Generate random embedding vector`
+- **Thin community `Community 567`** (1 nodes): `Insert a single document into the RAG system.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 568`** (1 nodes): `Generate random metadata`
+- **Thin community `Community 568`** (1 nodes): `Query the RAG system and return the answer.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 569`** (1 nodes): `Store a memory - high frequency operation`
+- **Thin community `Community 569`** (1 nodes): `Return the name of the RAG system for logging.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 570`** (1 nodes): `Search for memories using vector similarity`
+- **Thin community `Community 570`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 571`** (1 nodes): `Retrieve a specific memory by ID`
+- **Thin community `Community 571`** (1 nodes): `Test blue-green deployment strategy`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 572`** (1 nodes): `Get memories for a specific agent`
+- **Thin community `Community 572`** (1 nodes): `Test canary deployment strategy`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 573`** (1 nodes): `Test agent coordination operations`
+- **Thin community `Community 573`** (1 nodes): `Test rolling deployment strategy`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 574`** (1 nodes): `Lightweight system health check`
+- **Thin community `Community 574`** (1 nodes): `Test deployment validation procedures`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 575`** (1 nodes): `Update an existing memory`
+- **Thin community `Community 575`** (1 nodes): `Test deployment rollback procedures`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 576`** (1 nodes): `High-frequency trading memory operations`
+- **Thin community `Community 576`** (1 nodes): `Test deployment configuration validation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 577`** (1 nodes): `Light load scenario for basic functionality testing`
+- **Thin community `Community 577`** (1 nodes): `Test traffic switching validation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 578`** (1 nodes): `Medium load scenario for typical usage testing`
+- **Thin community `Community 578`** (1 nodes): `Test resource limit configuration`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 579`** (1 nodes): `Heavy load scenario for stress testing`
+- **Thin community `Community 579`** (1 nodes): `Test disaster recovery framework initialization`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 580`** (1 nodes): `Endurance scenario for long-running stability testing`
+- **Thin community `Community 580`** (1 nodes): `Test emergency backup creation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 581`** (1 nodes): `Base URL for Enhanced Cognee API`
+- **Thin community `Community 581`** (1 nodes): `Test data corruption disaster simulation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 582`** (1 nodes): `Performance thresholds for testing`
+- **Thin community `Community 582`** (1 nodes): `Test hardware failure simulation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 583`** (1 nodes): `Base URL for Enhanced Cognee API`
+- **Thin community `Community 583`** (1 nodes): `Test recovery procedures`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 584`** (1 nodes): `Test normal business hours load scenario`
+- **Thin community `Community 584`** (1 nodes): `Test complete disaster recovery test`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 585`** (1 nodes): `Test system performance under peak load`
+- **Thin community `Community 585`** (1 nodes): `Test RTO/RPO compliance checking`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 586`** (1 nodes): `Test system limits under stress conditions`
+- **Thin community `Community 586`** (1 nodes): `Test disaster recovery report generation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 587`** (1 nodes): `Test system stability over extended period`
+- **Thin community `Community 587`** (1 nodes): `Test emergency rollback procedures`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 588`** (1 nodes): `Test performance regression detection`
+- **Thin community `Community 588`** (1 nodes): `Test functionality verification after recovery`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 589`** (1 nodes): `Test realistic user behavior simulation`
+- **Thin community `Community 589`** (1 nodes): `Test performance validation after recovery`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 590`** (1 nodes): `Test system scalability patterns`
+- **Thin community `Community 590`** (1 nodes): `Test runbook creation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 591`** (1 nodes): `Test resource utilization under optimal conditions`
+- **Thin community `Community 591`** (1 nodes): `Test runbook search functionality`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 592`** (1 nodes): `Base URL for Enhanced Cognee API`
+- **Thin community `Community 592`** (1 nodes): `Test runbook execution in dry run mode`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 593`** (1 nodes): `Security test data including malicious inputs`
+- **Thin community `Community 593`** (1 nodes): `Test incident procedure creation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 594`** (1 nodes): `Base URL for Enhanced Cognee API`
+- **Thin community `Community 594`** (1 nodes): `Test monitoring guide creation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 595`** (1 nodes): `Sensitive test data for privacy testing`
+- **Thin community `Community 595`** (1 nodes): `Test documentation report generation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 596`** (1 nodes): `Base URL for Enhanced Cognee API`
+- **Thin community `Community 596`** (1 nodes): `Test standard runbooks creation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 597`** (1 nodes): `Base URL for Enhanced Cognee API`
+- **Thin community `Community 597`** (1 nodes): `Test runbook structure validation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 598`** (1 nodes): `Base URL for Enhanced Cognee API`
+- **Thin community `Community 598`** (1 nodes): `Test incident procedure structure validation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 599`** (1 nodes): `Test user data for authentication workflow`
+- **Thin community `Community 599`** (1 nodes): `Test documentation index structure`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 600`** (1 nodes): `Get authentication headers for API requests`
+- **Thin community `Community 600`** (1 nodes): `Test runbook execution rollback functionality`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 601`** (1 nodes): `Base URL for Enhanced Cognee API`
+- **Thin community `Community 601`** (1 nodes): `Test runbook verification steps execution`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 602`** (1 nodes): `Sample market data for trading workflow`
+- **Thin community `Community 602`** (1 nodes): `Test runbook versioning`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 603`** (1 nodes): `Base URL for Enhanced Cognee API`
+- **Thin community `Community 603`** (1 nodes): `Test runbook tags functionality`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 604`** (1 nodes): `Validate WCAG 2.1 accessibility compliance`
+- **Thin community `Community 604`** (1 nodes): `Test escalation contacts structure`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 605`** (1 nodes): `Test keyboard navigation accessibility`
+- **Thin community `Community 605`** (1 nodes): `Test related runbooks functionality`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 606`** (1 nodes): `Test ARIA labels and descriptions`
+- **Thin community `Community 606`** (1 nodes): `Test runbook prerequisites`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 607`** (1 nodes): `Test color contrast compliance`
+- **Thin community `Community 607`** (1 nodes): `Test metric recording functionality`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 608`** (1 nodes): `Test focus management and indicators`
+- **Thin community `Community 608`** (1 nodes): `Test alert rule registration and triggering`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 609`** (1 nodes): `Test screen reader compatibility`
+- **Thin community `Community 609`** (1 nodes): `Test health check execution`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 610`** (1 nodes): `Test mobile responsive design`
+- **Thin community `Community 610`** (1 nodes): `Test metrics summary functionality`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 611`** (1 nodes): `Test tablet responsive design`
+- **Thin community `Community 611`** (1 nodes): `Test system health assessment`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 612`** (1 nodes): `Test desktop layout optimization`
+- **Thin community `Community 612`** (1 nodes): `Test alert handler functionality`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 613`** (1 nodes): `Test compatibility across different browsers`
+- **Thin community `Community 613`** (1 nodes): `Test test alert functionality`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 614`** (1 nodes): `Test feature detection and graceful degradation`
+- **Thin community `Community 614`** (1 nodes): `Test monitoring start/stop lifecycle`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 615`** (1 nodes): `Test complete user journeys across the application`
+- **Thin community `Community 615`** (1 nodes): `Test Slack alert handler`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 616`** (1 nodes): `Test error handling within user journeys`
+- **Thin community `Community 616`** (1 nodes): `Test metric definition validation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 617`** (1 nodes): `Test visual regression against baseline`
+- **Thin community `Community 617`** (1 nodes): `Test structured logging initialization`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 618`** (1 nodes): `Test UI consistency across pages`
+- **Thin community `Community 618`** (1 nodes): `Test structured log entry creation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 619`** (1 nodes): `Test theme switching functionality`
+- **Thin community `Community 619`** (1 nodes): `Test log level filtering`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 620`** (1 nodes): `Test language localization support`
+- **Thin community `Community 620`** (1 nodes): `Test log aggregation by component`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 621`** (1 nodes): `Test responsive image loading`
+- **Thin community `Community 621`** (1 nodes): `Test error log handling`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 622`** (1 nodes): `Fixture for Algorithmic Trading System agent`
+- **Thin community `Community 622`** (1 nodes): `Test distributed tracing span creation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 623`** (1 nodes): `Fixture for Risk Management agent`
+- **Thin community `Community 623`** (1 nodes): `Test error handling in tracing spans`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 624`** (1 nodes): `Fixture for Market Analysis agent`
+- **Thin community `Community 624`** (1 nodes): `Test metric definition`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 625`** (1 nodes): `Test Algorithmic Trading System agent initialization`
+- **Thin community `Community 625`** (1 nodes): `Test metric recording`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 626`** (1 nodes): `Test trading signal generation`
+- **Thin community `Community 626`** (1 nodes): `Test log search functionality`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 627`** (1 nodes): `Test risk assessment functionality`
+- **Thin community `Community 627`** (1 nodes): `Test performance metrics collection`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 628`** (1 nodes): `Test market data analysis`
+- **Thin community `Community 628`** (1 nodes): `Test observability report generation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 629`** (1 nodes): `Test agent memory integration`
+- **Thin community `Community 629`** (1 nodes): `Test log filtering by time range`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 630`** (1 nodes): `Fixture for Code Reviewer agent`
+- **Thin community `Community 630`** (1 nodes): `Test observability framework lifecycle`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 631`** (1 nodes): `Fixture for Development agent`
+- **Thin community `Community 631`** (1 nodes): `install_lite.ps1`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 632`** (1 nodes): `Fixture for Architecture agent`
+- **Thin community `Community 632`** (1 nodes): `Current state string: "CLOSED", "OPEN", or "HALF_OPEN".          Automatically t`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 633`** (1 nodes): `Test code review functionality`
+- **Thin community `Community 633`** (1 nodes): `Render report rows as a fixed-width ASCII table.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 634`** (1 nodes): `Test security vulnerability detection`
+- **Thin community `Community 634`** (1 nodes): `Multi-Agent System (MAS) specific categories         This is ONE EXAMPLE of how`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 635`** (1 nodes): `Test development task execution`
+- **Thin community `Community 635`** (1 nodes): `Generic default categories for simple projects         Projects can override wi`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 636`** (1 nodes): `Test architecture design functionality`
+- **Thin community `Community 636`** (1 nodes): `Build a Slack webhook payload with a single section block.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 637`** (1 nodes): `Fixture for Context Manager agent`
+- **Thin community `Community 637`** (1 nodes): `Build a Discord webhook payload with an embed.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 638`** (1 nodes): `Fixture for Performance Monitor agent`
+- **Thin community `Community 638`** (1 nodes): `POST *payload* as JSON to *url*.          Tries aiohttp first; falls back to url`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 639`** (1 nodes): `Fixture for Communication Coordinator agent`
+- **Thin community `Community 639`** (1 nodes): `Load content from *source* (file path, URL, or connection string).         Retur`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 640`** (1 nodes): `Test context creation`
+- **Thin community `Community 640`** (1 nodes): `Return True if this loader can handle the given source.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 641`** (1 nodes): `Test context memory sharing`
+- **Thin community `Community 641`** (1 nodes): `Create from dictionary.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 642`** (1 nodes): `Test performance monitoring`
+- **Thin community `Community 642`** (1 nodes): `Return HMAC-SHA256 hex signature of *body* using *secret*.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 643`** (1 nodes): `Test agent coordination`
+- **Thin community `Community 643`** (1 nodes): `Make a basic LLM API call.          Args:             prompt: The prompt to s`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 644`** (1 nodes): `Test coordination between different agent categories`
+- **Thin community `Community 644`** (1 nodes): `Make an LLM API call with message history.          Args:             message`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 645`** (1 nodes): `Test memory sharing between agents`
+- **Thin community `Community 645`** (1 nodes): `Make an LLM API call expecting JSON response.          Args:             prom`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 646`** (1 nodes): `Test consensus building between agents`
+- **Thin community `Community 646`** (1 nodes): `Get current available tokens.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 647`** (1 nodes): `Scenario: User works with memories in multiple languages          1. User adds`
+- **Thin community `Community 647`** (1 nodes): `Get seconds until tokens available.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 648`** (1 nodes): `Scenario: User discovers related content across languages          1. User sea`
+- **Thin community `Community 648`** (1 nodes): `Validate API contracts and OpenAPI specifications`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 649`** (1 nodes): `Scenario: User explores memories using facets          1. User views all memor`
+- **Thin community `Community 649`** (1 nodes): `Validate that authentication is properly enforced`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 650`** (1 nodes): `Scenario: User gets search suggestions while typing          1. User starts ty`
+- **Thin community `Community 650`** (1 nodes): `Test API rate limiting enforcement`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 651`** (1 nodes): `Scenario: User views language statistics          1. User adds many memories i`
+- **Thin community `Community 651`** (1 nodes): `API performance testing under various load conditions`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 652`** (1 nodes): `Scenario: User benchmarks system performance          1. User runs performance`
+- **Thin community `Community 652`** (1 nodes): `Test API timeout handling`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 653`** (1 nodes): `Scenario: System migrates existing memories to include language metadata`
+- **Thin community `Community 653`** (1 nodes): `Test API under sustained concurrent load`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 654`** (1 nodes): `Scenario: Database connection fails during operation          1. User performs`
+- **Thin community `Community 654`** (1 nodes): `Test GraphQL query execution and response validation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 655`** (1 nodes): `Scenario: System handles invalid metadata gracefully          1. Database retu`
+- **Thin community `Community 655`** (1 nodes): `Test GraphQL error handling`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 656`** (1 nodes): `Scenario: Multiple users use system simultaneously          1. User A searches`
+- **Thin community `Community 656`** (1 nodes): `Test GraphQL subscription support (if implemented)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 657`** (1 nodes): `Scenario: System processes multiple language detections concurrently`
+- **Thin community `Community 657`** (1 nodes): `Test API input validation and sanitization`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 658`** (1 nodes): `Complete workflow: Add memories in multiple languages, search, and analyze`
+- **Thin community `Community 658`** (1 nodes): `Test CORS headers configuration`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 659`** (1 nodes): `Test adding memory with automatic language detection`
+- **Thin community `Community 659`** (1 nodes): `Test rate limiting security against abuse`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 660`** (1 nodes): `Test complete workflow with multi-language memories`
+- **Thin community `Community 660`** (1 nodes): `Test multiple API version support`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 661`** (1 nodes): `Test cross-language search workflow`
+- **Thin community `Community 661`** (1 nodes): `Test backward compatibility with older API versions`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 662`** (1 nodes): `Test faceted search with language filtering`
+- **Thin community `Community 662`** (1 nodes): `Test GitHub Actions workflow generation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 663`** (1 nodes): `Test that language metadata persists correctly`
+- **Thin community `Community 663`** (1 nodes): `Test complete execution of workflow scenarios`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 664`** (1 nodes): `Test language-filtered database query`
+- **Thin community `Community 664`** (1 nodes): `Test workflow error recovery mechanisms`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 665`** (1 nodes): `Test getting language distribution from database`
+- **Thin community `Community 665`** (1 nodes): `Validate lawful basis for data processing`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 666`** (1 nodes): `Test detect_language MCP tool integration`
+- **Thin community `Community 666`** (1 nodes): `Validate data subject right of access`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 667`** (1 nodes): `Test get_supported_languages MCP tool integration`
+- **Thin community `Community 667`** (1 nodes): `Validate right to erasure (right to be forgotten)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 668`** (1 nodes): `Test search_by_language MCP tool integration`
+- **Thin community `Community 668`** (1 nodes): `Validate data portability requirements`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 669`** (1 nodes): `Test cross_language_search MCP tool integration`
+- **Thin community `Community 669`** (1 nodes): `Validate consent management requirements`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 670`** (1 nodes): `Test get_language_distribution MCP tool integration`
+- **Thin community `Community 670`** (1 nodes): `Validate GDPR data breach notification requirements`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 671`** (1 nodes): `Test that query performance is tracked correctly`
+- **Thin community `Community 671`** (1 nodes): `Test SOC 2 access control requirements`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 672`** (1 nodes): `Test performance benchmarking integration`
+- **Thin community `Community 672`** (1 nodes): `Test SOC 2 system monitoring requirements`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 673`** (1 nodes): `Test complete workflow from detection to search`
+- **Thin community `Community 673`** (1 nodes): `Test SOC 2 incident response capabilities`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 674`** (1 nodes): `Test discovering related content across languages`
+- **Thin community `Community 674`** (1 nodes): `Test SOC 2 change management procedures`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 675`** (1 nodes): `Test complete faceted search workflow`
+- **Thin community `Community 675`** (1 nodes): `Test PCI DSS cardholder data protection`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 676`** (1 nodes): `Test complete lifecycle: add -> detect -> search -> retrieve`
+- **Thin community `Community 676`** (1 nodes): `Test PCI DSS network security requirements`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 677`** (1 nodes): `Test lifecycle with memories in multiple languages`
+- **Thin community `Community 677`** (1 nodes): `Test PCI DSS vulnerability management`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 678`** (1 nodes): `Test searching specific language`
+- **Thin community `Community 678`** (1 nodes): `Test ISO 27001 information security policy`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 679`** (1 nodes): `Test getting language distribution`
+- **Thin community `Community 679`** (1 nodes): `Test ISO 27001 risk assessment process`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 680`** (1 nodes): `Test complete faceted search workflow`
+- **Thin community `Community 680`** (1 nodes): `Test ISO 27001 asset management`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 681`** (1 nodes): `Test search suggestions workflow`
+- **Thin community `Community 681`** (1 nodes): `Test compliance across multiple frameworks`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 682`** (1 nodes): `Test fuzzy search with typos`
+- **Thin community `Community 682`** (1 nodes): `Test comprehensive compliance reporting`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 683`** (1 nodes): `Test query optimization workflow`
+- **Thin community `Community 683`** (1 nodes): `Test OpenAPI specification completeness`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 684`** (1 nodes): `Test benchmarking workflow`
+- **Thin community `Community 684`** (1 nodes): `Test API example validity and completeness`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 685`** (1 nodes): `Test complete language detection workflow via MCP`
+- **Thin community `Community 685`** (1 nodes): `Test API response documentation accuracy`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 686`** (1 nodes): `Test search facets workflow via MCP`
+- **Thin community `Community 686`** (1 nodes): `Test API changelog accuracy and completeness`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 687`** (1 nodes): `Test handling of invalid language detection`
+- **Thin community `Community 687`** (1 nodes): `Test Python docstring coverage`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 688`** (1 nodes): `Test handling of corrupted metadata in searches`
+- **Thin community `Community 688`** (1 nodes): `Test docstring quality and content`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 689`** (1 nodes): `Test handling of empty datasets`
+- **Thin community `Community 689`** (1 nodes): `Test type hint annotation coverage`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 690`** (1 nodes): `Test concurrent language detection operations`
+- **Thin community `Community 690`** (1 nodes): `Test module-level documentation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 691`** (1 nodes): `Test concurrent search operations`
+- **Thin community `Community 691`** (1 nodes): `Test getting started guide completeness`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 692`** (1 nodes): `__init__.py`
+- **Thin community `Community 692`** (1 nodes): `Test user guide navigation and structure`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 693`** (1 nodes): `__init__.py`
+- **Thin community `Community 693`** (1 nodes): `Test tutorial documentation quality`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 694`** (1 nodes): `__init__.py`
+- **Thin community `Community 694`** (1 nodes): `Test troubleshooting guide effectiveness`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 695`** (1 nodes): `__init__.py`
+- **Thin community `Community 695`** (1 nodes): `Test installation guide prerequisites coverage`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 696`** (1 nodes): `Test setting TTL to 0 (no expiry)`
+- **Thin community `Community 696`** (1 nodes): `Test Docker installation guide accuracy`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 697`** (1 nodes): `Test recording negative query time (edge case)`
+- **Thin community `Community 697`** (1 nodes): `Test configuration guide completeness`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 698`** (1 nodes): `__init__.py`
+- **Thin community `Community 698`** (1 nodes): `Test installation verification procedures`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 699`** (1 nodes): `check-lockfile.py`
+- **Thin community `Community 699`** (1 nodes): `Test FAQ completeness and organization`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 700`** (1 nodes): `Dynamic Category System (no hardcoded categories)`
+- **Thin community `Community 700`** (1 nodes): `Test troubleshooting guide quality and effectiveness`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 701`** (1 nodes): `Enhanced Cognee Project`
+- **Thin community `Community 701`** (1 nodes): `Test best practices documentation quality`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 702`** (1 nodes): `Test Suite (975 tests, 100% pass rate)`
+- **Thin community `Community 702`** (1 nodes): `Test glossary completeness and accuracy`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 703`** (1 nodes): `10-Category Testing Framework`
+- **Thin community `Community 703`** (1 nodes): `Generate random memory content`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 704`** (1 nodes): `Test Scenarios Suite`
+- **Thin community `Community 704`** (1 nodes): `Generate random embedding vector`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 705`** (1 nodes): `Enhanced Cognee Memory Dashboard UX/UI`
+- **Thin community `Community 705`** (1 nodes): `Generate random metadata`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 706`** (1 nodes): `QA Evaluation Benchmark System`
+- **Thin community `Community 706`** (1 nodes): `Store a memory - high frequency operation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 707`** (1 nodes): `Setup and Installation Scripts`
+- **Thin community `Community 707`** (1 nodes): `Search for memories using vector similarity`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 708`** (1 nodes): `CODE Search Type`
+- **Thin community `Community 708`** (1 nodes): `Retrieve a specific memory by ID`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 709`** (1 nodes): `Zero-Configuration Auto Setup`
+- **Thin community `Community 709`** (1 nodes): `Get memories for a specific agent`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 710`** (1 nodes): `Disaster Recovery Checklist`
+- **Thin community `Community 710`** (1 nodes): `Test agent coordination operations`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 711`** (1 nodes): `Contributor Covenant Code of Conduct`
+- **Thin community `Community 711`** (1 nodes): `Lightweight system health check`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 712`** (1 nodes): `Security Issue Reporting Policy`
+- **Thin community `Community 712`** (1 nodes): `Update an existing memory`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 713`** (1 nodes): `Memory List with Infinite Scroll`
+- **Thin community `Community 713`** (1 nodes): `High-frequency trading memory operations`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 714`** (1 nodes): `Memory Detail View`
+- **Thin community `Community 714`** (1 nodes): `Light load scenario for basic functionality testing`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 715`** (1 nodes): `Filter Persistence via Zustand and URL`
+- **Thin community `Community 715`** (1 nodes): `Medium load scenario for typical usage testing`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 716`** (1 nodes): `Timeline Visualization Component`
+- **Thin community `Community 716`** (1 nodes): `Heavy load scenario for stress testing`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 717`** (1 nodes): `Analytics Dashboard Component`
+- **Thin community `Community 717`** (1 nodes): `Endurance scenario for long-running stability testing`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 718`** (1 nodes): `Activity Heatmap Component`
+- **Thin community `Community 718`** (1 nodes): `Base URL for Enhanced Cognee API`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 719`** (1 nodes): `Automation Configuration System (automation_config.json)`
+- **Thin community `Community 719`** (1 nodes): `Performance thresholds for testing`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 720`** (1 nodes): `Enhanced Cognee CLI Wrapper`
+- **Thin community `Community 720`** (1 nodes): `Base URL for Enhanced Cognee API`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 721`** (1 nodes): `Auto-Configuration System`
+- **Thin community `Community 721`** (1 nodes): `Test normal business hours load scenario`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 722`** (1 nodes): `21-Agent Multi-Agent System`
+- **Thin community `Community 722`** (1 nodes): `Test system performance under peak load`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 723`** (1 nodes): `Compliance Standards (SOC 2, PCI DSS, GDPR, CCPA, ISO 27001, NIST)`
+- **Thin community `Community 723`** (1 nodes): `Test system limits under stress conditions`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 724`** (1 nodes): `Plot Metrics Dependencies (numpy, matplotlib, seaborn, scipy)`
+- **Thin community `Community 724`** (1 nodes): `Test system stability over extended period`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 725`** (1 nodes): `Third Party Licenses`
+- **Thin community `Community 725`** (1 nodes): `Test performance regression detection`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 726`** (1 nodes): `Setup and Installation Scripts`
+- **Thin community `Community 726`** (1 nodes): `Test realistic user behavior simulation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 727`** (1 nodes): `Alice in Wonderland Sample Data`
+- **Thin community `Community 727`** (1 nodes): `Test system scalability patterns`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 728`** (1 nodes): `Background Video Blur (MP4 - Frontend Asset)`
+- **Thin community `Community 728`** (1 nodes): `Test resource utilization under optimal conditions`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 729`** (1 nodes): `Generic File Icon`
+- **Thin community `Community 729`** (1 nodes): `Base URL for Enhanced Cognee API`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 730`** (1 nodes): `Programmer Light Bulb Joke`
+- **Thin community `Community 730`** (1 nodes): `Security test data including malicious inputs`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 731`** (1 nodes): `Base URL for Enhanced Cognee API`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 732`** (1 nodes): `Sensitive test data for privacy testing`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 733`** (1 nodes): `Base URL for Enhanced Cognee API`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 734`** (1 nodes): `Base URL for Enhanced Cognee API`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 735`** (1 nodes): `Base URL for Enhanced Cognee API`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 736`** (1 nodes): `Test user data for authentication workflow`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 737`** (1 nodes): `Get authentication headers for API requests`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 738`** (1 nodes): `Base URL for Enhanced Cognee API`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 739`** (1 nodes): `Sample market data for trading workflow`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 740`** (1 nodes): `Base URL for Enhanced Cognee API`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 741`** (1 nodes): `Validate WCAG 2.1 accessibility compliance`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 742`** (1 nodes): `Test keyboard navigation accessibility`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 743`** (1 nodes): `Test ARIA labels and descriptions`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 744`** (1 nodes): `Test color contrast compliance`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 745`** (1 nodes): `Test focus management and indicators`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 746`** (1 nodes): `Test screen reader compatibility`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 747`** (1 nodes): `Test mobile responsive design`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 748`** (1 nodes): `Test tablet responsive design`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 749`** (1 nodes): `Test desktop layout optimization`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 750`** (1 nodes): `Test compatibility across different browsers`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 751`** (1 nodes): `Test feature detection and graceful degradation`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 752`** (1 nodes): `Test complete user journeys across the application`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 753`** (1 nodes): `Test error handling within user journeys`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 754`** (1 nodes): `Test visual regression against baseline`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 755`** (1 nodes): `Test UI consistency across pages`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 756`** (1 nodes): `Test theme switching functionality`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 757`** (1 nodes): `Test language localization support`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 758`** (1 nodes): `Test responsive image loading`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 759`** (1 nodes): `Fixture for Algorithmic Trading System agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 760`** (1 nodes): `Fixture for Risk Management agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 761`** (1 nodes): `Fixture for Market Analysis agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 762`** (1 nodes): `Test Algorithmic Trading System agent initialization`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 763`** (1 nodes): `Test trading signal generation`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 764`** (1 nodes): `Test risk assessment functionality`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 765`** (1 nodes): `Test market data analysis`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 766`** (1 nodes): `Test agent memory integration`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 767`** (1 nodes): `Fixture for Code Reviewer agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 768`** (1 nodes): `Fixture for Development agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 769`** (1 nodes): `Fixture for Architecture agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 770`** (1 nodes): `Test code review functionality`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 771`** (1 nodes): `Test security vulnerability detection`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 772`** (1 nodes): `Test development task execution`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 773`** (1 nodes): `Test architecture design functionality`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 774`** (1 nodes): `Fixture for Context Manager agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 775`** (1 nodes): `Fixture for Performance Monitor agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 776`** (1 nodes): `Fixture for Communication Coordinator agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 777`** (1 nodes): `Test context creation`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 778`** (1 nodes): `Test context memory sharing`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 779`** (1 nodes): `Test performance monitoring`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 780`** (1 nodes): `Test agent coordination`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 781`** (1 nodes): `Test coordination between different agent categories`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 782`** (1 nodes): `Test memory sharing between agents`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 783`** (1 nodes): `Test consensus building between agents`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 784`** (1 nodes): `Scenario: User works with memories in multiple languages          1. User adds`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 785`** (1 nodes): `Scenario: User discovers related content across languages          1. User sea`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 786`** (1 nodes): `Scenario: User explores memories using facets          1. User views all memor`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 787`** (1 nodes): `Scenario: User gets search suggestions while typing          1. User starts ty`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 788`** (1 nodes): `Scenario: User views language statistics          1. User adds many memories i`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 789`** (1 nodes): `Scenario: User benchmarks system performance          1. User runs performance`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 790`** (1 nodes): `Scenario: System migrates existing memories to include language metadata`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 791`** (1 nodes): `Scenario: Database connection fails during operation          1. User performs`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 792`** (1 nodes): `Scenario: System handles invalid metadata gracefully          1. Database retu`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 793`** (1 nodes): `Scenario: Multiple users use system simultaneously          1. User A searches`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 794`** (1 nodes): `Scenario: System processes multiple language detections concurrently`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 795`** (1 nodes): `Complete workflow: Add memories in multiple languages, search, and analyze`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 796`** (1 nodes): `Test adding memory with automatic language detection`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 797`** (1 nodes): `Test complete workflow with multi-language memories`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 798`** (1 nodes): `Test cross-language search workflow`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 799`** (1 nodes): `Test faceted search with language filtering`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 800`** (1 nodes): `Test that language metadata persists correctly`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 801`** (1 nodes): `Test language-filtered database query`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 802`** (1 nodes): `Test getting language distribution from database`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 803`** (1 nodes): `Test detect_language MCP tool integration`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 804`** (1 nodes): `Test get_supported_languages MCP tool integration`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 805`** (1 nodes): `Test search_by_language MCP tool integration`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 806`** (1 nodes): `Test cross_language_search MCP tool integration`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 807`** (1 nodes): `Test get_language_distribution MCP tool integration`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 808`** (1 nodes): `Test that query performance is tracked correctly`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 809`** (1 nodes): `Test performance benchmarking integration`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 810`** (1 nodes): `Test complete workflow from detection to search`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 811`** (1 nodes): `Test discovering related content across languages`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 812`** (1 nodes): `Test complete faceted search workflow`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 813`** (1 nodes): `Test complete lifecycle: add -> detect -> search -> retrieve`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 814`** (1 nodes): `Test lifecycle with memories in multiple languages`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 815`** (1 nodes): `Test searching specific language`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 816`** (1 nodes): `Test getting language distribution`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 817`** (1 nodes): `Test complete faceted search workflow`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 818`** (1 nodes): `Test search suggestions workflow`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 819`** (1 nodes): `Test fuzzy search with typos`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 820`** (1 nodes): `Test query optimization workflow`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 821`** (1 nodes): `Test benchmarking workflow`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 822`** (1 nodes): `Test complete language detection workflow via MCP`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 823`** (1 nodes): `Test search facets workflow via MCP`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 824`** (1 nodes): `Test handling of invalid language detection`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 825`** (1 nodes): `Test handling of corrupted metadata in searches`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 826`** (1 nodes): `Test handling of empty datasets`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 827`** (1 nodes): `Test concurrent language detection operations`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 828`** (1 nodes): `Test concurrent search operations`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 829`** (1 nodes): `__init__.py`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 830`** (1 nodes): `__init__.py`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 831`** (1 nodes): `__init__.py`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 832`** (1 nodes): `__init__.py`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 833`** (1 nodes): `If the server returns a dict (e.g. an error), wrap it in a list.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 834`** (1 nodes): `Verify that the client is usable inside an async with block.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 835`** (1 nodes): `Test setting TTL to 0 (no expiry)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 836`** (1 nodes): `Test recording negative query time (edge case)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 837`** (1 nodes): `set_tier() must not raise for valid tier strings (may return False with no pool)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 838`** (1 nodes): `__init__.py`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 839`** (1 nodes): `check-lockfile.py`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 840`** (1 nodes): `Check if operation should be logged based on config.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 841`** (1 nodes): `Anonymize sensitive data in log entries.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 842`** (1 nodes): `Log an automated operation.          Args:             operation_type: Type o`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 843`** (1 nodes): `Write log entry to file.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 844`** (1 nodes): `Write log entry to PostgreSQL database.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 845`** (1 nodes): `Add log entry to recent logs buffer.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 846`** (1 nodes): `Get recent log entries.          Args:             limit: Maximum number of e`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 847`** (1 nodes): `Get current performance metrics.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 848`** (1 nodes): `Query audit logs from database.          Args:             start_time: Start`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 849`** (1 nodes): `Clean up old log entries based on retention policy.          Args:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 850`** (1 nodes): `Close the audit logger and cleanup resources.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 851`** (1 nodes): `Get the global audit logger instance.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 852`** (1 nodes): `Initialize the global audit logger.      Args:         config_path: Path to a`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 853`** (1 nodes): `Undo memory update by restoring the original content.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 854`** (1 nodes): `Undo memory deletion by re-inserting the original row.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 855`** (1 nodes): `Undo memory summarization by restoring the original full content.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 856`** (1 nodes): `Undo deduplication by restoring each merged memory.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 857`** (1 nodes): `Undo sharing policy change by reverting to the original policy.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 858`** (1 nodes): `Re-apply the most recently undone operation for an agent.          Args:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 859`** (1 nodes): `Re-apply the new_state captured in the undo entry.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 860`** (1 nodes): `Undo an entire chain of related operations.          Args:             operation`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 861`** (1 nodes): `Get undo history for an agent.          Args:             agent_id: Filter by ag`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 862`** (1 nodes): `Remove expired undo entries from history and database.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 863`** (1 nodes): `Get the global undo manager instance.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 864`** (1 nodes): `Initialize the global undo manager.      Args:         config_path: Path to auto`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 865`** (1 nodes): `Search memories using semantic and text search (Standard Memory MCP Tool)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 866`** (1 nodes): `Expire or archive memories older than specified days (Memory Management Tool)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 867`** (1 nodes): `Automatically find and handle duplicate memories (Memory Deduplication Tool)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 868`** (1 nodes): `Create a shared memory space for multiple agents (Cross-Agent Sharing Tool)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 869`** (1 nodes): `End an active session and optionally record a summary.      TRIGGER TYPE: (M)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 870`** (1 nodes): `Initialize the undo manager.          Args:             config_path: Path to`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 871`** (1 nodes): `Load automation configuration.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 872`** (1 nodes): `Get default configuration.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 873`** (1 nodes): `Create an undo entry for an operation.          Args:             operation_t`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 874`** (1 nodes): `Save undo entry to database.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 875`** (1 nodes): `Undo a specific operation.          Args:             undo_id: ID of the oper`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 876`** (1 nodes): `Perform the actual undo operation.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 877`** (1 nodes): `Undo memory addition by deleting it.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 878`** (1 nodes): `Undo memory update by reverting to original content.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 879`** (1 nodes): `Undo memory deletion by restoring it.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 880`** (1 nodes): `Undo memory summarization by restoring original content.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 881`** (1 nodes): `Undo deduplication by restoring merged memories.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 882`** (1 nodes): `Undo sharing policy change by reverting to original.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 883`** (1 nodes): `Load undo entry from database.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 884`** (1 nodes): `Update undo entry in database.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 885`** (1 nodes): `Undo an entire chain of related operations.          Args:             operat`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 886`** (1 nodes): `Get undo history for an agent.          Args:             agent_id: Filter by`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 887`** (1 nodes): `Remove expired undo entries from history and database.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 888`** (1 nodes): `Get the global undo manager instance.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 889`** (1 nodes): `Initialize the global undo manager.      Args:         config_path: Path to a`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 890`** (1 nodes): `# TODO: Call actual delete_memory function`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 891`** (1 nodes): `# TODO: Call actual update_memory function`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 892`** (1 nodes): `# TODO: Call actual add_memory function`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 893`** (1 nodes): `# TODO: Update memory with original content`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 894`** (1 nodes): `# TODO: Update metadata`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 895`** (1 nodes): `# TODO: Restore each merged memory`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 896`** (1 nodes): `# TODO: Call set_memory_sharing with original policy`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 897`** (1 nodes): `Enhanced Cognee Lite Mode - MCP Server  Lightweight MCP server with 10 essenti`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 898`** (1 nodes): `Lightweight MCP server for Enhanced Cognee Lite mode.      Features:     - 10`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 899`** (1 nodes): `Initialize Lite MCP server.          Args:             db_path: Path to SQLit`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 900`** (1 nodes): `Add a memory to the database.          Args:             content: Memory cont`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 901`** (1 nodes): `Search memories using FTS5 full-text search.          Args:             query`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 902`** (1 nodes): `List memories with pagination.          Args:             agent_id: Agent ide`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 903`** (1 nodes): `Get a specific memory by ID.          Args:             memory_id: Memory ID`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 904`** (1 nodes): `Update an existing memory.          Args:             memory_id: Memory ID`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 905`** (1 nodes): `Delete a memory.          Args:             memory_id: Memory ID          R`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 906`** (1 nodes): `List all agents with memory counts.          Returns:             Formatted a`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 907`** (1 nodes): `Perform health check.          Returns:             Health status`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 908`** (1 nodes): `Get system statistics.          Returns:             Formatted statistics`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 909`** (1 nodes): `Basic cognify - transform data to knowledge (Lite mode, no graph).          Ar`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 910`** (1 nodes): `MCP protocol implementation for Lite mode.      Implements stdio-based MCP pro`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 911`** (1 nodes): `Initialize available MCP tools.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 912`** (1 nodes): `Call an MCP tool.          Args:             tool_name: Tool name`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 913`** (1 nodes): `Main entry point for Lite MCP server.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 914`** (1 nodes): `# TODO: Implement stdio-based MCP protocol`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 915`** (1 nodes): `Print setup wizard header.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 916`** (1 nodes): `Print info message (ASCII-only).`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 917`** (1 nodes): `Print success message (ASCII-only).`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 918`** (1 nodes): `Print warning message (ASCII-only).`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 919`** (1 nodes): `Print error message (ASCII-only).`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 920`** (1 nodes): `Ask user yes/no question.      Args:         prompt: Question prompt`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 921`** (1 nodes): `Ask user for text input.      Args:         prompt: Input prompt         def`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 922`** (1 nodes): `Check if required dependencies are installed.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 923`** (1 nodes): `Create required directories.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 924`** (1 nodes): `Initialize SQLite database with schema.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 925`** (1 nodes): `Test database functionality.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 926`** (1 nodes): `Create Lite mode configuration file.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 927`** (1 nodes): `Print setup completion summary.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 928`** (1 nodes): `Main setup wizard function.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 929`** (1 nodes): `SQLite database manager for Enhanced Cognee Lite mode.      Features:     - T`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 930`** (1 nodes): `Initialize SQLite manager.          Args:             db_path: Path to SQLite`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 931`** (1 nodes): `Get thread-local database connection.          Returns:             SQLite co`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 932`** (1 nodes): `Ensure database directory and file exist.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 933`** (1 nodes): `Initialize database schema from SQL file.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 934`** (1 nodes): `Add a document to the database.          Args:             data_id: Unique da`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 935`** (1 nodes): `Full-text search using FTS5.          Args:             query: Search query`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 936`** (1 nodes): `Get document by ID.          Args:             doc_id: Document ID`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 937`** (1 nodes): `List documents with pagination.          Args:             user_id: User iden`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 938`** (1 nodes): `Update document.          Args:             doc_id: Document ID`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 939`** (1 nodes): `Delete document.          Args:             doc_id: Document ID          Re`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 940`** (1 nodes): `Create a new session.          Args:             user_id: User identifier`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 941`** (1 nodes): `Get session by ID.          Args:             session_id: Session ID`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 942`** (1 nodes): `List sessions.          Args:             user_id: User identifier`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 943`** (1 nodes): `Get database statistics.          Returns:             Statistics dictionary`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 944`** (1 nodes): `List all agents with memory counts.          Returns:             List of age`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 945`** (1 nodes): `Perform health check.          Returns:             Health status dictionary`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 946`** (1 nodes): `Close database connection.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 947`** (1 nodes): `Context manager entry.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 948`** (1 nodes): `Context manager exit.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 949`** (1 nodes): `Search memories using semantic and text search (Standard Memory MCP Tool)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 950`** (1 nodes): `Expire or archive memories older than specified days (Memory Management Tool)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 951`** (1 nodes): `Automatically find and handle duplicate memories (Memory Deduplication Tool)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 952`** (1 nodes): `Create a shared memory space for multiple agents (Cross-Agent Sharing Tool)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 953`** (1 nodes): `Interactive setup wizard for Enhanced Cognee.      Guides users through initia`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 954`** (1 nodes): `Initialize setup wizard.          Args:             project_root: Root direct`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 955`** (1 nodes): `Run the interactive setup wizard.          Returns:             True if setup`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 956`** (1 nodes): `Collect configuration from user.          Returns:             Configuration`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 957`** (1 nodes): `Save configuration to .env file.          Args:             config: Configura`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 958`** (1 nodes): `Generate .env file content from configuration.          Args:             con`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 959`** (1 nodes): `Verify that setup was successful.          Returns:             True if verif`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 960`** (1 nodes): `Print success message.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 961`** (1 nodes): `Get current timestamp.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 962`** (1 nodes): `Main entry point for setup wizard.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 963`** (1 nodes): `Simple entity extraction (could be enhanced with NLP)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 964`** (1 nodes): `Enhanced Cognee MCP Server with enterprise-grade memory stack integration`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 965`** (1 nodes): `Initialize all Enhanced stack connections`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 966`** (1 nodes): `Initialize PostgreSQL connection (replaces SQLite)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 967`** (1 nodes): `Initialize Qdrant client (replaces LanceDB)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 968`** (1 nodes): `Initialize Neo4j driver (replaces Kuzu)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 969`** (1 nodes): `Initialize Redis client (new cache layer)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 970`** (1 nodes): `Generate Qdrant collection name with DYNAMIC categorization          Supports dy`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 971`** (1 nodes): `Add memory entry to Enhanced stack`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 972`** (1 nodes): `Search memory using Enhanced vector database with DYNAMIC categories          Su`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 973`** (1 nodes): `Build Qdrant filter from search query`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 974`** (1 nodes): `Get list of active agents from PostgreSQL`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 975`** (1 nodes): `Add knowledge graph relation using Neo4j`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 976`** (1 nodes): `Get memory statistics from Enhanced stack`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 977`** (1 nodes): `Setup FastAPI routes for MCP interface`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 978`** (1 nodes): `Manage application lifecycle`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 979`** (1 nodes): `Generic default categories for simple projects         Projects can override wi`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 980`** (1 nodes): `Manages memory configuration for projects     Projects can provide their own co`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 981`** (1 nodes): `Load configuration from file or use defaults`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 982`** (1 nodes): `Find configuration file in standard locations`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 983`** (1 nodes): `Load configuration from JSON file`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 984`** (1 nodes): `Get category configuration by name`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 985`** (1 nodes): `Get agent configuration`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 986`** (1 nodes): `Add or update a category`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 987`** (1 nodes): `Add or update an agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 988`** (1 nodes): `Check if category exists`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 989`** (1 nodes): `Get prefix for a category`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 990`** (1 nodes): `Create an example configuration file for a project     Projects can customize t`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 991`** (1 nodes): `Get the global configuration manager instance`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 992`** (1 nodes): `Reset the global configuration manager (for testing)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 993`** (1 nodes): `Search memories using semantic and text search (Standard Memory MCP Tool)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 994`** (1 nodes): `Expire or archive memories older than specified days (Memory Management Tool)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 995`** (1 nodes): `Automatically find and handle duplicate memories (Memory Deduplication Tool)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 996`** (1 nodes): `Create a shared memory space for multiple agents (Cross-Agent Sharing Tool)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 997`** (1 nodes): `Execute trading order (simulated)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 998`** (1 nodes): `Calculate Value at Risk (simplified)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 999`** (1 nodes): `Calculate portfolio beta (simplified)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1000`** (1 nodes): `Calculate portfolio volatility (simplified)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1001`** (1 nodes): `Calculate maximum drawdown (simplified)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1002`** (1 nodes): `Calculate cyclomatic complexity (simplified)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1003`** (1 nodes): `Factory function to create SMC agents`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1004`** (1 nodes): `Test Algorithmic Trading System (ATS) Agents`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1005`** (1 nodes): `Fixture for Algorithmic Trading System agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1006`** (1 nodes): `Fixture for Risk Management agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1007`** (1 nodes): `Fixture for Market Analysis agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1008`** (1 nodes): `Test Algorithmic Trading System agent initialization`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1009`** (1 nodes): `Test trading signal generation`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1010`** (1 nodes): `Test risk assessment functionality`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1011`** (1 nodes): `Test market data analysis`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1012`** (1 nodes): `Test agent memory integration`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1013`** (1 nodes): `Test agent error handling`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1014`** (1 nodes): `Test Other Multi-Agent (OMA) Agents`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1015`** (1 nodes): `Fixture for Code Reviewer agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1016`** (1 nodes): `Fixture for Development agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1017`** (1 nodes): `Fixture for Architecture agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1018`** (1 nodes): `Test code review functionality`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1019`** (1 nodes): `Test security vulnerability detection`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1020`** (1 nodes): `Test development task execution`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1021`** (1 nodes): `Test architecture design functionality`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1022`** (1 nodes): `Test Shared Multi-Agent Components (SMC) Agents`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1023`** (1 nodes): `Fixture for Context Manager agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1024`** (1 nodes): `Fixture for Performance Monitor agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1025`** (1 nodes): `Fixture for Communication Coordinator agent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1026`** (1 nodes): `Test context creation`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1027`** (1 nodes): `Test context memory sharing`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1028`** (1 nodes): `Test performance monitoring`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1029`** (1 nodes): `Test agent coordination`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1030`** (1 nodes): `Test multi-agent coordination and communication`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1031`** (1 nodes): `Test coordination between different agent categories`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1032`** (1 nodes): `Test memory sharing between agents`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1033`** (1 nodes): `Test consensus building between agents`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1034`** (1 nodes): `Search memories using semantic and text search (Standard Memory MCP Tool)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1035`** (1 nodes): `Expire or archive memories older than specified days (Memory Management Tool)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1036`** (1 nodes): `Automatically find and handle duplicate memories (Memory Deduplication Tool)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1037`** (1 nodes): `Create a shared memory space for multiple agents (Cross-Agent Sharing Tool)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1038`** (1 nodes): `If backend access control is enabled this function will ensure all datasets have`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1039`** (1 nodes): `# TODO: Add better handling of vector and graph config accross Cognee.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1040`** (1 nodes): `Add data to Cognee for knowledge graph processing.      This is the first step`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1041`** (1 nodes): `Upload ontology files with their respective keys.          Args:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1042`** (1 nodes): `Retrieve ontology content for one or more keys.          Args:             on`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1043`** (1 nodes): `Update existing data in Cognee.      Supported Input Types:         - **Text`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1044`** (1 nodes): `Start a visualization server on the specified port.      Args:         port (`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1045`** (1 nodes): `Filter instances by IDs or indices, or load filter from a JSON file.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1046`** (1 nodes): `Base class for context retrieval strategies.      This class serves as a bluep`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1047`** (1 nodes): `Get relevant context based on extracted entities and original query.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1048`** (1 nodes): `Create a chunking engine instance.      Returns:     --------          Retu`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1049`** (1 nodes): `Manage chunking of source data using specified strategies and parameters.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1050`** (1 nodes): `Abstract base class for distributed cache coordination systems (e.g., Redis, Mem`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1051`** (1 nodes): `Acquire a lock on the given key.         Must be implemented by subclasses.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1052`** (1 nodes): `Release the lock if it is held.         Must be implemented by subclasses.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1053`** (1 nodes): `Context manager for safely acquiring and releasing the lock.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1054`** (1 nodes): `Add a Q/A/context triplet to a cache session.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1055`** (1 nodes): `Retrieve the most recent Q/A/context triplets for a session.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1056`** (1 nodes): `Retrieve all Q/A/context triplets for the given session.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1057`** (1 nodes): `Gracefully close any async connections.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1058`** (1 nodes): `Release the Redis lock manually, if held. (Sync because of Kuzu)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1059`** (1 nodes): `Handler for interacting with Kuzu Dataset databases.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1060`** (1 nodes): `Create a new Kuzu instance for the dataset. Return connection info that will be`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1061`** (1 nodes): `Reads the Kùzu storage version code from the first catalog.bin file bytes.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1062`** (1 nodes): `Create (if needed) a venv at .kuzu_envs/{version} and install kuzu=={version}.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1063`** (1 nodes): `Uses the given python_exe to execute a short snippet that     connects to the K`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1064`** (1 nodes): `Main migration function that handles the complete migration process.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1065`** (1 nodes): `When overwrite is enabled, back up the original old_db (file with .lock and .wal`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1066`** (1 nodes): `# NOTE: Running python in debug mode can cause issues with creating a virtual en`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1067`** (1 nodes): `Custom JSON encoder that handles UUID objects.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1068`** (1 nodes): `Adapter for remote Kuzu graph database operations via REST API.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1069`** (1 nodes): `Initialize remote Kuzu database connection.          Args:             api_ur`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1070`** (1 nodes): `Get or create an aiohttp session.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1071`** (1 nodes): `Close the adapter and its session.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1072`** (1 nodes): `Make a request to the Kuzu API.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1073`** (1 nodes): `Execute a Kuzu query via the REST API.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1074`** (1 nodes): `Check if the required schema exists without causing recursion.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1075`** (1 nodes): `Create the required schema tables.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1076`** (1 nodes): `Initialize the database schema if it doesn't exist.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1077`** (1 nodes): `Handler for a quick development PoC integration of Cognee multi-user and permiss`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1078`** (1 nodes): `Create a new Neo4j Aura instance for the dataset. Return connection info that wi`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1079`** (1 nodes): `# TODO: Maybe we can allow **kwargs parameter forwarding for cases like these`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1080`** (1 nodes): `Neptune Analytics stores vector on a node level,         so create_collection()`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1081`** (1 nodes): `Return the database configuration as a dictionary.          Returns:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1082`** (1 nodes): `Cache and return the relational database configuration.      This function ret`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1083`** (1 nodes): `Manage and configure migration settings for a database, inheriting from BaseSett`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1084`** (1 nodes): `Convert migration configuration to dictionary format.          Returns:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1085`** (1 nodes): `Retrieve the migration configuration instance.      This function uses memoiza`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1086`** (1 nodes): `Create and return a relational engine instance.      This function retrieves t`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1087`** (1 nodes): `Check if a DatasetDatabase row already exists for the given owner + dataset.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1088`** (1 nodes): `Return the `DatasetDatabase` row for the given owner + dataset.      • If the`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1089`** (1 nodes): `Convert the configuration settings to a dictionary.          Returns:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1090`** (1 nodes): `Retrieve the cached vector database configuration.      This function uses the`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1091`** (1 nodes): `This function will get the appropriate vector db config based on async context.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1092`** (1 nodes): `Perform a search in the specified collection using either a text query or a vect`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1093`** (1 nodes): `Perform a batch search using multiple text queries against a collection.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1094`** (1 nodes): `Delete specified data points from a collection.          Parameters:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1095`** (1 nodes): `Remove obsolete or unnecessary data from the database.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1096`** (1 nodes): `Embed textual data into vector representations.          Parameters:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1097`** (1 nodes): `Get a connection to the vector database.         This method is optional and ma`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1098`** (1 nodes): `Get a collection object from the vector database.         This method is option`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1099`** (1 nodes): `Create a vector index for improved search performance.         This method is o`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1100`** (1 nodes): `Index data points for improved search performance.         This method is optio`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1101`** (1 nodes): `Get or transform a data point schema for the specific vector database.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1102`** (1 nodes): `Return a dictionary with connection info for a vector database for the given dat`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1103`** (1 nodes): `Delete the vector database for the given dataset.         Function should auto`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1104`** (1 nodes): `Represent a metadata structure with type and index fields.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1105`** (1 nodes): `Model representing a data point with versioning and metadata support.      Pub`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1106`** (1 nodes): `Retrieve embeddable data from the data point object based on index fields.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1107`** (1 nodes): `Retrieve a list of embeddable properties from the data point.          This me`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1108`** (1 nodes): `Retrieve the names of embeddable properties defined in the metadata.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1109`** (1 nodes): `Increment the version number of the data point and update the timestamp.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1110`** (1 nodes): `Serialize the DataPoint instance to a JSON string format.          This method`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1111`** (1 nodes): `Deserialize a DataPoint instance from a JSON string.          The method trans`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1112`** (1 nodes): `Convert the DataPoint instance to a dictionary representation.          This m`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1113`** (1 nodes): `Instantiate a DataPoint from a dictionary of attribute values.          The me`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1114`** (1 nodes): `Represents edge metadata for relationships between DataPoints.      This class`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1115`** (1 nodes): `Auto-populate edge_text from relationship_type if not explicitly provided.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1116`** (1 nodes): `Parse the input ID and convert it to a UUID object if it is a valid string`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1117`** (1 nodes): `Base class for entity extraction strategies.      This class defines the inter`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1118`** (1 nodes): `Extract entities from the given text.          This is an abstract method that`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1119`** (1 nodes): `Check if a specified file exists in the storage.          Parameters:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1120`** (1 nodes): `Check if a specified file is a regular file.          Parameters:         ---`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1121`** (1 nodes): `Get the size of a specified file in bytes.          Parameters:         -----`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1122`** (1 nodes): `Store data at the specified file path.          Parameters:         ---------`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1123`** (1 nodes): `Retrieve file from the specified file path.          Parameters:         ----`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1124`** (1 nodes): `Copy a file from a source path to a destination path.          Parameters:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1125`** (1 nodes): `Ensure that the specified directory exists, creating it if necessary.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1126`** (1 nodes): `Remove the storage at the specified file path.          Parameters:         -`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1127`** (1 nodes): `Remove an entire directory tree at the specified path, including all files and`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1128`** (1 nodes): `Extract text from a file based on its type.      Supports extraction from PDF`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1129`** (1 nodes): `Represents metadata for a file.      This class defines a structure to store v`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1130`** (1 nodes): `Retrieve metadata from a file object.      Reset the file pointer to the begin`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1131`** (1 nodes): `Represents an exception for file type errors.      This exception is raised wh`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1132`** (1 nodes): `Guess the file type from the given binary file stream.      If the file type c`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1133`** (1 nodes): `Initialize the BAML registry after the model is created.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1134`** (1 nodes): `Validate required environment variables for the 'ollama' LLM provider.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1135`** (1 nodes): `Convert the LLMConfig instance into a dictionary representation.          Retu`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1136`** (1 nodes): `Retrieve and cache the LLM configuration.      This function returns an instan`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1137`** (1 nodes): `Class handles selection of structured output frameworks and LLM functions.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1138`** (1 nodes): `Read a query prompt from a file.      Retrieve the contents of a specified pro`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1139`** (1 nodes): `Render a Jinja2 template asynchronously.      Set the base directory if not pr`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1140`** (1 nodes): `Rate limiter for LLM API calls.      This class implements a singleton pattern`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1141`** (1 nodes): `Wait if rate limit is reached.          This method blocks until the request c`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1142`** (1 nodes): `Decorator for rate limiting synchronous functions.      Parameters:     -----`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1143`** (1 nodes): `Decorate an asynchronous function for rate limiting.      This decorator ensur`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1144`** (1 nodes): `Check if an error is related to rate limiting.      Evaluate the provided erro`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1145`** (1 nodes): `Calculate the backoff time for a retry attempt with jitter.      Parameters:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1146`** (1 nodes): `Decorate a synchronous function to automatically retry on rate limit errors.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1147`** (1 nodes): `Retry an asynchronous function with an exponential backoff strategy upon encount`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1148`** (1 nodes): `List of file extensions this loader supports.          Returns:             L`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1149`** (1 nodes): `List of MIME types this loader supports.          Returns:             List o`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1150`** (1 nodes): `Unique name identifier for this loader.          Returns:             String`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1151`** (1 nodes): `Check if this loader can handle the given file.          Args:             ex`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1152`** (1 nodes): `Load and process the file, returning standardized result.          Args:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1153`** (1 nodes): `Register a loader at runtime.      This allows external packages and custom lo`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1154`** (1 nodes): `Create a new dataset and give all permissions on this dataset to the given user.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1155`** (1 nodes): `# TODO: Remove dataset from pipeline_run_status in Data objects related to datas`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1156`** (1 nodes): `Represents a type of entity with a name and description.      This class inher`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1157`** (1 nodes): `Extract edge metadata and datapoints from a field value.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1158`** (1 nodes): `Create edge properties dictionary with metadata if present.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1159`** (1 nodes): `Extract relationship key from edge metadata or use field name as fallback.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1160`** (1 nodes): `Generate a unique property key for visited_properties tracking.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1161`** (1 nodes): `Process a field containing DataPoints, always working with lists.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1162`** (1 nodes): `Generator that yields (target_datapoint, field_name, edge_metadata) tuples.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1163`** (1 nodes): `Extract graph representation from a DataPoint model.      Args:         data_`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1164`** (1 nodes): `Filter nodes to return only those that are not destinations of any edges.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1165`** (1 nodes): `Fetches and sums token counts from the database.      Returns:         int: T`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1166`** (1 nodes): `Execute the underlying task with given arguments.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1167`** (1 nodes): `Execute async generator task and collect results in batches.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1168`** (1 nodes): `Execute generator task and collect results in batches.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1169`** (1 nodes): `Execute coroutine task and yield the result.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1170`** (1 nodes): `Execute function task and yield the result.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1171`** (1 nodes): `Execute the task based on its type and yield results with the next task's batch`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1172`** (1 nodes): `Retrieves context based on the query.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1173`** (1 nodes): `Generates a response using the query and optional context.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1174`** (1 nodes): `Retriever for handling codeing rule based searches.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1175`** (1 nodes): `Get authenticated user with environment-controlled behavior:     - If REQUIRE_A`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1176`** (1 nodes): `Node in a knowledge graph.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1177`** (1 nodes): `Edge in a knowledge graph.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1178`** (1 nodes): `Node in a knowledge graph.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1179`** (1 nodes): `Edge in a knowledge graph.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1180`** (1 nodes): `Base class for different types of content.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1181`** (1 nodes): `Class for a single class label prediction.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1182`** (1 nodes): `Class for a single class label summary and description.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1183`** (1 nodes): `Relevant summary and chunk id`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1184`** (1 nodes): `Base class for content type, storing type of content as string.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1185`** (1 nodes): `Textual content class for more specific text categories.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1186`** (1 nodes): `Model to predict the type of content.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1187`** (1 nodes): `Resolve a writable logs directory.      Priority:     1) BaseConfig.logs_root`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1188`** (1 nodes): `A custom file handler that writes simpler plain text log entries.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1189`** (1 nodes): `Get a logger.      If `setup_logging()` has not been called, returns a standar`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1190`** (1 nodes): `Log the current database configuration for all database types`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1191`** (1 nodes): `Removes old log files, keeping only the most recent ones.      Args:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1192`** (1 nodes): `Sets up the logging configuration with structlog integration.      Args:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1193`** (1 nodes): `Return the file path of the log file in use, if any.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1194`** (1 nodes): `# NOTE: Has to be imporated at runtime to avoid circular import`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1195`** (1 nodes): `# NOTE: environment variable must be used here as it allows us to`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1196`** (1 nodes): `# NOTE: Some users have complained that Cognee crashes when trying to get micros`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1197`** (1 nodes): `Create a secure SSL context.      By default, use the system's certificate sto`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1198`** (1 nodes): `Creates or reads a anonymous user id`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1199`** (1 nodes): `Recursively replaces any property whose key matches one of `property_names``
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1200`** (1 nodes): `Embed a logo into the graph visualization as a watermark.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1201`** (1 nodes): `Spin up a simple HTTP server in a background thread to serve files.     This is`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1202`** (1 nodes): `A single developer rule extracted from text.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1203`** (1 nodes): `Collection of parsed rules.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1204`** (1 nodes): `Handle the propagation of the cognee database configuration to the dlt library.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1205`** (1 nodes): `Cache for robots.txt data.      Attributes:         protego: Parsed robots.tx`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1206`** (1 nodes): `Initialize the BeautifulSoupCrawler.          Args:             concurrency:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1207`** (1 nodes): `Initialize the HTTP client if not already created.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1208`** (1 nodes): `Enter the context manager, initializing the HTTP client.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1209`** (1 nodes): `Get the root URL (scheme and netloc) from a URL.          Args:             u`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1210`** (1 nodes): `Enforce rate limiting for requests to the same domain.          Args:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1211`** (1 nodes): `Get cached robots.txt data if valid.          Args:             domain_root:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1212`** (1 nodes): `Fetch and cache robots.txt data.          Args:             domain_root: The`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1213`** (1 nodes): `Check if a URL is allowed by robots.txt.          Args:             url: The`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1214`** (1 nodes): `Get the crawl delay for a URL from robots.txt.          Args:             url`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1215`** (1 nodes): `Fetch a URL using HTTPX with retries.          Args:             url: The URL`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1216`** (1 nodes): `Fetch and render a URL using Playwright for JavaScript content.          Args:`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1217`** (1 nodes): `Fetch and extract content from URLs using BeautifulSoup or Playwright.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1218`** (1 nodes): `# NOTE: Because of the different size of the postgres and sqlite databases,`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1219`** (1 nodes): `# NOTE: Because of the different size of the postgres and sqlite databases,`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1220`** (1 nodes): `Test cognify command with all possible options`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1221`** (1 nodes): `Test config set command argument parsing`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1222`** (1 nodes): `Test delete command with force flag`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1223`** (1 nodes): `Test CLI error handling and edge cases`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1224`** (1 nodes): `Test that debug flag is accepted`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1225`** (1 nodes): `Test invalid search type handling`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1226`** (1 nodes): `Test invalid chunker handling`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1227`** (1 nodes): `Test invalid output format handling`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1228`** (1 nodes): `Tests simple pydantic structure for get_graph_from_model`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1229`** (1 nodes): `Tests multiple entities to document connection`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1230`** (1 nodes): `Tests duplicated objects in document list`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1231`** (1 nodes): `Tests multi level nested structure extraction`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1232`** (1 nodes): `Tests graph from model with empty contains element`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1233`** (1 nodes): `Tests the new flexible edge system with mixed relationships`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1234`** (1 nodes): `Dynamic Category System (no hardcoded categories)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1235`** (1 nodes): `Enhanced Cognee Project`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1236`** (1 nodes): `Test Suite (975 tests, 100% pass rate)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1237`** (1 nodes): `Test Requirements File`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1238`** (1 nodes): `CODE Search Type`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1239`** (1 nodes): `Zero-Configuration Auto Setup`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1240`** (1 nodes): `Disaster Recovery Checklist`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1241`** (1 nodes): `Contributor Covenant Code of Conduct`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1242`** (1 nodes): `Security Issue Reporting Policy`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1243`** (1 nodes): `Database Stack (PostgreSQL, Qdrant, Neo4j, Redis)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1244`** (1 nodes): `21-Agent Multi-Agent System`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1245`** (1 nodes): `Compliance Standards (SOC 2, PCI DSS, GDPR, CCPA, ISO 27001, NIST)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1246`** (1 nodes): `Third Party Licenses`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1247`** (1 nodes): `Setup and Installation Scripts`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1248`** (1 nodes): `Alice in Wonderland Sample Data`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1249`** (1 nodes): `Background Video Blur (MP4 - Frontend Asset)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1250`** (1 nodes): `Generic File Icon`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 1251`** (1 nodes): `Programmer Light Bulb Joke`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `GET()` connect `Kuzu Graph Adapter` to `Database Migrations`, `Advanced Search Engine`, `Agent Memory Integration`, `Schema Migrations`, `Authentication Security`, `Memory Operations`, `Anthropic LLM Client`, `Advanced Features Analytics`, `Event Entity Graph`, `Faceted Fuzzy Search`, `Dataset Schema`, `Graph Model Migration`, `Document Processing`, `Data Point Extraction`, `Benchmark Adapters`, `Production Security`, `Production Optimization`, `Structured Output`, `Performance Baselines`, `UI Accessibility Testing`, `Claude API Integration`, `Production Documentation`, `Performance Metrics`, `Results Analysis`, `Community 30`, `Community 31`, `Community 33`, `Community 36`, `Community 39`, `Community 47`, `Community 51`, `Community 58`?**
-  _High betweenness centrality (0.194) - this node is a cross-community bridge._
-- **Why does `Enhanced Cognee Test Suite Comprehensive testing for Enhanced Cognee MCP Server` connect `Schema Migrations` to `Kuzu Graph Adapter`, `Database Migrations`, `Agent Memory Integration`, `Anthropic LLM Client`, `Advanced Features Analytics`, `Graph Model Migration`, `LLM Adapters`, `Data Point Extraction`?**
-  _High betweenness centrality (0.030) - this node is a cross-community bridge._
-- **Why does `AgentMemoryIntegration` connect `Agent Memory Integration` to `Kuzu Graph Adapter`, `Advanced Search Engine`, `Schema Migrations`, `Memory Operations`?**
-  _High betweenness centrality (0.027) - this node is a cross-community bridge._
-- **Are the 737 inferred relationships involving `str` (e.g. with `detect_project_type()` and `cognify()`) actually correct?**
-  _`str` has 737 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 742 inferred relationships involving `GET()` (e.g. with `upgrade()` and `test_z_ai_connection()`) actually correct?**
-  _`GET()` has 742 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 468 inferred relationships involving `AgentMemoryIntegration` (e.g. with `MemoryConfigManager` and `MemoryCategoryConfig`) actually correct?**
-  _`AgentMemoryIntegration` has 468 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 347 inferred relationships involving `SecurityEvent` (e.g. with `SecurityIncidentSeverity` and `AlertChannel`) actually correct?**
-  _`SecurityEvent` has 347 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `GET()` connect `Community 0` to `Community 1`, `Community 2`, `Community 3`, `Community 4`, `Community 5`, `Community 6`, `Community 7`, `Community 8`, `Community 9`, `Community 10`, `Community 11`, `Community 12`, `Community 13`, `Community 15`, `Community 16`, `Community 17`, `Community 18`, `Community 19`, `Community 20`, `Community 21`, `Community 22`, `Community 24`, `Community 25`, `Community 26`, `Community 28`, `Community 32`, `Community 34`, `Community 37`, `Community 39`, `Community 51`, `Community 57`?**
+  _High betweenness centrality (0.083) - this node is a cross-community bridge._
+- **Why does `SessionManager` connect `Community 11` to `Community 0`, `Community 1`, `Community 2`, `Community 4`, `Community 15`?**
+  _High betweenness centrality (0.026) - this node is a cross-community bridge._
+- **Why does `Enhanced Cognee Test Suite Comprehensive testing for Enhanced Cognee MCP Server` connect `Community 10` to `Community 0`, `Community 1`, `Community 35`, `Community 4`, `Community 3`, `Community 5`, `Community 6`, `Community 8`, `Community 9`, `Community 11`, `Community 12`, `Community 15`, `Community 18`, `Community 24`, `Community 31`?**
+  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+- **Are the 1055 inferred relationships involving `str` (e.g. with `run_benchmarks()` and `detect_project_type()`) actually correct?**
+  _`str` has 1055 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 949 inferred relationships involving `GET()` (e.g. with `upgrade()` and `test_z_ai_connection()`) actually correct?**
+  _`GET()` has 949 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 716 inferred relationships involving `PerformanceAnalytics` (e.g. with `Initialize Enhanced database connections` and `Cleanup Enhanced database connections`) actually correct?**
+  _`PerformanceAnalytics` has 716 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 715 inferred relationships involving `MemoryDeduplicator` (e.g. with `Initialize Enhanced database connections` and `Cleanup Enhanced database connections`) actually correct?**
+  _`MemoryDeduplicator` has 715 INFERRED edges - model-reasoned connections that need verification._
