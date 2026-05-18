@@ -54,7 +54,7 @@ langdetect==1.0.9                   # Language detection (28 languages)
 # Text Processing and NLP
 tiktoken==0.13.0                    # Token counting
 nltk==3.9.4                        # Natural language processing
-spacy==3.8.14                       # NLP pipeline
+spacy>=3.8.13,<3.9                 # NLP pipeline (3.8.14 doesn't exist on PyPI; 3.8.13 is latest in the 3.8.x line)
 textstat==0.7.13                    # Text statistics
 
 # Machine Learning and AI
