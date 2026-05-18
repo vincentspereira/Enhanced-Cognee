@@ -37,7 +37,7 @@ pyyaml==6.0.3                      # YAML parsing
 
 # Logging and Monitoring
 structlog==24.1.0                  # Structured logging
-rich==13.7.0                       # Rich console output
+rich>=13.8.0,<14.0                 # Rich console output (must be >=13.8 for typer 0.25.x)
 prometheus-client==0.25.0          # Prometheus metrics
 opentelemetry-api==1.41.1          # OpenTelemetry tracing
 opentelemetry-sdk==1.41.1
