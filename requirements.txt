@@ -85,7 +85,9 @@ markupsafe==2.1.5                  # Secure markup
 # CLI and Utilities
 typer==0.25.1                       # CLI framework
 click==8.4.0                       # Command line interface
-rich-cli==4.3.0                    # Rich CLI utilities
+# rich-cli removed: it's a phantom dependency -- never imported in our code,
+# and the pinned version 4.3.0 doesn't exist on PyPI (max published is 1.8.1).
+# The `rich` package (transitive via typer) provides everything we need.
 
 # File Processing
 python-magic==0.4.27               # File type detection
