@@ -30,15 +30,16 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'pip'
 
-      - name: Install dependencies (with uv for speed)
+      - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip uv
-          uv pip install --system pylint black flake8 mypy bandit ruff
-          # Install runtime deps so linters can resolve imports. Fail loud if
-          # requirements.txt is broken - linting against a half-installed env is useless.
-          uv pip install --system -r requirements.txt
+          python -m pip install --upgrade pip
+          pip install pylint black flake8 mypy bandit ruff
+          # Install runtime deps so linters can resolve imports. Using pip
+          # (not uv) because requirements.txt has legacy pins that uv's strict
+          # resolver rejects. TODO: switch to uv once we have a uv-compiled lockfile.
+          pip install -r requirements.txt
           if [ -f requirements-dev.txt ]; then
-            uv pip install --system -r requirements-dev.txt || true
+            pip install -r requirements-dev.txt || true
           fi
 
       - name: Run Ruff (fast linter, must pass)
@@ -188,18 +189,20 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'pip'
 
-      - name: Install dependencies (with uv for speed)
+      - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip uv
-          # Test runners first (fast)
-          uv pip install --system pytest pytest-cov pytest-asyncio pytest-mock pytest-benchmark hypothesis
-          # Runtime deps - fail loudly if requirements.txt is broken (do NOT swallow with tail)
-          uv pip install --system -r requirements.txt
+          python -m pip install --upgrade pip
+          # Test runners first (fast - no resolver issues at this scope)
+          pip install pytest pytest-cov pytest-asyncio pytest-mock pytest-benchmark hypothesis
+          # Runtime deps - use pip's lenient resolver. requirements.txt has some
+          # legacy pins that uv's strict resolver rejects but pip can satisfy.
+          # TODO: regenerate via `uv pip compile` and adopt uv once we have a lockfile.
+          pip install -r requirements.txt
           if [ -f requirements-dev.txt ]; then
-            uv pip install --system -r requirements-dev.txt || true
+            pip install -r requirements-dev.txt || true
           fi
           # Ensure the package itself is installed for `import src.*` to work
-          uv pip install --system -e .
+          pip install -e .
           # Sanity check that the key DB clients made it in
           python -c "import neo4j, redis, psycopg2, qdrant_client; print('DB clients OK:', neo4j.__version__, redis.__version__, psycopg2.__version__)"
 
@@ -327,15 +330,15 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'pip'
 
-      - name: Install dependencies (with uv for speed)
+      - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip uv
-          uv pip install --system pytest pytest-cov pytest-asyncio pytest-mock
-          uv pip install --system -r requirements.txt
+          python -m pip install --upgrade pip
+          pip install pytest pytest-cov pytest-asyncio pytest-mock
+          pip install -r requirements.txt
           if [ -f requirements-dev.txt ]; then
-            uv pip install --system -r requirements-dev.txt || true
+            pip install -r requirements-dev.txt || true
           fi
-          uv pip install --system -e .
+          pip install -e .
 
       - name: Wait for databases
         run: |
@@ -581,12 +584,12 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'pip'
 
-      - name: Install dependencies (with uv for speed)
+      - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip uv
-          uv pip install --system pytest pytest-benchmark locust
-          uv pip install --system -r requirements.txt
-          uv pip install --system -e .
+          python -m pip install --upgrade pip
+          pip install pytest pytest-benchmark locust
+          pip install -r requirements.txt
+          pip install -e .
 
       - name: Run performance benchmarks
         run: pytest tests/performance/ -v --benchmark-only || echo "No performance tests yet"

@@ -65,7 +65,7 @@ accelerate==0.28.0                 # PyTorch acceleration
 datasets==2.18.0                   # Dataset handling
 
 # AI Provider SDKs
-openai==1.12.0                     # OpenAI API
+openai>=1.80.1,<2.0                # OpenAI API (pyproject requires >=1.80.1)
 anthropic==0.102.0                   # Anthropic API
 google-generativeai==0.8.6         # Google AI
 
@@ -116,10 +116,10 @@ asyncio-mqtt==0.16.2               # MQTT async client
 aiohttp==3.13.5                     # Async HTTP client/server
 
 # Testing (development only)
-pytest==8.1.1                      # Testing framework
-pytest-asyncio==0.23.4             # Async testing
-pytest-mock==3.15.1                # Mocking in tests
-pytest-cov==4.1.0                  # Coverage reporting
+pytest>=8.1.0,<9.0                 # Testing framework (pinned to 8.x; 9.x removes APIs we use)
+pytest-asyncio>=0.24.0,<2.0        # Async testing (0.24 added pytest 8 support; 1.x is current)
+pytest-mock>=3.14,<4.0             # Mocking in tests
+pytest-cov>=5.0,<8.0               # Coverage reporting (5+ supports pytest 8)
 
 # Development Tools
 black==24.3.0                      # Code formatting
