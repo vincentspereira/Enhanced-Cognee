@@ -75,6 +75,18 @@ mcp>=1.0.0                         # Model Context Protocol SDK (FastMCP server 
 boto3>=1.34,<2.0
 botocore>=1.34,<2.0
 
+# Rate-limiting for FastAPI (imported at module level by enhanced_security_framework.py)
+slowapi>=0.1.9,<1.0
+
+# More module-level imports found by clean-CI install audit (each one fails
+# test-collection at import time because they are imported unconditionally):
+PyJWT>=2.8,<3.0                    # `import jwt` in src/security/{auth,enhanced_security_framework}.py
+bleach>=6.0,<7.0                   # HTML/XSS sanitization
+dataclasses-json>=0.6,<1.0         # JSON (de)serialization for @dataclass
+feedparser>=6.0,<7.0               # RSS/Atom feed parsing (used by ingest_url)
+plotly>=5.18,<7.0                  # Charting (knowledge-graph viz endpoints)
+markdown>=3.5,<4.0                 # Markdown -> HTML rendering
+
 # Memory and Caching
 redis==5.1.1                       # Redis client
 hiredis==2.3.2                     # Redis parser
