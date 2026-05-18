@@ -68,6 +68,12 @@ datasets==2.18.0                   # Dataset handling
 openai>=1.80.1,<2.0                # OpenAI API (pyproject requires >=1.80.1)
 anthropic==0.102.0                   # Anthropic API
 google-generativeai==0.8.6         # Google AI
+mcp>=1.0.0                         # Model Context Protocol SDK (FastMCP server for MCP tools)
+
+# AWS SDK (imported at module level by src/security/enhanced_security_framework.py
+# for credential rotation tooling; required even if AWS features aren't used)
+boto3>=1.34,<2.0
+botocore>=1.34,<2.0
 
 # Memory and Caching
 redis==5.1.1                       # Redis client
