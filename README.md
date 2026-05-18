@@ -83,16 +83,19 @@ Full deployment guide: [`docs/DEPLOYMENT_QUICKSTART.md`](docs/DEPLOYMENT_QUICKST
 
 ## Table of Contents
 
+- [Install in 30 Seconds](#install-in-30-seconds)
 - [Quick Comparison](#quick-comparison)
 - [Overview](#overview)
 - [What is Enhanced Cognee?](#what-is-enhanced-cognee)
 - [New Features](#new-features)
 - [Comparison with Original Cognee](#comparison-with-original-cognee)
+- [Screenshots and Demos](#screenshots-and-demos)
 - [Architecture](#architecture)
 - [System Workflow](#system-workflow)
 - [Installation](#installation)
 - [Quick Start](#quick-start)
 - [Multi-IDE Support](#multi-ide-support)
+- [Quick Examples](#quick-examples)
 - [MCP Tools Reference](#mcp-tools-reference)
 - [How MCP Tools Work](#how-mcp-tools-work)
 - [Agent Integration](#agent-integration)
@@ -106,6 +109,10 @@ Full deployment guide: [`docs/DEPLOYMENT_QUICKSTART.md`](docs/DEPLOYMENT_QUICKST
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
+- [Project Files](#project-files)
+- [Contributors](#contributors)
+- [Roadmap](#roadmap)
+- [Star History](#star-history)
 
 ---
 
@@ -616,10 +623,9 @@ Based on testing with enterprise datasets:
 - **95%+** storage efficiency with deduplication and summarization
 - **Sub-millisecond** agent coordination with Valkey pub/sub
 
----
+> See "Comparison with Original Cognee" above for the side-by-side feature table, or [`docs/COMPARE_TO_ALTERNATIVES.md`](docs/COMPARE_TO_ALTERNATIVES.md) for broader market context.
 
-JUNK_ROWS_BELOW_TO_DELETE
-| **MCP Tools**             | None            | ✅ **122 tools**                               |
+✅ **122 tools**                               |
 | **Multi-Agent Support**   | None            | ✅ **Real-time sync for 100+ agents**          |
 | **Memory Deduplication**  | None            | ✅ **95%+ storage savings**                    |
 | **Memory Summarization**  | None            | ✅ **10x+ compression**                        |
@@ -629,8 +635,6 @@ JUNK_ROWS_BELOW_TO_DELETE
 | **IDE Support**           | None            | ✅ **MCP-compatible IDEs**                     |
 | **Test Coverage**         | Basic           | ✅ **4,158 tests passing (100% pass rate)** |
 | **MCP IDE Integration**   | No              | ✅ **Standard Memory MCP**                     |
-> See "Comparison with Original Cognee" above for the side-by-side feature table, or [`docs/COMPARE_TO_ALTERNATIVES.md`](docs/COMPARE_TO_ALTERNATIVES.md) for broader market context.
-
 ---
 
 ## Original Cognee Features Available via Enhanced Cognee MCP
