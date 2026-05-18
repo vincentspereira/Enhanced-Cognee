@@ -151,10 +151,10 @@ jobs:
       neo4j:
         image: neo4j:5.25-community
         env:
-          NEO4J_AUTH: neo4j/cognee_password
+          NEO4J_AUTH: neo4j/cognee_test_password
           NEO4J_PLUGINS: '["apoc"]'
         options: >-
-          --health-cmd "cypher-shell -u neo4j -p cognee_password 'RETURN 1' || exit 1"
+          --health-cmd "cypher-shell -u neo4j -p cognee_test_password 'RETURN 1' || exit 1"
           --health-interval 15s
           --health-timeout 10s
           --health-retries 15
@@ -175,7 +175,7 @@ jobs:
       REDIS_PORT: "26379"
       NEO4J_URI: bolt://localhost:27687
       NEO4J_USER: neo4j
-      NEO4J_PASSWORD: cognee_password
+      NEO4J_PASSWORD: cognee_test_password
       ENHANCED_COGNEE_MODE: "true"
 
     steps:
@@ -218,7 +218,7 @@ jobs:
           curl -sf http://localhost:26333/healthz && echo " Qdrant ready"
           # Neo4j - HTTP endpoint check (no Python neo4j package needed here)
           for i in $(seq 1 30); do
-            if curl -sf -u neo4j:cognee_password http://localhost:27474/ > /dev/null 2>&1; then
+            if curl -sf -u neo4j:cognee_test_password http://localhost:27474/ > /dev/null 2>&1; then
               echo "Neo4j ready"; break
             fi
             echo "Waiting for Neo4j ($i/30)..."; sleep 2
@@ -290,10 +290,10 @@ jobs:
       neo4j:
         image: neo4j:5.25-community
         env:
-          NEO4J_AUTH: neo4j/cognee_password
+          NEO4J_AUTH: neo4j/cognee_test_password
           NEO4J_PLUGINS: '["apoc"]'
         options: >-
-          --health-cmd "cypher-shell -u neo4j -p cognee_password 'RETURN 1' || exit 1"
+          --health-cmd "cypher-shell -u neo4j -p cognee_test_password 'RETURN 1' || exit 1"
           --health-interval 15s
           --health-timeout 10s
           --health-retries 15
@@ -314,7 +314,7 @@ jobs:
       REDIS_PORT: "26379"
       NEO4J_URI: bolt://localhost:27687
       NEO4J_USER: neo4j
-      NEO4J_PASSWORD: cognee_password
+      NEO4J_PASSWORD: cognee_test_password
       ENHANCED_COGNEE_MODE: "true"
 
     steps:
@@ -348,7 +348,7 @@ jobs:
           python -c "import redis; r = redis.Redis(host='localhost', port=26379); print('Valkey ping:', r.ping())"
           curl -sf http://localhost:26333/healthz && echo " Qdrant ready"
           for i in $(seq 1 30); do
-            if curl -sf -u neo4j:cognee_password http://localhost:27474/ > /dev/null 2>&1; then
+            if curl -sf -u neo4j:cognee_test_password http://localhost:27474/ > /dev/null 2>&1; then
               echo "Neo4j ready"; break
             fi
             echo "Waiting for Neo4j ($i/30)..."; sleep 2
@@ -544,10 +544,10 @@ jobs:
       neo4j:
         image: neo4j:5.25-community
         env:
-          NEO4J_AUTH: neo4j/cognee_password
+          NEO4J_AUTH: neo4j/cognee_test_password
           NEO4J_PLUGINS: '["apoc"]'
         options: >-
-          --health-cmd "cypher-shell -u neo4j -p cognee_password 'RETURN 1' || exit 1"
+          --health-cmd "cypher-shell -u neo4j -p cognee_test_password 'RETURN 1' || exit 1"
           --health-interval 15s
           --health-timeout 10s
           --health-retries 15
@@ -568,7 +568,7 @@ jobs:
       REDIS_PORT: "26379"
       NEO4J_URI: bolt://localhost:27687
       NEO4J_USER: neo4j
-      NEO4J_PASSWORD: cognee_password
+      NEO4J_PASSWORD: cognee_test_password
       ENHANCED_COGNEE_MODE: "true"
 
     steps:
