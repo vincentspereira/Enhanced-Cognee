@@ -27,10 +27,10 @@ from src.db_adapters import graph_apache_age
 
 _REASON_NO_AGE = (
     "Apache AGE not reachable on Postgres at "
-    + os.getenv("POSTGRES_HOST", "localhost")
+    + os.getenv("AGE_HOST", os.getenv("POSTGRES_HOST", "localhost"))
     + ":"
-    + os.getenv("POSTGRES_PORT", "25432")
-    + "; skipping. Use `apache/age:PG16_latest` image."
+    + os.getenv("AGE_PORT", os.getenv("POSTGRES_PORT", "25432"))
+    + "; skipping. Use `apache/age:release_PG16_1.6.0` image."
 )
 
 
