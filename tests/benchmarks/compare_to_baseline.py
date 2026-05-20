@@ -9,7 +9,7 @@ Designed to be called from CI as the last step of a perf-regression
 job:
 
     python -m tests.benchmarks.compare_to_baseline \
-      --baseline tests/benchmarks/baselines/2026-05-20_default_stack.json \
+      --baseline tests/benchmarks/baselines/<YYYY-MM-DD>_default_stack.json \
       --new tests/benchmarks/output/provider_comparison.json \
       --thresholds tests/benchmarks/baselines/regression_thresholds.json
 
