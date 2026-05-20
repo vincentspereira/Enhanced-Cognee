@@ -305,7 +305,7 @@ class CrossAgentMemorySharing:
                     })
                 )
 
-                logger.info(f"Created shared space '{space_name}' for {len(member_agents)} agents")
+                logger.info(f"Created shared space '{{space_name}}' for {len(member_agents)} agents")
 
                 return {
                     "status": "success",
