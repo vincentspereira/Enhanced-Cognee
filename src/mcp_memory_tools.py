@@ -370,6 +370,7 @@ async def search_memories(
 async def delete_memory(
     memory_id: str,
     agent_id: str = "claude-code",
+    tenant_id: Optional[str] = None,
     confirm_token: Optional[str] = None,
     postgres_pool=None,
     realtime_sync=None,
@@ -436,21 +437,41 @@ async def delete_memory(
             result["error"] = "PostgreSQL not available - cannot delete memory"
             return result
 
-        async with postgres_pool.acquire() as conn:
-            # Check if memory exists and get category
-            existing = await conn.fetchrow("""
-                SELECT id, agent_id, data->>'category' as category
-                FROM shared_memory.documents WHERE id = $1
-            """, memory_id)
+        # Tenant-scoped table; falls back to un-scoped when tenant_id is None.
+        from src.multi_tenant import TenantContext, tenant_scoped_table
 
+        async def _do_delete() -> tuple:
+            target_table = tenant_scoped_table("shared_memory.documents")
+            async with postgres_pool.acquire() as conn_:
+                existing_ = await conn_.fetchrow(
+                    f"SELECT id, agent_id, data->>'category' as category "
+                    f"FROM {target_table} WHERE id = $1",
+                    memory_id,
+                )
+                if not existing_:
+                    return (existing_, None)
+                await conn_.execute(
+                    f"DELETE FROM {target_table} WHERE id = $1", memory_id
+                )
+                return (existing_, True)
+
+        if tenant_id:
+            async with TenantContext(tenant_id):
+                existing, _deleted = await _do_delete()
+        else:
+            existing, _deleted = await _do_delete()
+
+        # Preserve original control flow / log block (uses `existing`).
+        from contextlib import asynccontextmanager
+
+        @asynccontextmanager
+        async def _noop_conn():
+            yield None
+
+        async with _noop_conn() as conn:
             if not existing:
                 result["error"] = f"Memory not found: {memory_id}"
                 return result
-
-            # Delete memory
-            await conn.execute("""
-                DELETE FROM shared_memory.documents WHERE id = $1
-            """, memory_id)
 
             logger.info(f"OK Deleted memory: {memory_id} by agent: {agent_id}")
 
@@ -503,6 +524,7 @@ async def delete_memory(
 
 
 async def list_agents(
+    tenant_id: Optional[str] = None,
     postgres_pool=None,
     performance_analytics=None
 ) -> Dict[str, Any]:
@@ -532,13 +554,33 @@ async def list_agents(
             result["error"] = "PostgreSQL not available - cannot list agents"
             return result
 
-        async with postgres_pool.acquire() as conn:
-            rows = await conn.fetch("""
-                SELECT agent_id, COUNT(*) as memory_count
-                FROM shared_memory.documents
-                GROUP BY agent_id
-                ORDER BY memory_count DESC
-            """)
+        from src.multi_tenant import TenantContext, tenant_scoped_table
+
+        async def _do_list() -> list:
+            target_table = tenant_scoped_table("shared_memory.documents")
+            async with postgres_pool.acquire() as conn_:
+                return await conn_.fetch(
+                    "SELECT agent_id, COUNT(*) as memory_count "
+                    f"FROM {target_table} "
+                    "GROUP BY agent_id "
+                    "ORDER BY memory_count DESC"
+                )
+
+        if tenant_id:
+            async with TenantContext(tenant_id):
+                rows = await _do_list()
+        else:
+            rows = await _do_list()
+
+        # Preserve the original outer `async with conn` block shape for the
+        # remaining logging code below.
+        from contextlib import asynccontextmanager
+
+        @asynccontextmanager
+        async def _noop_conn():
+            yield None
+
+        async with _noop_conn() as conn:
 
             # AUTO-TRIGGER: Log performance metrics
             if performance_analytics:

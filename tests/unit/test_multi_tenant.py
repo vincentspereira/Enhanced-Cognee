@@ -261,6 +261,82 @@ class TestMCPMemoryToolsTenantWiring:
         assert "INSERT INTO shared_memory.documents_t_acme" in joined
 
     @pytest.mark.asyncio
+    async def test_delete_memory_uses_tenant_table(self):
+        from unittest.mock import AsyncMock, MagicMock, patch
+        from src import mcp_memory_tools
+
+        executed_sql: list = []
+        fake_conn = MagicMock()
+
+        async def _capture_execute(sql, *args):
+            executed_sql.append(("execute", sql))
+            return None
+
+        async def _capture_fetchrow(sql, *args):
+            executed_sql.append(("fetchrow", sql))
+            return {"id": "abc", "agent_id": "agent-1", "category": "x"}
+
+        fake_conn.execute = _capture_execute
+        fake_conn.fetchrow = _capture_fetchrow
+
+        class _AcquireCM:
+            async def __aenter__(self_):
+                return fake_conn
+            async def __aexit__(self_, *a):
+                return None
+
+        fake_pool = MagicMock()
+        fake_pool.acquire = MagicMock(return_value=_AcquireCM())
+
+        with patch("src.security_mcp.validate_uuid", return_value="00000000-0000-0000-0000-000000000001"), \
+             patch("src.security_mcp.validate_agent_id", return_value="agent-1"), \
+             patch("src.security_mcp.confirmation_manager.require_confirmation"), \
+             patch("src.security_mcp.require_agent_authorization", new_callable=AsyncMock):
+            await mcp_memory_tools.delete_memory(
+                memory_id="00000000-0000-0000-0000-000000000001",
+                agent_id="agent-1",
+                tenant_id="acme",
+                confirm_token="CONFIRM",
+                postgres_pool=fake_pool,
+            )
+
+        # Both the existence-check fetchrow and the DELETE must hit the
+        # tenant-scoped table.
+        joined = "\n".join(sql for _kind, sql in executed_sql)
+        assert "documents_t_acme" in joined
+        assert "DELETE FROM shared_memory.documents_t_acme" in joined
+
+    @pytest.mark.asyncio
+    async def test_list_agents_uses_tenant_table(self):
+        from unittest.mock import AsyncMock, MagicMock, patch
+        from src import mcp_memory_tools
+
+        executed_sql: list = []
+        fake_conn = MagicMock()
+
+        async def _capture_fetch(sql, *args):
+            executed_sql.append(sql)
+            return []
+
+        fake_conn.fetch = _capture_fetch
+
+        class _AcquireCM:
+            async def __aenter__(self_):
+                return fake_conn
+            async def __aexit__(self_, *a):
+                return None
+
+        fake_pool = MagicMock()
+        fake_pool.acquire = MagicMock(return_value=_AcquireCM())
+
+        await mcp_memory_tools.list_agents(
+            tenant_id="acme", postgres_pool=fake_pool
+        )
+
+        joined = "\n".join(executed_sql)
+        assert "documents_t_acme" in joined
+
+    @pytest.mark.asyncio
     async def test_add_memory_unscoped_when_no_tenant_id(self):
         from unittest.mock import AsyncMock, MagicMock, patch
         from src import mcp_memory_tools
