@@ -29,6 +29,7 @@ async def add_memory(
     content: str,
     user_id: str = "default",
     agent_id: str = "claude-code",
+    tenant_id: Optional[str] = None,
     metadata: Optional[str] = None,
     postgres_pool=None,
     memory_deduplicator=None,
@@ -116,14 +117,36 @@ async def add_memory(
         memory_id = str(uuid.uuid4())
         created_at = datetime.now(timezone.utc).replace(tzinfo=None)
 
-        # Store in PostgreSQL
-        async with postgres_pool.acquire() as conn:
-            await conn.execute("""
-                INSERT INTO shared_memory.documents
-                (id, title, content, agent_id, memory_category, tags, metadata, created_at)
-                VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
-            """, memory_id, f"Memory from {agent_id}", content,
-                agent_id, "general", [], metadata_dict, created_at)
+        # Store in PostgreSQL -- tenant-scoped table if a tenant_id is set.
+        # See src/multi_tenant.py: when tenant_id is provided, we bootstrap
+        # `shared_memory.documents_t_<tenant>` (LIKE the canonical table)
+        # lazily and write into it. Single-tenant callers (no tenant_id)
+        # continue to use `shared_memory.documents` unchanged.
+        from src.multi_tenant import (
+            TenantContext,
+            ensure_tenant_schema,
+            tenant_scoped_table,
+        )
+
+        async def _do_insert():
+            target_table = tenant_scoped_table("shared_memory.documents")
+            async with postgres_pool.acquire() as conn:
+                await conn.execute(
+                    f"""
+                    INSERT INTO {target_table}
+                    (id, title, content, agent_id, memory_category, tags, metadata, created_at)
+                    VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+                    """,
+                    memory_id, f"Memory from {agent_id}", content,
+                    agent_id, "general", [], metadata_dict, created_at,
+                )
+
+        if tenant_id:
+            async with TenantContext(tenant_id):
+                await ensure_tenant_schema(postgres_pool, tenant_id)
+                await _do_insert()
+        else:
+            await _do_insert()
 
         logger.info(f"OK Added memory: {memory_id} for user: {user_id}, agent: {agent_id}")
 
@@ -195,6 +218,7 @@ async def search_memories(
     limit: int = 10,
     user_id: str = "default",
     agent_id: Optional[str] = None,
+    tenant_id: Optional[str] = None,
     postgres_pool=None,
     performance_analytics=None
 ) -> Dict[str, Any]:
@@ -243,24 +267,47 @@ async def search_memories(
             result["error"] = "PostgreSQL not available - cannot search memories"
             return result
 
-        async with postgres_pool.acquire() as conn:
-            # Build query with filters
-            query_str = """
-                SELECT id, title, content, agent_id, created_at
-                FROM shared_memory.documents
-                WHERE content ILIKE $1
-            """
-            params = [f"%{query}%"]
+        # Tenant-scoped table lookup (see add_memory for the same pattern).
+        from src.multi_tenant import TenantContext, tenant_scoped_table
 
-            # Add agent filter if specified
-            if agent_id:
-                query_str += " AND agent_id = $2"
-                params.append(agent_id)
+        async def _do_search() -> list:
+            target_table = tenant_scoped_table("shared_memory.documents")
+            async with postgres_pool.acquire() as conn:
+                # Build query with filters
+                query_str = (
+                    "SELECT id, title, content, agent_id, created_at "
+                    f"FROM {target_table} "
+                    "WHERE content ILIKE $1"
+                )
+                params: list = [f"%{query}%"]
 
-            query_str += " ORDER BY created_at DESC LIMIT $" + str(len(params) + 1)
-            params.append(limit)
+                # Add agent filter if specified
+                if agent_id:
+                    query_str += " AND agent_id = $2"
+                    params.append(agent_id)
 
-            rows = await conn.fetch(query_str, *params)
+                query_str += " ORDER BY created_at DESC LIMIT $" + str(len(params) + 1)
+                params.append(limit)
+
+                return await conn.fetch(query_str, *params)
+
+        if tenant_id:
+            async with TenantContext(tenant_id):
+                rows = await _do_search()
+        else:
+            rows = await _do_search()
+
+        # Backwards-compat: existing code below this block expects `conn`
+        # to be in scope but only reads from `rows`. We open a no-op
+        # async context to preserve the original shape without
+        # actually opening a connection.
+        from contextlib import asynccontextmanager
+
+        @asynccontextmanager
+        async def _noop_conn():
+            yield None
+
+        async with _noop_conn() as conn:
 
             # Calculate search duration
             duration_ms = (time.time() - start_time) * 1000

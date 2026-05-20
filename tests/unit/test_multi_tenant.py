@@ -154,6 +154,153 @@ class TestNamingHelpers:
 
 
 # ---------------------------------------------------------------------------
+# Dotted table names + ensure_tenant_schema + MCP-tool wiring
+# ---------------------------------------------------------------------------
+
+
+class TestDottedTableScoping:
+    """tenant_scoped_table handles `schema.table` correctly."""
+
+    def test_dotted_name_preserves_schema(self):
+        from src.multi_tenant import tenant_scoped_table
+        with TenantContext("acme"):
+            assert tenant_scoped_table("shared_memory.documents") == \
+                "shared_memory.documents_t_acme"
+
+    def test_dotted_name_unscoped_when_no_tenant(self):
+        from src.multi_tenant import tenant_scoped_table
+        assert tenant_scoped_table("shared_memory.documents") == \
+            "shared_memory.documents"
+
+    def test_bare_name_still_works(self):
+        from src.multi_tenant import tenant_scoped_table
+        with TenantContext("acme"):
+            assert tenant_scoped_table("documents") == "documents_t_acme"
+
+
+class TestEnsureTenantSchema:
+    """`ensure_tenant_schema` issues idempotent CREATE TABLE via the pool."""
+
+    @pytest.mark.asyncio
+    async def test_no_op_when_no_tenant(self):
+        from unittest.mock import MagicMock
+        from src.multi_tenant import ensure_tenant_schema
+
+        pool = MagicMock()
+        await ensure_tenant_schema(pool, tenant_id=None)
+        pool.acquire.assert_not_called()
+
+    @pytest.mark.asyncio
+    async def test_issues_two_create_table_statements(self):
+        from unittest.mock import AsyncMock, MagicMock
+        from src.multi_tenant import ensure_tenant_schema
+
+        fake_conn = MagicMock()
+        fake_conn.execute = AsyncMock()
+
+        class _AcquireCM:
+            async def __aenter__(self_):
+                return fake_conn
+            async def __aexit__(self_, *a):
+                return None
+
+        pool = MagicMock()
+        pool.acquire = MagicMock(return_value=_AcquireCM())
+
+        await ensure_tenant_schema(pool, tenant_id="acme")
+
+        assert fake_conn.execute.await_count == 2
+        sqls = [call.args[0] for call in fake_conn.execute.await_args_list]
+        assert any("documents_t_acme" in s for s in sqls)
+        assert any("embeddings_t_acme" in s for s in sqls)
+        assert all("CREATE TABLE IF NOT EXISTS" in s for s in sqls)
+
+
+class TestMCPMemoryToolsTenantWiring:
+    """add_memory routes through the tenant-scoped table when tenant_id set."""
+
+    @pytest.mark.asyncio
+    async def test_add_memory_uses_tenant_table(self):
+        from unittest.mock import AsyncMock, MagicMock, patch
+        from src import mcp_memory_tools
+
+        executed_sql: list = []
+        fake_conn = MagicMock()
+
+        async def _capture(sql, *args):
+            executed_sql.append(sql)
+            return None
+
+        fake_conn.execute = _capture
+
+        class _AcquireCM:
+            async def __aenter__(self_):
+                return fake_conn
+            async def __aexit__(self_, *a):
+                return None
+
+        fake_pool = MagicMock()
+        fake_pool.acquire = MagicMock(return_value=_AcquireCM())
+
+        with patch("src.security_mcp.validate_memory_content", return_value="hello"), \
+             patch("src.security_mcp.validate_agent_id", return_value="agent-1"), \
+             patch("src.security_mcp.sanitize_string", return_value="user-1"):
+            result = await mcp_memory_tools.add_memory(
+                content="hello",
+                agent_id="agent-1",
+                user_id="user-1",
+                tenant_id="acme",
+                postgres_pool=fake_pool,
+            )
+
+        assert result["status"] == "success"
+        joined = "\n".join(executed_sql)
+        # Both the schema-bootstrap CREATE TABLEs and the INSERT
+        # should have hit the tenant-scoped table name.
+        assert "documents_t_acme" in joined
+        assert "INSERT INTO shared_memory.documents_t_acme" in joined
+
+    @pytest.mark.asyncio
+    async def test_add_memory_unscoped_when_no_tenant_id(self):
+        from unittest.mock import AsyncMock, MagicMock, patch
+        from src import mcp_memory_tools
+
+        executed_sql: list = []
+        fake_conn = MagicMock()
+
+        async def _capture(sql, *args):
+            executed_sql.append(sql)
+            return None
+
+        fake_conn.execute = _capture
+
+        class _AcquireCM:
+            async def __aenter__(self_):
+                return fake_conn
+            async def __aexit__(self_, *a):
+                return None
+
+        fake_pool = MagicMock()
+        fake_pool.acquire = MagicMock(return_value=_AcquireCM())
+
+        with patch("src.security_mcp.validate_memory_content", return_value="hi"), \
+             patch("src.security_mcp.validate_agent_id", return_value="agent-1"), \
+             patch("src.security_mcp.sanitize_string", return_value="user-1"):
+            result = await mcp_memory_tools.add_memory(
+                content="hi",
+                agent_id="agent-1",
+                user_id="user-1",
+                postgres_pool=fake_pool,
+            )
+
+        assert result["status"] == "success"
+        joined = "\n".join(executed_sql)
+        # No tenant -> original un-scoped table
+        assert "INSERT INTO shared_memory.documents" in joined
+        assert "documents_t_" not in joined
+
+
+# ---------------------------------------------------------------------------
 # ENHANCED_REQUIRE_TENANT enforcement
 # ---------------------------------------------------------------------------
 

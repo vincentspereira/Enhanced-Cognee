@@ -70,7 +70,7 @@ from __future__ import annotations
 import contextvars
 import os
 import re
-from typing import Optional
+from typing import Any, Optional
 
 _TENANT_CTX: contextvars.ContextVar[Optional[str]] = contextvars.ContextVar(
     "enhanced_cognee_tenant", default=None
@@ -193,15 +193,51 @@ def _maybe_require_tenant() -> Optional[str]:
 
 
 def tenant_scoped_table(base_table: str) -> str:
-    """Return ``<base>_t_<tenant>`` (or ``<base>`` if no tenant).
+    """Return the tenant-scoped form of a Postgres table identifier.
 
-    Postgres table name. Both the base and the tenant id must
-    survive ``sanitise_tenant_id`` (already enforced on set).
+    Accepts both bare names and schema-qualified names:
+
+        "documents"               -> "documents_t_<tenant>"
+        "shared_memory.documents" -> "shared_memory.documents_t_<tenant>"
+
+    Both forms preserve the schema qualifier so SQL like
+    ``INSERT INTO shared_memory.documents_t_acme ...`` is valid.
     """
     t = _maybe_require_tenant()
     if t is None:
         return base_table
+    if "." in base_table:
+        schema, table = base_table.rsplit(".", 1)
+        return f"{schema}.{table}_t_{t}"
     return f"{base_table}_t_{t}"
+
+
+async def ensure_tenant_schema(pool: Any, tenant_id: Optional[str] = None) -> None:
+    """Create the per-tenant Postgres tables on first use.
+
+    Idempotent: uses ``CREATE TABLE IF NOT EXISTS``. Mirrors the
+    columns from the canonical ``shared_memory.documents`` /
+    ``shared_memory.embeddings`` schema in
+    ``docker/init-scripts/01-init-pgvector.sql``. Call this once at
+    MCP server startup (per tenant) or lazily on first write.
+
+    Pass an explicit ``tenant_id`` to bootstrap a specific tenant
+    out-of-band; otherwise reads the current TenantContext.
+    """
+    t = tenant_id or _TENANT_CTX.get()
+    if t is None:
+        return  # single-tenant mode -- nothing to create
+    safe_t = sanitise_tenant_id(t)
+
+    async with pool.acquire() as conn:
+        await conn.execute(
+            f'CREATE TABLE IF NOT EXISTS shared_memory.documents_t_{safe_t} '
+            f'(LIKE shared_memory.documents INCLUDING ALL)'
+        )
+        await conn.execute(
+            f'CREATE TABLE IF NOT EXISTS shared_memory.embeddings_t_{safe_t} '
+            f'(LIKE shared_memory.embeddings INCLUDING ALL)'
+        )
 
 
 def tenant_scoped_collection(base_collection: str) -> str:
