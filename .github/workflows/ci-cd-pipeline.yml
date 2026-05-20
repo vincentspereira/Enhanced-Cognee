@@ -333,21 +333,17 @@ jobs:
         # the HTTP transport (ARCADEDB_TRANSPORT=http) -- ships in
         # PR #9 via src/db_adapters/graph_arcadedb.py.
         #
-        # Healthcheck: targets the Studio root rather than
-        # /api/v1/ready (that endpoint isn't stable across 26.x).
-        # A 200 on `/` is enough to confirm the JVM has finished
-        # starting and the HTTP listener is bound.
+        # No `--health-cmd`: the ArcadeDB image doesn't ship curl /
+        # wget, so any in-container healthcheck would always fail.
+        # GHA without a healthcheck waits for the container to be
+        # "running" (= Docker startup completes), which is enough;
+        # the in-step readiness probe below (run from the runner)
+        # polls the HTTP port until ArcadeDB actually responds.
         image: arcadedata/arcadedb:26.5.1
         env:
           JAVA_OPTS: "-Darcadedb.server.rootPassword=cognee_test_password"
         ports:
           - 22480:2480
-        options: >-
-          --health-cmd "curl -sf http://localhost:2480/ || exit 1"
-          --health-interval 15s
-          --health-timeout 10s
-          --health-retries 20
-          --health-start-period 60s
 
     env:
       POSTGRES_HOST: localhost
