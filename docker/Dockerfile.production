@@ -1,6 +1,11 @@
-# Enhanced Cognee Dockerfile
-# Integrates Enhanced Cognee with enterprise-grade memory stack
-# Replaces default databases: SQLite->PostgreSQL, LanceDB->Qdrant, Kuzu->Neo4j, adds Redis
+# Enhanced Cognee - Production Dockerfile
+# Production-tuned build of the FastAPI HTTP app (src.enhanced_cognee_mcp:app).
+# Referenced by docker/docker-compose-production.yml (build context = repo root).
+#
+# Differences vs docker/Dockerfile.enhanced-cognee:
+#   - Multiple uvicorn workers (UVICORN_WORKERS, default 2)
+#   - No build tooling left in the final layer beyond what pip needs
+#   - Non-root user, no --reload
 
 FROM python:3.12-slim
 
@@ -11,7 +16,6 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     build-essential \
     curl \
-    jq \
     wget \
     git \
     gcc \
@@ -22,78 +26,63 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Install Enhanced Cognee dependencies
+# Install Enhanced Cognee runtime dependencies (mirrors the enhanced-cognee image)
 RUN pip install --no-cache-dir \
-    # Enhanced Stack Dependencies
     psycopg2-binary==2.9.9 \
     qdrant-client==1.10.0 \
     neo4j==5.25.0 \
     redis==5.1.1 \
     pgvector==0.3.2 \
-
-    # Existing Cognee Dependencies
     fastapi==0.110.0 \
     uvicorn==0.27.1 \
     pydantic==2.6.1 \
     sqlalchemy==2.0.25 \
     alembic==1.13.1 \
-    asyncio-mqtt==0.16.1 \
     python-dotenv==1.0.1 \
     httpx==0.26.0 \
     aiofiles==23.2.1 \
     python-multipart==0.0.9 \
     python-jose[cryptography]==3.3.0 \
     passlib[bcrypt]==1.7.4 \
-    python-decouple==3.8 \
     structlog==24.1.0 \
-    rich==13.7.0 \
-    typer==0.9.0 \
-    click==8.1.7 \
     pyyaml==6.0.1 \
-    jinja2==3.1.3 \
-    markupsafe==2.1.5 \
-    numpy==1.26.4 \
-    pandas==2.2.1 \
-    scikit-learn==1.4.1 \
-    transformers==4.40.1 \
-    torch==2.2.1 \
-    sentence-transformers==2.6.1 \
     tiktoken==0.6.0 \
     openai==1.12.0 \
-    anthropic==0.8.1 \
-    tiktoken==0.6.0
+    prometheus-client==0.20.0
 
 # Copy Enhanced Cognee application code
 COPY src/ /app/src/
 COPY alembic/ /app/alembic/
 COPY alembic.ini /app/
+COPY alembic-enhanced.ini /app/
 COPY config/ /app/config/
 
-# Copy initialization scripts
-COPY docker/scripts/ /app/scripts/
-
-# Set environment variables for Enhanced Stack
+# Environment for the Enhanced Stack.
 # PYTHONPATH=/app so the `src` package resolves (module is src.enhanced_cognee_mcp:app).
 ENV PYTHONPATH=/app
 ENV ENHANCED_COGNEE_MODE=true
 ENV LOG_LEVEL=INFO
 ENV PYTHONUNBUFFERED=1
+# Number of uvicorn workers (override at runtime).
+ENV UVICORN_WORKERS=2
+# Listen port (override at runtime).
+ENV PORT=8080
 
-# Create a non-root user and make the runtime data/log dirs writable by it.
+# Create a non-root user and make runtime dirs writable.
 RUN groupadd --system appuser \
     && useradd --system --gid appuser --create-home --home-dir /home/appuser appuser \
     && mkdir -p /app/data /app/logs /app/tmp \
     && chown -R appuser:appuser /app
 
-# Drop privileges -- the app runs as the unprivileged appuser.
+# Drop privileges.
 USER appuser
 
-# Expose port
+# Expose the app port.
 EXPOSE 8080
 
 # Health check -- liveness endpoint (200 while the process is up).
 HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
-    CMD curl -f http://localhost:8080/health/live || exit 1
+    CMD curl -f "http://localhost:${PORT}/health/live" || exit 1
 
-# Start the Enhanced Cognee FastAPI app. NO --reload in production.
-CMD ["python", "-m", "uvicorn", "src.enhanced_cognee_mcp:app", "--host", "0.0.0.0", "--port", "8080"]
+# Production start: multiple workers, NO --reload. Shell form so ${VAR} expands.
+CMD ["sh", "-c", "exec uvicorn src.enhanced_cognee_mcp:app --host 0.0.0.0 --port ${PORT} --workers ${UVICORN_WORKERS}"]
