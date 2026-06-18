@@ -18,7 +18,7 @@ Cognee is now successfully configured as your **primary memory MCP server** with
 
 ### Primary LLM (Z.ai)
 ```bash
-LLM_API_KEY="79eaf40722c34b82b2f040fbd8519582.lzyM2fnYmRbzqWRR"
+LLM_API_KEY="<YOUR_ZAI_API_KEY>"
 LLM_MODEL="zhipu/glm-5"
 LLM_PROVIDER="zai"
 LLM_ENDPOINT="https://api.z.ai/api/coding/paas/v4/"
